@@ -680,10 +680,10 @@ settings._tbxanzahl = RemoteObject.createNew ("anywheresoftware.b4a.objects.Edit
 settings._btnverstgdelete = RemoteObject.createNew ("anywheresoftware.b4a.objects.ButtonWrapper");__ref.setField("_btnverstgdelete",settings._btnverstgdelete);
  //BA.debugLineNum = 39;BA.debugLine="Private btnVerstgSpeichern As Button";
 settings._btnverstgspeichern = RemoteObject.createNew ("anywheresoftware.b4a.objects.ButtonWrapper");__ref.setField("_btnverstgspeichern",settings._btnverstgspeichern);
- //BA.debugLineNum = 41;BA.debugLine="Private lstVeranstaltungen As ListView";
-settings._lstveranstaltungen = RemoteObject.createNew ("anywheresoftware.b4a.objects.ListViewWrapper");__ref.setField("_lstveranstaltungen",settings._lstveranstaltungen);
- //BA.debugLineNum = 42;BA.debugLine="Private lstTeilnehmer As ListView";
-settings._lstteilnehmer = RemoteObject.createNew ("anywheresoftware.b4a.objects.ListViewWrapper");__ref.setField("_lstteilnehmer",settings._lstteilnehmer);
+ //BA.debugLineNum = 41;BA.debugLine="Private lstVeranstaltungen As CustomListView";
+settings._lstveranstaltungen = RemoteObject.createNew ("b4a.example3.customlistview");__ref.setField("_lstveranstaltungen",settings._lstveranstaltungen);
+ //BA.debugLineNum = 42;BA.debugLine="Private lstTeilnehmer As CustomListView";
+settings._lstteilnehmer = RemoteObject.createNew ("b4a.example3.customlistview");__ref.setField("_lstteilnehmer",settings._lstteilnehmer);
  //BA.debugLineNum = 44;BA.debugLine="Private tbxTeilnehmer As EditText";
 settings._tbxteilnehmer = RemoteObject.createNew ("anywheresoftware.b4a.objects.EditTextWrapper");__ref.setField("_tbxteilnehmer",settings._tbxteilnehmer);
  //BA.debugLineNum = 45;BA.debugLine="Private btnTLNDelete As Button";
@@ -2920,10 +2920,10 @@ Debug.locals.put("New", _new);
 Debug.ShouldStop(-2147483648);
  BA.debugLineNum = 993;BA.debugLine="Log(\"tbxAnzahl_TextChanged\")";
 Debug.ShouldStop(1);
-settings.__c.runVoidMethod ("LogImpl","410092545",RemoteObject.createImmutable("tbxAnzahl_TextChanged"),0);
+settings.__c.runVoidMethod ("LogImpl","846727169",RemoteObject.createImmutable("tbxAnzahl_TextChanged"),0);
  BA.debugLineNum = 994;BA.debugLine="Log(\"dochange = \" & dochange)";
 Debug.ShouldStop(2);
-settings.__c.runVoidMethod ("LogImpl","410092546",RemoteObject.concat(RemoteObject.createImmutable("dochange = "),__ref.getField(true,"_dochange" /*RemoteObject*/ )),0);
+settings.__c.runVoidMethod ("LogImpl","846727170",RemoteObject.concat(RemoteObject.createImmutable("dochange = "),__ref.getField(true,"_dochange" /*RemoteObject*/ )),0);
  BA.debugLineNum = 995;BA.debugLine="If dochange = False Then Return";
 Debug.ShouldStop(4);
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_dochange" /*RemoteObject*/ ),settings.__c.getField(true,"False"))) { 
@@ -3010,10 +3010,10 @@ Debug.locals.put("New", _new);
 Debug.ShouldStop(67108864);
  BA.debugLineNum = 1020;BA.debugLine="Log(\"tbxTeilnehmer_TextChanged\")";
 Debug.ShouldStop(134217728);
-settings.__c.runVoidMethod ("LogImpl","410223617",RemoteObject.createImmutable("tbxTeilnehmer_TextChanged"),0);
+settings.__c.runVoidMethod ("LogImpl","846858241",RemoteObject.createImmutable("tbxTeilnehmer_TextChanged"),0);
  BA.debugLineNum = 1021;BA.debugLine="Log(\"dochange = \" & dochange)";
 Debug.ShouldStop(268435456);
-settings.__c.runVoidMethod ("LogImpl","410223618",RemoteObject.concat(RemoteObject.createImmutable("dochange = "),__ref.getField(true,"_dochange" /*RemoteObject*/ )),0);
+settings.__c.runVoidMethod ("LogImpl","846858242",RemoteObject.concat(RemoteObject.createImmutable("dochange = "),__ref.getField(true,"_dochange" /*RemoteObject*/ )),0);
  BA.debugLineNum = 1022;BA.debugLine="If dochange = False Then Return";
 Debug.ShouldStop(536870912);
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_dochange" /*RemoteObject*/ ),settings.__c.getField(true,"False"))) { 
@@ -3159,10 +3159,10 @@ Debug.locals.put("New", _new);
 Debug.ShouldStop(512);
  BA.debugLineNum = 971;BA.debugLine="Log(\"tbxVeranstaltung_TextChanged\")";
 Debug.ShouldStop(1024);
-settings.__c.runVoidMethod ("LogImpl","49961473",RemoteObject.createImmutable("tbxVeranstaltung_TextChanged"),0);
+settings.__c.runVoidMethod ("LogImpl","846596097",RemoteObject.createImmutable("tbxVeranstaltung_TextChanged"),0);
  BA.debugLineNum = 972;BA.debugLine="Log(\"dochange = \" & dochange)";
 Debug.ShouldStop(2048);
-settings.__c.runVoidMethod ("LogImpl","49961474",RemoteObject.concat(RemoteObject.createImmutable("dochange = "),__ref.getField(true,"_dochange" /*RemoteObject*/ )),0);
+settings.__c.runVoidMethod ("LogImpl","846596098",RemoteObject.concat(RemoteObject.createImmutable("dochange = "),__ref.getField(true,"_dochange" /*RemoteObject*/ )),0);
  BA.debugLineNum = 973;BA.debugLine="If dochange = False Then Return";
 Debug.ShouldStop(4096);
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_dochange" /*RemoteObject*/ ),settings.__c.getField(true,"False"))) { 
@@ -3224,7 +3224,7 @@ int _i = 0;
 Debug.ShouldStop(1);
  BA.debugLineNum = 1155;BA.debugLine="lstTeilnehmer.Clear";
 Debug.ShouldStop(4);
-__ref.getField(false,"_lstteilnehmer" /*RemoteObject*/ ).runVoidMethod ("Clear");
+__ref.getField(false,"_lstteilnehmer" /*RemoteObject*/ ).runVoidMethod ("_clear");
  BA.debugLineNum = 1157;BA.debugLine="For I = 0 To Teilnehmer.Size - 1 Step 2";
 Debug.ShouldStop(16);
 {
@@ -3236,9 +3236,6 @@ Debug.locals.put("i", _i);
  BA.debugLineNum = 1158;BA.debugLine="If I + 1 < Teilnehmer.Size Then";
 Debug.ShouldStop(32);
 if (RemoteObject.solveBoolean("<",RemoteObject.solve(new RemoteObject[] {RemoteObject.createImmutable(_i),RemoteObject.createImmutable(1)}, "+",1, 1),BA.numberCast(double.class, __ref.getField(false,"_teilnehmer" /*RemoteObject*/ ).runMethod(true,"getSize")))) { 
- BA.debugLineNum = 1159;BA.debugLine="lstTeilnehmer.AddSingleLine2(Teilnehmer.Get(I),";
-Debug.ShouldStop(64);
-__ref.getField(false,"_lstteilnehmer" /*RemoteObject*/ ).runVoidMethod ("AddSingleLine2",(Object)(BA.ObjectToCharSequence(__ref.getField(false,"_teilnehmer" /*RemoteObject*/ ).runMethod(false,"Get",(Object)(BA.numberCast(int.class, _i))))),(Object)(__ref.getField(false,"_teilnehmer" /*RemoteObject*/ ).runMethod(false,"Get",(Object)(RemoteObject.solve(new RemoteObject[] {RemoteObject.createImmutable(_i),RemoteObject.createImmutable(1)}, "+",1, 1)))));
  };
  }
 }Debug.locals.put("i", _i);
@@ -3265,7 +3262,7 @@ RemoteObject _name = RemoteObject.createImmutable("");
 Debug.ShouldStop(64);
  BA.debugLineNum = 1129;BA.debugLine="lstVeranstaltungen.Clear";
 Debug.ShouldStop(256);
-__ref.getField(false,"_lstveranstaltungen" /*RemoteObject*/ ).runVoidMethod ("Clear");
+__ref.getField(false,"_lstveranstaltungen" /*RemoteObject*/ ).runVoidMethod ("_clear");
  BA.debugLineNum = 1131;BA.debugLine="For Each KEY As String In Veranstaltungen.Keys";
 Debug.ShouldStop(1024);
 {
@@ -3286,9 +3283,6 @@ _datum = BA.ObjectToString(_v.runMethod(false,"GetDefault",(Object)(RemoteObject
  BA.debugLineNum = 1136;BA.debugLine="Dim NAME As String = V.GetDefault(\"Name\", \"\")";
 Debug.ShouldStop(32768);
 _name = BA.ObjectToString(_v.runMethod(false,"GetDefault",(Object)(RemoteObject.createImmutable(("Name"))),(Object)((RemoteObject.createImmutable("")))));Debug.locals.put("name", _name);Debug.locals.put("NAME", _name);
- BA.debugLineNum = 1138;BA.debugLine="lstVeranstaltungen.AddSingleLine2( _";
-Debug.ShouldStop(131072);
-__ref.getField(false,"_lstveranstaltungen" /*RemoteObject*/ ).runVoidMethod ("AddSingleLine2",(Object)(BA.ObjectToCharSequence(RemoteObject.concat(_datum,RemoteObject.createImmutable("   "),_name))),(Object)((_key)));
  }
 }Debug.locals.put("key", _key);
 ;

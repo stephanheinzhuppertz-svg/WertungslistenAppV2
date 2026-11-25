@@ -44,8 +44,8 @@ Sub Class_Globals
 	Private btnVerstgDelete As Button
 	Private btnVerstgSpeichern As Button
 	
-	Private lstVeranstaltungen As ListView
-	Private lstTeilnehmer As ListView
+	Private lstVeranstaltungen As CustomListView
+	Private lstTeilnehmer As CustomListView
 	
 	Private tbxTeilnehmer As EditText
 	Private btnTLNDelete As Button
@@ -1141,9 +1141,9 @@ Private Sub ZeigeVeranstaltungenCLV
 		Dim DATUM As String = V.GetDefault("Datum", "")
 		Dim NAME As String = V.GetDefault("Name", "")
 
-		lstVeranstaltungen.AddSingleLine2( _
-            DATUM & "   " & NAME, _
-            KEY)
+		'lstVeranstaltungen.AddSingleLine2( _
+        '    DATUM & "   " & NAME, _
+        '    KEY)
 
 	Next
 
@@ -1162,7 +1162,7 @@ Private Sub ZeigeTeilnehmerCLV
 
 	For I = 0 To Teilnehmer.Size - 1 Step 2
 		If I + 1 < Teilnehmer.Size Then
-			lstTeilnehmer.AddSingleLine2(Teilnehmer.Get(I), Teilnehmer.Get(I + 1))
+			'lstTeilnehmer.AddSingleLine2(Teilnehmer.Get(I), Teilnehmer.Get(I + 1))
 		End If
 	Next
 
@@ -1182,3 +1182,4 @@ Private Sub lstVeranstaltungen_ItemClick (Position As Int, Value As Object)
 	setzeVeranstaltung(webviewVSTGN_ID)
 
 End Sub
+

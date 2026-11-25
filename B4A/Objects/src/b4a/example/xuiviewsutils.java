@@ -24,33 +24,33 @@ RDebugUtils.currentModule="xuiviewsutils";
 if (Debug.shouldDelegate(null, "performhapticfeedback", true))
 	 {return ((String) Debug.delegate(null, "performhapticfeedback", new Object[] {_ba,_view}));}
 anywheresoftware.b4j.object.JavaObject _jo = null;
-RDebugUtils.currentLine=47972352;
- //BA.debugLineNum = 47972352;BA.debugLine="Public Sub PerformHapticFeedback (View As B4XView)";
-RDebugUtils.currentLine=47972353;
- //BA.debugLineNum = 47972353;BA.debugLine="Initialize";
+RDebugUtils.currentLine=36503552;
+ //BA.debugLineNum = 36503552;BA.debugLine="Public Sub PerformHapticFeedback (View As B4XView)";
+RDebugUtils.currentLine=36503553;
+ //BA.debugLineNum = 36503553;BA.debugLine="Initialize";
 _initialize(_ba);
-RDebugUtils.currentLine=47972355;
- //BA.debugLineNum = 47972355;BA.debugLine="Dim jo As JavaObject = View";
+RDebugUtils.currentLine=36503555;
+ //BA.debugLineNum = 36503555;BA.debugLine="Dim jo As JavaObject = View";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_view.getObject()));
-RDebugUtils.currentLine=47972356;
- //BA.debugLineNum = 47972356;BA.debugLine="jo.RunMethod(\"performHapticFeedback\", Array(1))";
+RDebugUtils.currentLine=36503556;
+ //BA.debugLineNum = 36503556;BA.debugLine="jo.RunMethod(\"performHapticFeedback\", Array(1))";
 _jo.RunMethod("performHapticFeedback",new Object[]{(Object)(1)});
-RDebugUtils.currentLine=47972362;
- //BA.debugLineNum = 47972362;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36503562;
+ //BA.debugLineNum = 36503562;BA.debugLine="End Sub";
 return "";
 }
 public static String  _settextorcsbuildertolabel(anywheresoftware.b4a.BA _ba,anywheresoftware.b4a.objects.B4XViewWrapper _xlbl,Object _text) throws Exception{
 RDebugUtils.currentModule="xuiviewsutils";
 if (Debug.shouldDelegate(null, "settextorcsbuildertolabel", true))
 	 {return ((String) Debug.delegate(null, "settextorcsbuildertolabel", new Object[] {_ba,_xlbl,_text}));}
-RDebugUtils.currentLine=48103424;
- //BA.debugLineNum = 48103424;BA.debugLine="Public Sub SetTextOrCSBuilderToLabel(xlbl As B4XVi";
-RDebugUtils.currentLine=48103426;
- //BA.debugLineNum = 48103426;BA.debugLine="xlbl.Text = Text";
+RDebugUtils.currentLine=36634624;
+ //BA.debugLineNum = 36634624;BA.debugLine="Public Sub SetTextOrCSBuilderToLabel(xlbl As B4XVi";
+RDebugUtils.currentLine=36634626;
+ //BA.debugLineNum = 36634626;BA.debugLine="xlbl.Text = Text";
 _xlbl.setText(BA.ObjectToCharSequence(_text));
-RDebugUtils.currentLine=48103436;
- //BA.debugLineNum = 48103436;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36634636;
+ //BA.debugLineNum = 36634636;BA.debugLine="End Sub";
 return "";
 }
 public static String  _addstubtoclvifneeded(anywheresoftware.b4a.BA _ba,b4a.example3.customlistview _customlistview1,int _color) throws Exception{
@@ -60,44 +60,44 @@ if (Debug.shouldDelegate(null, "addstubtoclvifneeded", true))
 b4a.example3.customlistview._clvitem _lastitem = null;
 anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
 int _height = 0;
-RDebugUtils.currentLine=48037888;
- //BA.debugLineNum = 48037888;BA.debugLine="Public Sub AddStubToCLVIfNeeded(CustomListView1 As";
-RDebugUtils.currentLine=48037889;
- //BA.debugLineNum = 48037889;BA.debugLine="If CustomListView1.Size = 0 Then Return";
+RDebugUtils.currentLine=36569088;
+ //BA.debugLineNum = 36569088;BA.debugLine="Public Sub AddStubToCLVIfNeeded(CustomListView1 As";
+RDebugUtils.currentLine=36569089;
+ //BA.debugLineNum = 36569089;BA.debugLine="If CustomListView1.Size = 0 Then Return";
 if (_customlistview1._getsize()==0) { 
 if (true) return "";};
-RDebugUtils.currentLine=48037890;
- //BA.debugLineNum = 48037890;BA.debugLine="Dim LastItem As CLVItem = CustomListView1.GetRawL";
+RDebugUtils.currentLine=36569090;
+ //BA.debugLineNum = 36569090;BA.debugLine="Dim LastItem As CLVItem = CustomListView1.GetRawL";
 _lastitem = _customlistview1._getrawlistitem((int) (_customlistview1._getsize()-1));
-RDebugUtils.currentLine=48037891;
- //BA.debugLineNum = 48037891;BA.debugLine="If LastItem.Offset + LastItem.Panel.Height < Cust";
+RDebugUtils.currentLine=36569091;
+ //BA.debugLineNum = 36569091;BA.debugLine="If LastItem.Offset + LastItem.Panel.Height < Cust";
 if (_lastitem.Offset+_lastitem.Panel.getHeight()<_customlistview1._asview().getHeight()) { 
-RDebugUtils.currentLine=48037893;
- //BA.debugLineNum = 48037893;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"stub\")";
+RDebugUtils.currentLine=36569093;
+ //BA.debugLineNum = 36569093;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"stub\")";
 _p = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _p = _xui.CreatePanel((_ba.processBA == null ? _ba : _ba.processBA),"stub");
-RDebugUtils.currentLine=48037894;
- //BA.debugLineNum = 48037894;BA.debugLine="p.Color = Color";
+RDebugUtils.currentLine=36569094;
+ //BA.debugLineNum = 36569094;BA.debugLine="p.Color = Color";
 _p.setColor(_color);
-RDebugUtils.currentLine=48037895;
- //BA.debugLineNum = 48037895;BA.debugLine="Dim Height As Int = CustomListView1.AsView.Heigh";
+RDebugUtils.currentLine=36569095;
+ //BA.debugLineNum = 36569095;BA.debugLine="Dim Height As Int = CustomListView1.AsView.Heigh";
 _height = (int) (_customlistview1._asview().getHeight()-_lastitem.Offset-_lastitem.Panel.getHeight()-anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (3)));
-RDebugUtils.currentLine=48037896;
- //BA.debugLineNum = 48037896;BA.debugLine="If xui.IsB4J Then Height = Height + 5";
+RDebugUtils.currentLine=36569096;
+ //BA.debugLineNum = 36569096;BA.debugLine="If xui.IsB4J Then Height = Height + 5";
 if (_xui.getIsB4J()) { 
 _height = (int) (_height+5);};
-RDebugUtils.currentLine=48037897;
- //BA.debugLineNum = 48037897;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, CustomListView1.AsV";
+RDebugUtils.currentLine=36569097;
+ //BA.debugLineNum = 36569097;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, CustomListView1.AsV";
 _p.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_customlistview1._asview().getWidth(),_height);
-RDebugUtils.currentLine=48037898;
- //BA.debugLineNum = 48037898;BA.debugLine="CustomListView1.Add(p, \"\")";
+RDebugUtils.currentLine=36569098;
+ //BA.debugLineNum = 36569098;BA.debugLine="CustomListView1.Add(p, \"\")";
 _customlistview1._add(_p,(Object)(""));
-RDebugUtils.currentLine=48037899;
- //BA.debugLineNum = 48037899;BA.debugLine="CustomListView1.sv.ScrollViewContentHeight = Cus";
+RDebugUtils.currentLine=36569099;
+ //BA.debugLineNum = 36569099;BA.debugLine="CustomListView1.sv.ScrollViewContentHeight = Cus";
 _customlistview1._sv.setScrollViewContentHeight((int) (_customlistview1._sv.getScrollViewContentHeight()-_customlistview1._getdividersize()));
  };
-RDebugUtils.currentLine=48037901;
- //BA.debugLineNum = 48037901;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36569101;
+ //BA.debugLineNum = 36569101;BA.debugLine="End Sub";
 return "";
 }
 public static String  _setbitmapandfill(anywheresoftware.b4a.BA _ba,anywheresoftware.b4a.objects.B4XViewWrapper _imageview,anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper _bmp) throws Exception{
@@ -105,20 +105,20 @@ RDebugUtils.currentModule="xuiviewsutils";
 if (Debug.shouldDelegate(null, "setbitmapandfill", true))
 	 {return ((String) Debug.delegate(null, "setbitmapandfill", new Object[] {_ba,_imageview,_bmp}));}
 anywheresoftware.b4a.objects.ImageViewWrapper _iiv = null;
-RDebugUtils.currentLine=48168960;
- //BA.debugLineNum = 48168960;BA.debugLine="Public Sub SetBitmapAndFill (ImageView As B4XView,";
-RDebugUtils.currentLine=48168961;
- //BA.debugLineNum = 48168961;BA.debugLine="ImageView.SetBitmap(Bmp)";
+RDebugUtils.currentLine=36700160;
+ //BA.debugLineNum = 36700160;BA.debugLine="Public Sub SetBitmapAndFill (ImageView As B4XView,";
+RDebugUtils.currentLine=36700161;
+ //BA.debugLineNum = 36700161;BA.debugLine="ImageView.SetBitmap(Bmp)";
 _imageview.SetBitmap((android.graphics.Bitmap)(_bmp.getObject()));
-RDebugUtils.currentLine=48168962;
- //BA.debugLineNum = 48168962;BA.debugLine="Dim iiv As ImageView = ImageView";
+RDebugUtils.currentLine=36700162;
+ //BA.debugLineNum = 36700162;BA.debugLine="Dim iiv As ImageView = ImageView";
 _iiv = new anywheresoftware.b4a.objects.ImageViewWrapper();
 _iiv = (anywheresoftware.b4a.objects.ImageViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ImageViewWrapper(), (android.widget.ImageView)(_imageview.getObject()));
-RDebugUtils.currentLine=48168964;
- //BA.debugLineNum = 48168964;BA.debugLine="iiv.Gravity = Gravity.FILL";
+RDebugUtils.currentLine=36700164;
+ //BA.debugLineNum = 36700164;BA.debugLine="iiv.Gravity = Gravity.FILL";
 _iiv.setGravity(anywheresoftware.b4a.keywords.Common.Gravity.FILL);
-RDebugUtils.currentLine=48168970;
- //BA.debugLineNum = 48168970;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36700170;
+ //BA.debugLineNum = 36700170;BA.debugLine="End Sub";
 return "";
 }
 public static String  _setalpha(anywheresoftware.b4a.BA _ba,anywheresoftware.b4a.objects.B4XViewWrapper _view,float _level) throws Exception{
@@ -127,20 +127,20 @@ if (Debug.shouldDelegate(null, "setalpha", true))
 	 {return ((String) Debug.delegate(null, "setalpha", new Object[] {_ba,_view,_level}));}
 anywheresoftware.b4j.object.JavaObject _jo = null;
 float _alpha = 0f;
-RDebugUtils.currentLine=48365568;
- //BA.debugLineNum = 48365568;BA.debugLine="Public Sub SetAlpha (View As B4XView, Level As Flo";
-RDebugUtils.currentLine=48365570;
- //BA.debugLineNum = 48365570;BA.debugLine="Dim jo As JavaObject = View";
+RDebugUtils.currentLine=36896768;
+ //BA.debugLineNum = 36896768;BA.debugLine="Public Sub SetAlpha (View As B4XView, Level As Flo";
+RDebugUtils.currentLine=36896770;
+ //BA.debugLineNum = 36896770;BA.debugLine="Dim jo As JavaObject = View";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_view.getObject()));
-RDebugUtils.currentLine=48365571;
- //BA.debugLineNum = 48365571;BA.debugLine="Dim alpha As Float = Level";
+RDebugUtils.currentLine=36896771;
+ //BA.debugLineNum = 36896771;BA.debugLine="Dim alpha As Float = Level";
 _alpha = _level;
-RDebugUtils.currentLine=48365572;
- //BA.debugLineNum = 48365572;BA.debugLine="jo.RunMethod(\"setAlpha\", Array(alpha))";
+RDebugUtils.currentLine=36896772;
+ //BA.debugLineNum = 36896772;BA.debugLine="jo.RunMethod(\"setAlpha\", Array(alpha))";
 _jo.RunMethod("setAlpha",new Object[]{(Object)(_alpha)});
-RDebugUtils.currentLine=48365580;
- //BA.debugLineNum = 48365580;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36896780;
+ //BA.debugLineNum = 36896780;BA.debugLine="End Sub";
 return "";
 }
 public static b4a.example.b4ximageview  _createb4ximageview(anywheresoftware.b4a.BA _ba) throws Exception{
@@ -149,29 +149,29 @@ if (Debug.shouldDelegate(null, "createb4ximageview", true))
 	 {return ((b4a.example.b4ximageview) Debug.delegate(null, "createb4ximageview", new Object[] {_ba}));}
 b4a.example.b4ximageview _iv = null;
 anywheresoftware.b4a.objects.B4XViewWrapper _base = null;
-RDebugUtils.currentLine=48300032;
- //BA.debugLineNum = 48300032;BA.debugLine="Public Sub CreateB4XImageView As B4XImageView";
-RDebugUtils.currentLine=48300033;
- //BA.debugLineNum = 48300033;BA.debugLine="Dim iv As B4XImageView";
+RDebugUtils.currentLine=36831232;
+ //BA.debugLineNum = 36831232;BA.debugLine="Public Sub CreateB4XImageView As B4XImageView";
+RDebugUtils.currentLine=36831233;
+ //BA.debugLineNum = 36831233;BA.debugLine="Dim iv As B4XImageView";
 _iv = new b4a.example.b4ximageview();
-RDebugUtils.currentLine=48300034;
- //BA.debugLineNum = 48300034;BA.debugLine="iv.Initialize(Null, \"\")";
+RDebugUtils.currentLine=36831234;
+ //BA.debugLineNum = 36831234;BA.debugLine="iv.Initialize(Null, \"\")";
 _iv._initialize /*String*/ (null,_ba,anywheresoftware.b4a.keywords.Common.Null,"");
-RDebugUtils.currentLine=48300035;
- //BA.debugLineNum = 48300035;BA.debugLine="Dim base As B4XView = xui.CreatePanel(\"\")";
+RDebugUtils.currentLine=36831235;
+ //BA.debugLineNum = 36831235;BA.debugLine="Dim base As B4XView = xui.CreatePanel(\"\")";
 _base = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _base = _xui.CreatePanel((_ba.processBA == null ? _ba : _ba.processBA),"");
-RDebugUtils.currentLine=48300036;
- //BA.debugLineNum = 48300036;BA.debugLine="base.SetLayoutAnimated(0, 0, 0, 100dip, 100dip)";
+RDebugUtils.currentLine=36831236;
+ //BA.debugLineNum = 36831236;BA.debugLine="base.SetLayoutAnimated(0, 0, 0, 100dip, 100dip)";
 _base.SetLayoutAnimated((int) (0),(int) (0),(int) (0),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100)));
-RDebugUtils.currentLine=48300037;
- //BA.debugLineNum = 48300037;BA.debugLine="iv.DesignerCreateView(base, Null, CreateMap(\"Roun";
+RDebugUtils.currentLine=36831237;
+ //BA.debugLineNum = 36831237;BA.debugLine="iv.DesignerCreateView(base, Null, CreateMap(\"Roun";
 _iv._designercreateview /*String*/ (null,(Object)(_base.getObject()),(anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(anywheresoftware.b4a.keywords.Common.Null)),anywheresoftware.b4a.keywords.Common.createMap(new Object[] {(Object)("Round"),(Object)(anywheresoftware.b4a.keywords.Common.False),(Object)("ResizeMode"),(Object)("FIT"),(Object)("BackgroundColor"),(Object)(((int)0xffaaaaaa)),(Object)("CornersRadius"),(Object)(0)}));
-RDebugUtils.currentLine=48300038;
- //BA.debugLineNum = 48300038;BA.debugLine="Return iv";
+RDebugUtils.currentLine=36831238;
+ //BA.debugLineNum = 36831238;BA.debugLine="Return iv";
 if (true) return _iv;
-RDebugUtils.currentLine=48300039;
- //BA.debugLineNum = 48300039;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36831239;
+ //BA.debugLineNum = 36831239;BA.debugLine="End Sub";
 return null;
 }
 public static anywheresoftware.b4a.objects.B4XViewWrapper  _createlabel(anywheresoftware.b4a.BA _ba) throws Exception{
@@ -179,36 +179,36 @@ RDebugUtils.currentModule="xuiviewsutils";
 if (Debug.shouldDelegate(null, "createlabel", true))
 	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper) Debug.delegate(null, "createlabel", new Object[] {_ba}));}
 anywheresoftware.b4a.objects.LabelWrapper _lbl = null;
-RDebugUtils.currentLine=48234496;
- //BA.debugLineNum = 48234496;BA.debugLine="Public Sub CreateLabel As B4XView";
-RDebugUtils.currentLine=48234497;
- //BA.debugLineNum = 48234497;BA.debugLine="Dim lbl As Label";
+RDebugUtils.currentLine=36765696;
+ //BA.debugLineNum = 36765696;BA.debugLine="Public Sub CreateLabel As B4XView";
+RDebugUtils.currentLine=36765697;
+ //BA.debugLineNum = 36765697;BA.debugLine="Dim lbl As Label";
 _lbl = new anywheresoftware.b4a.objects.LabelWrapper();
-RDebugUtils.currentLine=48234498;
- //BA.debugLineNum = 48234498;BA.debugLine="lbl.Initialize(\"\")";
+RDebugUtils.currentLine=36765698;
+ //BA.debugLineNum = 36765698;BA.debugLine="lbl.Initialize(\"\")";
 _lbl.Initialize(_ba,"");
-RDebugUtils.currentLine=48234499;
- //BA.debugLineNum = 48234499;BA.debugLine="Return lbl";
+RDebugUtils.currentLine=36765699;
+ //BA.debugLineNum = 36765699;BA.debugLine="Return lbl";
 if (true) return (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_lbl.getObject()));
-RDebugUtils.currentLine=48234500;
- //BA.debugLineNum = 48234500;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36765700;
+ //BA.debugLineNum = 36765700;BA.debugLine="End Sub";
 return null;
 }
 public static String  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
 RDebugUtils.currentModule="xuiviewsutils";
 if (Debug.shouldDelegate(null, "initialize", true))
 	 {return ((String) Debug.delegate(null, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=47906816;
- //BA.debugLineNum = 47906816;BA.debugLine="Private Sub Initialize";
-RDebugUtils.currentLine=47906817;
- //BA.debugLineNum = 47906817;BA.debugLine="If UtilsInitialized Then Return";
+RDebugUtils.currentLine=36438016;
+ //BA.debugLineNum = 36438016;BA.debugLine="Private Sub Initialize";
+RDebugUtils.currentLine=36438017;
+ //BA.debugLineNum = 36438017;BA.debugLine="If UtilsInitialized Then Return";
 if (_utilsinitialized) { 
 if (true) return "";};
-RDebugUtils.currentLine=47906818;
- //BA.debugLineNum = 47906818;BA.debugLine="UtilsInitialized = True";
+RDebugUtils.currentLine=36438018;
+ //BA.debugLineNum = 36438018;BA.debugLine="UtilsInitialized = True";
 _utilsinitialized = anywheresoftware.b4a.keywords.Common.True;
-RDebugUtils.currentLine=47906825;
- //BA.debugLineNum = 47906825;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36438025;
+ //BA.debugLineNum = 36438025;BA.debugLine="End Sub";
 return "";
 }
 }

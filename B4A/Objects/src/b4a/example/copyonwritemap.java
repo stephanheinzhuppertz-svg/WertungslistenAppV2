@@ -41,13 +41,13 @@ public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public String  _class_globals(b4a.example.copyonwritemap __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
-RDebugUtils.currentLine=19070976;
- //BA.debugLineNum = 19070976;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=19070977;
- //BA.debugLineNum = 19070977;BA.debugLine="Private InternalMap As Map";
+RDebugUtils.currentLine=7602176;
+ //BA.debugLineNum = 7602176;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=7602177;
+ //BA.debugLineNum = 7602177;BA.debugLine="Private InternalMap As Map";
 _internalmap = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=19070978;
- //BA.debugLineNum = 19070978;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7602178;
+ //BA.debugLineNum = 7602178;BA.debugLine="End Sub";
 return "";
 }
 public String  _clear(b4a.example.copyonwritemap __ref) throws Exception{
@@ -55,16 +55,16 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "clear", true))
 	 {return ((String) Debug.delegate(ba, "clear", null));}
-RDebugUtils.currentLine=19529728;
- //BA.debugLineNum = 19529728;BA.debugLine="Public Sub Clear";
-RDebugUtils.currentLine=19529729;
- //BA.debugLineNum = 19529729;BA.debugLine="Dim InternalMap As Map";
+RDebugUtils.currentLine=8060928;
+ //BA.debugLineNum = 8060928;BA.debugLine="Public Sub Clear";
+RDebugUtils.currentLine=8060929;
+ //BA.debugLineNum = 8060929;BA.debugLine="Dim InternalMap As Map";
 _internalmap = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=19529730;
- //BA.debugLineNum = 19529730;BA.debugLine="InternalMap.Initialize";
+RDebugUtils.currentLine=8060930;
+ //BA.debugLineNum = 8060930;BA.debugLine="InternalMap.Initialize";
 __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ .Initialize();
-RDebugUtils.currentLine=19529731;
- //BA.debugLineNum = 19529731;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8060931;
+ //BA.debugLineNum = 8060931;BA.debugLine="End Sub";
 return "";
 }
 public boolean  _containskey(b4a.example.copyonwritemap __ref,Object _key) throws Exception{
@@ -72,13 +72,13 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "containskey", true))
 	 {return ((Boolean) Debug.delegate(ba, "containskey", new Object[] {_key}));}
-RDebugUtils.currentLine=19660800;
- //BA.debugLineNum = 19660800;BA.debugLine="Public Sub ContainsKey (Key As Object) As Boolean";
-RDebugUtils.currentLine=19660801;
- //BA.debugLineNum = 19660801;BA.debugLine="Return InternalMap.ContainsKey(Key)";
+RDebugUtils.currentLine=8192000;
+ //BA.debugLineNum = 8192000;BA.debugLine="Public Sub ContainsKey (Key As Object) As Boolean";
+RDebugUtils.currentLine=8192001;
+ //BA.debugLineNum = 8192001;BA.debugLine="Return InternalMap.ContainsKey(Key)";
 if (true) return __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ .ContainsKey(_key);
-RDebugUtils.currentLine=19660802;
- //BA.debugLineNum = 19660802;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8192002;
+ //BA.debugLineNum = 8192002;BA.debugLine="End Sub";
 return false;
 }
 public String  _copymap(b4a.example.copyonwritemap __ref) throws Exception{
@@ -86,13 +86,13 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "copymap", true))
 	 {return ((String) Debug.delegate(ba, "copymap", null));}
-RDebugUtils.currentLine=19202048;
- //BA.debugLineNum = 19202048;BA.debugLine="Private Sub CopyMap";
-RDebugUtils.currentLine=19202049;
- //BA.debugLineNum = 19202049;BA.debugLine="InternalMap = B4XCollections.MergeMaps(InternalMa";
+RDebugUtils.currentLine=7733248;
+ //BA.debugLineNum = 7733248;BA.debugLine="Private Sub CopyMap";
+RDebugUtils.currentLine=7733249;
+ //BA.debugLineNum = 7733249;BA.debugLine="InternalMap = B4XCollections.MergeMaps(InternalMa";
 __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/  = _b4xcollections._mergemaps /*anywheresoftware.b4a.objects.collections.Map*/ (getActivityBA(),__ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ ,(anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(__c.Null)));
-RDebugUtils.currentLine=19202050;
- //BA.debugLineNum = 19202050;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7733250;
+ //BA.debugLineNum = 7733250;BA.debugLine="End Sub";
 return "";
 }
 public Object  _get(b4a.example.copyonwritemap __ref,Object _key) throws Exception{
@@ -100,13 +100,13 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "get", true))
 	 {return ((Object) Debug.delegate(ba, "get", new Object[] {_key}));}
-RDebugUtils.currentLine=19267584;
- //BA.debugLineNum = 19267584;BA.debugLine="Public Sub Get (Key As Object) As Object";
-RDebugUtils.currentLine=19267585;
- //BA.debugLineNum = 19267585;BA.debugLine="Return InternalMap.Get(Key)";
+RDebugUtils.currentLine=7798784;
+ //BA.debugLineNum = 7798784;BA.debugLine="Public Sub Get (Key As Object) As Object";
+RDebugUtils.currentLine=7798785;
+ //BA.debugLineNum = 7798785;BA.debugLine="Return InternalMap.Get(Key)";
 if (true) return __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ .Get(_key);
-RDebugUtils.currentLine=19267586;
- //BA.debugLineNum = 19267586;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7798786;
+ //BA.debugLineNum = 7798786;BA.debugLine="End Sub";
 return null;
 }
 public Object  _getdefault(b4a.example.copyonwritemap __ref,Object _key,Object _default) throws Exception{
@@ -114,13 +114,13 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "getdefault", true))
 	 {return ((Object) Debug.delegate(ba, "getdefault", new Object[] {_key,_default}));}
-RDebugUtils.currentLine=19333120;
- //BA.debugLineNum = 19333120;BA.debugLine="Public Sub GetDefault (Key As Object, Default As O";
-RDebugUtils.currentLine=19333121;
- //BA.debugLineNum = 19333121;BA.debugLine="Return InternalMap.GetDefault(Key, Default)";
+RDebugUtils.currentLine=7864320;
+ //BA.debugLineNum = 7864320;BA.debugLine="Public Sub GetDefault (Key As Object, Default As O";
+RDebugUtils.currentLine=7864321;
+ //BA.debugLineNum = 7864321;BA.debugLine="Return InternalMap.GetDefault(Key, Default)";
 if (true) return __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ .GetDefault(_key,_default);
-RDebugUtils.currentLine=19333122;
- //BA.debugLineNum = 19333122;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7864322;
+ //BA.debugLineNum = 7864322;BA.debugLine="End Sub";
 return null;
 }
 public anywheresoftware.b4a.objects.collections.Map  _getmap(b4a.example.copyonwritemap __ref) throws Exception{
@@ -128,13 +128,13 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "getmap", true))
 	 {return ((anywheresoftware.b4a.objects.collections.Map) Debug.delegate(ba, "getmap", null));}
-RDebugUtils.currentLine=19726336;
- //BA.debugLineNum = 19726336;BA.debugLine="Public Sub GetMap As Map";
-RDebugUtils.currentLine=19726337;
- //BA.debugLineNum = 19726337;BA.debugLine="Return InternalMap";
+RDebugUtils.currentLine=8257536;
+ //BA.debugLineNum = 8257536;BA.debugLine="Public Sub GetMap As Map";
+RDebugUtils.currentLine=8257537;
+ //BA.debugLineNum = 8257537;BA.debugLine="Return InternalMap";
 if (true) return __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ ;
-RDebugUtils.currentLine=19726338;
- //BA.debugLineNum = 19726338;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8257538;
+ //BA.debugLineNum = 8257538;BA.debugLine="End Sub";
 return null;
 }
 public int  _getsize(b4a.example.copyonwritemap __ref) throws Exception{
@@ -142,13 +142,13 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "getsize", true))
 	 {return ((Integer) Debug.delegate(ba, "getsize", null));}
-RDebugUtils.currentLine=19595264;
- //BA.debugLineNum = 19595264;BA.debugLine="Public Sub getSize As Int";
-RDebugUtils.currentLine=19595265;
- //BA.debugLineNum = 19595265;BA.debugLine="Return InternalMap.Size";
+RDebugUtils.currentLine=8126464;
+ //BA.debugLineNum = 8126464;BA.debugLine="Public Sub getSize As Int";
+RDebugUtils.currentLine=8126465;
+ //BA.debugLineNum = 8126465;BA.debugLine="Return InternalMap.Size";
 if (true) return __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ .getSize();
-RDebugUtils.currentLine=19595266;
- //BA.debugLineNum = 19595266;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8126466;
+ //BA.debugLineNum = 8126466;BA.debugLine="End Sub";
 return 0;
 }
 public String  _initialize(b4a.example.copyonwritemap __ref,anywheresoftware.b4a.BA _ba,anywheresoftware.b4a.objects.collections.Map _initialitems) throws Exception{
@@ -157,13 +157,13 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_initialitems}));}
-RDebugUtils.currentLine=19136512;
- //BA.debugLineNum = 19136512;BA.debugLine="Public Sub Initialize (InitialItems As Map)";
-RDebugUtils.currentLine=19136513;
- //BA.debugLineNum = 19136513;BA.debugLine="InternalMap = B4XCollections.MergeMaps(InitialIte";
+RDebugUtils.currentLine=7667712;
+ //BA.debugLineNum = 7667712;BA.debugLine="Public Sub Initialize (InitialItems As Map)";
+RDebugUtils.currentLine=7667713;
+ //BA.debugLineNum = 7667713;BA.debugLine="InternalMap = B4XCollections.MergeMaps(InitialIte";
 __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/  = _b4xcollections._mergemaps /*anywheresoftware.b4a.objects.collections.Map*/ (getActivityBA(),_initialitems,(anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(__c.Null)));
-RDebugUtils.currentLine=19136514;
- //BA.debugLineNum = 19136514;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7667714;
+ //BA.debugLineNum = 7667714;BA.debugLine="End Sub";
 return "";
 }
 public String  _put(b4a.example.copyonwritemap __ref,Object _key,Object _value) throws Exception{
@@ -171,16 +171,16 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "put", true))
 	 {return ((String) Debug.delegate(ba, "put", new Object[] {_key,_value}));}
-RDebugUtils.currentLine=19398656;
- //BA.debugLineNum = 19398656;BA.debugLine="Public Sub Put (Key As Object, Value As Object)";
-RDebugUtils.currentLine=19398657;
- //BA.debugLineNum = 19398657;BA.debugLine="CopyMap";
+RDebugUtils.currentLine=7929856;
+ //BA.debugLineNum = 7929856;BA.debugLine="Public Sub Put (Key As Object, Value As Object)";
+RDebugUtils.currentLine=7929857;
+ //BA.debugLineNum = 7929857;BA.debugLine="CopyMap";
 __ref._copymap /*String*/ (null);
-RDebugUtils.currentLine=19398658;
- //BA.debugLineNum = 19398658;BA.debugLine="InternalMap.Put(Key, Value)";
+RDebugUtils.currentLine=7929858;
+ //BA.debugLineNum = 7929858;BA.debugLine="InternalMap.Put(Key, Value)";
 __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ .Put(_key,_value);
-RDebugUtils.currentLine=19398659;
- //BA.debugLineNum = 19398659;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7929859;
+ //BA.debugLineNum = 7929859;BA.debugLine="End Sub";
 return "";
 }
 public String  _remove(b4a.example.copyonwritemap __ref,Object _key) throws Exception{
@@ -188,16 +188,16 @@ __ref = this;
 RDebugUtils.currentModule="copyonwritemap";
 if (Debug.shouldDelegate(ba, "remove", true))
 	 {return ((String) Debug.delegate(ba, "remove", new Object[] {_key}));}
-RDebugUtils.currentLine=19464192;
- //BA.debugLineNum = 19464192;BA.debugLine="Public Sub Remove (Key As Object)";
-RDebugUtils.currentLine=19464193;
- //BA.debugLineNum = 19464193;BA.debugLine="CopyMap";
+RDebugUtils.currentLine=7995392;
+ //BA.debugLineNum = 7995392;BA.debugLine="Public Sub Remove (Key As Object)";
+RDebugUtils.currentLine=7995393;
+ //BA.debugLineNum = 7995393;BA.debugLine="CopyMap";
 __ref._copymap /*String*/ (null);
-RDebugUtils.currentLine=19464194;
- //BA.debugLineNum = 19464194;BA.debugLine="InternalMap.Remove(Key)";
+RDebugUtils.currentLine=7995394;
+ //BA.debugLineNum = 7995394;BA.debugLine="InternalMap.Remove(Key)";
 __ref._internalmap /*anywheresoftware.b4a.objects.collections.Map*/ .Remove(_key);
-RDebugUtils.currentLine=19464195;
- //BA.debugLineNum = 19464195;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7995395;
+ //BA.debugLineNum = 7995395;BA.debugLine="End Sub";
 return "";
 }
 }

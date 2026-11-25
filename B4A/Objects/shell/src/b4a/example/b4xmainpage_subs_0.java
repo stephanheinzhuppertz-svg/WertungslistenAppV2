@@ -2262,7 +2262,7 @@ __ref.runClassMethod (b4a.example.b4xmainpage.class, "_startactivityforresult" /
        catch (Exception e6) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e6.toString()); BA.debugLineNum = 668;BA.debugLine="Log(\"StartConfirmDeviceCredential Fehler: \" & La";
 Debug.ShouldStop(134217728);
-b4xmainpage.__c.runVoidMethod ("LogImpl","42686983",RemoteObject.concat(RemoteObject.createImmutable("StartConfirmDeviceCredential Fehler: "),b4xmainpage.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
+b4xmainpage.__c.runVoidMethod ("LogImpl","839321607",RemoteObject.concat(RemoteObject.createImmutable("StartConfirmDeviceCredential Fehler: "),b4xmainpage.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
  BA.debugLineNum = 669;BA.debugLine="RefreshTokenProcedure";
 Debug.ShouldStop(268435456);
 __ref.runClassMethod (b4a.example.b4xmainpage.class, "_refreshtokenprocedure" /*RemoteObject*/ );

@@ -189,7 +189,7 @@ Debug.JustUpdateDeviceLine();
 if (__ref.getField(false,"_idtob4xpage" /*RemoteObject*/ ).runClassMethod (b4a.example.b4xorderedmap.class, "_containskey" /*RemoteObject*/ ,(Object)((_idtolower))).<Boolean>get().booleanValue()) { 
  BA.debugLineNum = 146;BA.debugLine="Log($\"Page with this id already exists: ${IdToLo";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","920643843",(RemoteObject.concat(RemoteObject.createImmutable("Page with this id already exists: "),b4xpagesmanager.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_idtolower))),RemoteObject.createImmutable("!"))),0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","99175043",(RemoteObject.concat(RemoteObject.createImmutable("Page with this id already exists: "),b4xpagesmanager.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_idtolower))),RemoteObject.createImmutable("!"))),0);
  BA.debugLineNum = 147;BA.debugLine="Return";
 Debug.JustUpdateDeviceLine();
 if (true) return RemoteObject.createImmutable("");
@@ -374,7 +374,7 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("=",_screenorientation,BA.numberCast(double.class, -(double) (0 + 1)))) { 
  BA.debugLineNum = 119;BA.debugLine="LogColor(\"#SupportedOrientations attribute mus";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","920512789",BA.ObjectToString("#SupportedOrientations attribute must be set to landscape or portrait."),__ref.getField(false,"_xui" /*RemoteObject*/ ).getField(true,"Color_Red"));
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","99043989",BA.ObjectToString("#SupportedOrientations attribute must be set to landscape or portrait."),__ref.getField(false,"_xui" /*RemoteObject*/ ).getField(true,"Color_Red"));
  };
  };
  }
@@ -452,7 +452,7 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean(".",__ref.getField(false,"_xui" /*RemoteObject*/ ).runMethod(true,"getIsB4i")) && RemoteObject.solveBoolean("!",__ref.runClassMethod (b4a.example.b4xpagesmanager.class, "_gettoppage" /*RemoteObject*/ ),_pi)) { 
  BA.debugLineNum = 215;BA.debugLine="Log(\"Only top page can be closed\")";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","920905988",RemoteObject.createImmutable("Only top page can be closed"),0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","99437188",RemoteObject.createImmutable("Only top page can be closed"),0);
  BA.debugLineNum = 216;BA.debugLine="Return";
 Debug.JustUpdateDeviceLine();
 if (true) return RemoteObject.createImmutable("");
@@ -462,7 +462,7 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean(".",__ref.getField(false,"_xui" /*RemoteObject*/ ).runMethod(true,"getIsB4i")) && RemoteObject.solveBoolean("=",__ref.getField(false,"_mstackofpageids" /*RemoteObject*/ ).runClassMethod (b4a.example.b4xset.class, "_getsize" /*RemoteObject*/ ),BA.numberCast(double.class, 1))) { 
  BA.debugLineNum = 218;BA.debugLine="Log(\"First page cannot be closed\")";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","920905991",RemoteObject.createImmutable("First page cannot be closed"),0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","99437191",RemoteObject.createImmutable("First page cannot be closed"),0);
  BA.debugLineNum = 219;BA.debugLine="Return";
 Debug.JustUpdateDeviceLine();
 if (true) return RemoteObject.createImmutable("");
@@ -906,10 +906,10 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("n",_pi)) { 
  BA.debugLineNum = 416;BA.debugLine="Log(\"Error: page id not found: \" & id)";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","921626883",RemoteObject.concat(RemoteObject.createImmutable("Error: page id not found: "),_id),0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","910158083",RemoteObject.concat(RemoteObject.createImmutable("Error: page id not found: "),_id),0);
  BA.debugLineNum = 417;BA.debugLine="Log(\"Ids: \" & IdToB4XPage.Keys) 'ignore";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","921626884",RemoteObject.concat(RemoteObject.createImmutable("Ids: "),__ref.getField(false,"_idtob4xpage" /*RemoteObject*/ ).runClassMethod (b4a.example.b4xorderedmap.class, "_getkeys" /*RemoteObject*/ )),0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","910158084",RemoteObject.concat(RemoteObject.createImmutable("Ids: "),__ref.getField(false,"_idtob4xpage" /*RemoteObject*/ ).runClassMethod (b4a.example.b4xorderedmap.class, "_getkeys" /*RemoteObject*/ )),0);
  };
  BA.debugLineNum = 419;BA.debugLine="Return pi";
 Debug.JustUpdateDeviceLine();
@@ -1173,7 +1173,7 @@ Debug.JustUpdateDeviceLine();
 _msg = (RemoteObject.concat(RemoteObject.createImmutable("*** "),b4xpagesmanager.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_pi.getField(true,"Id" /*RemoteObject*/ )))),RemoteObject.createImmutable(": "),b4xpagesmanager.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_ev))),RemoteObject.createImmutable(" "),b4xpagesmanager.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((__ref.getField(true,"_stackstring" /*RemoteObject*/ )))),RemoteObject.createImmutable("")));Debug.locals.put("msg", _msg);Debug.locals.put("msg", _msg);
  BA.debugLineNum = 658;BA.debugLine="Log(msg)";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","922740995",_msg,0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","911272195",_msg,0);
  };
  BA.debugLineNum = 660;BA.debugLine="End Sub";
 Debug.JustUpdateDeviceLine();
@@ -1265,7 +1265,7 @@ b4xpagesmanager.__c.runVoidMethod ("CallSubDelayed3",__ref.getField(false, "ba")
 default: {
  BA.debugLineNum = 577;BA.debugLine="Log(\"Too many parameters\")";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","922216718",RemoteObject.createImmutable("Too many parameters"),0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","910747918",RemoteObject.createImmutable("Too many parameters"),0);
  break; }
 }
 ;
@@ -1330,7 +1330,7 @@ if (true) return b4xpagesmanager.__c.runMethodAndSync(false,"CallSubNew3",__ref.
 default: {
  BA.debugLineNum = 595;BA.debugLine="Log(\"Too many parameters\")";
 Debug.JustUpdateDeviceLine();
-b4xpagesmanager.__c.runVoidMethod ("LogImpl","922282254",RemoteObject.createImmutable("Too many parameters"),0);
+b4xpagesmanager.__c.runVoidMethod ("LogImpl","910813454",RemoteObject.createImmutable("Too many parameters"),0);
  break; }
 }
 ;
