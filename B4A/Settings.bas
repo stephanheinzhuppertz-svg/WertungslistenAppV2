@@ -77,10 +77,6 @@ End Sub
 
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
-	
-	'B4XPages.SetTitle(Me, "Wertungslisten-App Einstellungen")
-	'BuildUI
-	
 	Root.LoadLayout("Settings")
 	
 	' B4XPage_Appear wird von B4XPages automatisch nach B4XPage_Created aufgerufen
@@ -130,288 +126,272 @@ End Sub
 ' ==============================================================================
 ' 1. UI-AUFBAU (1:1 aus Settings.scm)
 ' ==============================================================================
-Private Sub BuildUI
-	Log("BuildUI Anfang")
-	dochange = False
-	Root.Color = Colors.White
-	
-	' --- Oberer Header (VerticalArrangement5) ---
-	Dim pnlHeader As Panel
-	pnlHeader.Initialize("")
-	pnlHeader.Color = Colors.White
-	Root.AddView(pnlHeader, 0, 0, 100%x, 80dip)
-	
-	Dim lblW1 As Int = 115dip
-	Dim lblW2 As Int = 100%x - lblW1 - 45dip
-	
-	Dim Label5 As Label
-	Label5.Initialize("")
-	Label5.Text = "Verein:"
-	Label5.Typeface = Typeface.DEFAULT_BOLD
-	Label5.TextColor = Colors.Black
-	Label5.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	pnlHeader.AddView(Label5, 5dip, 4dip, lblW1, 24dip)
-	
-	lblVerein.Initialize("")
-	lblVerein.Text = "- Vereinsbezeichnung -"
-	lblVerein.Typeface = Typeface.DEFAULT_BOLD
-	lblVerein.TextColor = 0xFF16AA16
-	lblVerein.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL
-	pnlHeader.AddView(lblVerein, lblW1 + 8dip, 4dip, lblW2, 24dip)
-	
-	Dim Label10 As Label
-	Label10.Initialize("")
-	Label10.Text = "Veranstaltung:"
-	Label10.Typeface = Typeface.DEFAULT_BOLD
-	Label10.TextColor = Colors.Black
-	Label10.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	pnlHeader.AddView(Label10, 5dip, 28dip, lblW1, 24dip)
-	
-	lblVeranstaltung.Initialize("")
-	lblVeranstaltung.Text = "-Veranstaltung-"
-	lblVeranstaltung.Typeface = Typeface.DEFAULT_BOLD
-	lblVeranstaltung.TextColor = 0xFF3333FF
-	lblVeranstaltung.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL
-	pnlHeader.AddView(lblVeranstaltung, lblW1 + 8dip, 28dip, lblW2, 24dip)
-	
-	Dim Label12 As Label
-	Label12.Initialize("")
-	Label12.Text = "Datum:"
-	Label12.Typeface = Typeface.DEFAULT_BOLD
-	Label12.TextColor = Colors.Black
-	Label12.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	pnlHeader.AddView(Label12, 5dip, 52dip, lblW1, 24dip)
-	
-	lblDatum.Initialize("")
-	lblDatum.Text = "- Datum -"
-	lblDatum.Typeface = Typeface.DEFAULT_BOLD
-	lblDatum.TextColor = 0xFF3333FF
-	lblDatum.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL
-	pnlHeader.AddView(lblDatum, lblW1 + 8dip, 52dip, lblW2, 24dip)
-	
-	btnBack.Initialize("btnBack")
-	SetButtonImageSafe(btnBack, "Arrows-Back.png", "◀")
-	pnlHeader.AddView(btnBack, 100%x - 36dip, 26dip, 28dip, 28dip)
-	
-	' --- Scrollbarer Hauptbereich ---
-	svMain.Initialize(950dip)
-	Root.AddView(svMain, 0, 80dip, 100%x, 100%y - 80dip)
-	Dim pnlContent As Panel = svMain.Panel
-	pnlContent.Color = Colors.White
-	
-	Dim curY As Int = 0
-	
-	' Trenner 1
-	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
-	curY = curY + 12dip
-	
-	' --- Block 1: Veranstaltung bearbeiten ---
-	Dim pnlVstng As Panel
-	pnlVstng.Initialize("")
-	pnlVstng.Color = 0xAAEEFFEE
-	pnlContent.AddView(pnlVstng, 0, curY, 100%x, 225dip)
-	
-	Dim Label6 As Label
-	Label6.Initialize("")
-	Label6.Text = "Veranstaltung"
-	Label6.TextSize = 18
-	Label6.Typeface = Typeface.DEFAULT_BOLD
-	Label6.TextColor = 0xFF16AA16
-	Label6.Gravity = Gravity.CENTER_VERTICAL
-	pnlVstng.AddView(Label6, 15dip, 8dip, 140dip, 28dip)
-	
-	lblClosed.Initialize("")
-	lblClosed.Text = "geschlossen"
-	lblClosed.Typeface = Typeface.DEFAULT_BOLD
-	lblClosed.TextColor = Colors.Red
-	lblClosed.Gravity = Gravity.CENTER_VERTICAL
-	lblClosed.Visible = False
-	pnlVstng.AddView(lblClosed, 160dip, 8dip, 120dip, 28dip)
-	
-	' Zeile Datum + Auswahl
-	Dim Label7 As Label
-	Label7.Initialize("")
-	Label7.Text = "Datum:"
-	Label7.Typeface = Typeface.DEFAULT_BOLD
-	Label7.TextColor = Colors.Black
-	Label7.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	pnlVstng.AddView(Label7, 5dip, 44dip, 115dip, 40dip)
-	
-	dprDatum.Initialize("dprDatum")
-	dprDatum.Text = "Datum"
-	dprDatum.Typeface = Typeface.DEFAULT_BOLD
-	dprDatum.TextColor = 0xFF16AA16
-	pnlVstng.AddView(dprDatum, 128dip, 44dip, 115dip, 40dip)
-	
-	btnAuswahl.Initialize("btnAuswahl")
-	btnAuswahl.Text = "Auswahl"
-	btnAuswahl.TextSize = 14
-	btnAuswahl.Typeface = Typeface.DEFAULT_BOLD
-	btnAuswahl.TextColor = 0xFF3333FF
-	pnlVstng.AddView(btnAuswahl, 100%x - 105dip, 44dip, 95dip, 40dip)
-	
-	' Zeile Bezeichnung
-	Dim Label8 As Label
-	Label8.Initialize("")
-	Label8.Text = "Bezeichnung:"
-	Label8.Typeface = Typeface.DEFAULT_BOLD
-	Label8.TextColor = Colors.Black
-	Label8.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	pnlVstng.AddView(Label8, 5dip, 90dip, 115dip, 42dip)
-	
-	Dim et As EditText
-	et.Initialize("Test")
-	
-	Log("vor Init Veranstaltung")
-	'tbxVeranstaltung.Initialize("tbxVeranstaltung")
-	tbxVeranstaltung.Initialize("")
-	Log("TextSize")	
-	tbxVeranstaltung.TextSize = 16
-	Log("Typeface")
-	tbxVeranstaltung.Typeface = Typeface.DEFAULT_BOLD
-	Log("TextColor")
-	tbxVeranstaltung.TextColor = 0xFF16AA16
-	Log("SingleLine")
-	tbxVeranstaltung.SingleLine = True
-	tbxVeranstaltung.Initialize("tbxVeranstaltung")
-	Log("AddView")
-	pnlVstng.AddView(tbxVeranstaltung, 128dip, 90dip, 100%x - 138dip, 42dip)
-	Log("nach AddView")
-	
-	' Zeile Plätze
-	Dim Label9 As Label
-	Label9.Initialize("")
-	Label9.Text = "Plätze:"
-	Label9.Typeface = Typeface.DEFAULT_BOLD
-	Label9.TextColor = Colors.Black
-	Label9.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	pnlVstng.AddView(Label9, 5dip, 138dip, 115dip, 42dip)
-	
-	tbxAnzahl.Initialize("tbxAnzahl")
-	tbxAnzahl.TextSize = 16
-	tbxAnzahl.Typeface = Typeface.DEFAULT_BOLD
-	tbxAnzahl.TextColor = 0xFF16AA16
-	tbxAnzahl.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	tbxAnzahl.InputType = tbxAnzahl.INPUT_TYPE_NUMBERS
-	'tbxAnzahl.SingleLine = True
-	pnlVstng.AddView(tbxAnzahl, 128dip, 138dip, 100dip, 42dip)
-	
-	' Buttons Löschen / Speichern (Veranstaltung)
-	btnVerstgDelete.Initialize("btnVerstgDelete")
-	btnVerstgDelete.Text = "Löschen"
-	btnVerstgDelete.Typeface = Typeface.DEFAULT_BOLD
-	btnVerstgDelete.TextColor = 0xFF16AA16
-	pnlVstng.AddView(btnVerstgDelete, 25dip, 184dip, 115dip, 36dip)
-	
-	btnVerstgSpeichern.Initialize("btnVerstgSpeichern")
-	btnVerstgSpeichern.Text = "Speichern"
-	btnVerstgSpeichern.Typeface = Typeface.DEFAULT_BOLD
-	btnVerstgSpeichern.TextColor = 0xFF16AA16
-	pnlVstng.AddView(btnVerstgSpeichern, 100%x - 140dip, 184dip, 115dip, 36dip)
-	
-	curY = curY + 225dip
-	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
-	curY = curY + 12dip
-	
-	' --- WebView Veranstaltungen ---
-	'webVeranstaltungen.Initialize("webVeranstaltungen")
-	'webVeranstaltungen.JavaScriptEnabled = True
-	'SetupWebViewBridge(webVeranstaltungen, "AppInventorVSTGN")
-	'pnlContent.AddView(webVeranstaltungen, 0, curY, 100%x, 220dip)
-	lstVeranstaltungen.Initialize("lstVeranstaltungen")
-	lstVeranstaltungen.SingleLineLayout.Label.TextColor = 0xFF16AA16
-	lstVeranstaltungen.SingleLineLayout.Label.TextSize = 16
-	pnlContent.AddView(lstVeranstaltungen, 0, curY, 100%x, 220dip)
-	curY = curY + 220dip
-		
-	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
-	curY = curY + 12dip
-	
-	' --- Block 2: Teilnehmer bearbeiten ---
-	Dim pnlTln As Panel
-	pnlTln.Initialize("")
-	pnlTln.Color = 0xDDEEFFEE
-	pnlContent.AddView(pnlTln, 0, curY, 100%x, 145dip)
-	
-	Dim Label2 As Label
-	Label2.Initialize("")
-	Label2.Text = "Teilnehmer"
-	Label2.TextSize = 18
-	Label2.Typeface = Typeface.DEFAULT_BOLD
-	Label2.TextColor = 0xFF16AA16
-	Label2.Gravity = Gravity.CENTER_VERTICAL
-	pnlTln.AddView(Label2, 15dip, 8dip, 110dip, 28dip)
-	
-	Dim Label15 As Label
-	Label15.Initialize("")
-	Label15.Text = "(unabhängig von Veranstaltung)"
-	Label15.TextSize = 10
-	Label15.TextColor = Colors.DarkGray
-	Label15.Gravity = Gravity.CENTER_VERTICAL
-	pnlTln.AddView(Label15, 125dip, 8dip, 100%x - 135dip, 28dip)
-	
-	Dim Label14 As Label
-	Label14.Initialize("")
-	Label14.Text = "Name, Vorname:"
-	Label14.Typeface = Typeface.DEFAULT_BOLD
-	Label14.TextColor = Colors.Black
-	Label14.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
-	pnlTln.AddView(Label14, 5dip, 44dip, 115dip, 42dip)
-	
-	tbxTeilnehmer.Initialize("tbxTeilnehmer")
-	tbxTeilnehmer.TextSize = 16
-	tbxTeilnehmer.Typeface = Typeface.DEFAULT_BOLD
-	tbxTeilnehmer.TextColor = 0xFF16AA16
-	'tbxTeilnehmer.SingleLine = True
-	pnlTln.AddView(tbxTeilnehmer, 128dip, 44dip, 100%x - 138dip, 42dip)
-	
-	btnTLNDelete.Initialize("btnTLNDelete")
-	btnTLNDelete.Text = "Löschen"
-	btnTLNDelete.Typeface = Typeface.DEFAULT_BOLD
-	btnTLNDelete.TextColor = 0xFF16AA16
-	pnlTln.AddView(btnTLNDelete, 25dip, 98dip, 115dip, 36dip)
-	
-	btnTLNSpeichern.Initialize("btnTLNSpeichern")
-	btnTLNSpeichern.Text = "Speichern"
-	btnTLNSpeichern.Typeface = Typeface.DEFAULT_BOLD
-	btnTLNSpeichern.TextColor = 0xFF16AA16
-	pnlTln.AddView(btnTLNSpeichern, 100%x - 140dip, 98dip, 115dip, 36dip)
-	
-	curY = curY + 145dip
-	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
-	curY = curY + 12dip
-	
-	' --- WebView Teilnehmer ---
-	'webTeilnehmer.Initialize("webTeilnehmer")
-	'webTeilnehmer.JavaScriptEnabled = True
-	'SetupWebViewBridge(webTeilnehmer, "AppInventorTLN")
-	'pnlContent.AddView(webTeilnehmer, 0, curY, 100%x, 260dip)
-	lstTeilnehmer.Initialize("lstTeilnehmer")
-	lstTeilnehmer.SingleLineLayout.Label.TextColor = 0xFF16AA16
-	lstTeilnehmer.SingleLineLayout.Label.TextSize = 16
-	pnlContent.AddView(lstTeilnehmer, 0, curY, 100%x, 260dip)
-	curY = curY + 270dip
-	
-	pnlContent.Height = curY
-	Log("BuildUI Ende")
-	dochange = True
+'Private Sub BuildUI
+'	Log("BuildUI Anfang")
+'	dochange = False
+'	Root.Color = Colors.White
+'	
+'	' --- Oberer Header (VerticalArrangement5) ---
+'	Dim pnlHeader As Panel
+'	pnlHeader.Initialize("")
+'	pnlHeader.Color = Colors.White
+'	Root.AddView(pnlHeader, 0, 0, 100%x, 80dip)
+'	
+'	Dim lblW1 As Int = 115dip
+'	Dim lblW2 As Int = 100%x - lblW1 - 45dip
+'	
+'	Dim Label5 As Label
+'	Label5.Initialize("")
+'	Label5.Text = "Verein:"
+'	Label5.Typeface = Typeface.DEFAULT_BOLD
+'	Label5.TextColor = Colors.Black
+'	Label5.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	pnlHeader.AddView(Label5, 5dip, 4dip, lblW1, 24dip)
+'	
+'	lblVerein.Text = "- Vereinsbezeichnung -"
+'	lblVerein.Typeface = Typeface.DEFAULT_BOLD
+'	lblVerein.TextColor = 0xFF16AA16
+'	lblVerein.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL
+'	pnlHeader.AddView(lblVerein, lblW1 + 8dip, 4dip, lblW2, 24dip)
+'	
+'	Dim Label10 As Label
+'	Label10.Initialize("")
+'	Label10.Text = "Veranstaltung:"
+'	Label10.Typeface = Typeface.DEFAULT_BOLD
+'	Label10.TextColor = Colors.Black
+'	Label10.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	pnlHeader.AddView(Label10, 5dip, 28dip, lblW1, 24dip)
+'	
+'	lblVeranstaltung.Text = "-Veranstaltung-"
+'	lblVeranstaltung.Typeface = Typeface.DEFAULT_BOLD
+'	lblVeranstaltung.TextColor = 0xFF3333FF
+'	lblVeranstaltung.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL
+'	pnlHeader.AddView(lblVeranstaltung, lblW1 + 8dip, 28dip, lblW2, 24dip)
+'	
+'	Dim Label12 As Label
+'	Label12.Initialize("")
+'	Label12.Text = "Datum:"
+'	Label12.Typeface = Typeface.DEFAULT_BOLD
+'	Label12.TextColor = Colors.Black
+'	Label12.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	pnlHeader.AddView(Label12, 5dip, 52dip, lblW1, 24dip)
+'	
+'	lblDatum.Text = "- Datum -"
+'	lblDatum.Typeface = Typeface.DEFAULT_BOLD
+'	lblDatum.TextColor = 0xFF3333FF
+'	lblDatum.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL
+'	pnlHeader.AddView(lblDatum, lblW1 + 8dip, 52dip, lblW2, 24dip)
+'	
+'	SetButtonImageSafe(btnBack, "Arrows-Back.png", "◀")
+'	pnlHeader.AddView(btnBack, 100%x - 36dip, 26dip, 28dip, 28dip)
+'	
+'	' --- Scrollbarer Hauptbereich ---
+'	svMain.Initialize(950dip)
+'	Root.AddView(svMain, 0, 80dip, 100%x, 100%y - 80dip)
+'	Dim pnlContent As Panel = svMain.Panel
+'	pnlContent.Color = Colors.White
+'	
+'	Dim curY As Int = 0
+'	
+'	' Trenner 1
+'	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
+'	curY = curY + 12dip
+'	
+'	' --- Block 1: Veranstaltung bearbeiten ---
+'	Dim pnlVstng As Panel
+'	pnlVstng.Initialize("")
+'	pnlVstng.Color = 0xAAEEFFEE
+'	pnlContent.AddView(pnlVstng, 0, curY, 100%x, 225dip)
+'	
+'	Dim Label6 As Label
+'	Label6.Initialize("")
+'	Label6.Text = "Veranstaltung"
+'	Label6.TextSize = 18
+'	Label6.Typeface = Typeface.DEFAULT_BOLD
+'	Label6.TextColor = 0xFF16AA16
+'	Label6.Gravity = Gravity.CENTER_VERTICAL
+'	pnlVstng.AddView(Label6, 15dip, 8dip, 140dip, 28dip)
+'	
+'	lblClosed.Initialize("")
+'	lblClosed.Text = "geschlossen"
+'	lblClosed.Typeface = Typeface.DEFAULT_BOLD
+'	lblClosed.TextColor = Colors.Red
+'	lblClosed.Gravity = Gravity.CENTER_VERTICAL
+'	lblClosed.Visible = False
+'	pnlVstng.AddView(lblClosed, 160dip, 8dip, 120dip, 28dip)
+'	
+'	' Zeile Datum + Auswahl
+'	Dim Label7 As Label
+'	Label7.Initialize("")
+'	Label7.Text = "Datum:"
+'	Label7.Typeface = Typeface.DEFAULT_BOLD
+'	Label7.TextColor = Colors.Black
+'	Label7.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	pnlVstng.AddView(Label7, 5dip, 44dip, 115dip, 40dip)
+'	
+'	dprDatum.Text = "Datum"
+'	dprDatum.Typeface = Typeface.DEFAULT_BOLD
+'	dprDatum.TextColor = 0xFF16AA16
+'	pnlVstng.AddView(dprDatum, 128dip, 44dip, 115dip, 40dip)
+'	
+'	btnAuswahl.Text = "Auswahl"
+'	btnAuswahl.TextSize = 14
+'	btnAuswahl.Typeface = Typeface.DEFAULT_BOLD
+'	btnAuswahl.TextColor = 0xFF3333FF
+'	pnlVstng.AddView(btnAuswahl, 100%x - 105dip, 44dip, 95dip, 40dip)
+'	
+'	' Zeile Bezeichnung
+'	Dim Label8 As Label
+'	Label8.Initialize("")
+'	Label8.Text = "Bezeichnung:"
+'	Label8.Typeface = Typeface.DEFAULT_BOLD
+'	Label8.TextColor = Colors.Black
+'	Label8.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	pnlVstng.AddView(Label8, 5dip, 90dip, 115dip, 42dip)
+'	
+'	Dim et As EditText
+'	et.Initialize("Test")
+'	
+'	Log("TextSize")	
+'	tbxVeranstaltung.TextSize = 16
+'	Log("Typeface")
+'	tbxVeranstaltung.Typeface = Typeface.DEFAULT_BOLD
+'	Log("TextColor")
+'	tbxVeranstaltung.TextColor = 0xFF16AA16
+'	Log("SingleLine")
+'	tbxVeranstaltung.SingleLine = True
+'	tbxVeranstaltung.Initialize("tbxVeranstaltung")
+'	Log("AddView")
+'	pnlVstng.AddView(tbxVeranstaltung, 128dip, 90dip, 100%x - 138dip, 42dip)
+'	Log("nach AddView")
+'	
+'	' Zeile Plätze
+'	Dim Label9 As Label
+'	Label9.Initialize("")
+'	Label9.Text = "Plätze:"
+'	Label9.Typeface = Typeface.DEFAULT_BOLD
+'	Label9.TextColor = Colors.Black
+'	Label9.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	pnlVstng.AddView(Label9, 5dip, 138dip, 115dip, 42dip)
+'	
+'	tbxAnzahl.Initialize("tbxAnzahl")
+'	tbxAnzahl.TextSize = 16
+'	tbxAnzahl.Typeface = Typeface.DEFAULT_BOLD
+'	tbxAnzahl.TextColor = 0xFF16AA16
+'	tbxAnzahl.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	tbxAnzahl.InputType = tbxAnzahl.INPUT_TYPE_NUMBERS
+'	'tbxAnzahl.SingleLine = True
+'	pnlVstng.AddView(tbxAnzahl, 128dip, 138dip, 100dip, 42dip)
+'	
+'	' Buttons Löschen / Speichern (Veranstaltung)
+'	btnVerstgDelete.Text = "Löschen"
+'	btnVerstgDelete.Typeface = Typeface.DEFAULT_BOLD
+'	btnVerstgDelete.TextColor = 0xFF16AA16
+'	pnlVstng.AddView(btnVerstgDelete, 25dip, 184dip, 115dip, 36dip)
+'	
+'	btnVerstgSpeichern.Text = "Speichern"
+'	btnVerstgSpeichern.Typeface = Typeface.DEFAULT_BOLD
+'	btnVerstgSpeichern.TextColor = 0xFF16AA16
+'	pnlVstng.AddView(btnVerstgSpeichern, 100%x - 140dip, 184dip, 115dip, 36dip)
+'	
+'	curY = curY + 225dip
+'	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
+'	curY = curY + 12dip
+'	
+'	' --- WebView Veranstaltungen ---
+'	'webVeranstaltungen.Initialize("webVeranstaltungen")
+'	'webVeranstaltungen.JavaScriptEnabled = True
+'	'SetupWebViewBridge(webVeranstaltungen, "AppInventorVSTGN")
+'	'pnlContent.AddView(webVeranstaltungen, 0, curY, 100%x, 220dip)
+'	lstVeranstaltungen.SingleLineLayout.Label.TextColor = 0xFF16AA16
+'	lstVeranstaltungen.SingleLineLayout.Label.TextSize = 16
+'	pnlContent.AddView(lstVeranstaltungen, 0, curY, 100%x, 220dip)
+'	curY = curY + 220dip
+'		
+'	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
+'	curY = curY + 12dip
+'	
+'	' --- Block 2: Teilnehmer bearbeiten ---
+'	Dim pnlTln As Panel
+'	pnlTln.Initialize("")
+'	pnlTln.Color = 0xDDEEFFEE
+'	pnlContent.AddView(pnlTln, 0, curY, 100%x, 145dip)
+'	
+'	Dim Label2 As Label
+'	Label2.Initialize("")
+'	Label2.Text = "Teilnehmer"
+'	Label2.TextSize = 18
+'	Label2.Typeface = Typeface.DEFAULT_BOLD
+'	Label2.TextColor = 0xFF16AA16
+'	Label2.Gravity = Gravity.CENTER_VERTICAL
+'	pnlTln.AddView(Label2, 15dip, 8dip, 110dip, 28dip)
+'	
+'	Dim Label15 As Label
+'	Label15.Initialize("")
+'	Label15.Text = "(unabhängig von Veranstaltung)"
+'	Label15.TextSize = 10
+'	Label15.TextColor = Colors.DarkGray
+'	Label15.Gravity = Gravity.CENTER_VERTICAL
+'	pnlTln.AddView(Label15, 125dip, 8dip, 100%x - 135dip, 28dip)
+'	
+'	Dim Label14 As Label
+'	Label14.Initialize("")
+'	Label14.Text = "Name, Vorname:"
+'	Label14.Typeface = Typeface.DEFAULT_BOLD
+'	Label14.TextColor = Colors.Black
+'	Label14.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
+'	pnlTln.AddView(Label14, 5dip, 44dip, 115dip, 42dip)
+'	
+'	tbxTeilnehmer.TextSize = 16
+'	tbxTeilnehmer.Typeface = Typeface.DEFAULT_BOLD
+'	tbxTeilnehmer.TextColor = 0xFF16AA16
+'	'tbxTeilnehmer.SingleLine = True
+'	pnlTln.AddView(tbxTeilnehmer, 128dip, 44dip, 100%x - 138dip, 42dip)
+'	
+'	btnTLNDelete.Text = "Löschen"
+'	btnTLNDelete.Typeface = Typeface.DEFAULT_BOLD
+'	btnTLNDelete.TextColor = 0xFF16AA16
+'	pnlTln.AddView(btnTLNDelete, 25dip, 98dip, 115dip, 36dip)
+'	
+'	btnTLNSpeichern.Text = "Speichern"
+'	btnTLNSpeichern.Typeface = Typeface.DEFAULT_BOLD
+'	btnTLNSpeichern.TextColor = 0xFF16AA16
+'	pnlTln.AddView(btnTLNSpeichern, 100%x - 140dip, 98dip, 115dip, 36dip)
+'	
+'	curY = curY + 145dip
+'	AddDivider(pnlContent, curY, 12dip, 0xFFEEFFEE)
+'	curY = curY + 12dip
+'	
+'	' --- WebView Teilnehmer ---
+'	'webTeilnehmer.Initialize("webTeilnehmer")
+'	'webTeilnehmer.JavaScriptEnabled = True
+'	'SetupWebViewBridge(webTeilnehmer, "AppInventorTLN")
+'	'pnlContent.AddView(webTeilnehmer, 0, curY, 100%x, 260dip)
+'	lstTeilnehmer.SingleLineLayout.Label.TextColor = 0xFF16AA16
+'	lstTeilnehmer.SingleLineLayout.Label.TextSize = 16
+'	pnlContent.AddView(lstTeilnehmer, 0, curY, 100%x, 260dip)
+'	curY = curY + 270dip
+'	
+'	pnlContent.Height = curY
+'	Log("BuildUI Ende")
+'	dochange = True
+'
+'End Sub
 
-End Sub
+'Private Sub AddDivider(parent As Panel, topPos As Int, h As Int, col As Int)
+'	Dim p As Panel
+'	p.Initialize("")
+'	p.Color = col
+'	parent.AddView(p, 0, topPos, 100%x, h)
+'End Sub
 
-Private Sub AddDivider(parent As Panel, topPos As Int, h As Int, col As Int)
-	Dim p As Panel
-	p.Initialize("")
-	p.Color = col
-	parent.AddView(p, 0, topPos, 100%x, h)
-End Sub
-
-Private Sub SetButtonImageSafe(btn As Button, fileName As String, fallbackText As String)
-	If File.Exists(File.DirAssets, fileName) Then
-		btn.SetBackgroundImage(LoadBitmap(File.DirAssets, fileName))
-	Else
-		btn.Text = fallbackText
-	End If
-End Sub
+'Private Sub SetButtonImageSafe(btn As Button, fileName As String, fallbackText As String)
+'	If File.Exists(File.DirAssets, fileName) Then
+'		btn.SetBackgroundImage(LoadBitmap(File.DirAssets, fileName))
+'	Else
+'		btn.Text = fallbackText
+'	End If
+'End Sub
 
 ' ==============================================================================
 ' 2. ZUSTANDS-STEUERUNG & HEADER

@@ -793,231 +793,219 @@ settings,initialize,0,0,58,70
 
 
 ,loadtinydb
-settings,adddivider,0,0,395,400
-
-
-
-settings,b4xpage_appear,1,0,83,110
+settings,b4xpage_appear,1,0,79,106
 b4xpages,mpm,httputils2service,tempfolder
 
 ,loadtinydb,b4xpages,mainpage,,dbget,,disablevstng,,disabletln,,setzeheaderfromdb,,changeurl,,dbput,,closesettings,,holeveranstaltungen,,starttimer,b4xpages,getmanager,b4xpages,closepage,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring,,executehttp,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,delveranstaltung,,zeigeteilnehmerclv,,formatdatecustom,,enablevstng,httpjob,getstring2
-settings,loadtinydb,0,0,1109,1115
+settings,loadtinydb,0,0,1089,1095
 
 
 
-settings,dbget,0,0,1132,1145
+settings,dbget,0,0,1112,1125
 
 
 
-settings,disablevstng,0,0,413,424
+settings,disablevstng,0,0,393,404
 
 
 
-settings,disabletln,0,0,439,445
+settings,disabletln,0,0,419,425
 
 
 
-settings,setzeheaderfromdb,0,0,455,459
-
-
-,dbget
-settings,changeurl,0,0,461,466
+settings,setzeheaderfromdb,0,0,435,439
 
 
 ,dbget
-settings,dbput,0,0,1117,1130
+settings,changeurl,0,0,441,446
+
+
+,dbget
+settings,dbput,0,0,1097,1110
 
 
 
-settings,closesettings,1,0,118,122
+settings,closesettings,1,0,114,118
 b4xpages,mpm
 
 b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,holeveranstaltungen,1,0,471,475
+settings,holeveranstaltungen,1,0,451,455
 httputils2service,tempfolder,b4xpages,mpm
 
 ,executehttp,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,starttimer,0,0,1085,1089
+settings,starttimer,0,0,1065,1069
 
 
 
-settings,b4xpage_closerequest,0,0,112,116
+settings,b4xpage_closerequest,0,0,108,112
 b4xpages,mpm
 
 b4xpages,mainpage,b4xpages,getmanager
-settings,b4xpage_created,1,0,72,81
+settings,b4xpage_created,1,0,72,77
 
 
 
-settings,btnauswahl_click,1,0,925,930
+settings,btnauswahl_click,1,0,905,910
 b4xpages,mpm
 
 ,savedbvstng,,closesettings,,dbput,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,savedbvstng,0,0,604,611
+settings,savedbvstng,0,0,584,591
 
 
 ,dbput
-settings,btnback_click,1,0,846,848
+settings,btnback_click,1,0,826,828
 b4xpages,mpm
 
 ,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,btntlndelete_click,1,0,965,973
+settings,btntlndelete_click,1,0,945,953
 httputils2service,tempfolder,b4xpages,mpm
 
 ,starttimer,,deltln,,disabletln,,executehttp,,enabletln,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,deltln,1,0,736,743
+settings,deltln,1,0,716,723
 httputils2service,tempfolder,b4xpages,mpm
 
 ,disabletln,,executehttp,,enabletln,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,btntlnspeichern_click,1,0,975,978
+settings,btntlnspeichern_click,1,0,955,958
 httputils2service,tempfolder,b4xpages,mpm
 
 ,savetln,,starttimer,,disabletln,,executehttp,,enabletln,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,savetln,1,0,714,734
+settings,savetln,1,0,694,714
 httputils2service,tempfolder,b4xpages,mpm
 
 ,disabletln,,executehttp,,enabletln,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,btnverstgdelete_click,1,0,932,940
+settings,btnverstgdelete_click,1,0,912,920
 httputils2service,tempfolder,b4xpages,mpm
 
 ,starttimer,,delwertungsliste,,disablevstng,,executehttp,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,delwertungsliste,1,0,613,625
+settings,delwertungsliste,1,0,593,605
 httputils2service,tempfolder,b4xpages,mpm
 
 ,disablevstng,,executehttp,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,btnverstgspeichern_click,1,0,942,963
+settings,btnverstgspeichern_click,1,0,922,943
 httputils2service,tempfolder,b4xpages,mpm
 
 ,starttimer,,savevstng,,disablevstng,,executehttp,,savedbvstng,,enablevstng,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,formatdatecustom,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,savevstng,1,0,577,602
+settings,savevstng,1,0,557,582
 httputils2service,tempfolder,b4xpages,mpm
 
 ,disablevstng,,executehttp,,savedbvstng,,enablevstng,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,formatdatecustom,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,buildui,0,0,127,393
-
-
-,setbuttonimagesafe,,adddivider
-settings,setbuttonimagesafe,0,0,402,408
-
-
-
 settings,class_globals,0,0,4,56
 
 
 
-settings,clvteilnehmer_itemclick,1,0,1185,1190
+settings,clvteilnehmer_itemclick,1,0,1165,1170
 
 
 ,setzeteilnehmer,,disabletln,,enabletln
-settings,setzeteilnehmer,1,0,689,712
+settings,setzeteilnehmer,1,0,669,692
 
 
 ,disabletln,,enabletln
-settings,clvveranstaltungen_itemclick,1,0,1166,1171
+settings,clvveranstaltungen_itemclick,1,0,1146,1151
 
 
 ,setzeveranstaltung,,disablevstng,,formatdatecustom
-settings,setzeveranstaltung,1,0,511,552
+settings,setzeveranstaltung,1,0,491,532
 
 
 ,disablevstng,,formatdatecustom
-settings,dateutils_setdate,0,0,915,923
+settings,dateutils_setdate,0,0,895,903
 
 
 
-settings,executehttp,1,0,753,781
+settings,executehttp,1,0,733,761
 httputils2service,tempfolder,b4xpages,mpm
 
 httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,executehttp,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,enabletln,0,0,447,453
+settings,enabletln,0,0,427,433
 
 
 
-settings,delveranstaltung,1,0,627,640
+settings,delveranstaltung,1,0,607,620
 httputils2service,tempfolder,b4xpages,mpm
 
 ,disablevstng,,formatdatecustom,,executehttp,,enablevstng,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,formatdatecustom,0,0,1096,1102
+settings,formatdatecustom,0,0,1076,1082
 
 
 
-settings,enablevstng,0,0,426,437
+settings,enablevstng,0,0,406,417
 
 
 
-settings,dprdatum_click,1,0,850,913
+settings,dprdatum_click,1,0,830,893
 
 
 ,dateutils_setdate,,formatdatecustom,,dbget,,disablevstng,,enablevstng,,starttimer
-settings,handlegottext,1,0,783,832
+settings,handlegottext,1,0,763,812
 httputils2service,tempfolder,b4xpages,mpm
 
 ,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,executehttp,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,setzeoffline,1,0,834,841
+settings,setzeoffline,1,0,814,821
 b4xpages,mpm
 
 ,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,ladeteilnehmer,0,0,668,687
+settings,ladeteilnehmer,0,0,648,667
 
 
 ,zeigeteilnehmerclv
-settings,pruefedbverein,0,0,554,575
+settings,pruefedbverein,0,0,534,555
 
 
 ,dbget,,dbput
-settings,zeigeveranstaltungenclv,0,0,1147,1164
+settings,zeigeveranstaltungenclv,0,0,1127,1144
 
 
 
-settings,holetln,1,0,662,666
+settings,holetln,1,0,642,646
 httputils2service,tempfolder,b4xpages,mpm
 
 ,executehttp,httpjob,initialize,httpjob,download,httpjob,putstring,httpjob,getrequest,httpjob,delete,,handlegottext,httpjob,getstring,,setzeoffline,httpjob,release,,starttimer,httpjob,addscheme,httpjob,putbytes,,ladeteilnehmer,,pruefedbverein,,zeigeveranstaltungenclv,,holetln,,holeveranstaltungen,,dbget,,dbput,,delveranstaltung,,zeigeteilnehmerclv,,disablevstng,,formatdatecustom,,enablevstng,httpjob,getstring2,,closesettings,b4xpages,mainpage,b4xpages,closepage,b4xpages,getmanager,b4xpagesmanager,closepage,b4xpagesmanager,findpifromb4xpage,b4xset,contains,b4xpagesmanager,gettoppage,b4xset,getsize,b4xpagesmanager,closepageimpl,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xpagesmanager,toppageappear,b4xorderedmap,getvalues,b4xorderedmap,containskey,b4xorderedmap,get,b4xset,aslist,b4xorderedmap,getsize,b4xorderedmap,getkeys,b4xpagesmanager,raiseeventwithresult,b4xpagesmanager,logevent,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring
-settings,hidekeyboard,0,0,1104,1107
+settings,hidekeyboard,0,0,1084,1087
 b4xpages,mpm
 
 b4xpages,getnativeparent,b4xpages,getmanager,b4xpagesmanager,findpifromb4xpage,b4xorderedmap,getvalues
-settings,zeigeteilnehmerclv,0,0,1173,1183
+settings,zeigeteilnehmerclv,0,0,1153,1163
 
 
 
-settings,ladeveranstaltungen,1,0,477,509
+settings,ladeveranstaltungen,1,0,457,489
 
 
 ,formatdatecustom,,setzeveranstaltung,,disablevstng
-settings,lstveranstaltungen_itemclick,1,0,1192,1198
+settings,lstveranstaltungen_itemclick,1,0,1172,1178
 
 
 ,setzeveranstaltung,,disablevstng,,formatdatecustom
-settings,pruefeinhalt,0,0,642,657
+settings,pruefeinhalt,0,0,622,637
 
 
 
-settings,tbxanzahl_focuschanged,0,0,1003,1009
+settings,tbxanzahl_focuschanged,0,0,983,989
 b4xpages,mpm
 
 ,hidekeyboard,b4xpages,getnativeparent,b4xpages,getmanager,b4xpagesmanager,findpifromb4xpage,b4xorderedmap,getvalues
-settings,tbxanzahl_textchanged,1,0,1012,1028
+settings,tbxanzahl_textchanged,1,0,992,1008
 
 
 ,pruefeinhalt,,starttimer
-settings,tbxteilnehmer_focuschanged,0,0,1030,1036
+settings,tbxteilnehmer_focuschanged,0,0,1010,1016
 b4xpages,mpm
 
 ,hidekeyboard,b4xpages,getnativeparent,b4xpages,getmanager,b4xpagesmanager,findpifromb4xpage,b4xorderedmap,getvalues
-settings,tbxteilnehmer_textchanged,1,0,1039,1080
+settings,tbxteilnehmer_textchanged,1,0,1019,1060
 
 
 ,starttimer
-settings,tbxveranstaltung_focuschanged,0,0,981,987
+settings,tbxveranstaltung_focuschanged,0,0,961,967
 b4xpages,mpm
 
 ,hidekeyboard,b4xpages,getnativeparent,b4xpages,getmanager,b4xpagesmanager,findpifromb4xpage,b4xorderedmap,getvalues
-settings,tbxveranstaltung_textchanged,0,0,990,1001
+settings,tbxveranstaltung_textchanged,0,0,970,981
 
 
 ,pruefeinhalt,,starttimer
-settings,uhrzeit_tick,1,0,1091,1094
+settings,uhrzeit_tick,1,0,1071,1074
 b4xpages,mpm,httputils2service,tempfolder
 
 b4xpages,showpage,b4xpages,getmanager,b4xpagesmanager,showpage,b4xpagesmanager,getpagefromid,b4xpagesmanager,gettoppage,b4xpagesmanager,createpageifneeded,b4xpagesmanager,toppagedisappear,b4xset,remove,b4xpagesmanager,showpageimpl,b4xset,add,b4xpagesmanager,toppageappear,b4xorderedmap,get,b4xorderedmap,getkeys,b4xset,getsize,b4xset,aslist,b4xorderedmap,getsize,b4xpagesmanager,createpageimpl,b4xorderedmap,put,b4xpagesmanager,logevent,b4xmainpage,b4xpage_created,screenmain,b4xpage_created,,b4xpage_created,screensaver,b4xpage_created,b4xpagesmanager,createb4xpageparent,b4xpages,settitle,screenmain,initialize,b4xpages,addpage,,initialize,screensaver,initialize,b4xmainpage,buildui,b4xmainpage,dbget,b4xmainpage,startconfirmdevicecredential,b4xpagesmanager,settitle,b4xpagesmanager,findpifromb4xpage,b4xorderedmap,getvalues,screenmain,loadtinydb,b4xpagesmanager,addpage,b4xorderedmap,containskey,b4xpagesmanager,createb4xpageinfo,,loadtinydb,b4xmainpage,startactivityforresult,b4xmainpage,refreshtokenprocedure,b4xmainpage,getba,b4xmainpage,sendhttprequest,httpjob,initialize,httpjob,download,httpjob,poststring,httpjob,getrequest,httpjob,putstring,b4xmainpage,handlewebresponse,httpjob,getstring,httpjob,release,httpjob,addscheme,httpjob,postbytes,httpjob,putbytes,b4xmainpage,dbput,b4xmainpage,pruefeofflineaenderung,b4xmainpage,holebezeichnung,b4xmainpage,starttimer,b4xmainpage,holetln,b4xmainpage,ladeteilnehmer,b4xmainpage,zeitstempel,b4xmainpage,holeverein,b4xmainpage,savewertungsliste,b4xmainpage,formatdatecustom,b4xmainpage,addteilnehmer,httpjob,getstring2,screenmain,buildui,screenmain,b4xpage_appear,screenmain,setbuttonimagesafe,screenmain,setupwebviewbridge,b4xpages,mainpage,b4xpages,closepage,screenmain,initialisiere,screenmain,starttimer,b4xpagesmanager,closepage,b4xset,contains,b4xpagesmanager,closepageimpl,b4xpagesmanager,raiseeventwithresult,b4xorderedmap,remove,b4xpagesmanager,raiseevent,b4xpagesmanager,updatemenuitems,b4xpagesmanager,updatestackstring,screenmain,disableeingabe,screenmain,setzeheaderfromdb,screenmain,changeurl,screenmain,clear,screenmain,updatelayoutpositions,screenmain,dbget,screenmain,opensettingspage,screenmain,holetln,screenmain,getweb,screenmain,gottextoffline,screenmain,executehttp,screenmain,holewertungsliste,screenmain,initwertungsliste,screenmain,savewertungsliste,screenmain,zeigewertungsliste,screenmain,addteilnehmer,screenmain,formatdatecustom,screenmain,dbput,screenmain,zeitstempel,screenmain,puttextweb,httpjob,patchstring,screenmain,handlegottext,screenmain,setzeoffline,httpjob,patchbytes,screenmain,ladewertungsliste,screenmain,ladeteilnehmer,screenmain,holefdj,screenmain,closevstng,screenmain,ladefdj,screenmain,patchtextweb,screensaver,buildui
