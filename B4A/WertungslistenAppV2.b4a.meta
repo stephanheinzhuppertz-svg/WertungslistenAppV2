@@ -13,6 +13,6 @@ ModuleClosedNodes1=
 ModuleClosedNodes2=
 ModuleClosedNodes3=
 ModuleClosedNodes4=
-NavigationStack=Settings,disableTLN,440,0,Settings,B4XPage_Appear,77,0,Settings,B4XPage_Created,72,1,Settings,Initialize,67,0,Settings,Class_Globals,50,0,Settings,CloseSettings,367,0,Visueller Designer,Settings.bal,-100,6,Settings,disableVSTNG,393,0
+NavigationStack=Settings,disableTLN,440,0,Settings,B4XPage_Appear,77,0,Settings,B4XPage_Created,72,1,Settings,Initialize,67,0,Settings,Class_Globals,50,0,Settings,disableVSTNG,393,0,Visueller Designer,Settings.bal,-100,6,Settings,CloseSettings,377,0
 SelectedBuild=0
 VisibleModules=1,2,4,3
