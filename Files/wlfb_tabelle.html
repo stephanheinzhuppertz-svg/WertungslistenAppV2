@@ -1,0 +1,545 @@
+<!doctype html>
+<head>
+  <meta name="author" content="sthnet.de">
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  
+  <title>Table Layout</title>
+
+  <style type="text/css">
+    html, body {
+       margin: 0;
+       padding: 0;
+    }
+  
+    table#t01 {table-layout:auto;}
+    table#t01 td {padding:2px 2px 2px 2px; font-size: 12px;}
+    table#t01 tr {border: 0}
+    table#t01 td {border: 0}
+    table#t01 td:nth-of-type(1) {width: 15%; text-align: right; padding-right: 1px; color: black;}
+    table#t01 td:nth-of-type(2) {width: 20%; text-align: right; padding-right: 0px; color: #16aa16; font-size: 16px;}
+    table#t01 td:nth-of-type(3) {width:  5%; text-align: left;  padding-left:  5px; color: black;}
+    table#t01 td:nth-of-type(4) {width: 30%; text-align: right; padding-right: 1px; color: black;}
+    table#t01 td:nth-of-type(5) {width: 25%; text-align: right; padding-right: 0px; color: #16aa16; font-size: 16px;}
+    table#t01 td:nth-of-type(6) {width:  5%; text-align: left;  padding-left:  2px; color: black;}
+
+
+    table#t02 {table-layout:fixed;  margin-left: auto;margin-right: auto;}
+    table#t02 ,th ,td {border: 1px solid black; border-collapse: collapse; padding:2px 2px 2px 2px;}
+    table#t02 th {cursor: pointer;}
+    table#t02 tr:nth-child(even) {background-color: #eee}
+    table#t02 tr:nth-child(odd)  {background-color: #fff}
+    table#t02 th{color: white; background-color: #16aa16}
+    table#t02 th:nth-of-type(1) {text-align: center; width: 11%; font-size: 16px;}
+    table#t02 th:nth-of-type(2) {text-align: center; width: 56%; font-size: 16px;}
+    table#t02 th:nth-of-type(3) {text-align: center; width: 21%; font-size: 16px;}
+    table#t02 th:nth-of-type(4) {text-align: center; width: 12%; font-size: 16px;}
+    table#t02 td:nth-of-type(1) {text-align: center; font-size: 16px;}
+    table#t02 td:nth-of-type(2) {text-align: left; padding-right: 5px; font-size: 16px;}
+    table#t02 td:nth-of-type(3) {text-align: right; padding-right: 5px; font-size: 16px;}
+    table#t02 td:nth-of-type(4) {text-align: right; padding-right: 5px; font-size: 16px;}
+   </style>  
+</head>
+
+<body>
+  <div>
+  <table id="t01" style="width:100%;">
+  <tr>
+     <td>Fisch des Jahres:</td>
+     <td><span id="fdjGEWICHT" style="font-weight:bold">0</span></td>
+     <td> gr.</td>
+     <td colspan="3" style="text-align:left; width:60%; padding-right:0;">
+        <span id="fdjTLN" style="display:inline-block; margin-left:10px; font-weight:bold; color:#16aa16; font-size:16px;">
+           n.n.
+        </span>
+     </td>
+  </tr>
+  <tr>
+     <td>Rang 1:</td>
+     <td><span id="maxGewicht" style="font-weight:bold">-</span></td>
+     <td><span id="maxSize">gr.</span></td>
+     <td>Gesamt-Gewicht:</td>
+     <td><span id="gesamtGewicht" style="font-weight:bold">-</span></td>
+     <td><span id="gesamtSize">gr.</span></td>
+  </tr></table>
+  </div>
+  <div></div>
+  <div id="myTable" style="font:normal 10px/2.0em Lucida Sans; width:100%;"></div>
+  <script>     
+          
+     let maxGewicht;
+     let gesGewicht;
+     let cell_nr;
+     let cell_selected;
+     let row_nr;
+     let row_selected;
+     let doc;
+     let rowArray;
+     let sortArray;
+     let rows;
+     let doClick;
+	 let unbesetzt;
+     
+     function init(){
+        var data = window.AppInventor.getWebViewString();
+        data = data.replace(/[\[\]"']/g, '');
+        render(data);
+     } 
+    
+     function render(urlArray){  
+        try {
+        if (!urlArray || urlArray.length === 0) return;
+        
+        var delimiter = ",";
+     
+        maxGewicht = 0;
+        gesGewicht = 0;
+     
+        cell_nr = 0;
+        cell_selected = 0;
+     
+        row_nr = 0;
+        row_selected = 0;
+     
+        doc = document;
+        var fragment = doc.createDocumentFragment();
+        var thead = doc.createElement("thead");
+        var tr = doc.createElement("tr");
+     
+        rowArray = urlArray.split(delimiter);
+     
+        rows = (rowArray.length -4) / 4
+        sortArray = Array.from(Array(rows), () => new Array(2));
+		
+		  unbesetzt = 0;
+        for (let j = 1; j < rowArray.length; j+=4) {
+           let content =  rowArray[j].trim().toLowerCase();
+   
+           if (content === "") {
+              unbesetzt++;
+           }
+        }
+     
+        doClick = false;
+     
+        addRows(thead, "th");
+        fragment.appendChild(thead);
+     
+        var tbody = doc.createElement("tbody");
+    
+        addRows(tbody, "td");
+        fragment.appendChild(tbody);
+    
+        var table = doc.createElement("table");
+        table.id = "t02";
+	     table.style.width = "100%";
+        table.appendChild(fragment);
+
+        doc.getElementById("myTable").appendChild(table);
+        doc.getElementById("myTable").getElementsByTagName('table')[0].className = "striped";
+     
+        ermittleRang();
+        formatGewicht();
+        zeigeMinMax();
+     
+        var height = document.body.scrollHeight;
+        window.AppInventor.setWebViewString("Height:" + height.toString());
+		
+		window.AppInventor.setWebViewString(rowArray.toString());
+        
+        } catch (error) {
+            alert("Da lief was schief:" + error.message);
+        }
+     }
+     
+     /*window.onload = function() {
+        init();
+     };*/
+     
+//-------------------------------------------------------------------------------------------------------------------
+     function hdrClick() {
+        let table, rows, switching, i, shouldSwitch, col;
+        table = document.getElementById("t02");
+        col = Number(this.id.substring(6)); // HeaderX → X
+
+        switching = true;
+        while (switching) {
+           switching = false;
+           rows = table.rows;
+
+           for (i = 1; i < (rows.length - 1); i++) { // skip header
+              shouldSwitch = false;
+
+              // -----------------------------
+              // Werte der aktuellen und nächsten Zeile
+              // -----------------------------
+              let rowX = rows[i];
+              let rowY = rows[i + 1];
+
+              // -----------------------------
+              // Speziell für Spalte 3 (Rang)
+              // -----------------------------
+              if (col === 3) {
+                 let col0_x = Number(rowX.getElementsByTagName("TD")[0].innerHTML);
+                 let col0_y = Number(rowY.getElementsByTagName("TD")[0].innerHTML);
+
+                 let col1_x = rowX.getElementsByTagName("TD")[1].innerHTML.trim().toLowerCase();
+                 let col1_y = rowY.getElementsByTagName("TD")[1].innerHTML.trim().toLowerCase();
+
+                 let col3_x = Number(rowX.getElementsByTagName("TD")[3].innerHTML);
+                 let col3_y = Number(rowY.getElementsByTagName("TD")[3].innerHTML);
+
+                 // Rang normalisieren (≤0 ans Ende)
+                 if (col3_x <= 0) col3_x = rows.length + 1;
+                 if (col3_y <= 0) col3_y = rows.length + 1;
+
+                 // Teilnehmer vorhanden?
+                 let hasName_x = (col1_x !== "");
+                 let hasName_y = (col1_y !== "");
+
+                 // --- Vergleichslogik ---
+                 if (col3_y < col3_x) {
+                    shouldSwitch = true;
+                    break;
+                 }
+                 if (col3_y === col3_x) {
+                    // 1. Kriterium: Name vorhanden?
+                    if (hasName_y && !hasName_x) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                    // 2. Kriterium: Platz
+                    if (hasName_y === hasName_x && col0_y < col0_x) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                 }
+              } 
+              // -----------------------------
+              // Alle anderen Spalten: einfache numerische Sortierung
+              // -----------------------------
+              else {
+                 let x = rowX.getElementsByTagName("TD")[col];
+                 let y = rowY.getElementsByTagName("TD")[col];
+
+                 let xn = Number(x.innerHTML);
+                 let yn = Number(y.innerHTML);
+
+                 if (xn <= 0) xn = rows.length + 1;
+                 if (yn <= 0) yn = rows.length + 1;
+
+                 if (yn < xn) {
+                    shouldSwitch = true;
+                    break;
+                 }
+              }
+           }
+
+           if (shouldSwitch) {
+              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+              switching = true;
+           }
+        }
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function rowClick() {
+       var row = Number(this.id.substring(3));
+       markiere(row);
+
+       var txt = "rowclick" + row_selected
+       window.AppInventor.setWebViewString(txt);
+    }   
+//-------------------------------------------------------------------------------------------------------------------
+    function addRows(dom, tag) {
+       
+       if (tag == "th"){
+          // Tabelle header
+          let tr = doc.createElement("tr");
+          
+          // Header 1, Platz
+          var el = doc.createElement(tag);
+          el.id = "header0";
+          el.innerHTML = rowArray[0].replace(/[^a-zA-Z0-9]/g,'');
+          el.addEventListener("click", hdrClick);
+          tr.appendChild(el);
+          
+          // Header 2, Teilnehmer
+          el = doc.createElement(tag);
+          el.innerHTML = rowArray[1].replace(/[^a-zA-Z0-9]/g,'');
+          tr.appendChild(el);
+          
+          // Header 3, Gewicht
+          el = doc.createElement(tag);
+          el.innerHTML = rowArray[2].replace(/[^a-zA-Z0-9]/g,'');
+          tr.appendChild(el);
+          
+          // Header 4, Rang
+          el = doc.createElement(tag);
+          el.id = "header3";
+          el.innerHTML = rowArray[3].replace(/[^a-zA-Z0-9]/g,'');
+          el.addEventListener("click", hdrClick);
+          tr.appendChild(el);
+          
+          dom.appendChild(tr);
+    
+       } else {
+          // Tabelle Datenreihen
+          
+          for (let j = 4; j < rowArray.length; j += 4){
+             row_nr ++;
+             tr = doc.createElement("tr");
+             tr.id = "row" + row_nr;
+             tr.addEventListener("click", rowClick);
+             
+             // Spalte 1, Platz
+             cell_nr ++;
+             var el = doc.createElement(tag);
+             el.id = "cell" + cell_nr;
+             el.innerHTML = rowArray[j + 0].replace(/[^a-zA-Z0-9]/g,'');
+             tr.appendChild(el);
+             
+             // Spalte 2, Teilnehmer
+             cell_nr ++;
+             el = doc.createElement(tag);
+             el.id = "cell" + cell_nr;
+             var txt = rowArray[j + 1].replace(/["]/g,'').trim();
+             el.innerHTML = txt;
+             let leer = (txt == "" );
+             tr.appendChild(el);
+             
+             // Spalte 3, Gewicht
+             cell_nr ++;
+             el = doc.createElement(tag);
+             el.id = "cell" + cell_nr;
+             var wert = -1;
+             if (!leer){
+                wert = Number(rowArray[j + 2].replace(/[^a-zA-Z0-9]/g,''));
+                el.innerHTML = wert;
+             }
+             tr.appendChild(el);
+             
+             // maxGewicht und GesamtGewicht setzen
+             if (wert > maxGewicht) maxGewicht = wert;
+             if (wert > 0)          gesGewicht += wert;
+
+             // Spalte 4, Rang (Spalte nur erzeugen)
+             cell_nr ++;
+             el = doc.createElement(tag);
+             el.id = "cell" + cell_nr;
+             tr.appendChild(el);
+             
+             // DS mit Gewicht in Sort-Array aufnehmen
+             sortArray[row_nr -1][0] = cell_nr
+             sortArray[row_nr -1][1] = wert
+                          
+             dom.appendChild(tr);
+          }   //-for
+       }
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function zeigeMinMax(){
+       if (cell_selected > 0){
+          var row = Math.floor(cell_selected / 4);
+
+          var farbe = "#fff";
+          if (row % 2 == 0) farbe = "#eee";
+          
+          var id = "cell" + (cell_selected -2);
+          doc.getElementById(id).style.backgroundColor = farbe;
+          id = "cell" + (cell_selected -1);
+          doc.getElementById(id).style.backgroundColor = farbe;
+          id = "cell" + (cell_selected -0);
+          doc.getElementById(id).style.backgroundColor = farbe;
+          id = "cell" + (cell_selected +1);
+          doc.getElementById(id).style.backgroundColor = farbe;
+
+          cell_selected = 0;
+       }
+       
+       if (cell_nr > 0 && maxGewicht > 0){
+          for (let x = 3; x <= (cell_nr -1); x += 4){   
+             var id = "cell" + x;
+             var wert = Number(doc.getElementById(id).innerHTML);
+             
+             if (maxGewicht == wert ){  
+                cell_selected = x;
+                id = "cell" + (cell_selected -2);
+                doc.getElementById(id).style.backgroundColor = '#ccffcc';
+                id = "cell" + (cell_selected -1);
+                doc.getElementById(id).style.backgroundColor = '#ccffcc';
+                id = "cell" + (cell_selected -0);
+                doc.getElementById(id).style.backgroundColor = '#ccffcc';
+                doc.getElementById(id).style.fontWeight = 'bold';   
+                id = "cell" + (cell_selected +1);
+                doc.getElementById(id).style.backgroundColor = '#ccffcc';
+             } //-if
+          } // -for
+       } //-if
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function markiere(row){
+       var row_old = row_selected;
+       if (row_old > 0){
+           row_selected = 0;
+           for (let x = 1; x <= 4; x++){
+                var cell = (row_old - 1) * 4 + x;
+                var id = "cell" + cell;
+                
+                if (row_old % 2 == 0){
+                   doc.getElementById(id).style.backgroundColor = '#eee';
+                } else {   
+                   doc.getElementById(id).style.backgroundColor = '#fff';
+                }
+           }
+           doClick = false;
+       }
+
+       if (row > 0){
+           row_selected = row;
+           for (let x = 1; x <= 4; x++){
+                var cell = (row - 1) * 4 + x;
+                var id = "cell" + cell;
+                doc.getElementById(id).style.backgroundColor = '#ffcc99';
+           }
+           doClick = true;
+       }
+       zeigeMinMax();       
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function formatGewicht(){
+       doc.getElementById("maxGewicht").innerHTML = maxGewicht;
+       if (maxGewicht >= 1000){
+          var wert = maxGewicht / 1000.0
+          doc.getElementById("maxGewicht").innerHTML = toLocal(wert, 1);
+          doc.getElementById("maxSize").innerHTML = "kg";
+       }
+   
+       doc.getElementById("gesamtGewicht").innerHTML = gesGewicht;
+       if (gesGewicht >= 1000){
+          var wert = gesGewicht / 1000.0
+          doc.getElementById("gesamtGewicht").innerHTML = toLocal(wert, 1);
+          doc.getElementById("gesamtSize").innerHTML = "kg";
+       }
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function toLocal(x, tfx){
+       var nr = Number(x);
+       nr = nr.toLocaleString('de-DE', {minimumFractionDigits: tfx, maximumFractionDigits: tfx});
+       return nr;
+    }
+//-------------------------------------------------------------------------------------------------------------------
+function ermittleRang(){
+   sortArray.sort(compareValue);
+
+   let rang = 0;
+   let letzterWert = null;
+   let position = 0;
+
+   for (let j = 0; j < sortArray.length; j++) {
+
+      let id = "cell" + sortArray[j][0];
+      let gewicht = sortArray[j][1];
+
+      if (gewicht > 0) {
+
+         position++;
+
+         // Neues Gewicht -> Rang entspricht aktueller Position
+         if (gewicht !== letzterWert) {
+            rang = position;
+         }
+
+         letzterWert = gewicht;
+
+         doc.getElementById(id).innerHTML = rang;
+         rowArray[sortArray[j][0] + 3] = rang;
+      }
+      else if (gewicht == 0) {
+
+         if (rows - unbesetzt == 0) {
+            doc.getElementById(id).innerHTML = rows;
+            rowArray[sortArray[j][0] + 3] = rows;
+         } else {
+            doc.getElementById(id).innerHTML = rows - unbesetzt;
+            rowArray[sortArray[j][0] + 3] = rows - unbesetzt;
+         }
+      }
+   }
+}
+//-------------------------------------------------------------------------------------------------------------------
+    function compareValue(a, b) {
+       return b[1]-a[1]
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function setzeFDJ(gewicht, teilnehmer) {
+       document.getElementById("fdjGEWICHT").innerHTML = gewicht;
+       document.getElementById("fdjTLN").innerHTML = teilnehmer;
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function selectRowById(row) {
+       try {
+       
+       row = Number(row);
+       if (!row || row < 1 || row > row_nr) return;
+
+       markiere(row);
+
+       var txt = "rowclick" + row_selected;
+       window.AppInventor.setWebViewString(txt);
+       } catch (error) {
+            alert("selectRowById:" + error.message);
+       }
+    }
+//-------------------------------------------------------------------------------------------------------------------
+function printView() {
+    // Hilfsfunktion: Tabelle in Tab-getrennten Text umwandeln
+    function tableToTabText(table) {
+        let rows = table.querySelectorAll("tr");
+        return Array.from(rows).map(row => {
+            // Nur <th> und <td> abfragen, span weglassen (Text kommt mit td.innerText)
+            let cells = row.querySelectorAll("th, td");
+            return Array.from(cells)
+                        .map(cell => cell.innerText.trim())
+                        .join(";"); // Spalten mit Tab trennen
+        }).join("\n"); // Zeilen mit Zeilenumbruch trennen
+    }
+
+    let outputText = "";
+
+    // 1️⃣ Statische Tabelle t01
+    let t01 = document.getElementById("t01");
+    if (t01) {
+        outputText += tableToTabText(t01) + "\n\n"; // Leerzeile zwischen Tabellen
+    }
+
+    // 2️⃣ Dynamische Tabelle myTable
+    let myTable = document.getElementById("myTable");
+    if (myTable) {
+        // Prüfen, ob myTable eine echte Tabelle enthält
+        let dynTable = myTable.querySelector("table");
+        if (dynTable) {
+            outputText += tableToTabText(dynTable) + "\n\n";
+        } 
+        // Falls nur <tr> direkt im Div erzeugt wurden
+        else if (myTable.querySelectorAll("tr").length > 0) {
+            let rows = myTable.querySelectorAll("tr");
+            rows.forEach(row => {
+                let cells = row.querySelectorAll("td");
+                outputText += Array.from(cells)
+                                  .map(c => c.innerText.trim())
+                                  .join("\t") + "\n";
+            });
+        } 
+        // Falls nur Text vorhanden
+        else if (myTable.innerText.trim() !== "") {
+            outputText += myTable.innerText.trim();
+        }
+    }
+
+    // 3️⃣ Ergebnis an App Inventor senden
+    window.AppInventor.setWebViewString("Print: " + outputText);
+}
+//-------------------------------------------------------------------------------------------------------------------	
+  </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<head>
+  <meta name="author" content="sthnet.de">
+  <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no">
+  
+  <title>Table Layout</title>
+
+  <style type="text/css">
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+    
+    table#t02 {table-layout:fixed;  margin-left: auto;margin-right: auto;}
+    table#t02 ,th ,td {border: 1px solid black; border-collapse: collapse; padding:2px 2px 2px 2px;}
+    table#t02 th {cursor: pointer;}
+    table#t02 tr:nth-child(even) {background-color: #eee}
+    table#t02 tr:nth-child(odd)  {background-color: #fff}
+    table#t02 th{color: white; background-color: #16aa16}
+    table#t02 th:nth-of-type(1) {text-align: center; width: 100%; font-size: 16px;} 
+    table#t02 td:nth-of-type(1) {text-align: left; font-size: 16px;}
+  </style>  
+</head>
+
+<body>
+  <div id="myTable" style="width:100%; font:normal 10px/2.0em Lucida Sans;">
+</div>
+
+  <script>   
+     let doc;
+     let tln;
+     let row_nr;
+     let doClick;
+     let row_selected;
+      
+     function init(){
+        var data = window.AppInventor.getWebViewString();
+        render(data);
+     }
+     
+     function render(urlArray){
+        if (!urlArray || urlArray.length === 0) return;
+        var delimiter = ",";
+      
+        row_nr = 0;
+		row_selected = null;
+     
+        doc = document;
+        var fragment = doc.createDocumentFragment();
+        var thead = doc.createElement("thead");
+     
+        var parts = urlArray.split(delimiter);
+        tln = [];
+     
+        for (let i = 0; i < (parts.length -1); i += 2) {
+           let name = parts[i].replace(/[^a-zA-Z0-9 .äöüÄÖÜß-]/g,'').trim();
+           let id   = parts[i + 1].replace(/["\[\]]/g, "").trim();
+
+           tln.push({ name, id });
+        }
+     
+        tln.sort((a, b) => a.name.localeCompare(b.name, 'de', { sensitivity: 'base' }));
+ 
+        var rows = tln.length;
+
+        doClick = false;
+     
+        addRows(thead, "th", tln.length);
+        fragment.appendChild(thead);
+     
+        var tbody = doc.createElement("tbody");
+    
+        addRows(tbody, "td", tln.length);
+        fragment.appendChild(tbody);
+    
+        var table = doc.createElement("table");
+        table.id = "t02";
+	    table.style.width = "100%";
+        table.appendChild(fragment);
+
+        doc.getElementById("myTable").appendChild(table);
+        doc.getElementById("myTable").getElementsByTagName('table')[0].className = "striped";
+     
+        var height = document.body.scrollHeight;
+        window.AppInventor.setWebViewString("Height:" + height.toString());
+     
+        let tln_id = parts.at(-1).replace(/["\[\]]/g, "").trim();
+        markiereById(tln_id);
+        window.AppInventor.setWebViewString("rowclick" + tln_id);
+
+     }
+     
+     /*window.onload = function() {
+        init();
+     };*/
+//-------------------------------------------------------------------------------------------------------------------
+    function hdrClick() {
+    }  
+//-------------------------------------------------------------------------------------------------------------------
+    function rowClick() {
+       const id = this.dataset.row;
+
+       markiereById(id);
+
+       window.AppInventor.setWebViewString("rowclick" + id);
+    }
+//-------------------------------------------------------------------------------------------------------------------
+    function addRows(dom, tag, rows) {
+       
+       if (tag == "th"){
+          // Tabelle header
+          let trHead = doc.createElement("tr");
+          
+          // Header 1, Teilnehmer
+          let el = doc.createElement(tag);
+          el.id = "header0";
+          el.innerHTML = "Teilnehmer (" + rows + ")";
+          el.addEventListener("click", hdrClick);
+          trHead.appendChild(el);
+          
+          dom.appendChild(trHead);
+    
+       } else {
+          // Tabelle Datenreihen
+          
+          let tr = doc.createElement("tr");
+		  tr.id = "row0";
+		  tr.dataset.row = "t0";
+          tr.addEventListener("click", rowClick);
+		  
+		  // Spalte 1, <neuer Teilnehmer>
+          let el = doc.createElement(tag);
+          el.innerHTML = "<b><i>&lt; neuer Teilnehmer &gt;</i></b>";
+		  el.style.color = "#3333FF";
+			 
+          tr.appendChild(el);
+          dom.appendChild(tr);	
+		  
+		  for (let j = 0; j < tln.length; j++){
+             row_nr ++;
+             
+             let tr = doc.createElement("tr");
+             tr.id = "row" + row_nr;
+             tr.dataset.row = tln[j].id;
+             tr.addEventListener("click", rowClick);
+             
+             // Spalte 1, Teilnehmer
+             el = doc.createElement(tag);
+             var txt = tln[j].name;
+             el.innerHTML = txt;
+             
+             tr.appendChild(el);
+             dom.appendChild(tr);
+          }   //-for
+       }
+    }
+//-------------------------------------------------------------------------------------------------------------------
+  function markiereById(id){
+
+   // alte Markierung entfernen
+   if (row_selected !== null){
+      let old = doc.querySelector('tr[data-row="' + row_selected + '"]');
+      if (old){
+         let index = old.rowIndex;
+         old.style.backgroundColor = (index % 2 === 0) ? '#eee' : '#fff';
+      }
+   }
+
+   // neue setzen
+   let neu = doc.querySelector('tr[data-row="' + id + '"]');
+   if (neu){
+      neu.style.backgroundColor = '#ffcc99';
+      row_selected = id;
+   }
+}
+//-------------------------------------------------------------------------------------------------------------------
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+<head>
+  <meta name="author" content="sthnet.de">
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no">
+  
+  <title>Table Layout</title>
+
+  <style type="text/css">
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+    table#t02 {table-layout:fixed;  margin-left: auto;margin-right: auto;}
+    table#t02 ,th ,td {border: 1px solid black; border-collapse: collapse; padding:2px 2px 2px 2px;}
+    table#t02 th {cursor: pointer;}
+    table#t02 tr:nth-child(even) {background-color: #eee}
+    table#t02 tr:nth-child(odd)  {background-color: #fff}
+    table#t02 th{color: white; background-color: #16aa16}
+    table#t02 th:nth-of-type(1) {text-align: center; width: 100px; font-size: 16px;} 
+    table#t02 th:nth-of-type(2) {text-align: center; width: calc(100% - 100px); font-size: 16px;} 
+    table#t02 td:nth-of-type(1) {text-align: center; font-size: 16px;}
+    table#t02 td:nth-of-type(2) {text-align: left; padding-right: 5px; font-size: 16px;}
+   </style>  
+</head>
+
+<body>   
+    <div id="myTable" style="width:100%; font:normal 10px/2.0em Lucida Sans;"></div>
+  <script>        
+     let doc;
+     let header;
+     let events;
+     let indexMap;
+     let cell_nr;
+     let row_nr;
+     let row_selected;
+     let doClick;
+     let tr;
+     
+     function init(){
+        var data = window.AppInventor.getWebViewString();
+        render(data);
+     }
+     
+     function render(urlArray){
+        if (!urlArray || urlArray.length === 0) return;
+        
+        var delimiter = ",";
+     
+        cell_nr = 0;
+        row_nr = 0;
+        row_selected = 0;
+	     
+        doc = document;
+        doc.getElementById("myTable").innerHTML = "";
+        
+        var fragment = doc.createDocumentFragment();
+        var thead = doc.createElement("thead");
+        tr = doc.createElement("tr");
+     
+        var parts = urlArray.split(delimiter);
+        if (parts.length < 3) return;
+	 
+        header = parts.slice(0, 2);	 
+	    events = [];
+	 
+	    for (let i = 3; i < parts.length -2; i += 3) {
+           let datum = parts[i].replace(/["\[\]]/g, "").trim();
+           let name = parts[i + 1].replace(/["\[\]]/g, "").trim();
+		   let id = parts[i + 2].replace(/["\[\]]/g, "").trim();
+		   events.push({ datum, name, id});
+        } 
+	 
+	     events.sort((a, b) => {
+           let [dayA, monthA, yearA] = a.datum.split(".");
+           let [dayB, monthB, yearB] = b.datum.split(".");
+
+           let dateA = new Date(yearA, monthA - 1, dayA);
+           let dateB = new Date(yearB, monthB - 1, dayB);
+
+           return dateA - dateB;
+        });
+     
+        var veranstaltung_id = parts.at(-1).replace(/["\[\]]/g, "").trim();
+		indexMap = {}; 
+     
+        doClick = false;
+     
+        addRows(thead, "th");
+        fragment.appendChild(thead);
+     
+        var tbody = doc.createElement("tbody");
+    
+        addRows(tbody, "td");
+        fragment.appendChild(tbody);
+    
+        var table = doc.createElement("table");
+        table.id = "t02";
+	    table.style.width = "100%";
+        table.appendChild(fragment);
+
+        doc.getElementById("myTable").appendChild(table);
+        doc.getElementById("myTable").getElementsByTagName('table')[0].className = "striped";    
+             
+        var height = document.body.scrollHeight;
+        window.AppInventor.setWebViewString("Height:" + height.toString());
+         
+        if (veranstaltung_id != "v0") {
+           markiereVeranstaltung(veranstaltung_id);
+		  }
+        
+     }
+     
+     /*window.onload = function() {
+        init();
+     };*/
+//-------------------------------------------------------------------------------------------------------------------
+    function rowClick() {
+       const id = this.dataset.row;   // z.B. "v5"
+       markiereVeranstaltung(id);
+    }   
+//-------------------------------------------------------------------------------------------------------------------
+    function addRows(dom, tag) {
+       
+       if (tag == "th"){
+          // Tabelle header
+          let trHead = doc.createElement("tr");
+          
+          // Header 1, Datum
+          var el = doc.createElement(tag);
+          el.innerHTML = header[0].replace(/[^a-zA-Z0-9]/g,'');
+          trHead.appendChild(el);
+          
+          // Header 2, Veranstaltung
+          el = doc.createElement(tag);
+          el.innerHTML = header[1].replace(/[^a-zA-Z0-9]/g,'');
+          trHead.appendChild(el);
+          
+          dom.appendChild(trHead);
+    
+       } else {
+          // Tabelle Datenreihen
+
+          for (let j = 0; j < events.length; j ++){
+             row_nr ++;
+             const originalIndex = events[j].id;
+             
+             let tr = doc.createElement("tr");
+             tr.id = "row" + row_nr;
+			 tr.dataset.row = originalIndex;
+             tr.addEventListener("click", rowClick);
+             
+             indexMap[originalIndex] = row_nr;
+             
+             // Spalte 1, Datum
+             cell_nr ++;
+             var el = doc.createElement(tag);
+             el.id = "cell" + cell_nr;
+             el.innerHTML = events[j].datum;
+             tr.appendChild(el);
+             
+             // Spalte 2, Veranstaltung
+             cell_nr ++;
+             el = doc.createElement(tag);
+             el.id = "cell" + cell_nr;
+             el.innerHTML = events[j].name;
+             tr.appendChild(el);
+
+             dom.appendChild(tr);
+          }   //-for
+       }
+    }
+//-------------------------------------------------------------------------------------------------------------------
+  function markiere(row){
+   if (!row) return;
+
+   // alte Markierung entfernen
+   if (row_selected > 0){
+      let oldRow = doc.getElementById("row" + row_selected);
+      if (oldRow){
+         oldRow.style.backgroundColor = "";
+      }
+   }
+
+   // neue Markierung setzen
+   row_selected = row;
+
+   let newRow = doc.getElementById("row" + row);
+   if (newRow){
+      newRow.style.backgroundColor = '#ffcc99';
+   }
+
+   doClick = true;
+}
+//-------------------------------------------------------------------------------------------------------------------
+    function toLocal(x, tfx){
+       var nr = Number(x);
+       nr = nr.toLocaleString('de-DE', {minimumFractionDigits: tfx, maximumFractionDigits: tfx});
+       return nr;
+    }
+//-------------------------------------------------------------------------------------------------------------------
+     function markiereVeranstaltung(id) {
+        const neuePosition = indexMap[id];
+		if (neuePosition) {
+           markiere(neuePosition);
+        }
+        window.AppInventor.setWebViewString("rowclick" + id);
+     }
+//-------------------------------------------------------------------------------------------------------------------
+
+  </script>
+</body>
+</html>
