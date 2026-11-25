@@ -48,13 +48,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "getpanel", true))
 	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper) Debug.delegate(ba, "getpanel", new Object[] {_dialog}));}
-RDebugUtils.currentLine=41091072;
- //BA.debugLineNum = 41091072;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
-RDebugUtils.currentLine=41091073;
- //BA.debugLineNum = 41091073;BA.debugLine="Return mBase";
+RDebugUtils.currentLine=40632320;
+ //BA.debugLineNum = 40632320;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
+RDebugUtils.currentLine=40632321;
+ //BA.debugLineNum = 40632321;BA.debugLine="Return mBase";
 if (true) return __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ;
-RDebugUtils.currentLine=41091074;
- //BA.debugLineNum = 41091074;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40632322;
+ //BA.debugLineNum = 40632322;BA.debugLine="End Sub";
 return null;
 }
 public String  _show(b4a.example.b4xprogressdialog __ref,b4a.example.b4xdialog _dialog) throws Exception{
@@ -62,13 +62,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "show", true))
 	 {return ((String) Debug.delegate(ba, "show", new Object[] {_dialog}));}
-RDebugUtils.currentLine=41287680;
- //BA.debugLineNum = 41287680;BA.debugLine="Private Sub Show (Dialog As B4XDialog) 'ignore";
-RDebugUtils.currentLine=41287681;
- //BA.debugLineNum = 41287681;BA.debugLine="LoadingIndicator.Show";
+RDebugUtils.currentLine=40828928;
+ //BA.debugLineNum = 40828928;BA.debugLine="Private Sub Show (Dialog As B4XDialog) 'ignore";
+RDebugUtils.currentLine=40828929;
+ //BA.debugLineNum = 40828929;BA.debugLine="LoadingIndicator.Show";
 __ref._loadingindicator /*b4a.example.b4xloadingindicator*/ ._show /*String*/ (null);
-RDebugUtils.currentLine=41287682;
- //BA.debugLineNum = 41287682;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40828930;
+ //BA.debugLineNum = 40828930;BA.debugLine="End Sub";
 return "";
 }
 public String  _dialogclosed(b4a.example.b4xprogressdialog __ref,int _result) throws Exception{
@@ -76,40 +76,40 @@ __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "dialogclosed", true))
 	 {return ((String) Debug.delegate(ba, "dialogclosed", new Object[] {_result}));}
-RDebugUtils.currentLine=41353216;
- //BA.debugLineNum = 41353216;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
-RDebugUtils.currentLine=41353217;
- //BA.debugLineNum = 41353217;BA.debugLine="LoadingIndicator.Hide";
+RDebugUtils.currentLine=40894464;
+ //BA.debugLineNum = 40894464;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
+RDebugUtils.currentLine=40894465;
+ //BA.debugLineNum = 40894465;BA.debugLine="LoadingIndicator.Hide";
 __ref._loadingindicator /*b4a.example.b4xloadingindicator*/ ._hide /*String*/ (null);
-RDebugUtils.currentLine=41353218;
- //BA.debugLineNum = 41353218;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40894466;
+ //BA.debugLineNum = 40894466;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.b4xprogressdialog __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
-RDebugUtils.currentLine=40828928;
- //BA.debugLineNum = 40828928;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=40828929;
- //BA.debugLineNum = 40828929;BA.debugLine="Private xui As XUI";
+RDebugUtils.currentLine=40370176;
+ //BA.debugLineNum = 40370176;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=40370177;
+ //BA.debugLineNum = 40370177;BA.debugLine="Private xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=40828930;
- //BA.debugLineNum = 40828930;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=40370178;
+ //BA.debugLineNum = 40370178;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=40828931;
- //BA.debugLineNum = 40828931;BA.debugLine="Private mText As Object";
+RDebugUtils.currentLine=40370179;
+ //BA.debugLineNum = 40370179;BA.debugLine="Private mText As Object";
 _mtext = new Object();
-RDebugUtils.currentLine=40828932;
- //BA.debugLineNum = 40828932;BA.debugLine="Public LoadingIndicator As B4XLoadingIndicator";
+RDebugUtils.currentLine=40370180;
+ //BA.debugLineNum = 40370180;BA.debugLine="Public LoadingIndicator As B4XLoadingIndicator";
 _loadingindicator = new b4a.example.b4xloadingindicator();
-RDebugUtils.currentLine=40828933;
- //BA.debugLineNum = 40828933;BA.debugLine="Public Label1 As B4XView";
+RDebugUtils.currentLine=40370181;
+ //BA.debugLineNum = 40370181;BA.debugLine="Public Label1 As B4XView";
 _label1 = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=40828934;
- //BA.debugLineNum = 40828934;BA.debugLine="Public mDialog As B4XDialog";
+RDebugUtils.currentLine=40370182;
+ //BA.debugLineNum = 40370182;BA.debugLine="Public mDialog As B4XDialog";
 _mdialog = new b4a.example.b4xdialog();
-RDebugUtils.currentLine=40828935;
- //BA.debugLineNum = 40828935;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40370183;
+ //BA.debugLineNum = 40370183;BA.debugLine="End Sub";
 return "";
 }
 public Object  _gettext(b4a.example.b4xprogressdialog __ref) throws Exception{
@@ -117,13 +117,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "gettext", true))
 	 {return ((Object) Debug.delegate(ba, "gettext", null));}
-RDebugUtils.currentLine=41025536;
- //BA.debugLineNum = 41025536;BA.debugLine="Public Sub getText As Object";
-RDebugUtils.currentLine=41025537;
- //BA.debugLineNum = 41025537;BA.debugLine="Return mText";
+RDebugUtils.currentLine=40566784;
+ //BA.debugLineNum = 40566784;BA.debugLine="Public Sub getText As Object";
+RDebugUtils.currentLine=40566785;
+ //BA.debugLineNum = 40566785;BA.debugLine="Return mText";
 if (true) return __ref._mtext /*Object*/ ;
-RDebugUtils.currentLine=41025538;
- //BA.debugLineNum = 41025538;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40566786;
+ //BA.debugLineNum = 40566786;BA.debugLine="End Sub";
 return null;
 }
 public String  _hide(b4a.example.b4xprogressdialog __ref) throws Exception{
@@ -131,13 +131,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "hide", true))
 	 {return ((String) Debug.delegate(ba, "hide", null));}
-RDebugUtils.currentLine=41222144;
- //BA.debugLineNum = 41222144;BA.debugLine="Public Sub Hide";
-RDebugUtils.currentLine=41222145;
- //BA.debugLineNum = 41222145;BA.debugLine="mDialog.Close(0)";
+RDebugUtils.currentLine=40763392;
+ //BA.debugLineNum = 40763392;BA.debugLine="Public Sub Hide";
+RDebugUtils.currentLine=40763393;
+ //BA.debugLineNum = 40763393;BA.debugLine="mDialog.Close(0)";
 __ref._mdialog /*b4a.example.b4xdialog*/ ._close /*boolean*/ (null,(int) (0));
-RDebugUtils.currentLine=41222146;
- //BA.debugLineNum = 41222146;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40763394;
+ //BA.debugLineNum = 40763394;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4a.example.b4xprogressdialog __ref,anywheresoftware.b4a.BA _ba,anywheresoftware.b4a.objects.B4XViewWrapper _parent) throws Exception{
@@ -146,37 +146,37 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_parent}));}
-RDebugUtils.currentLine=40894464;
- //BA.debugLineNum = 40894464;BA.debugLine="Public Sub Initialize (Parent As B4XView)";
-RDebugUtils.currentLine=40894465;
- //BA.debugLineNum = 40894465;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
+RDebugUtils.currentLine=40435712;
+ //BA.debugLineNum = 40435712;BA.debugLine="Public Sub Initialize (Parent As B4XView)";
+RDebugUtils.currentLine=40435713;
+ //BA.debugLineNum = 40435713;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"mBase");
-RDebugUtils.currentLine=40894466;
- //BA.debugLineNum = 40894466;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 60dip)";
+RDebugUtils.currentLine=40435714;
+ //BA.debugLineNum = 40435714;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 60dip)";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (60)));
-RDebugUtils.currentLine=40894467;
- //BA.debugLineNum = 40894467;BA.debugLine="mBase.LoadLayout(\"XV_ProgressTemplate\")";
+RDebugUtils.currentLine=40435715;
+ //BA.debugLineNum = 40435715;BA.debugLine="mBase.LoadLayout(\"XV_ProgressTemplate\")";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("XV_ProgressTemplate",ba);
-RDebugUtils.currentLine=40894468;
- //BA.debugLineNum = 40894468;BA.debugLine="mBase.SetColorAndBorder(xui.Color_White, 0, 0, 5d";
+RDebugUtils.currentLine=40435716;
+ //BA.debugLineNum = 40435716;BA.debugLine="mBase.SetColorAndBorder(xui.Color_White, 0, 0, 5d";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetColorAndBorder(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White,(int) (0),(int) (0),__c.DipToCurrent((int) (5)));
-RDebugUtils.currentLine=40894469;
- //BA.debugLineNum = 40894469;BA.debugLine="LoadingIndicator.Hide";
+RDebugUtils.currentLine=40435717;
+ //BA.debugLineNum = 40435717;BA.debugLine="LoadingIndicator.Hide";
 __ref._loadingindicator /*b4a.example.b4xloadingindicator*/ ._hide /*String*/ (null);
-RDebugUtils.currentLine=40894470;
- //BA.debugLineNum = 40894470;BA.debugLine="mDialog.Initialize(Parent)";
+RDebugUtils.currentLine=40435718;
+ //BA.debugLineNum = 40435718;BA.debugLine="mDialog.Initialize(Parent)";
 __ref._mdialog /*b4a.example.b4xdialog*/ ._initialize /*String*/ (null,ba,_parent);
-RDebugUtils.currentLine=40894471;
- //BA.debugLineNum = 40894471;BA.debugLine="mDialog.ButtonsHeight = -2dip";
+RDebugUtils.currentLine=40435719;
+ //BA.debugLineNum = 40435719;BA.debugLine="mDialog.ButtonsHeight = -2dip";
 __ref._mdialog /*b4a.example.b4xdialog*/ ._buttonsheight /*int*/  = (int) (-__c.DipToCurrent((int) (2)));
-RDebugUtils.currentLine=40894472;
- //BA.debugLineNum = 40894472;BA.debugLine="mDialog.BorderWidth = 0";
+RDebugUtils.currentLine=40435720;
+ //BA.debugLineNum = 40435720;BA.debugLine="mDialog.BorderWidth = 0";
 __ref._mdialog /*b4a.example.b4xdialog*/ ._borderwidth /*int*/  = (int) (0);
-RDebugUtils.currentLine=40894473;
- //BA.debugLineNum = 40894473;BA.debugLine="mDialog.BorderCornersRadius = 5dip";
+RDebugUtils.currentLine=40435721;
+ //BA.debugLineNum = 40435721;BA.debugLine="mDialog.BorderCornersRadius = 5dip";
 __ref._mdialog /*b4a.example.b4xdialog*/ ._bordercornersradius /*int*/  = __c.DipToCurrent((int) (5));
-RDebugUtils.currentLine=40894474;
- //BA.debugLineNum = 40894474;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40435722;
+ //BA.debugLineNum = 40435722;BA.debugLine="End Sub";
 return "";
 }
 public String  _settext(b4a.example.b4xprogressdialog __ref,Object _t) throws Exception{
@@ -184,13 +184,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "settext", true))
 	 {return ((String) Debug.delegate(ba, "settext", new Object[] {_t}));}
-RDebugUtils.currentLine=40960000;
- //BA.debugLineNum = 40960000;BA.debugLine="Public Sub setText(t As Object)";
-RDebugUtils.currentLine=40960001;
- //BA.debugLineNum = 40960001;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(Label1, t";
+RDebugUtils.currentLine=40501248;
+ //BA.debugLineNum = 40501248;BA.debugLine="Public Sub setText(t As Object)";
+RDebugUtils.currentLine=40501249;
+ //BA.debugLineNum = 40501249;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(Label1, t";
 _xuiviewsutils._settextorcsbuildertolabel /*String*/ (ba,__ref._label1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ,_t);
-RDebugUtils.currentLine=40960002;
- //BA.debugLineNum = 40960002;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40501250;
+ //BA.debugLineNum = 40501250;BA.debugLine="End Sub";
 return "";
 }
 public String  _showdialog(b4a.example.b4xprogressdialog __ref,Object _text) throws Exception{
@@ -198,20 +198,20 @@ __ref = this;
 RDebugUtils.currentModule="b4xprogressdialog";
 if (Debug.shouldDelegate(ba, "showdialog", true))
 	 {return ((String) Debug.delegate(ba, "showdialog", new Object[] {_text}));}
-RDebugUtils.currentLine=41156608;
- //BA.debugLineNum = 41156608;BA.debugLine="Public Sub ShowDialog (Text As Object)";
-RDebugUtils.currentLine=41156609;
- //BA.debugLineNum = 41156609;BA.debugLine="setText(Text)";
+RDebugUtils.currentLine=40697856;
+ //BA.debugLineNum = 40697856;BA.debugLine="Public Sub ShowDialog (Text As Object)";
+RDebugUtils.currentLine=40697857;
+ //BA.debugLineNum = 40697857;BA.debugLine="setText(Text)";
 __ref._settext /*String*/ (null,_text);
-RDebugUtils.currentLine=41156610;
- //BA.debugLineNum = 41156610;BA.debugLine="If mDialog.Visible = False Then";
+RDebugUtils.currentLine=40697858;
+ //BA.debugLineNum = 40697858;BA.debugLine="If mDialog.Visible = False Then";
 if (__ref._mdialog /*b4a.example.b4xdialog*/ ._getvisible /*boolean*/ (null)==__c.False) { 
-RDebugUtils.currentLine=41156611;
- //BA.debugLineNum = 41156611;BA.debugLine="mDialog.ShowTemplate(Me, \"\", \"\", \"\")";
+RDebugUtils.currentLine=40697859;
+ //BA.debugLineNum = 40697859;BA.debugLine="mDialog.ShowTemplate(Me, \"\", \"\", \"\")";
 __ref._mdialog /*b4a.example.b4xdialog*/ ._showtemplate /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ (null,this,(Object)(""),(Object)(""),(Object)(""));
  };
-RDebugUtils.currentLine=41156613;
- //BA.debugLineNum = 41156613;BA.debugLine="End Sub";
+RDebugUtils.currentLine=40697861;
+ //BA.debugLineNum = 40697861;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -54,13 +54,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xsignaturetemplate";
 if (Debug.shouldDelegate(ba, "getpanel", true))
 	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper) Debug.delegate(ba, "getpanel", new Object[] {_dialog}));}
-RDebugUtils.currentLine=43974656;
- //BA.debugLineNum = 43974656;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
-RDebugUtils.currentLine=43974657;
- //BA.debugLineNum = 43974657;BA.debugLine="Return mBase";
+RDebugUtils.currentLine=43515904;
+ //BA.debugLineNum = 43515904;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
+RDebugUtils.currentLine=43515905;
+ //BA.debugLineNum = 43515905;BA.debugLine="Return mBase";
 if (true) return __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ;
-RDebugUtils.currentLine=43974658;
- //BA.debugLineNum = 43974658;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43515906;
+ //BA.debugLineNum = 43515906;BA.debugLine="End Sub";
 return null;
 }
 public String  _show(b4a.example.b4xsignaturetemplate __ref,b4a.example.b4xdialog _dialog) throws Exception{
@@ -68,19 +68,19 @@ __ref = this;
 RDebugUtils.currentModule="b4xsignaturetemplate";
 if (Debug.shouldDelegate(ba, "show", true))
 	 {return ((String) Debug.delegate(ba, "show", new Object[] {_dialog}));}
-RDebugUtils.currentLine=44040192;
- //BA.debugLineNum = 44040192;BA.debugLine="Private Sub Show (Dialog As B4XDialog) 'ignore";
-RDebugUtils.currentLine=44040193;
- //BA.debugLineNum = 44040193;BA.debugLine="cvs.DrawRect(cvs.TargetRect, BackgroundColor, Tru";
+RDebugUtils.currentLine=43581440;
+ //BA.debugLineNum = 43581440;BA.debugLine="Private Sub Show (Dialog As B4XDialog) 'ignore";
+RDebugUtils.currentLine=43581441;
+ //BA.debugLineNum = 43581441;BA.debugLine="cvs.DrawRect(cvs.TargetRect, BackgroundColor, Tru";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawRect(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect(),__ref._backgroundcolor /*int*/ ,__c.True,(float) (0));
-RDebugUtils.currentLine=44040194;
- //BA.debugLineNum = 44040194;BA.debugLine="cvs.Invalidate";
+RDebugUtils.currentLine=43581442;
+ //BA.debugLineNum = 43581442;BA.debugLine="cvs.Invalidate";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .Invalidate();
-RDebugUtils.currentLine=44040195;
- //BA.debugLineNum = 44040195;BA.debugLine="NumberOfPoints = 0";
+RDebugUtils.currentLine=43581443;
+ //BA.debugLineNum = 43581443;BA.debugLine="NumberOfPoints = 0";
 __ref._numberofpoints /*int*/  = (int) (0);
-RDebugUtils.currentLine=44040196;
- //BA.debugLineNum = 44040196;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43581444;
+ //BA.debugLineNum = 43581444;BA.debugLine="End Sub";
 return "";
 }
 public String  _dialogclosed(b4a.example.b4xsignaturetemplate __ref,int _result) throws Exception{
@@ -90,66 +90,66 @@ if (Debug.shouldDelegate(ba, "dialogclosed", true))
 	 {return ((String) Debug.delegate(ba, "dialogclosed", new Object[] {_result}));}
 anywheresoftware.b4a.objects.B4XCanvas.B4XRect _r = null;
 int _baseline = 0;
-RDebugUtils.currentLine=44236800;
- //BA.debugLineNum = 44236800;BA.debugLine="Private Sub DialogClosed (Result As Int)";
-RDebugUtils.currentLine=44236801;
- //BA.debugLineNum = 44236801;BA.debugLine="If Result = xui.DialogResponse_Positive And AddDa";
+RDebugUtils.currentLine=43778048;
+ //BA.debugLineNum = 43778048;BA.debugLine="Private Sub DialogClosed (Result As Int)";
+RDebugUtils.currentLine=43778049;
+ //BA.debugLineNum = 43778049;BA.debugLine="If Result = xui.DialogResponse_Positive And AddDa";
 if (_result==__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive && __ref._adddateandtime /*boolean*/ ) { 
-RDebugUtils.currentLine=44236802;
- //BA.debugLineNum = 44236802;BA.debugLine="Dim r As B4XRect = cvs.MeasureText(\"M\", TextFont";
+RDebugUtils.currentLine=43778050;
+ //BA.debugLineNum = 43778050;BA.debugLine="Dim r As B4XRect = cvs.MeasureText(\"M\", TextFont";
 _r = __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .MeasureText("M",__ref._textfont /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XFont*/ );
-RDebugUtils.currentLine=44236803;
- //BA.debugLineNum = 44236803;BA.debugLine="Dim Baseline As Int = cvs.TargetRect.Bottom - r.";
+RDebugUtils.currentLine=43778051;
+ //BA.debugLineNum = 43778051;BA.debugLine="Dim Baseline As Int = cvs.TargetRect.Bottom - r.";
 _baseline = (int) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getBottom()-_r.getHeight()-_r.getTop()-__c.DipToCurrent((int) (2)));
-RDebugUtils.currentLine=44236804;
- //BA.debugLineNum = 44236804;BA.debugLine="cvs.DrawText($\"$DateTime{DateTime.Now}\"$, 2dip,";
+RDebugUtils.currentLine=43778052;
+ //BA.debugLineNum = 43778052;BA.debugLine="cvs.DrawText($\"$DateTime{DateTime.Now}\"$, 2dip,";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawText(ba,(""+__c.SmartStringFormatter("datetime",(Object)(__c.DateTime.getNow()))+""),(float) (__c.DipToCurrent((int) (2))),(float) (_baseline),__ref._textfont /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XFont*/ ,__ref._textcolor /*int*/ ,BA.getEnumFromString(android.graphics.Paint.Align.class,"LEFT"));
  };
-RDebugUtils.currentLine=44236806;
- //BA.debugLineNum = 44236806;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43778054;
+ //BA.debugLineNum = 43778054;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.b4xsignaturetemplate __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xsignaturetemplate";
-RDebugUtils.currentLine=43778048;
- //BA.debugLineNum = 43778048;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=43778049;
- //BA.debugLineNum = 43778049;BA.debugLine="Private xui As XUI";
+RDebugUtils.currentLine=43319296;
+ //BA.debugLineNum = 43319296;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=43319297;
+ //BA.debugLineNum = 43319297;BA.debugLine="Private xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=43778050;
- //BA.debugLineNum = 43778050;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=43319298;
+ //BA.debugLineNum = 43319298;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=43778051;
- //BA.debugLineNum = 43778051;BA.debugLine="Private cvs As B4XCanvas";
+RDebugUtils.currentLine=43319299;
+ //BA.debugLineNum = 43319299;BA.debugLine="Private cvs As B4XCanvas";
 _cvs = new anywheresoftware.b4a.objects.B4XCanvas();
-RDebugUtils.currentLine=43778052;
- //BA.debugLineNum = 43778052;BA.debugLine="Private LastX, LastY As Float";
+RDebugUtils.currentLine=43319300;
+ //BA.debugLineNum = 43319300;BA.debugLine="Private LastX, LastY As Float";
 _lastx = 0f;
 _lasty = 0f;
-RDebugUtils.currentLine=43778053;
- //BA.debugLineNum = 43778053;BA.debugLine="Public StrokeWidth As Float = 2dip";
+RDebugUtils.currentLine=43319301;
+ //BA.debugLineNum = 43319301;BA.debugLine="Public StrokeWidth As Float = 2dip";
 _strokewidth = (float) (__c.DipToCurrent((int) (2)));
-RDebugUtils.currentLine=43778054;
- //BA.debugLineNum = 43778054;BA.debugLine="Public StrokeColor As Int = xui.Color_Black";
+RDebugUtils.currentLine=43319302;
+ //BA.debugLineNum = 43319302;BA.debugLine="Public StrokeColor As Int = xui.Color_Black";
 _strokecolor = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Black;
-RDebugUtils.currentLine=43778055;
- //BA.debugLineNum = 43778055;BA.debugLine="Public TextColor As Int = 0xFFFF8800";
+RDebugUtils.currentLine=43319303;
+ //BA.debugLineNum = 43319303;BA.debugLine="Public TextColor As Int = 0xFFFF8800";
 _textcolor = ((int)0xffff8800);
-RDebugUtils.currentLine=43778056;
- //BA.debugLineNum = 43778056;BA.debugLine="Public BackgroundColor As Int = xui.Color_White";
+RDebugUtils.currentLine=43319304;
+ //BA.debugLineNum = 43319304;BA.debugLine="Public BackgroundColor As Int = xui.Color_White";
 _backgroundcolor = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White;
-RDebugUtils.currentLine=43778057;
- //BA.debugLineNum = 43778057;BA.debugLine="Public AddDateAndTime As Boolean = True";
+RDebugUtils.currentLine=43319305;
+ //BA.debugLineNum = 43319305;BA.debugLine="Public AddDateAndTime As Boolean = True";
 _adddateandtime = __c.True;
-RDebugUtils.currentLine=43778058;
- //BA.debugLineNum = 43778058;BA.debugLine="Public TextFont As B4XFont";
+RDebugUtils.currentLine=43319306;
+ //BA.debugLineNum = 43319306;BA.debugLine="Public TextFont As B4XFont";
 _textfont = new anywheresoftware.b4a.objects.B4XViewWrapper.B4XFont();
-RDebugUtils.currentLine=43778059;
- //BA.debugLineNum = 43778059;BA.debugLine="Public NumberOfPoints As Int";
+RDebugUtils.currentLine=43319307;
+ //BA.debugLineNum = 43319307;BA.debugLine="Public NumberOfPoints As Int";
 _numberofpoints = 0;
-RDebugUtils.currentLine=43778060;
- //BA.debugLineNum = 43778060;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43319308;
+ //BA.debugLineNum = 43319308;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper  _getbitmap(b4a.example.b4xsignaturetemplate __ref) throws Exception{
@@ -157,13 +157,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xsignaturetemplate";
 if (Debug.shouldDelegate(ba, "getbitmap", true))
 	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) Debug.delegate(ba, "getbitmap", null));}
-RDebugUtils.currentLine=44171264;
- //BA.debugLineNum = 44171264;BA.debugLine="Public Sub getBitmap As B4XBitmap";
-RDebugUtils.currentLine=44171265;
- //BA.debugLineNum = 44171265;BA.debugLine="Return cvs.CreateBitmap";
+RDebugUtils.currentLine=43712512;
+ //BA.debugLineNum = 43712512;BA.debugLine="Public Sub getBitmap As B4XBitmap";
+RDebugUtils.currentLine=43712513;
+ //BA.debugLineNum = 43712513;BA.debugLine="Return cvs.CreateBitmap";
 if (true) return __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .CreateBitmap();
-RDebugUtils.currentLine=44171266;
- //BA.debugLineNum = 44171266;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43712514;
+ //BA.debugLineNum = 43712514;BA.debugLine="End Sub";
 return null;
 }
 public String  _initialize(b4a.example.b4xsignaturetemplate __ref,anywheresoftware.b4a.BA _ba) throws Exception{
@@ -172,22 +172,22 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4xsignaturetemplate";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=43843584;
- //BA.debugLineNum = 43843584;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=43843585;
- //BA.debugLineNum = 43843585;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
+RDebugUtils.currentLine=43384832;
+ //BA.debugLineNum = 43384832;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=43384833;
+ //BA.debugLineNum = 43384833;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"mBase");
-RDebugUtils.currentLine=43843586;
- //BA.debugLineNum = 43843586;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 200dip)";
+RDebugUtils.currentLine=43384834;
+ //BA.debugLineNum = 43384834;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 200dip)";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (200)));
-RDebugUtils.currentLine=43843587;
- //BA.debugLineNum = 43843587;BA.debugLine="cvs.Initialize(mBase)";
+RDebugUtils.currentLine=43384835;
+ //BA.debugLineNum = 43384835;BA.debugLine="cvs.Initialize(mBase)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .Initialize(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ );
-RDebugUtils.currentLine=43843588;
- //BA.debugLineNum = 43843588;BA.debugLine="TextFont = xui.CreateDefaultFont(14)";
+RDebugUtils.currentLine=43384836;
+ //BA.debugLineNum = 43384836;BA.debugLine="TextFont = xui.CreateDefaultFont(14)";
 __ref._textfont /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XFont*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreateDefaultFont((float) (14));
-RDebugUtils.currentLine=43843589;
- //BA.debugLineNum = 43843589;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43384837;
+ //BA.debugLineNum = 43384837;BA.debugLine="End Sub";
 return "";
 }
 public String  _mbase_touch(b4a.example.b4xsignaturetemplate __ref,int _action,float _x,float _y) throws Exception{
@@ -195,40 +195,40 @@ __ref = this;
 RDebugUtils.currentModule="b4xsignaturetemplate";
 if (Debug.shouldDelegate(ba, "mbase_touch", true))
 	 {return ((String) Debug.delegate(ba, "mbase_touch", new Object[] {_action,_x,_y}));}
-RDebugUtils.currentLine=44105728;
- //BA.debugLineNum = 44105728;BA.debugLine="Private Sub mBase_Touch (Action As Int, X As Float";
-RDebugUtils.currentLine=44105729;
- //BA.debugLineNum = 44105729;BA.debugLine="Select Action";
+RDebugUtils.currentLine=43646976;
+ //BA.debugLineNum = 43646976;BA.debugLine="Private Sub mBase_Touch (Action As Int, X As Float";
+RDebugUtils.currentLine=43646977;
+ //BA.debugLineNum = 43646977;BA.debugLine="Select Action";
 switch (BA.switchObjectToInt(_action,__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .TOUCH_ACTION_DOWN,__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .TOUCH_ACTION_MOVE)) {
 case 0: {
-RDebugUtils.currentLine=44105731;
- //BA.debugLineNum = 44105731;BA.debugLine="LastX = X";
+RDebugUtils.currentLine=43646979;
+ //BA.debugLineNum = 43646979;BA.debugLine="LastX = X";
 __ref._lastx /*float*/  = _x;
-RDebugUtils.currentLine=44105732;
- //BA.debugLineNum = 44105732;BA.debugLine="LastY = Y";
+RDebugUtils.currentLine=43646980;
+ //BA.debugLineNum = 43646980;BA.debugLine="LastY = Y";
 __ref._lasty /*float*/  = _y;
  break; }
 case 1: {
-RDebugUtils.currentLine=44105734;
- //BA.debugLineNum = 44105734;BA.debugLine="cvs.DrawLine(LastX, LastY, X, Y, StrokeColor, S";
+RDebugUtils.currentLine=43646982;
+ //BA.debugLineNum = 43646982;BA.debugLine="cvs.DrawLine(LastX, LastY, X, Y, StrokeColor, S";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawLine(__ref._lastx /*float*/ ,__ref._lasty /*float*/ ,_x,_y,__ref._strokecolor /*int*/ ,__ref._strokewidth /*float*/ );
-RDebugUtils.currentLine=44105735;
- //BA.debugLineNum = 44105735;BA.debugLine="LastX = X";
+RDebugUtils.currentLine=43646983;
+ //BA.debugLineNum = 43646983;BA.debugLine="LastX = X";
 __ref._lastx /*float*/  = _x;
-RDebugUtils.currentLine=44105736;
- //BA.debugLineNum = 44105736;BA.debugLine="LastY = Y";
+RDebugUtils.currentLine=43646984;
+ //BA.debugLineNum = 43646984;BA.debugLine="LastY = Y";
 __ref._lasty /*float*/  = _y;
-RDebugUtils.currentLine=44105737;
- //BA.debugLineNum = 44105737;BA.debugLine="cvs.Invalidate";
+RDebugUtils.currentLine=43646985;
+ //BA.debugLineNum = 43646985;BA.debugLine="cvs.Invalidate";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .Invalidate();
-RDebugUtils.currentLine=44105738;
- //BA.debugLineNum = 44105738;BA.debugLine="NumberOfPoints = NumberOfPoints + 1";
+RDebugUtils.currentLine=43646986;
+ //BA.debugLineNum = 43646986;BA.debugLine="NumberOfPoints = NumberOfPoints + 1";
 __ref._numberofpoints /*int*/  = (int) (__ref._numberofpoints /*int*/ +1);
  break; }
 }
 ;
-RDebugUtils.currentLine=44105740;
- //BA.debugLineNum = 44105740;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43646988;
+ //BA.debugLineNum = 43646988;BA.debugLine="End Sub";
 return "";
 }
 public String  _resize(b4a.example.b4xsignaturetemplate __ref,int _width,int _height) throws Exception{
@@ -236,16 +236,16 @@ __ref = this;
 RDebugUtils.currentModule="b4xsignaturetemplate";
 if (Debug.shouldDelegate(ba, "resize", true))
 	 {return ((String) Debug.delegate(ba, "resize", new Object[] {_width,_height}));}
-RDebugUtils.currentLine=43909120;
- //BA.debugLineNum = 43909120;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
-RDebugUtils.currentLine=43909121;
- //BA.debugLineNum = 43909121;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
+RDebugUtils.currentLine=43450368;
+ //BA.debugLineNum = 43450368;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
+RDebugUtils.currentLine=43450369;
+ //BA.debugLineNum = 43450369;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
-RDebugUtils.currentLine=43909122;
- //BA.debugLineNum = 43909122;BA.debugLine="cvs.Resize(Width, Height)";
+RDebugUtils.currentLine=43450370;
+ //BA.debugLineNum = 43450370;BA.debugLine="cvs.Resize(Width, Height)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .Resize((float) (_width),(float) (_height));
-RDebugUtils.currentLine=43909123;
- //BA.debugLineNum = 43909123;BA.debugLine="End Sub";
+RDebugUtils.currentLine=43450371;
+ //BA.debugLineNum = 43450371;BA.debugLine="End Sub";
 return "";
 }
 }

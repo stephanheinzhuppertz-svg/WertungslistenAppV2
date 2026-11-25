@@ -52,13 +52,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xlisttemplate";
 if (Debug.shouldDelegate(ba, "getpanel", true))
 	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper) Debug.delegate(ba, "getpanel", new Object[] {_dialog}));}
-RDebugUtils.currentLine=37945344;
- //BA.debugLineNum = 37945344;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
-RDebugUtils.currentLine=37945345;
- //BA.debugLineNum = 37945345;BA.debugLine="Return mBase";
+RDebugUtils.currentLine=37486592;
+ //BA.debugLineNum = 37486592;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
+RDebugUtils.currentLine=37486593;
+ //BA.debugLineNum = 37486593;BA.debugLine="Return mBase";
 if (true) return __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ;
-RDebugUtils.currentLine=37945346;
- //BA.debugLineNum = 37945346;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37486594;
+ //BA.debugLineNum = 37486594;BA.debugLine="End Sub";
 return null;
 }
 public void  _show(b4a.example.b4xlisttemplate __ref,b4a.example.b4xdialog _dialog) throws Exception{
@@ -99,14 +99,14 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=38010881;
- //BA.debugLineNum = 38010881;BA.debugLine="xDialog = Dialog";
+RDebugUtils.currentLine=37552129;
+ //BA.debugLineNum = 37552129;BA.debugLine="xDialog = Dialog";
 __ref._xdialog /*b4a.example.b4xdialog*/  = _dialog;
-RDebugUtils.currentLine=38010882;
- //BA.debugLineNum = 38010882;BA.debugLine="CustomListView1.Clear";
+RDebugUtils.currentLine=37552130;
+ //BA.debugLineNum = 37552130;BA.debugLine="CustomListView1.Clear";
 __ref._customlistview1 /*b4a.example3.customlistview*/ ._clear();
-RDebugUtils.currentLine=38010883;
- //BA.debugLineNum = 38010883;BA.debugLine="For Each opt As Object In Options";
+RDebugUtils.currentLine=37552131;
+ //BA.debugLineNum = 37552131;BA.debugLine="For Each opt As Object In Options";
 if (true) break;
 
 case 1:
@@ -135,14 +135,14 @@ if (true) break;
 case 3:
 //C
 this.state = 13;
-RDebugUtils.currentLine=38010884;
- //BA.debugLineNum = 38010884;BA.debugLine="CustomListView1.AddTextItem(opt, opt)";
+RDebugUtils.currentLine=37552132;
+ //BA.debugLineNum = 37552132;BA.debugLine="CustomListView1.AddTextItem(opt, opt)";
 __ref._customlistview1 /*b4a.example3.customlistview*/ ._addtextitem(_opt,_opt);
  if (true) break;
 if (true) break;
 ;
-RDebugUtils.currentLine=38010886;
- //BA.debugLineNum = 38010886;BA.debugLine="If AllowMultiSelection Then";
+RDebugUtils.currentLine=37552134;
+ //BA.debugLineNum = 37552134;BA.debugLine="If AllowMultiSelection Then";
 
 case 4:
 //if
@@ -154,8 +154,8 @@ this.state = 6;
 case 6:
 //C
 this.state = 7;
-RDebugUtils.currentLine=38010887;
- //BA.debugLineNum = 38010887;BA.debugLine="Sleep(20)";
+RDebugUtils.currentLine=37552135;
+ //BA.debugLineNum = 37552135;BA.debugLine="Sleep(20)";
 parent.__c.Sleep(ba,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "b4xlisttemplate", "show"),(int) (20));
 this.state = 14;
 return;
@@ -163,8 +163,8 @@ case 14:
 //C
 this.state = 7;
 ;
-RDebugUtils.currentLine=38010888;
- //BA.debugLineNum = 38010888;BA.debugLine="For i = 0 To CustomListView1.Size - 1";
+RDebugUtils.currentLine=37552136;
+ //BA.debugLineNum = 37552136;BA.debugLine="For i = 0 To CustomListView1.Size - 1";
 if (true) break;
 
 case 7:
@@ -191,11 +191,11 @@ if (true) break;
 case 9:
 //C
 this.state = 16;
-RDebugUtils.currentLine=38010889;
- //BA.debugLineNum = 38010889;BA.debugLine="Dim item As CLVItem = CustomListView1.GetRawLis";
+RDebugUtils.currentLine=37552137;
+ //BA.debugLineNum = 37552137;BA.debugLine="Dim item As CLVItem = CustomListView1.GetRawLis";
 _item = __ref._customlistview1 /*b4a.example3.customlistview*/ ._getrawlistitem(_i);
-RDebugUtils.currentLine=38010890;
- //BA.debugLineNum = 38010890;BA.debugLine="SelectItem (item, False)";
+RDebugUtils.currentLine=37552138;
+ //BA.debugLineNum = 37552138;BA.debugLine="SelectItem (item, False)";
 __ref._selectitem /*String*/ (null,_item,parent.__c.False);
  if (true) break;
 if (true) break;
@@ -210,14 +210,14 @@ case 11:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=38010893;
- //BA.debugLineNum = 38010893;BA.debugLine="XUIViewsUtils.AddStubToCLVIfNeeded(CustomListView";
+RDebugUtils.currentLine=37552141;
+ //BA.debugLineNum = 37552141;BA.debugLine="XUIViewsUtils.AddStubToCLVIfNeeded(CustomListView";
 parent._xuiviewsutils._addstubtoclvifneeded /*String*/ (ba,__ref._customlistview1 /*b4a.example3.customlistview*/ ,__ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextbackgroundcolor);
-RDebugUtils.currentLine=38010894;
- //BA.debugLineNum = 38010894;BA.debugLine="SelectedItem = \"\"";
+RDebugUtils.currentLine=37552142;
+ //BA.debugLineNum = 37552142;BA.debugLine="SelectedItem = \"\"";
 __ref._selecteditem /*String*/  = "";
-RDebugUtils.currentLine=38010896;
- //BA.debugLineNum = 38010896;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37552144;
+ //BA.debugLineNum = 37552144;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -229,49 +229,49 @@ __ref = this;
 RDebugUtils.currentModule="b4xlisttemplate";
 if (Debug.shouldDelegate(ba, "dialogclosed", true))
 	 {return ((String) Debug.delegate(ba, "dialogclosed", new Object[] {_result}));}
-RDebugUtils.currentLine=38207488;
- //BA.debugLineNum = 38207488;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
-RDebugUtils.currentLine=38207490;
- //BA.debugLineNum = 38207490;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37748736;
+ //BA.debugLineNum = 37748736;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
+RDebugUtils.currentLine=37748738;
+ //BA.debugLineNum = 37748738;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.b4xlisttemplate __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xlisttemplate";
-RDebugUtils.currentLine=37748736;
- //BA.debugLineNum = 37748736;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=37748737;
- //BA.debugLineNum = 37748737;BA.debugLine="Private xui As XUI";
+RDebugUtils.currentLine=37289984;
+ //BA.debugLineNum = 37289984;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=37289985;
+ //BA.debugLineNum = 37289985;BA.debugLine="Private xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=37748738;
- //BA.debugLineNum = 37748738;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=37289986;
+ //BA.debugLineNum = 37289986;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=37748739;
- //BA.debugLineNum = 37748739;BA.debugLine="Public CustomListView1 As CustomListView";
+RDebugUtils.currentLine=37289987;
+ //BA.debugLineNum = 37289987;BA.debugLine="Public CustomListView1 As CustomListView";
 _customlistview1 = new b4a.example3.customlistview();
-RDebugUtils.currentLine=37748740;
- //BA.debugLineNum = 37748740;BA.debugLine="Public Options As List";
+RDebugUtils.currentLine=37289988;
+ //BA.debugLineNum = 37289988;BA.debugLine="Public Options As List";
 _options = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=37748741;
- //BA.debugLineNum = 37748741;BA.debugLine="Public SelectedItem As String";
+RDebugUtils.currentLine=37289989;
+ //BA.debugLineNum = 37289989;BA.debugLine="Public SelectedItem As String";
 _selecteditem = "";
-RDebugUtils.currentLine=37748742;
- //BA.debugLineNum = 37748742;BA.debugLine="Private xDialog As B4XDialog";
+RDebugUtils.currentLine=37289990;
+ //BA.debugLineNum = 37289990;BA.debugLine="Private xDialog As B4XDialog";
 _xdialog = new b4a.example.b4xdialog();
-RDebugUtils.currentLine=37748743;
- //BA.debugLineNum = 37748743;BA.debugLine="Public AllowMultiSelection As Boolean";
+RDebugUtils.currentLine=37289991;
+ //BA.debugLineNum = 37289991;BA.debugLine="Public AllowMultiSelection As Boolean";
 _allowmultiselection = false;
-RDebugUtils.currentLine=37748744;
- //BA.debugLineNum = 37748744;BA.debugLine="Public SelectionColor As Int = 0xAA0086FF";
+RDebugUtils.currentLine=37289992;
+ //BA.debugLineNum = 37289992;BA.debugLine="Public SelectionColor As Int = 0xAA0086FF";
 _selectioncolor = ((int)0xaa0086ff);
-RDebugUtils.currentLine=37748745;
- //BA.debugLineNum = 37748745;BA.debugLine="Public SelectedItems As List";
+RDebugUtils.currentLine=37289993;
+ //BA.debugLineNum = 37289993;BA.debugLine="Public SelectedItems As List";
 _selecteditems = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=37748746;
- //BA.debugLineNum = 37748746;BA.debugLine="Public MultiSelectionMinimum As Int = 0";
+RDebugUtils.currentLine=37289994;
+ //BA.debugLineNum = 37289994;BA.debugLine="Public MultiSelectionMinimum As Int = 0";
 _multiselectionminimum = (int) (0);
-RDebugUtils.currentLine=37748747;
- //BA.debugLineNum = 37748747;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37289995;
+ //BA.debugLineNum = 37289995;BA.debugLine="End Sub";
 return "";
 }
 public String  _customlistview1_itemclick(b4a.example.b4xlisttemplate __ref,int _index,Object _value) throws Exception{
@@ -280,37 +280,37 @@ RDebugUtils.currentModule="b4xlisttemplate";
 if (Debug.shouldDelegate(ba, "customlistview1_itemclick", true))
 	 {return ((String) Debug.delegate(ba, "customlistview1_itemclick", new Object[] {_index,_value}));}
 b4a.example3.customlistview._clvitem _item = null;
-RDebugUtils.currentLine=38141952;
- //BA.debugLineNum = 38141952;BA.debugLine="Private Sub CustomListView1_ItemClick (Index As In";
-RDebugUtils.currentLine=38141953;
- //BA.debugLineNum = 38141953;BA.debugLine="If Value = \"\" Then Return";
+RDebugUtils.currentLine=37683200;
+ //BA.debugLineNum = 37683200;BA.debugLine="Private Sub CustomListView1_ItemClick (Index As In";
+RDebugUtils.currentLine=37683201;
+ //BA.debugLineNum = 37683201;BA.debugLine="If Value = \"\" Then Return";
 if ((_value).equals((Object)(""))) { 
 if (true) return "";};
-RDebugUtils.currentLine=38141954;
- //BA.debugLineNum = 38141954;BA.debugLine="If AllowMultiSelection Then";
+RDebugUtils.currentLine=37683202;
+ //BA.debugLineNum = 37683202;BA.debugLine="If AllowMultiSelection Then";
 if (__ref._allowmultiselection /*boolean*/ ) { 
-RDebugUtils.currentLine=38141955;
- //BA.debugLineNum = 38141955;BA.debugLine="Dim Item As CLVItem = CustomListView1.GetRawList";
+RDebugUtils.currentLine=37683203;
+ //BA.debugLineNum = 37683203;BA.debugLine="Dim Item As CLVItem = CustomListView1.GetRawList";
 _item = __ref._customlistview1 /*b4a.example3.customlistview*/ ._getrawlistitem(_index);
-RDebugUtils.currentLine=38141956;
- //BA.debugLineNum = 38141956;BA.debugLine="SelectItem (Item, True)";
+RDebugUtils.currentLine=37683204;
+ //BA.debugLineNum = 37683204;BA.debugLine="SelectItem (Item, True)";
 __ref._selectitem /*String*/ (null,_item,__c.True);
  }else {
-RDebugUtils.currentLine=38141958;
- //BA.debugLineNum = 38141958;BA.debugLine="SelectedItem = Value";
+RDebugUtils.currentLine=37683206;
+ //BA.debugLineNum = 37683206;BA.debugLine="SelectedItem = Value";
 __ref._selecteditem /*String*/  = BA.ObjectToString(_value);
-RDebugUtils.currentLine=38141959;
- //BA.debugLineNum = 38141959;BA.debugLine="SelectedItems.Clear";
+RDebugUtils.currentLine=37683207;
+ //BA.debugLineNum = 37683207;BA.debugLine="SelectedItems.Clear";
 __ref._selecteditems /*anywheresoftware.b4a.objects.collections.List*/ .Clear();
-RDebugUtils.currentLine=38141960;
- //BA.debugLineNum = 38141960;BA.debugLine="SelectedItems.Add(Value)";
+RDebugUtils.currentLine=37683208;
+ //BA.debugLineNum = 37683208;BA.debugLine="SelectedItems.Add(Value)";
 __ref._selecteditems /*anywheresoftware.b4a.objects.collections.List*/ .Add(_value);
-RDebugUtils.currentLine=38141961;
- //BA.debugLineNum = 38141961;BA.debugLine="xDialog.Close(xui.DialogResponse_Positive)";
+RDebugUtils.currentLine=37683209;
+ //BA.debugLineNum = 37683209;BA.debugLine="xDialog.Close(xui.DialogResponse_Positive)";
 __ref._xdialog /*b4a.example.b4xdialog*/ ._close /*boolean*/ (null,__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive);
  };
-RDebugUtils.currentLine=38141963;
- //BA.debugLineNum = 38141963;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37683211;
+ //BA.debugLineNum = 37683211;BA.debugLine="End Sub";
 return "";
 }
 public String  _selectitem(b4a.example.b4xlisttemplate __ref,b4a.example3.customlistview._clvitem _item,boolean _toggle) throws Exception{
@@ -320,50 +320,50 @@ if (Debug.shouldDelegate(ba, "selectitem", true))
 	 {return ((String) Debug.delegate(ba, "selectitem", new Object[] {_item,_toggle}));}
 int _index = 0;
 boolean _selected = false;
-RDebugUtils.currentLine=38076416;
- //BA.debugLineNum = 38076416;BA.debugLine="Private Sub SelectItem (Item As CLVItem, Toggle As";
-RDebugUtils.currentLine=38076417;
- //BA.debugLineNum = 38076417;BA.debugLine="Dim index As Int = SelectedItems.IndexOf(Item.Val";
+RDebugUtils.currentLine=37617664;
+ //BA.debugLineNum = 37617664;BA.debugLine="Private Sub SelectItem (Item As CLVItem, Toggle As";
+RDebugUtils.currentLine=37617665;
+ //BA.debugLineNum = 37617665;BA.debugLine="Dim index As Int = SelectedItems.IndexOf(Item.Val";
 _index = __ref._selecteditems /*anywheresoftware.b4a.objects.collections.List*/ .IndexOf(_item.Value);
-RDebugUtils.currentLine=38076418;
- //BA.debugLineNum = 38076418;BA.debugLine="Dim Selected As Boolean = index > -1";
+RDebugUtils.currentLine=37617666;
+ //BA.debugLineNum = 37617666;BA.debugLine="Dim Selected As Boolean = index > -1";
 _selected = _index>-1;
-RDebugUtils.currentLine=38076419;
- //BA.debugLineNum = 38076419;BA.debugLine="If Toggle Then Selected = Not(Selected)";
+RDebugUtils.currentLine=37617667;
+ //BA.debugLineNum = 37617667;BA.debugLine="If Toggle Then Selected = Not(Selected)";
 if (_toggle) { 
 _selected = __c.Not(_selected);};
-RDebugUtils.currentLine=38076420;
- //BA.debugLineNum = 38076420;BA.debugLine="If Selected Then";
+RDebugUtils.currentLine=37617668;
+ //BA.debugLineNum = 37617668;BA.debugLine="If Selected Then";
 if (_selected) { 
-RDebugUtils.currentLine=38076421;
- //BA.debugLineNum = 38076421;BA.debugLine="If Not(Toggle) Then Item.Panel.Color = Selection";
+RDebugUtils.currentLine=37617669;
+ //BA.debugLineNum = 37617669;BA.debugLine="If Not(Toggle) Then Item.Panel.Color = Selection";
 if (__c.Not(_toggle)) { 
 _item.Panel.setColor(__ref._selectioncolor /*int*/ );};
-RDebugUtils.currentLine=38076422;
- //BA.debugLineNum = 38076422;BA.debugLine="Item.Color = CustomListView1.DefaultTextBackgrou";
+RDebugUtils.currentLine=37617670;
+ //BA.debugLineNum = 37617670;BA.debugLine="Item.Color = CustomListView1.DefaultTextBackgrou";
 _item.Color = __ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextbackgroundcolor;
-RDebugUtils.currentLine=38076423;
- //BA.debugLineNum = 38076423;BA.debugLine="If index = -1 Then SelectedItems.Add(Item.Value)";
+RDebugUtils.currentLine=37617671;
+ //BA.debugLineNum = 37617671;BA.debugLine="If index = -1 Then SelectedItems.Add(Item.Value)";
 if (_index==-1) { 
 __ref._selecteditems /*anywheresoftware.b4a.objects.collections.List*/ .Add(_item.Value);};
  }else {
-RDebugUtils.currentLine=38076425;
- //BA.debugLineNum = 38076425;BA.debugLine="Item.Color = SelectionColor";
+RDebugUtils.currentLine=37617673;
+ //BA.debugLineNum = 37617673;BA.debugLine="Item.Color = SelectionColor";
 _item.Color = __ref._selectioncolor /*int*/ ;
-RDebugUtils.currentLine=38076426;
- //BA.debugLineNum = 38076426;BA.debugLine="If Not(Toggle) Then Item.Panel.Color = CustomLis";
+RDebugUtils.currentLine=37617674;
+ //BA.debugLineNum = 37617674;BA.debugLine="If Not(Toggle) Then Item.Panel.Color = CustomLis";
 if (__c.Not(_toggle)) { 
 _item.Panel.setColor(__ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextbackgroundcolor);};
-RDebugUtils.currentLine=38076427;
- //BA.debugLineNum = 38076427;BA.debugLine="If index > -1 Then SelectedItems.RemoveAt(index)";
+RDebugUtils.currentLine=37617675;
+ //BA.debugLineNum = 37617675;BA.debugLine="If index > -1 Then SelectedItems.RemoveAt(index)";
 if (_index>-1) { 
 __ref._selecteditems /*anywheresoftware.b4a.objects.collections.List*/ .RemoveAt(_index);};
  };
-RDebugUtils.currentLine=38076429;
- //BA.debugLineNum = 38076429;BA.debugLine="xDialog.SetButtonState(xui.DialogResponse_Positiv";
+RDebugUtils.currentLine=37617677;
+ //BA.debugLineNum = 37617677;BA.debugLine="xDialog.SetButtonState(xui.DialogResponse_Positiv";
 __ref._xdialog /*b4a.example.b4xdialog*/ ._setbuttonstate /*String*/ (null,__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive,__ref._selecteditems /*anywheresoftware.b4a.objects.collections.List*/ .getSize()>=__ref._multiselectionminimum /*int*/ );
-RDebugUtils.currentLine=38076430;
- //BA.debugLineNum = 38076430;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37617678;
+ //BA.debugLineNum = 37617678;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4a.example.b4xlisttemplate __ref,anywheresoftware.b4a.BA _ba) throws Exception{
@@ -372,37 +372,37 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4xlisttemplate";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=37814272;
- //BA.debugLineNum = 37814272;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=37814273;
- //BA.debugLineNum = 37814273;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
+RDebugUtils.currentLine=37355520;
+ //BA.debugLineNum = 37355520;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=37355521;
+ //BA.debugLineNum = 37355521;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"mBase");
-RDebugUtils.currentLine=37814274;
- //BA.debugLineNum = 37814274;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 300dip)";
+RDebugUtils.currentLine=37355522;
+ //BA.debugLineNum = 37355522;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 300dip)";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (300)));
-RDebugUtils.currentLine=37814275;
- //BA.debugLineNum = 37814275;BA.debugLine="mBase.LoadLayout(\"ListTemplate\")";
+RDebugUtils.currentLine=37355523;
+ //BA.debugLineNum = 37355523;BA.debugLine="mBase.LoadLayout(\"ListTemplate\")";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("ListTemplate",ba);
-RDebugUtils.currentLine=37814276;
- //BA.debugLineNum = 37814276;BA.debugLine="mBase.SetColorAndBorder(xui.Color_Transparent, 0,";
+RDebugUtils.currentLine=37355524;
+ //BA.debugLineNum = 37355524;BA.debugLine="mBase.SetColorAndBorder(xui.Color_Transparent, 0,";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetColorAndBorder(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent,(int) (0),(int) (0),(int) (0));
-RDebugUtils.currentLine=37814277;
- //BA.debugLineNum = 37814277;BA.debugLine="CustomListView1.sv.SetColorAndBorder(xui.Color_Tr";
+RDebugUtils.currentLine=37355525;
+ //BA.debugLineNum = 37355525;BA.debugLine="CustomListView1.sv.SetColorAndBorder(xui.Color_Tr";
 __ref._customlistview1 /*b4a.example3.customlistview*/ ._sv.SetColorAndBorder(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent,(int) (0),(int) (0),(int) (0));
-RDebugUtils.currentLine=37814278;
- //BA.debugLineNum = 37814278;BA.debugLine="CustomListView1.DefaultTextBackgroundColor = 0xFF";
+RDebugUtils.currentLine=37355526;
+ //BA.debugLineNum = 37355526;BA.debugLine="CustomListView1.DefaultTextBackgroundColor = 0xFF";
 __ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextbackgroundcolor = ((int)0xff555555);
-RDebugUtils.currentLine=37814279;
- //BA.debugLineNum = 37814279;BA.debugLine="CustomListView1.DefaultTextColor = xui.Color_Whit";
+RDebugUtils.currentLine=37355527;
+ //BA.debugLineNum = 37355527;BA.debugLine="CustomListView1.DefaultTextColor = xui.Color_Whit";
 __ref._customlistview1 /*b4a.example3.customlistview*/ ._defaulttextcolor = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White;
-RDebugUtils.currentLine=37814284;
- //BA.debugLineNum = 37814284;BA.debugLine="Options.Initialize";
+RDebugUtils.currentLine=37355532;
+ //BA.debugLineNum = 37355532;BA.debugLine="Options.Initialize";
 __ref._options /*anywheresoftware.b4a.objects.collections.List*/ .Initialize();
-RDebugUtils.currentLine=37814285;
- //BA.debugLineNum = 37814285;BA.debugLine="SelectedItems.Initialize";
+RDebugUtils.currentLine=37355533;
+ //BA.debugLineNum = 37355533;BA.debugLine="SelectedItems.Initialize";
 __ref._selecteditems /*anywheresoftware.b4a.objects.collections.List*/ .Initialize();
-RDebugUtils.currentLine=37814286;
- //BA.debugLineNum = 37814286;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37355534;
+ //BA.debugLineNum = 37355534;BA.debugLine="End Sub";
 return "";
 }
 public String  _resize(b4a.example.b4xlisttemplate __ref,int _width,int _height) throws Exception{
@@ -410,16 +410,16 @@ __ref = this;
 RDebugUtils.currentModule="b4xlisttemplate";
 if (Debug.shouldDelegate(ba, "resize", true))
 	 {return ((String) Debug.delegate(ba, "resize", new Object[] {_width,_height}));}
-RDebugUtils.currentLine=37879808;
- //BA.debugLineNum = 37879808;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
-RDebugUtils.currentLine=37879809;
- //BA.debugLineNum = 37879809;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
+RDebugUtils.currentLine=37421056;
+ //BA.debugLineNum = 37421056;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
+RDebugUtils.currentLine=37421057;
+ //BA.debugLineNum = 37421057;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
-RDebugUtils.currentLine=37879810;
- //BA.debugLineNum = 37879810;BA.debugLine="CustomListView1.Base_Resize(Width, Height)";
+RDebugUtils.currentLine=37421058;
+ //BA.debugLineNum = 37421058;BA.debugLine="CustomListView1.Base_Resize(Width, Height)";
 __ref._customlistview1 /*b4a.example3.customlistview*/ ._base_resize(_width,_height);
-RDebugUtils.currentLine=37879811;
- //BA.debugLineNum = 37879811;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37421059;
+ //BA.debugLineNum = 37421059;BA.debugLine="End Sub";
 return "";
 }
 }

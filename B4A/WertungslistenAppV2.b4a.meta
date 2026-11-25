@@ -13,6 +13,6 @@ ModuleClosedNodes1=
 ModuleClosedNodes2=
 ModuleClosedNodes3=
 ModuleClosedNodes4=
-NavigationStack=Settings,HandleGotText,766,0,Settings,tbxVeranstaltung_FocusChanged,968,0,Settings,tbxVeranstaltung_TextChanged,969,0,ScreenMain,RunJS,574,0,Settings,B4XPage_Appear,96,0,ScreenMain,webErgebnis_PageFinished,569,0,ScreenMain,zeigeWertungsliste,565,0,Settings,Class_Globals,4,0,Settings,B4XPage_Created,75,0,Settings,Initialize,67,0,Settings,BuildUI,240,0
+NavigationStack=Settings,Class_Globals,4,0,Settings,pruefeInhalt,632,0,Settings,BuildUI,283,1,Settings,disableVSTNG,413,0,Visueller Designer,Settings.bal,-100,6,Settings,disableTLN,440,0,Settings,SetButtonImageSafe,411,0,Settings,B4XPage_Appear,77,0,Settings,Initialize,66,0,Settings,B4XPage_Created,76,1
 SelectedBuild=0
 VisibleModules=1,2,4,3

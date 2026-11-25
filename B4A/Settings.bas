@@ -77,12 +77,17 @@ End Sub
 
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
-	B4XPages.SetTitle(Me, "Wertungslisten-App Einstellungen")
-	BuildUI
+	
+	'B4XPages.SetTitle(Me, "Wertungslisten-App Einstellungen")
+	'BuildUI
+	
+	Root.LoadLayout("Settings")
+	
 	' B4XPage_Appear wird von B4XPages automatisch nach B4XPage_Created aufgerufen
 End Sub
 
 Public Sub B4XPage_Appear
+	
 	LoadTinyDB
 	
 	If B4XPages.MainPage.Status.IsInitialized And B4XPages.MainPage.Status.Size > 0 Then
@@ -90,8 +95,8 @@ Public Sub B4XPage_Appear
 	End If
 	
 	Veranstaltung_ID = DBGet("VeranstaltungID", "v0")
-	colorblue = lblVeranstaltung.TextColor
-	colorgreen = lblVerein.TextColor
+	'colorblue = lblVeranstaltung.TextColor
+	'colorgreen = lblVerein.TextColor
 	
 	disableVSTNG
 	disableTLN
@@ -126,6 +131,7 @@ End Sub
 ' 1. UI-AUFBAU (1:1 aus Settings.scm)
 ' ==============================================================================
 Private Sub BuildUI
+	Log("BuildUI Anfang")
 	dochange = False
 	Root.Color = Colors.White
 	
@@ -253,13 +259,24 @@ Private Sub BuildUI
 	Label8.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
 	pnlVstng.AddView(Label8, 5dip, 90dip, 115dip, 42dip)
 	
+	Dim et As EditText
+	et.Initialize("Test")
+	
+	Log("vor Init Veranstaltung")
 	'tbxVeranstaltung.Initialize("tbxVeranstaltung")
 	tbxVeranstaltung.Initialize("")
+	Log("TextSize")	
 	tbxVeranstaltung.TextSize = 16
+	Log("Typeface")
 	tbxVeranstaltung.Typeface = Typeface.DEFAULT_BOLD
+	Log("TextColor")
 	tbxVeranstaltung.TextColor = 0xFF16AA16
+	Log("SingleLine")
 	tbxVeranstaltung.SingleLine = True
+	tbxVeranstaltung.Initialize("tbxVeranstaltung")
+	Log("AddView")
 	pnlVstng.AddView(tbxVeranstaltung, 128dip, 90dip, 100%x - 138dip, 42dip)
+	Log("nach AddView")
 	
 	' Zeile Plätze
 	Dim Label9 As Label
@@ -276,7 +293,7 @@ Private Sub BuildUI
 	tbxAnzahl.TextColor = 0xFF16AA16
 	tbxAnzahl.Gravity = Gravity.RIGHT + Gravity.CENTER_VERTICAL
 	tbxAnzahl.InputType = tbxAnzahl.INPUT_TYPE_NUMBERS
-	tbxAnzahl.SingleLine = True
+	'tbxAnzahl.SingleLine = True
 	pnlVstng.AddView(tbxAnzahl, 128dip, 138dip, 100dip, 42dip)
 	
 	' Buttons Löschen / Speichern (Veranstaltung)
@@ -345,7 +362,7 @@ Private Sub BuildUI
 	tbxTeilnehmer.TextSize = 16
 	tbxTeilnehmer.Typeface = Typeface.DEFAULT_BOLD
 	tbxTeilnehmer.TextColor = 0xFF16AA16
-	tbxTeilnehmer.SingleLine = True
+	'tbxTeilnehmer.SingleLine = True
 	pnlTln.AddView(tbxTeilnehmer, 128dip, 44dip, 100%x - 138dip, 42dip)
 	
 	btnTLNDelete.Initialize("btnTLNDelete")
@@ -376,7 +393,9 @@ Private Sub BuildUI
 	curY = curY + 270dip
 	
 	pnlContent.Height = curY
+	Log("BuildUI Ende")
 	dochange = True
+
 End Sub
 
 Private Sub AddDivider(parent As Panel, topPos As Int, h As Int, col As Int)
