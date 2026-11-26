@@ -11,6 +11,7 @@ java.util.Map<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAnd
 anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
 String _w="";
 String _abstand="";
+String _right="";
 //BA.debugLineNum = 2;BA.debugLine="AutoScaleAll"[Settings/General script]
 anywheresoftware.b4a.keywords.LayoutBuilder.scaleAll(views);
 //BA.debugLineNum = 5;BA.debugLine="w = btnVerstgDelete.Width"[Settings/General script]
@@ -29,6 +30,13 @@ views.get("btntlndelete").vw.setWidth((int)((50d / 100 * width)-(Double.parseDou
 //BA.debugLineNum = 12;BA.debugLine="btnTLNSpeichern.SetLeftAndRight(50%x + (abstand / 2), 50%x + (abstand / 2) + w)"[Settings/General script]
 views.get("btntlnspeichern").vw.setLeft((int)((50d / 100 * width)+(Double.parseDouble(_abstand)/2d)));
 views.get("btntlnspeichern").vw.setWidth((int)((50d / 100 * width)+(Double.parseDouble(_abstand)/2d)+Double.parseDouble(_w) - ((50d / 100 * width)+(Double.parseDouble(_abstand)/2d))));
+//BA.debugLineNum = 15;BA.debugLine="w = btnAuswahl.Width"[Settings/General script]
+_w = (BA.NumberToString(views.get("btnauswahl").vw.getWidth()));
+//BA.debugLineNum = 16;BA.debugLine="right= btnVerstgSpeichern.right"[Settings/General script]
+_right = (BA.NumberToString(views.get("btnverstgspeichern").vw.getLeft() + views.get("btnverstgspeichern").vw.getWidth()));
+//BA.debugLineNum = 17;BA.debugLine="btnAuswahl.SetLeftAndRight(right - w, right)"[Settings/General script]
+views.get("btnauswahl").vw.setLeft((int)(Double.parseDouble(_right)-Double.parseDouble(_w)));
+views.get("btnauswahl").vw.setWidth((int)(Double.parseDouble(_right) - (Double.parseDouble(_right)-Double.parseDouble(_w))));
 
 }
 }

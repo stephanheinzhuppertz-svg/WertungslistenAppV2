@@ -116,79 +116,79 @@ if (Debug.shouldDelegate(ba, "initialize", true))
 anywheresoftware.b4j.object.JavaObject _jo = null;
 anywheresoftware.b4j.object.JavaObject _module = null;
 boolean _nonmainpagewasadded = false;
-RDebugUtils.currentLine=8978432;
- //BA.debugLineNum = 8978432;BA.debugLine="Public Sub Initialize (Activity As Activity)";
-RDebugUtils.currentLine=8978436;
- //BA.debugLineNum = 8978436;BA.debugLine="IdToB4XPage.Initialize";
+RDebugUtils.currentLine=20447232;
+ //BA.debugLineNum = 20447232;BA.debugLine="Public Sub Initialize (Activity As Activity)";
+RDebugUtils.currentLine=20447236;
+ //BA.debugLineNum = 20447236;BA.debugLine="IdToB4XPage.Initialize";
 __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._initialize /*String*/ (null,ba);
-RDebugUtils.currentLine=8978437;
- //BA.debugLineNum = 8978437;BA.debugLine="RootB4XToPage.Initialize";
+RDebugUtils.currentLine=20447237;
+ //BA.debugLineNum = 20447237;BA.debugLine="RootB4XToPage.Initialize";
 __ref._rootb4xtopage /*b4a.example.b4xorderedmap*/ ._initialize /*String*/ (null,ba);
-RDebugUtils.currentLine=8978438;
- //BA.debugLineNum = 8978438;BA.debugLine="mStackOfPageIds.Initialize";
+RDebugUtils.currentLine=20447238;
+ //BA.debugLineNum = 20447238;BA.debugLine="mStackOfPageIds.Initialize";
 __ref._mstackofpageids /*b4a.example.b4xset*/ ._initialize /*String*/ (null,ba);
-RDebugUtils.currentLine=8978442;
- //BA.debugLineNum = 8978442;BA.debugLine="Context.InitializeContext";
+RDebugUtils.currentLine=20447242;
+ //BA.debugLineNum = 20447242;BA.debugLine="Context.InitializeContext";
 __ref._context /*anywheresoftware.b4j.object.JavaObject*/ .InitializeContext(ba);
-RDebugUtils.currentLine=8978443;
- //BA.debugLineNum = 8978443;BA.debugLine="mMainForm = Activity";
+RDebugUtils.currentLine=20447243;
+ //BA.debugLineNum = 20447243;BA.debugLine="mMainForm = Activity";
 __ref._mmainform /*anywheresoftware.b4a.objects.ActivityWrapper*/  = _activity;
-RDebugUtils.currentLine=8978444;
- //BA.debugLineNum = 8978444;BA.debugLine="ime.Initialize(\"\")";
+RDebugUtils.currentLine=20447244;
+ //BA.debugLineNum = 20447244;BA.debugLine="ime.Initialize(\"\")";
 __ref._ime /*anywheresoftware.b4a.objects.IME*/ .Initialize("");
-RDebugUtils.currentLine=8978445;
- //BA.debugLineNum = 8978445;BA.debugLine="ReferenceRect = GetContentRect";
+RDebugUtils.currentLine=20447245;
+ //BA.debugLineNum = 20447245;BA.debugLine="ReferenceRect = GetContentRect";
 __ref._referencerect /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper*/  = __ref._getcontentrect /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper*/ (null);
-RDebugUtils.currentLine=8978446;
- //BA.debugLineNum = 8978446;BA.debugLine="ime.UpdatePercentageReference(ReferenceRect.Width";
+RDebugUtils.currentLine=20447246;
+ //BA.debugLineNum = 20447246;BA.debugLine="ime.UpdatePercentageReference(ReferenceRect.Width";
 __ref._ime /*anywheresoftware.b4a.objects.IME*/ .UpdatePercentageReference(ba,__ref._referencerect /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper*/ .getWidth(),__ref._referencerect /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper*/ .getHeight());
-RDebugUtils.currentLine=8978447;
- //BA.debugLineNum = 8978447;BA.debugLine="CheckMainActivityOrientations";
+RDebugUtils.currentLine=20447247;
+ //BA.debugLineNum = 20447247;BA.debugLine="CheckMainActivityOrientations";
 __ref._checkmainactivityorientations /*String*/ (null);
-RDebugUtils.currentLine=8978448;
- //BA.debugLineNum = 8978448;BA.debugLine="Dim jo As JavaObject = Me";
+RDebugUtils.currentLine=20447248;
+ //BA.debugLineNum = 20447248;BA.debugLine="Dim jo As JavaObject = Me";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(this));
-RDebugUtils.currentLine=8978449;
- //BA.debugLineNum = 8978449;BA.debugLine="Dim module As JavaObject";
+RDebugUtils.currentLine=20447249;
+ //BA.debugLineNum = 20447249;BA.debugLine="Dim module As JavaObject";
 _module = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=8978450;
- //BA.debugLineNum = 8978450;BA.debugLine="module.InitializeStatic(jo.RunMethodJO(\"getActivi";
+RDebugUtils.currentLine=20447250;
+ //BA.debugLineNum = 20447250;BA.debugLine="module.InitializeStatic(jo.RunMethodJO(\"getActivi";
 _module.InitializeStatic(BA.ObjectToString(_jo.RunMethodJO("getActivityBA",(Object[])(__c.Null)).GetField("className"))).SetField("dontPause",(Object)(__c.True));
-RDebugUtils.currentLine=8978454;
- //BA.debugLineNum = 8978454;BA.debugLine="B4XPages.InternalSetPagesManager(Me)";
+RDebugUtils.currentLine=20447254;
+ //BA.debugLineNum = 20447254;BA.debugLine="B4XPages.InternalSetPagesManager(Me)";
 _b4xpages._internalsetpagesmanager /*String*/ (ba,this);
-RDebugUtils.currentLine=8978455;
- //BA.debugLineNum = 8978455;BA.debugLine="MainPage.Initialize";
+RDebugUtils.currentLine=20447255;
+ //BA.debugLineNum = 20447255;BA.debugLine="MainPage.Initialize";
 __ref._mainpage /*b4a.example.b4xmainpage*/ ._initialize /*String*/ (null,ba);
-RDebugUtils.currentLine=8978456;
- //BA.debugLineNum = 8978456;BA.debugLine="Dim NonMainPageWasAdded As Boolean = IdToB4XPage.";
+RDebugUtils.currentLine=20447256;
+ //BA.debugLineNum = 20447256;BA.debugLine="Dim NonMainPageWasAdded As Boolean = IdToB4XPage.";
 _nonmainpagewasadded = __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._getsize /*int*/ (null)>0;
-RDebugUtils.currentLine=8978457;
- //BA.debugLineNum = 8978457;BA.debugLine="IdToB4XPage.Put(\"~~~~~temp~~~~\", CreateB4XPageInf";
+RDebugUtils.currentLine=20447257;
+ //BA.debugLineNum = 20447257;BA.debugLine="IdToB4XPage.Put(\"~~~~~temp~~~~\", CreateB4XPageInf";
 __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._put /*String*/ (null,(Object)("~~~~~temp~~~~"),(Object)(__ref._createb4xpageinfo /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,(Object)(__ref._mainpage /*b4a.example.b4xmainpage*/ ),"",__c.False,(Object)(""))));
-RDebugUtils.currentLine=8978458;
- //BA.debugLineNum = 8978458;BA.debugLine="BackgroundStateChanged(True)";
+RDebugUtils.currentLine=20447258;
+ //BA.debugLineNum = 20447258;BA.debugLine="BackgroundStateChanged(True)";
 __ref._backgroundstatechanged /*String*/ (null,__c.True);
-RDebugUtils.currentLine=8978459;
- //BA.debugLineNum = 8978459;BA.debugLine="IdToB4XPage.Remove(\"~~~~~temp~~~~\")";
+RDebugUtils.currentLine=20447259;
+ //BA.debugLineNum = 20447259;BA.debugLine="IdToB4XPage.Remove(\"~~~~~temp~~~~\")";
 __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._remove /*String*/ (null,(Object)("~~~~~temp~~~~"));
-RDebugUtils.currentLine=8978460;
- //BA.debugLineNum = 8978460;BA.debugLine="AddPageAndCreate(\"MainPage\", MainPage)";
+RDebugUtils.currentLine=20447260;
+ //BA.debugLineNum = 20447260;BA.debugLine="AddPageAndCreate(\"MainPage\", MainPage)";
 __ref._addpageandcreate /*String*/ (null,"MainPage",(Object)(__ref._mainpage /*b4a.example.b4xmainpage*/ ));
-RDebugUtils.currentLine=8978461;
- //BA.debugLineNum = 8978461;BA.debugLine="If NonMainPageWasAdded Then";
+RDebugUtils.currentLine=20447261;
+ //BA.debugLineNum = 20447261;BA.debugLine="If NonMainPageWasAdded Then";
 if (_nonmainpagewasadded) { 
-RDebugUtils.currentLine=8978462;
- //BA.debugLineNum = 8978462;BA.debugLine="If Not(xui.IsB4i) Then";
+RDebugUtils.currentLine=20447262;
+ //BA.debugLineNum = 20447262;BA.debugLine="If Not(xui.IsB4i) Then";
 if (__c.Not(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i())) { 
-RDebugUtils.currentLine=8978463;
- //BA.debugLineNum = 8978463;BA.debugLine="RaiseEvent(GetTopPage, \"B4XPage_Appear\", Null)";
+RDebugUtils.currentLine=20447263;
+ //BA.debugLineNum = 20447263;BA.debugLine="RaiseEvent(GetTopPage, \"B4XPage_Appear\", Null)";
 __ref._raiseevent /*String*/ (null,__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null),"B4XPage_Appear",(Object[])(__c.Null));
  };
  };
-RDebugUtils.currentLine=8978466;
- //BA.debugLineNum = 8978466;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20447266;
+ //BA.debugLineNum = 20447266;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.b4xpagesmanager._b4amenuitem  _addmenuitem(b4a.example.b4xpagesmanager __ref,Object _b4xpage,Object _title) throws Exception{
@@ -197,28 +197,28 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "addmenuitem", true))
 	 {return ((b4a.example.b4xpagesmanager._b4amenuitem) Debug.delegate(ba, "addmenuitem", new Object[] {_b4xpage,_title}));}
 b4a.example.b4xpagesmanager._b4amenuitem _mi = null;
-RDebugUtils.currentLine=10420224;
- //BA.debugLineNum = 10420224;BA.debugLine="Public Sub AddMenuItem (B4XPage As Object, Title A";
-RDebugUtils.currentLine=10420225;
- //BA.debugLineNum = 10420225;BA.debugLine="Dim mi As B4AMenuItem";
+RDebugUtils.currentLine=21889024;
+ //BA.debugLineNum = 21889024;BA.debugLine="Public Sub AddMenuItem (B4XPage As Object, Title A";
+RDebugUtils.currentLine=21889025;
+ //BA.debugLineNum = 21889025;BA.debugLine="Dim mi As B4AMenuItem";
 _mi = new b4a.example.b4xpagesmanager._b4amenuitem();
-RDebugUtils.currentLine=10420226;
- //BA.debugLineNum = 10420226;BA.debugLine="mi.Initialize";
+RDebugUtils.currentLine=21889026;
+ //BA.debugLineNum = 21889026;BA.debugLine="mi.Initialize";
 _mi.Initialize();
-RDebugUtils.currentLine=10420227;
- //BA.debugLineNum = 10420227;BA.debugLine="mi.Title = Title";
+RDebugUtils.currentLine=21889027;
+ //BA.debugLineNum = 21889027;BA.debugLine="mi.Title = Title";
 _mi.Title /*Object*/  = _title;
-RDebugUtils.currentLine=10420228;
- //BA.debugLineNum = 10420228;BA.debugLine="mi.Tag = Title";
+RDebugUtils.currentLine=21889028;
+ //BA.debugLineNum = 21889028;BA.debugLine="mi.Tag = Title";
 _mi.Tag /*String*/  = BA.ObjectToString(_title);
-RDebugUtils.currentLine=10420229;
- //BA.debugLineNum = 10420229;BA.debugLine="FindPIFromB4XPage(B4XPage).Parent.MenuItems.Add(m";
+RDebugUtils.currentLine=21889029;
+ //BA.debugLineNum = 21889029;BA.debugLine="FindPIFromB4XPage(B4XPage).Parent.MenuItems.Add(m";
 __ref._findpifromb4xpage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_b4xpage).Parent /*b4a.example.b4xpagesmanager._b4xpageparent*/ .MenuItems /*anywheresoftware.b4a.objects.collections.List*/ .Add((Object)(_mi));
-RDebugUtils.currentLine=10420230;
- //BA.debugLineNum = 10420230;BA.debugLine="Return mi";
+RDebugUtils.currentLine=21889030;
+ //BA.debugLineNum = 21889030;BA.debugLine="Return mi";
 if (true) return _mi;
-RDebugUtils.currentLine=10420231;
- //BA.debugLineNum = 10420231;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21889031;
+ //BA.debugLineNum = 21889031;BA.debugLine="End Sub";
 return null;
 }
 public String  _addpage(b4a.example.b4xpagesmanager __ref,String _id,Object _b4xpage) throws Exception{
@@ -227,30 +227,30 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "addpage", true))
 	 {return ((String) Debug.delegate(ba, "addpage", new Object[] {_id,_b4xpage}));}
 String _idtolower = "";
-RDebugUtils.currentLine=9175040;
- //BA.debugLineNum = 9175040;BA.debugLine="Public Sub AddPage (Id As String, B4XPage As Objec";
-RDebugUtils.currentLine=9175041;
- //BA.debugLineNum = 9175041;BA.debugLine="Dim IdToLower As String = Id.ToLowerCase";
+RDebugUtils.currentLine=20643840;
+ //BA.debugLineNum = 20643840;BA.debugLine="Public Sub AddPage (Id As String, B4XPage As Objec";
+RDebugUtils.currentLine=20643841;
+ //BA.debugLineNum = 20643841;BA.debugLine="Dim IdToLower As String = Id.ToLowerCase";
 _idtolower = _id.toLowerCase(anywheresoftware.b4a.keywords.Common.stringLocale);
-RDebugUtils.currentLine=9175042;
- //BA.debugLineNum = 9175042;BA.debugLine="If IdToB4XPage.ContainsKey(IdToLower) Then";
+RDebugUtils.currentLine=20643842;
+ //BA.debugLineNum = 20643842;BA.debugLine="If IdToB4XPage.ContainsKey(IdToLower) Then";
 if (__ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._containskey /*boolean*/ (null,(Object)(_idtolower))) { 
-RDebugUtils.currentLine=9175043;
- //BA.debugLineNum = 9175043;BA.debugLine="Log($\"Page with this id already exists: ${IdToLo";
-__c.LogImpl("99175043",("Page with this id already exists: "+__c.SmartStringFormatter("",(Object)(_idtolower))+"!"),0);
-RDebugUtils.currentLine=9175044;
- //BA.debugLineNum = 9175044;BA.debugLine="Return";
+RDebugUtils.currentLine=20643843;
+ //BA.debugLineNum = 20643843;BA.debugLine="Log($\"Page with this id already exists: ${IdToLo";
+__c.LogImpl("920643843",("Page with this id already exists: "+__c.SmartStringFormatter("",(Object)(_idtolower))+"!"),0);
+RDebugUtils.currentLine=20643844;
+ //BA.debugLineNum = 20643844;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=9175046;
- //BA.debugLineNum = 9175046;BA.debugLine="IdToB4XPage.Put(IdToLower, CreateB4XPageInfo(B4XP";
+RDebugUtils.currentLine=20643846;
+ //BA.debugLineNum = 20643846;BA.debugLine="IdToB4XPage.Put(IdToLower, CreateB4XPageInfo(B4XP";
 __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._put /*String*/ (null,(Object)(_idtolower),(Object)(__ref._createb4xpageinfo /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_b4xpage,_idtolower,__c.False,(Object)(_id))));
-RDebugUtils.currentLine=9175047;
- //BA.debugLineNum = 9175047;BA.debugLine="If IdToB4XPage.Size = 1 Then ShowPage(IdToLower)";
+RDebugUtils.currentLine=20643847;
+ //BA.debugLineNum = 20643847;BA.debugLine="If IdToB4XPage.Size = 1 Then ShowPage(IdToLower)";
 if (__ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._getsize /*int*/ (null)==1) { 
 __ref._showpage /*String*/ (null,_idtolower);};
-RDebugUtils.currentLine=9175048;
- //BA.debugLineNum = 9175048;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20643848;
+ //BA.debugLineNum = 20643848;BA.debugLine="End Sub";
 return "";
 }
 public String  _addpageandcreate(b4a.example.b4xpagesmanager __ref,String _id,Object _b4xpage) throws Exception{
@@ -258,16 +258,16 @@ __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "addpageandcreate", true))
 	 {return ((String) Debug.delegate(ba, "addpageandcreate", new Object[] {_id,_b4xpage}));}
-RDebugUtils.currentLine=9240576;
- //BA.debugLineNum = 9240576;BA.debugLine="Public Sub AddPageAndCreate (Id As String, B4XPage";
-RDebugUtils.currentLine=9240577;
- //BA.debugLineNum = 9240577;BA.debugLine="AddPage (Id, B4XPage)";
+RDebugUtils.currentLine=20709376;
+ //BA.debugLineNum = 20709376;BA.debugLine="Public Sub AddPageAndCreate (Id As String, B4XPage";
+RDebugUtils.currentLine=20709377;
+ //BA.debugLineNum = 20709377;BA.debugLine="AddPage (Id, B4XPage)";
 __ref._addpage /*String*/ (null,_id,_b4xpage);
-RDebugUtils.currentLine=9240578;
- //BA.debugLineNum = 9240578;BA.debugLine="CreatePageIfNeeded(GetPageFromId(Id))";
+RDebugUtils.currentLine=20709378;
+ //BA.debugLineNum = 20709378;BA.debugLine="CreatePageIfNeeded(GetPageFromId(Id))";
 __ref._createpageifneeded /*String*/ (null,__ref._getpagefromid /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_id));
-RDebugUtils.currentLine=9240579;
- //BA.debugLineNum = 9240579;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20709379;
+ //BA.debugLineNum = 20709379;BA.debugLine="End Sub";
 return "";
 }
 public String  _closepage(b4a.example.b4xpagesmanager __ref,Object _b4xpage) throws Exception{
@@ -277,69 +277,69 @@ if (Debug.shouldDelegate(ba, "closepage", true))
 	 {return ((String) Debug.delegate(ba, "closepage", new Object[] {_b4xpage}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
 boolean _isclosingtoppage = false;
-RDebugUtils.currentLine=9437184;
- //BA.debugLineNum = 9437184;BA.debugLine="Public Sub ClosePage (B4XPage As Object)";
-RDebugUtils.currentLine=9437185;
- //BA.debugLineNum = 9437185;BA.debugLine="Dim pi As B4XPageInfo = FindPIFromB4XPage(B4XPage";
+RDebugUtils.currentLine=20905984;
+ //BA.debugLineNum = 20905984;BA.debugLine="Public Sub ClosePage (B4XPage As Object)";
+RDebugUtils.currentLine=20905985;
+ //BA.debugLineNum = 20905985;BA.debugLine="Dim pi As B4XPageInfo = FindPIFromB4XPage(B4XPage";
 _pi = __ref._findpifromb4xpage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_b4xpage);
-RDebugUtils.currentLine=9437186;
- //BA.debugLineNum = 9437186;BA.debugLine="If mStackOfPageIds.Contains(pi.Id) = False Then R";
+RDebugUtils.currentLine=20905986;
+ //BA.debugLineNum = 20905986;BA.debugLine="If mStackOfPageIds.Contains(pi.Id) = False Then R";
 if (__ref._mstackofpageids /*b4a.example.b4xset*/ ._contains /*boolean*/ (null,(Object)(_pi.Id /*String*/ ))==__c.False) { 
 if (true) return "";};
-RDebugUtils.currentLine=9437187;
- //BA.debugLineNum = 9437187;BA.debugLine="If xui.IsB4i And GetTopPage <> pi Then";
+RDebugUtils.currentLine=20905987;
+ //BA.debugLineNum = 20905987;BA.debugLine="If xui.IsB4i And GetTopPage <> pi Then";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i() && (__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null)).equals(_pi) == false) { 
-RDebugUtils.currentLine=9437188;
- //BA.debugLineNum = 9437188;BA.debugLine="Log(\"Only top page can be closed\")";
-__c.LogImpl("99437188","Only top page can be closed",0);
-RDebugUtils.currentLine=9437189;
- //BA.debugLineNum = 9437189;BA.debugLine="Return";
+RDebugUtils.currentLine=20905988;
+ //BA.debugLineNum = 20905988;BA.debugLine="Log(\"Only top page can be closed\")";
+__c.LogImpl("920905988","Only top page can be closed",0);
+RDebugUtils.currentLine=20905989;
+ //BA.debugLineNum = 20905989;BA.debugLine="Return";
 if (true) return "";
  }else 
-{RDebugUtils.currentLine=9437190;
- //BA.debugLineNum = 9437190;BA.debugLine="Else If xui.IsB4i And mStackOfPageIds.Size = 1 Th";
+{RDebugUtils.currentLine=20905990;
+ //BA.debugLineNum = 20905990;BA.debugLine="Else If xui.IsB4i And mStackOfPageIds.Size = 1 Th";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i() && __ref._mstackofpageids /*b4a.example.b4xset*/ ._getsize /*int*/ (null)==1) { 
-RDebugUtils.currentLine=9437191;
- //BA.debugLineNum = 9437191;BA.debugLine="Log(\"First page cannot be closed\")";
-__c.LogImpl("99437191","First page cannot be closed",0);
-RDebugUtils.currentLine=9437192;
- //BA.debugLineNum = 9437192;BA.debugLine="Return";
+RDebugUtils.currentLine=20905991;
+ //BA.debugLineNum = 20905991;BA.debugLine="Log(\"First page cannot be closed\")";
+__c.LogImpl("920905991","First page cannot be closed",0);
+RDebugUtils.currentLine=20905992;
+ //BA.debugLineNum = 20905992;BA.debugLine="Return";
 if (true) return "";
  }}
 ;
-RDebugUtils.currentLine=9437194;
- //BA.debugLineNum = 9437194;BA.debugLine="Dim IsClosingTopPage As Boolean = GetTopPage = pi";
+RDebugUtils.currentLine=20905994;
+ //BA.debugLineNum = 20905994;BA.debugLine="Dim IsClosingTopPage As Boolean = GetTopPage = pi";
 _isclosingtoppage = (__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null)).equals(_pi);
-RDebugUtils.currentLine=9437195;
- //BA.debugLineNum = 9437195;BA.debugLine="ClosePageImpl(pi)";
+RDebugUtils.currentLine=20905995;
+ //BA.debugLineNum = 20905995;BA.debugLine="ClosePageImpl(pi)";
 __ref._closepageimpl /*String*/ (null,_pi);
-RDebugUtils.currentLine=9437196;
- //BA.debugLineNum = 9437196;BA.debugLine="If IsClosingTopPage Then";
+RDebugUtils.currentLine=20905996;
+ //BA.debugLineNum = 20905996;BA.debugLine="If IsClosingTopPage Then";
 if (_isclosingtoppage) { 
-RDebugUtils.currentLine=9437197;
- //BA.debugLineNum = 9437197;BA.debugLine="TopPageDisappear";
+RDebugUtils.currentLine=20905997;
+ //BA.debugLineNum = 20905997;BA.debugLine="TopPageDisappear";
 __ref._toppagedisappear /*String*/ (null);
  };
-RDebugUtils.currentLine=9437199;
- //BA.debugLineNum = 9437199;BA.debugLine="If xui.IsB4A And mStackOfPageIds.Size = 1 Then Re";
+RDebugUtils.currentLine=20905999;
+ //BA.debugLineNum = 20905999;BA.debugLine="If xui.IsB4A And mStackOfPageIds.Size = 1 Then Re";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4A() && __ref._mstackofpageids /*b4a.example.b4xset*/ ._getsize /*int*/ (null)==1) { 
 if (true) return "";};
-RDebugUtils.currentLine=9437200;
- //BA.debugLineNum = 9437200;BA.debugLine="mStackOfPageIds.Remove(pi.Id)";
+RDebugUtils.currentLine=20906000;
+ //BA.debugLineNum = 20906000;BA.debugLine="mStackOfPageIds.Remove(pi.Id)";
 __ref._mstackofpageids /*b4a.example.b4xset*/ ._remove /*String*/ (null,(Object)(_pi.Id /*String*/ ));
-RDebugUtils.currentLine=9437201;
- //BA.debugLineNum = 9437201;BA.debugLine="If IsClosingTopPage Then";
+RDebugUtils.currentLine=20906001;
+ //BA.debugLineNum = 20906001;BA.debugLine="If IsClosingTopPage Then";
 if (_isclosingtoppage) { 
-RDebugUtils.currentLine=9437202;
- //BA.debugLineNum = 9437202;BA.debugLine="If xui.IsB4A Then ShowPageImpl(GetTopPage)";
+RDebugUtils.currentLine=20906002;
+ //BA.debugLineNum = 20906002;BA.debugLine="If xui.IsB4A Then ShowPageImpl(GetTopPage)";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4A()) { 
 __ref._showpageimpl /*String*/ (null,__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null));};
-RDebugUtils.currentLine=9437203;
- //BA.debugLineNum = 9437203;BA.debugLine="TopPageAppear";
+RDebugUtils.currentLine=20906003;
+ //BA.debugLineNum = 20906003;BA.debugLine="TopPageAppear";
 __ref._toppageappear /*String*/ (null);
  };
-RDebugUtils.currentLine=9437205;
- //BA.debugLineNum = 9437205;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20906005;
+ //BA.debugLineNum = 20906005;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.b4xpagesmanager._b4xpageinfo  _findpifromb4xpage(b4a.example.b4xpagesmanager __ref,Object _page) throws Exception{
@@ -348,10 +348,10 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "findpifromb4xpage", true))
 	 {return ((b4a.example.b4xpagesmanager._b4xpageinfo) Debug.delegate(ba, "findpifromb4xpage", new Object[] {_page}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=9633792;
- //BA.debugLineNum = 9633792;BA.debugLine="Public Sub FindPIFromB4XPage (Page As Object) As B";
-RDebugUtils.currentLine=9633793;
- //BA.debugLineNum = 9633793;BA.debugLine="For Each pi As B4XPageInfo In IdToB4XPage.Values";
+RDebugUtils.currentLine=21102592;
+ //BA.debugLineNum = 21102592;BA.debugLine="Public Sub FindPIFromB4XPage (Page As Object) As B";
+RDebugUtils.currentLine=21102593;
+ //BA.debugLineNum = 21102593;BA.debugLine="For Each pi As B4XPageInfo In IdToB4XPage.Values";
 {
 final anywheresoftware.b4a.BA.IterableList group1 = __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._getvalues /*anywheresoftware.b4a.objects.collections.List*/ (null);
 final int groupLen1 = group1.getSize()
@@ -359,20 +359,20 @@ final int groupLen1 = group1.getSize()
 ;
 for (; index1 < groupLen1;index1++){
 _pi = (b4a.example.b4xpagesmanager._b4xpageinfo)(group1.Get(index1));
-RDebugUtils.currentLine=9633794;
- //BA.debugLineNum = 9633794;BA.debugLine="If pi.B4XPage = Page Then";
+RDebugUtils.currentLine=21102594;
+ //BA.debugLineNum = 21102594;BA.debugLine="If pi.B4XPage = Page Then";
 if ((_pi.B4XPage /*Object*/ ).equals(_page)) { 
-RDebugUtils.currentLine=9633795;
- //BA.debugLineNum = 9633795;BA.debugLine="Return pi";
+RDebugUtils.currentLine=21102595;
+ //BA.debugLineNum = 21102595;BA.debugLine="Return pi";
 if (true) return _pi;
  };
  }
 };
-RDebugUtils.currentLine=9633798;
- //BA.debugLineNum = 9633798;BA.debugLine="Return Null";
+RDebugUtils.currentLine=21102598;
+ //BA.debugLineNum = 21102598;BA.debugLine="Return Null";
 if (true) return (b4a.example.b4xpagesmanager._b4xpageinfo)(__c.Null);
-RDebugUtils.currentLine=9633799;
- //BA.debugLineNum = 9633799;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21102599;
+ //BA.debugLineNum = 21102599;BA.debugLine="End Sub";
 return null;
 }
 public Object  _getpage(b4a.example.b4xpagesmanager __ref,String _id) throws Exception{
@@ -380,13 +380,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "getpage", true))
 	 {return ((Object) Debug.delegate(ba, "getpage", new Object[] {_id}));}
-RDebugUtils.currentLine=10092544;
- //BA.debugLineNum = 10092544;BA.debugLine="Public Sub GetPage (Id As String) As Object";
-RDebugUtils.currentLine=10092545;
- //BA.debugLineNum = 10092545;BA.debugLine="Return GetPageFromId(Id).B4XPage";
+RDebugUtils.currentLine=21561344;
+ //BA.debugLineNum = 21561344;BA.debugLine="Public Sub GetPage (Id As String) As Object";
+RDebugUtils.currentLine=21561345;
+ //BA.debugLineNum = 21561345;BA.debugLine="Return GetPageFromId(Id).B4XPage";
 if (true) return __ref._getpagefromid /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_id).B4XPage /*Object*/ ;
-RDebugUtils.currentLine=10092546;
- //BA.debugLineNum = 10092546;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21561346;
+ //BA.debugLineNum = 21561346;BA.debugLine="End Sub";
 return null;
 }
 public String  _settitle(b4a.example.b4xpagesmanager __ref,Object _b4xpage,Object _title) throws Exception{
@@ -395,19 +395,19 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "settitle", true))
 	 {return ((String) Debug.delegate(ba, "settitle", new Object[] {_b4xpage,_title}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=9895936;
- //BA.debugLineNum = 9895936;BA.debugLine="Public Sub SetTitle (B4XPage As Object, Title As O";
-RDebugUtils.currentLine=9895937;
- //BA.debugLineNum = 9895937;BA.debugLine="Dim pi As B4XPageInfo = FindPIFromB4XPage(B4XPage";
+RDebugUtils.currentLine=21364736;
+ //BA.debugLineNum = 21364736;BA.debugLine="Public Sub SetTitle (B4XPage As Object, Title As O";
+RDebugUtils.currentLine=21364737;
+ //BA.debugLineNum = 21364737;BA.debugLine="Dim pi As B4XPageInfo = FindPIFromB4XPage(B4XPage";
 _pi = __ref._findpifromb4xpage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_b4xpage);
-RDebugUtils.currentLine=9895938;
- //BA.debugLineNum = 9895938;BA.debugLine="pi.Title = Title";
+RDebugUtils.currentLine=21364738;
+ //BA.debugLineNum = 21364738;BA.debugLine="pi.Title = Title";
 _pi.Title /*Object*/  = _title;
-RDebugUtils.currentLine=9895939;
- //BA.debugLineNum = 9895939;BA.debugLine="pi.Parent.NativeType.Title = Title";
+RDebugUtils.currentLine=21364739;
+ //BA.debugLineNum = 21364739;BA.debugLine="pi.Parent.NativeType.Title = Title";
 _pi.Parent /*b4a.example.b4xpagesmanager._b4xpageparent*/ .NativeType /*anywheresoftware.b4a.objects.ActivityWrapper*/ .setTitle(BA.ObjectToCharSequence(_title));
-RDebugUtils.currentLine=9895940;
- //BA.debugLineNum = 9895940;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21364740;
+ //BA.debugLineNum = 21364740;BA.debugLine="End Sub";
 return "";
 }
 public String  _showpage(b4a.example.b4xpagesmanager __ref,String _id) throws Exception{
@@ -417,45 +417,45 @@ if (Debug.shouldDelegate(ba, "showpage", true))
 	 {return ((String) Debug.delegate(ba, "showpage", new Object[] {_id}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
 b4a.example.b4xpagesmanager._b4xpageinfo _top = null;
-RDebugUtils.currentLine=9306112;
- //BA.debugLineNum = 9306112;BA.debugLine="Public Sub ShowPage (Id As String)";
-RDebugUtils.currentLine=9306113;
- //BA.debugLineNum = 9306113;BA.debugLine="Dim pi As B4XPageInfo = GetPageFromId(Id)";
+RDebugUtils.currentLine=20774912;
+ //BA.debugLineNum = 20774912;BA.debugLine="Public Sub ShowPage (Id As String)";
+RDebugUtils.currentLine=20774913;
+ //BA.debugLineNum = 20774913;BA.debugLine="Dim pi As B4XPageInfo = GetPageFromId(Id)";
 _pi = __ref._getpagefromid /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_id);
-RDebugUtils.currentLine=9306114;
- //BA.debugLineNum = 9306114;BA.debugLine="If pi = GetTopPage Then Return";
+RDebugUtils.currentLine=20774914;
+ //BA.debugLineNum = 20774914;BA.debugLine="If pi = GetTopPage Then Return";
 if ((_pi).equals(__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null))) { 
 if (true) return "";};
-RDebugUtils.currentLine=9306115;
- //BA.debugLineNum = 9306115;BA.debugLine="CreatePageIfNeeded(pi)";
+RDebugUtils.currentLine=20774915;
+ //BA.debugLineNum = 20774915;BA.debugLine="CreatePageIfNeeded(pi)";
 __ref._createpageifneeded /*String*/ (null,_pi);
-RDebugUtils.currentLine=9306116;
- //BA.debugLineNum = 9306116;BA.debugLine="TopPageDisappear";
+RDebugUtils.currentLine=20774916;
+ //BA.debugLineNum = 20774916;BA.debugLine="TopPageDisappear";
 __ref._toppagedisappear /*String*/ (null);
-RDebugUtils.currentLine=9306118;
- //BA.debugLineNum = 9306118;BA.debugLine="Dim Top As B4XPageInfo = GetTopPage";
+RDebugUtils.currentLine=20774918;
+ //BA.debugLineNum = 20774918;BA.debugLine="Dim Top As B4XPageInfo = GetTopPage";
 _top = __ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null);
-RDebugUtils.currentLine=9306119;
- //BA.debugLineNum = 9306119;BA.debugLine="If Top <> Null Then";
+RDebugUtils.currentLine=20774919;
+ //BA.debugLineNum = 20774919;BA.debugLine="If Top <> Null Then";
 if (_top!= null) { 
-RDebugUtils.currentLine=9306120;
- //BA.debugLineNum = 9306120;BA.debugLine="Top.Root.RemoveViewFromParent";
+RDebugUtils.currentLine=20774920;
+ //BA.debugLineNum = 20774920;BA.debugLine="Top.Root.RemoveViewFromParent";
 _top.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .RemoveViewFromParent();
  };
-RDebugUtils.currentLine=9306130;
- //BA.debugLineNum = 9306130;BA.debugLine="mStackOfPageIds.Remove(pi.Id)";
+RDebugUtils.currentLine=20774930;
+ //BA.debugLineNum = 20774930;BA.debugLine="mStackOfPageIds.Remove(pi.Id)";
 __ref._mstackofpageids /*b4a.example.b4xset*/ ._remove /*String*/ (null,(Object)(_pi.Id /*String*/ ));
-RDebugUtils.currentLine=9306131;
- //BA.debugLineNum = 9306131;BA.debugLine="ShowPageImpl(pi)";
+RDebugUtils.currentLine=20774931;
+ //BA.debugLineNum = 20774931;BA.debugLine="ShowPageImpl(pi)";
 __ref._showpageimpl /*String*/ (null,_pi);
-RDebugUtils.currentLine=9306132;
- //BA.debugLineNum = 9306132;BA.debugLine="mStackOfPageIds.Add(pi.Id)";
+RDebugUtils.currentLine=20774932;
+ //BA.debugLineNum = 20774932;BA.debugLine="mStackOfPageIds.Add(pi.Id)";
 __ref._mstackofpageids /*b4a.example.b4xset*/ ._add /*String*/ (null,(Object)(_pi.Id /*String*/ ));
-RDebugUtils.currentLine=9306133;
- //BA.debugLineNum = 9306133;BA.debugLine="TopPageAppear";
+RDebugUtils.currentLine=20774933;
+ //BA.debugLineNum = 20774933;BA.debugLine="TopPageAppear";
 __ref._toppageappear /*String*/ (null);
-RDebugUtils.currentLine=9306134;
- //BA.debugLineNum = 9306134;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20774934;
+ //BA.debugLineNum = 20774934;BA.debugLine="End Sub";
 return "";
 }
 public String  _showpageandremovepreviouspages(b4a.example.b4xpagesmanager __ref,String _id) throws Exception{
@@ -465,29 +465,29 @@ if (Debug.shouldDelegate(ba, "showpageandremovepreviouspages", true))
 	 {return ((String) Debug.delegate(ba, "showpageandremovepreviouspages", new Object[] {_id}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
 b4a.example.b4xpagesmanager._b4xpageinfo _pagetoremove = null;
-RDebugUtils.currentLine=9371648;
- //BA.debugLineNum = 9371648;BA.debugLine="Public Sub ShowPageAndRemovePreviousPages (Id As S";
-RDebugUtils.currentLine=9371649;
- //BA.debugLineNum = 9371649;BA.debugLine="If GetTopPage = Null Then";
+RDebugUtils.currentLine=20840448;
+ //BA.debugLineNum = 20840448;BA.debugLine="Public Sub ShowPageAndRemovePreviousPages (Id As S";
+RDebugUtils.currentLine=20840449;
+ //BA.debugLineNum = 20840449;BA.debugLine="If GetTopPage = Null Then";
 if (__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null)== null) { 
-RDebugUtils.currentLine=9371650;
- //BA.debugLineNum = 9371650;BA.debugLine="ShowPage(Id)";
+RDebugUtils.currentLine=20840450;
+ //BA.debugLineNum = 20840450;BA.debugLine="ShowPage(Id)";
 __ref._showpage /*String*/ (null,_id);
-RDebugUtils.currentLine=9371651;
- //BA.debugLineNum = 9371651;BA.debugLine="Return";
+RDebugUtils.currentLine=20840451;
+ //BA.debugLineNum = 20840451;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=9371653;
- //BA.debugLineNum = 9371653;BA.debugLine="Dim pi As B4XPageInfo = GetPageFromId(Id)";
+RDebugUtils.currentLine=20840453;
+ //BA.debugLineNum = 20840453;BA.debugLine="Dim pi As B4XPageInfo = GetPageFromId(Id)";
 _pi = __ref._getpagefromid /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_id);
-RDebugUtils.currentLine=9371654;
- //BA.debugLineNum = 9371654;BA.debugLine="CreatePageIfNeeded(pi)";
+RDebugUtils.currentLine=20840454;
+ //BA.debugLineNum = 20840454;BA.debugLine="CreatePageIfNeeded(pi)";
 __ref._createpageifneeded /*String*/ (null,_pi);
-RDebugUtils.currentLine=9371655;
- //BA.debugLineNum = 9371655;BA.debugLine="TopPageDisappear";
+RDebugUtils.currentLine=20840455;
+ //BA.debugLineNum = 20840455;BA.debugLine="TopPageDisappear";
 __ref._toppagedisappear /*String*/ (null);
-RDebugUtils.currentLine=9371659;
- //BA.debugLineNum = 9371659;BA.debugLine="For Each Id As String In mStackOfPageIds.AsList";
+RDebugUtils.currentLine=20840459;
+ //BA.debugLineNum = 20840459;BA.debugLine="For Each Id As String In mStackOfPageIds.AsList";
 {
 final anywheresoftware.b4a.BA.IterableList group8 = __ref._mstackofpageids /*b4a.example.b4xset*/ ._aslist /*anywheresoftware.b4a.objects.collections.List*/ (null);
 final int groupLen8 = group8.getSize()
@@ -495,32 +495,32 @@ final int groupLen8 = group8.getSize()
 ;
 for (; index8 < groupLen8;index8++){
 _id = BA.ObjectToString(group8.Get(index8));
-RDebugUtils.currentLine=9371660;
- //BA.debugLineNum = 9371660;BA.debugLine="Dim PageToRemove As B4XPageInfo = GetPageFromId(";
+RDebugUtils.currentLine=20840460;
+ //BA.debugLineNum = 20840460;BA.debugLine="Dim PageToRemove As B4XPageInfo = GetPageFromId(";
 _pagetoremove = __ref._getpagefromid /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_id);
-RDebugUtils.currentLine=9371662;
- //BA.debugLineNum = 9371662;BA.debugLine="PageToRemove.Root.RemoveViewFromParent";
+RDebugUtils.currentLine=20840462;
+ //BA.debugLineNum = 20840462;BA.debugLine="PageToRemove.Root.RemoveViewFromParent";
 _pagetoremove.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .RemoveViewFromParent();
  }
 };
-RDebugUtils.currentLine=9371669;
- //BA.debugLineNum = 9371669;BA.debugLine="mStackOfPageIds.Clear";
+RDebugUtils.currentLine=20840469;
+ //BA.debugLineNum = 20840469;BA.debugLine="mStackOfPageIds.Clear";
 __ref._mstackofpageids /*b4a.example.b4xset*/ ._clear /*String*/ (null);
-RDebugUtils.currentLine=9371670;
- //BA.debugLineNum = 9371670;BA.debugLine="mStackOfPageIds.Add(pi.Id)";
+RDebugUtils.currentLine=20840470;
+ //BA.debugLineNum = 20840470;BA.debugLine="mStackOfPageIds.Add(pi.Id)";
 __ref._mstackofpageids /*b4a.example.b4xset*/ ._add /*String*/ (null,(Object)(_pi.Id /*String*/ ));
-RDebugUtils.currentLine=9371671;
- //BA.debugLineNum = 9371671;BA.debugLine="If xui.IsB4A Or xui.IsB4J Then";
+RDebugUtils.currentLine=20840471;
+ //BA.debugLineNum = 20840471;BA.debugLine="If xui.IsB4A Or xui.IsB4J Then";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4A() || __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4J()) { 
-RDebugUtils.currentLine=9371672;
- //BA.debugLineNum = 9371672;BA.debugLine="ShowPageImpl(pi)";
+RDebugUtils.currentLine=20840472;
+ //BA.debugLineNum = 20840472;BA.debugLine="ShowPageImpl(pi)";
 __ref._showpageimpl /*String*/ (null,_pi);
  };
-RDebugUtils.currentLine=9371674;
- //BA.debugLineNum = 9371674;BA.debugLine="TopPageAppear";
+RDebugUtils.currentLine=20840474;
+ //BA.debugLineNum = 20840474;BA.debugLine="TopPageAppear";
 __ref._toppageappear /*String*/ (null);
-RDebugUtils.currentLine=9371675;
- //BA.debugLineNum = 9371675;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20840475;
+ //BA.debugLineNum = 20840475;BA.debugLine="End Sub";
 return "";
 }
 public String  _activity_actionbarhomeclick(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -529,28 +529,28 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "activity_actionbarhomeclick", true))
 	 {return ((String) Debug.delegate(ba, "activity_actionbarhomeclick", null));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=9109504;
- //BA.debugLineNum = 9109504;BA.debugLine="Public Sub Activity_ActionBarHomeClick";
-RDebugUtils.currentLine=9109505;
- //BA.debugLineNum = 9109505;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
+RDebugUtils.currentLine=20578304;
+ //BA.debugLineNum = 20578304;BA.debugLine="Public Sub Activity_ActionBarHomeClick";
+RDebugUtils.currentLine=20578305;
+ //BA.debugLineNum = 20578305;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
 _pi = __ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null);
-RDebugUtils.currentLine=9109506;
- //BA.debugLineNum = 9109506;BA.debugLine="If pi <> Null Then";
+RDebugUtils.currentLine=20578306;
+ //BA.debugLineNum = 20578306;BA.debugLine="If pi <> Null Then";
 if (_pi!= null) { 
-RDebugUtils.currentLine=9109507;
- //BA.debugLineNum = 9109507;BA.debugLine="If CloseRequestExists (pi) Then";
+RDebugUtils.currentLine=20578307;
+ //BA.debugLineNum = 20578307;BA.debugLine="If CloseRequestExists (pi) Then";
 if (__ref._closerequestexists /*boolean*/ (null,_pi)) { 
-RDebugUtils.currentLine=9109508;
- //BA.debugLineNum = 9109508;BA.debugLine="HandleCloseRequest(pi)";
+RDebugUtils.currentLine=20578308;
+ //BA.debugLineNum = 20578308;BA.debugLine="HandleCloseRequest(pi)";
 __ref._handlecloserequest /*void*/ (null,_pi);
  }else {
-RDebugUtils.currentLine=9109510;
- //BA.debugLineNum = 9109510;BA.debugLine="ClosePage(pi.B4XPage)";
+RDebugUtils.currentLine=20578310;
+ //BA.debugLineNum = 20578310;BA.debugLine="ClosePage(pi.B4XPage)";
 __ref._closepage /*String*/ (null,_pi.B4XPage /*Object*/ );
  };
  };
-RDebugUtils.currentLine=9109513;
- //BA.debugLineNum = 9109513;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20578313;
+ //BA.debugLineNum = 20578313;BA.debugLine="End Sub";
 return "";
 }
 public boolean  _activity_keypress(b4a.example.b4xpagesmanager __ref,int _keycode) throws Exception{
@@ -559,49 +559,49 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "activity_keypress", true))
 	 {return ((Boolean) Debug.delegate(ba, "activity_keypress", new Object[] {_keycode}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=10354688;
- //BA.debugLineNum = 10354688;BA.debugLine="Public Sub Activity_KeyPress (KeyCode As Int) As B";
-RDebugUtils.currentLine=10354689;
- //BA.debugLineNum = 10354689;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
+RDebugUtils.currentLine=21823488;
+ //BA.debugLineNum = 21823488;BA.debugLine="Public Sub Activity_KeyPress (KeyCode As Int) As B";
+RDebugUtils.currentLine=21823489;
+ //BA.debugLineNum = 21823489;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
 if (_keycode==__c.KeyCodes.KEYCODE_BACK) { 
-RDebugUtils.currentLine=10354690;
- //BA.debugLineNum = 10354690;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
+RDebugUtils.currentLine=21823490;
+ //BA.debugLineNum = 21823490;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
 _pi = __ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null);
-RDebugUtils.currentLine=10354691;
- //BA.debugLineNum = 10354691;BA.debugLine="If CloseRequestExists(pi) Then";
+RDebugUtils.currentLine=21823491;
+ //BA.debugLineNum = 21823491;BA.debugLine="If CloseRequestExists(pi) Then";
 if (__ref._closerequestexists /*boolean*/ (null,_pi)) { 
-RDebugUtils.currentLine=10354692;
- //BA.debugLineNum = 10354692;BA.debugLine="HandleCloseRequest(pi)";
+RDebugUtils.currentLine=21823492;
+ //BA.debugLineNum = 21823492;BA.debugLine="HandleCloseRequest(pi)";
 __ref._handlecloserequest /*void*/ (null,_pi);
  }else {
-RDebugUtils.currentLine=10354694;
- //BA.debugLineNum = 10354694;BA.debugLine="ClosePage(pi.B4XPage)";
+RDebugUtils.currentLine=21823494;
+ //BA.debugLineNum = 21823494;BA.debugLine="ClosePage(pi.B4XPage)";
 __ref._closepage /*String*/ (null,_pi.B4XPage /*Object*/ );
  };
-RDebugUtils.currentLine=10354696;
- //BA.debugLineNum = 10354696;BA.debugLine="Return True";
+RDebugUtils.currentLine=21823496;
+ //BA.debugLineNum = 21823496;BA.debugLine="Return True";
 if (true) return __c.True;
  };
-RDebugUtils.currentLine=10354698;
- //BA.debugLineNum = 10354698;BA.debugLine="Return False";
+RDebugUtils.currentLine=21823498;
+ //BA.debugLineNum = 21823498;BA.debugLine="Return False";
 if (true) return __c.False;
-RDebugUtils.currentLine=10354699;
- //BA.debugLineNum = 10354699;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21823499;
+ //BA.debugLineNum = 21823499;BA.debugLine="End Sub";
 return false;
 }
 public String  _activity_pause(b4a.example.b4xpagesmanager __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
-RDebugUtils.currentLine=11206656;
- //BA.debugLineNum = 11206656;BA.debugLine="Public Sub Activity_Pause";
-RDebugUtils.currentLine=11206657;
- //BA.debugLineNum = 11206657;BA.debugLine="RaiseEventWithResult(GetTopPage, \"B4XPage_Disappe";
+RDebugUtils.currentLine=22675456;
+ //BA.debugLineNum = 22675456;BA.debugLine="Public Sub Activity_Pause";
+RDebugUtils.currentLine=22675457;
+ //BA.debugLineNum = 22675457;BA.debugLine="RaiseEventWithResult(GetTopPage, \"B4XPage_Disappe";
 __ref._raiseeventwithresult /*Object*/ (null,__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null),"B4XPage_Disappear",(Object[])(__c.Null));
-RDebugUtils.currentLine=11206658;
- //BA.debugLineNum = 11206658;BA.debugLine="BackgroundStateChanged(False)";
+RDebugUtils.currentLine=22675458;
+ //BA.debugLineNum = 22675458;BA.debugLine="BackgroundStateChanged(False)";
 __ref._backgroundstatechanged /*String*/ (null,__c.False);
-RDebugUtils.currentLine=11206659;
- //BA.debugLineNum = 11206659;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22675459;
+ //BA.debugLineNum = 22675459;BA.debugLine="End Sub";
 return "";
 }
 public String  _raiseevent(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _targetpage,String _subname,Object[] _params) throws Exception{
@@ -610,55 +610,55 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "raiseevent", true))
 	 {return ((String) Debug.delegate(ba, "raiseevent", new Object[] {_targetpage,_subname,_params}));}
 int _length = 0;
-RDebugUtils.currentLine=10747904;
- //BA.debugLineNum = 10747904;BA.debugLine="Public Sub RaiseEvent (TargetPage As B4XPageInfo,";
-RDebugUtils.currentLine=10747905;
- //BA.debugLineNum = 10747905;BA.debugLine="If TargetPage = Null Then Return";
+RDebugUtils.currentLine=22216704;
+ //BA.debugLineNum = 22216704;BA.debugLine="Public Sub RaiseEvent (TargetPage As B4XPageInfo,";
+RDebugUtils.currentLine=22216705;
+ //BA.debugLineNum = 22216705;BA.debugLine="If TargetPage = Null Then Return";
 if (_targetpage== null) { 
 if (true) return "";};
-RDebugUtils.currentLine=10747906;
- //BA.debugLineNum = 10747906;BA.debugLine="Dim length As Int";
+RDebugUtils.currentLine=22216706;
+ //BA.debugLineNum = 22216706;BA.debugLine="Dim length As Int";
 _length = 0;
-RDebugUtils.currentLine=10747907;
- //BA.debugLineNum = 10747907;BA.debugLine="If Params = Null Then length = 0 Else length = Pa";
+RDebugUtils.currentLine=22216707;
+ //BA.debugLineNum = 22216707;BA.debugLine="If Params = Null Then length = 0 Else length = Pa";
 if (_params== null) { 
 _length = (int) (0);}
 else {
 _length = _params.length;};
-RDebugUtils.currentLine=10747908;
- //BA.debugLineNum = 10747908;BA.debugLine="LogEvent(TargetPage, SubName)";
+RDebugUtils.currentLine=22216708;
+ //BA.debugLineNum = 22216708;BA.debugLine="LogEvent(TargetPage, SubName)";
 __ref._logevent /*String*/ (null,_targetpage,_subname);
-RDebugUtils.currentLine=10747909;
- //BA.debugLineNum = 10747909;BA.debugLine="If xui.SubExists(TargetPage.B4XPage, SubName, len";
+RDebugUtils.currentLine=22216709;
+ //BA.debugLineNum = 22216709;BA.debugLine="If xui.SubExists(TargetPage.B4XPage, SubName, len";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .SubExists(ba,_targetpage.B4XPage /*Object*/ ,_subname,_length)==__c.False) { 
 if (true) return "";};
-RDebugUtils.currentLine=10747910;
- //BA.debugLineNum = 10747910;BA.debugLine="Select length";
+RDebugUtils.currentLine=22216710;
+ //BA.debugLineNum = 22216710;BA.debugLine="Select length";
 switch (_length) {
 case 0: {
-RDebugUtils.currentLine=10747912;
- //BA.debugLineNum = 10747912;BA.debugLine="CallSubDelayed(TargetPage.B4XPage, SubName)";
+RDebugUtils.currentLine=22216712;
+ //BA.debugLineNum = 22216712;BA.debugLine="CallSubDelayed(TargetPage.B4XPage, SubName)";
 __c.CallSubDelayed(ba,_targetpage.B4XPage /*Object*/ ,_subname);
  break; }
 case 1: {
-RDebugUtils.currentLine=10747914;
- //BA.debugLineNum = 10747914;BA.debugLine="CallSubDelayed2(TargetPage.B4XPage, SubName, Pa";
+RDebugUtils.currentLine=22216714;
+ //BA.debugLineNum = 22216714;BA.debugLine="CallSubDelayed2(TargetPage.B4XPage, SubName, Pa";
 __c.CallSubDelayed2(ba,_targetpage.B4XPage /*Object*/ ,_subname,_params[(int) (0)]);
  break; }
 case 2: {
-RDebugUtils.currentLine=10747916;
- //BA.debugLineNum = 10747916;BA.debugLine="CallSubDelayed3(TargetPage.B4XPage, SubName, Pa";
+RDebugUtils.currentLine=22216716;
+ //BA.debugLineNum = 22216716;BA.debugLine="CallSubDelayed3(TargetPage.B4XPage, SubName, Pa";
 __c.CallSubDelayed3(ba,_targetpage.B4XPage /*Object*/ ,_subname,_params[(int) (0)],_params[(int) (1)]);
  break; }
 default: {
-RDebugUtils.currentLine=10747918;
- //BA.debugLineNum = 10747918;BA.debugLine="Log(\"Too many parameters\")";
-__c.LogImpl("910747918","Too many parameters",0);
+RDebugUtils.currentLine=22216718;
+ //BA.debugLineNum = 22216718;BA.debugLine="Log(\"Too many parameters\")";
+__c.LogImpl("922216718","Too many parameters",0);
  break; }
 }
 ;
-RDebugUtils.currentLine=10747920;
- //BA.debugLineNum = 10747920;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22216720;
+ //BA.debugLineNum = 22216720;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.b4xpagesmanager._b4xpageinfo  _gettoppage(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -666,17 +666,17 @@ __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "gettoppage", true))
 	 {return ((b4a.example.b4xpagesmanager._b4xpageinfo) Debug.delegate(ba, "gettoppage", null));}
-RDebugUtils.currentLine=10944512;
- //BA.debugLineNum = 10944512;BA.debugLine="Public Sub GetTopPage As B4XPageInfo";
-RDebugUtils.currentLine=10944513;
- //BA.debugLineNum = 10944513;BA.debugLine="If mStackOfPageIds.Size = 0 Then Return Null";
+RDebugUtils.currentLine=22413312;
+ //BA.debugLineNum = 22413312;BA.debugLine="Public Sub GetTopPage As B4XPageInfo";
+RDebugUtils.currentLine=22413313;
+ //BA.debugLineNum = 22413313;BA.debugLine="If mStackOfPageIds.Size = 0 Then Return Null";
 if (__ref._mstackofpageids /*b4a.example.b4xset*/ ._getsize /*int*/ (null)==0) { 
 if (true) return (b4a.example.b4xpagesmanager._b4xpageinfo)(__c.Null);};
-RDebugUtils.currentLine=10944514;
- //BA.debugLineNum = 10944514;BA.debugLine="Return IdToB4XPage.Get(mStackOfPageIds.AsList.Get";
+RDebugUtils.currentLine=22413314;
+ //BA.debugLineNum = 22413314;BA.debugLine="Return IdToB4XPage.Get(mStackOfPageIds.AsList.Get";
 if (true) return (b4a.example.b4xpagesmanager._b4xpageinfo)(__ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._get /*Object*/ (null,__ref._mstackofpageids /*b4a.example.b4xset*/ ._aslist /*anywheresoftware.b4a.objects.collections.List*/ (null).Get((int) (__ref._mstackofpageids /*b4a.example.b4xset*/ ._getsize /*int*/ (null)-1))));
-RDebugUtils.currentLine=10944515;
- //BA.debugLineNum = 10944515;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22413315;
+ //BA.debugLineNum = 22413315;BA.debugLine="End Sub";
 return null;
 }
 public String  _activity_resume(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -685,23 +685,23 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "activity_resume", true))
 	 {return ((String) Debug.delegate(ba, "activity_resume", null));}
 boolean _shouldraise = false;
-RDebugUtils.currentLine=11075584;
- //BA.debugLineNum = 11075584;BA.debugLine="Public Sub Activity_Resume";
-RDebugUtils.currentLine=11075585;
- //BA.debugLineNum = 11075585;BA.debugLine="Dim ShouldRaise As Boolean = IsForeground = False";
+RDebugUtils.currentLine=22544384;
+ //BA.debugLineNum = 22544384;BA.debugLine="Public Sub Activity_Resume";
+RDebugUtils.currentLine=22544385;
+ //BA.debugLineNum = 22544385;BA.debugLine="Dim ShouldRaise As Boolean = IsForeground = False";
 _shouldraise = __ref._isforeground /*boolean*/ ==__c.False;
-RDebugUtils.currentLine=11075586;
- //BA.debugLineNum = 11075586;BA.debugLine="BackgroundStateChanged(True)";
+RDebugUtils.currentLine=22544386;
+ //BA.debugLineNum = 22544386;BA.debugLine="BackgroundStateChanged(True)";
 __ref._backgroundstatechanged /*String*/ (null,__c.True);
-RDebugUtils.currentLine=11075587;
- //BA.debugLineNum = 11075587;BA.debugLine="If ShouldRaise Then";
+RDebugUtils.currentLine=22544387;
+ //BA.debugLineNum = 22544387;BA.debugLine="If ShouldRaise Then";
 if (_shouldraise) { 
-RDebugUtils.currentLine=11075588;
- //BA.debugLineNum = 11075588;BA.debugLine="RaiseEvent(GetTopPage, \"B4XPage_Appear\", Null)";
+RDebugUtils.currentLine=22544388;
+ //BA.debugLineNum = 22544388;BA.debugLine="RaiseEvent(GetTopPage, \"B4XPage_Appear\", Null)";
 __ref._raiseevent /*String*/ (null,__ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null),"B4XPage_Appear",(Object[])(__c.Null));
  };
-RDebugUtils.currentLine=11075590;
- //BA.debugLineNum = 11075590;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22544390;
+ //BA.debugLineNum = 22544390;BA.debugLine="End Sub";
 return "";
 }
 public String  _createmenu(b4a.example.b4xpagesmanager __ref,Object _menu) throws Exception{
@@ -715,21 +715,21 @@ b4a.example.b4xpagesmanager._b4amenuitem _mi = null;
 anywheresoftware.b4j.object.JavaObject _nativemenuitem = null;
 anywheresoftware.b4a.objects.drawable.BitmapDrawable _bd = null;
 anywheresoftware.b4j.object.JavaObject _listener = null;
-RDebugUtils.currentLine=10551296;
- //BA.debugLineNum = 10551296;BA.debugLine="Public Sub CreateMenu (Menu As Object)";
-RDebugUtils.currentLine=10551297;
- //BA.debugLineNum = 10551297;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
+RDebugUtils.currentLine=22020096;
+ //BA.debugLineNum = 22020096;BA.debugLine="Public Sub CreateMenu (Menu As Object)";
+RDebugUtils.currentLine=22020097;
+ //BA.debugLineNum = 22020097;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
 _pi = __ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null);
-RDebugUtils.currentLine=10551298;
- //BA.debugLineNum = 10551298;BA.debugLine="If pi = Null Then Return";
+RDebugUtils.currentLine=22020098;
+ //BA.debugLineNum = 22020098;BA.debugLine="If pi = Null Then Return";
 if (_pi== null) { 
 if (true) return "";};
-RDebugUtils.currentLine=10551299;
- //BA.debugLineNum = 10551299;BA.debugLine="Dim jo As JavaObject = Menu";
+RDebugUtils.currentLine=22020099;
+ //BA.debugLineNum = 22020099;BA.debugLine="Dim jo As JavaObject = Menu";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_menu));
-RDebugUtils.currentLine=10551300;
- //BA.debugLineNum = 10551300;BA.debugLine="For Each mi As B4AMenuItem In pi.Parent.MenuItems";
+RDebugUtils.currentLine=22020100;
+ //BA.debugLineNum = 22020100;BA.debugLine="For Each mi As B4AMenuItem In pi.Parent.MenuItems";
 {
 final anywheresoftware.b4a.BA.IterableList group4 = _pi.Parent /*b4a.example.b4xpagesmanager._b4xpageparent*/ .MenuItems /*anywheresoftware.b4a.objects.collections.List*/ ;
 final int groupLen4 = group4.getSize()
@@ -737,43 +737,43 @@ final int groupLen4 = group4.getSize()
 ;
 for (; index4 < groupLen4;index4++){
 _mi = (b4a.example.b4xpagesmanager._b4amenuitem)(group4.Get(index4));
-RDebugUtils.currentLine=10551301;
- //BA.debugLineNum = 10551301;BA.debugLine="Dim NativeMenuItem As JavaObject = jo.RunMethod(";
+RDebugUtils.currentLine=22020101;
+ //BA.debugLineNum = 22020101;BA.debugLine="Dim NativeMenuItem As JavaObject = jo.RunMethod(";
 _nativemenuitem = new anywheresoftware.b4j.object.JavaObject();
 _nativemenuitem = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_jo.RunMethod("add",new Object[]{_mi.Title /*Object*/ })));
-RDebugUtils.currentLine=10551302;
- //BA.debugLineNum = 10551302;BA.debugLine="If mi.Bitmap.IsInitialized Then";
+RDebugUtils.currentLine=22020102;
+ //BA.debugLineNum = 22020102;BA.debugLine="If mi.Bitmap.IsInitialized Then";
 if (_mi.Bitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .IsInitialized()) { 
-RDebugUtils.currentLine=10551303;
- //BA.debugLineNum = 10551303;BA.debugLine="Dim bd As BitmapDrawable";
+RDebugUtils.currentLine=22020103;
+ //BA.debugLineNum = 22020103;BA.debugLine="Dim bd As BitmapDrawable";
 _bd = new anywheresoftware.b4a.objects.drawable.BitmapDrawable();
-RDebugUtils.currentLine=10551304;
- //BA.debugLineNum = 10551304;BA.debugLine="bd.Initialize(mi.Bitmap)";
+RDebugUtils.currentLine=22020104;
+ //BA.debugLineNum = 22020104;BA.debugLine="bd.Initialize(mi.Bitmap)";
 _bd.Initialize((android.graphics.Bitmap)(_mi.Bitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ .getObject()));
-RDebugUtils.currentLine=10551305;
- //BA.debugLineNum = 10551305;BA.debugLine="NativeMenuItem.RunMethod(\"setIcon\", Array(bd))";
+RDebugUtils.currentLine=22020105;
+ //BA.debugLineNum = 22020105;BA.debugLine="NativeMenuItem.RunMethod(\"setIcon\", Array(bd))";
 _nativemenuitem.RunMethod("setIcon",new Object[]{(Object)(_bd.getObject())});
  };
-RDebugUtils.currentLine=10551307;
- //BA.debugLineNum = 10551307;BA.debugLine="If mi.AddToBar Then";
+RDebugUtils.currentLine=22020107;
+ //BA.debugLineNum = 22020107;BA.debugLine="If mi.AddToBar Then";
 if (_mi.AddToBar /*boolean*/ ) { 
-RDebugUtils.currentLine=10551308;
- //BA.debugLineNum = 10551308;BA.debugLine="NativeMenuItem.RunMethod(\"setShowAsAction\", Arr";
+RDebugUtils.currentLine=22020108;
+ //BA.debugLineNum = 22020108;BA.debugLine="NativeMenuItem.RunMethod(\"setShowAsAction\", Arr";
 _nativemenuitem.RunMethod("setShowAsAction",new Object[]{(Object)(1)});
  };
-RDebugUtils.currentLine=10551310;
- //BA.debugLineNum = 10551310;BA.debugLine="Dim listener As JavaObject";
+RDebugUtils.currentLine=22020110;
+ //BA.debugLineNum = 22020110;BA.debugLine="Dim listener As JavaObject";
 _listener = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=10551311;
- //BA.debugLineNum = 10551311;BA.debugLine="listener.InitializeNewInstance(Application.Packa";
+RDebugUtils.currentLine=22020111;
+ //BA.debugLineNum = 22020111;BA.debugLine="listener.InitializeNewInstance(Application.Packa";
 _listener.InitializeNewInstance(__c.Application.getPackageName()+".b4xpagesmanager$PagesMenuListener",new Object[]{_pi.B4XPage /*Object*/ ,(Object)(_mi.Tag /*String*/ )});
-RDebugUtils.currentLine=10551312;
- //BA.debugLineNum = 10551312;BA.debugLine="NativeMenuItem.RunMethod(\"setOnMenuItemClickList";
+RDebugUtils.currentLine=22020112;
+ //BA.debugLineNum = 22020112;BA.debugLine="NativeMenuItem.RunMethod(\"setOnMenuItemClickList";
 _nativemenuitem.RunMethod("setOnMenuItemClickListener",new Object[]{(Object)(_listener.getObject())});
  }
 };
-RDebugUtils.currentLine=10551314;
- //BA.debugLineNum = 10551314;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22020114;
+ //BA.debugLineNum = 22020114;BA.debugLine="End Sub";
 return "";
 }
 public String  _mainform_resize(b4a.example.b4xpagesmanager __ref,double _width,double _height) throws Exception{
@@ -783,19 +783,19 @@ if (Debug.shouldDelegate(ba, "mainform_resize", true))
 	 {return ((String) Debug.delegate(ba, "mainform_resize", new Object[] {_width,_height}));}
 int _w = 0;
 int _h = 0;
-RDebugUtils.currentLine=10878976;
- //BA.debugLineNum = 10878976;BA.debugLine="Public Sub MainForm_Resize(Width As Double, Height";
-RDebugUtils.currentLine=10878977;
- //BA.debugLineNum = 10878977;BA.debugLine="Dim w As Int = Width";
+RDebugUtils.currentLine=22347776;
+ //BA.debugLineNum = 22347776;BA.debugLine="Public Sub MainForm_Resize(Width As Double, Height";
+RDebugUtils.currentLine=22347777;
+ //BA.debugLineNum = 22347777;BA.debugLine="Dim w As Int = Width";
 _w = (int) (_width);
-RDebugUtils.currentLine=10878978;
- //BA.debugLineNum = 10878978;BA.debugLine="Dim h As Int = Height";
+RDebugUtils.currentLine=22347778;
+ //BA.debugLineNum = 22347778;BA.debugLine="Dim h As Int = Height";
 _h = (int) (_height);
-RDebugUtils.currentLine=10878979;
- //BA.debugLineNum = 10878979;BA.debugLine="RaiseEvent(GetPageInfoFromRoot(Sender), \"B4XPage_";
+RDebugUtils.currentLine=22347779;
+ //BA.debugLineNum = 22347779;BA.debugLine="RaiseEvent(GetPageInfoFromRoot(Sender), \"B4XPage_";
 __ref._raiseevent /*String*/ (null,__ref._getpageinfofromroot /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__c.Sender(ba)))),"B4XPage_Resize",new Object[]{(Object)(_w),(Object)(_h)});
-RDebugUtils.currentLine=10878980;
- //BA.debugLineNum = 10878980;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22347780;
+ //BA.debugLineNum = 22347780;BA.debugLine="End Sub";
 return "";
 }
 public boolean  _closerequestexists(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _pi) throws Exception{
@@ -803,13 +803,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "closerequestexists", true))
 	 {return ((Boolean) Debug.delegate(ba, "closerequestexists", new Object[] {_pi}));}
-RDebugUtils.currentLine=10616832;
- //BA.debugLineNum = 10616832;BA.debugLine="Private Sub CloseRequestExists (pi As B4XPageInfo)";
-RDebugUtils.currentLine=10616833;
- //BA.debugLineNum = 10616833;BA.debugLine="Return xui.SubExists(pi.B4XPage, \"B4XPage_CloseRe";
+RDebugUtils.currentLine=22085632;
+ //BA.debugLineNum = 22085632;BA.debugLine="Private Sub CloseRequestExists (pi As B4XPageInfo)";
+RDebugUtils.currentLine=22085633;
+ //BA.debugLineNum = 22085633;BA.debugLine="Return xui.SubExists(pi.B4XPage, \"B4XPage_CloseRe";
 if (true) return __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .SubExists(ba,_pi.B4XPage /*Object*/ ,"B4XPage_CloseRequest",(int) (0));
-RDebugUtils.currentLine=10616834;
- //BA.debugLineNum = 10616834;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22085634;
+ //BA.debugLineNum = 22085634;BA.debugLine="End Sub";
 return false;
 }
 public void  _handlecloserequest(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _pi) throws Exception{
@@ -844,15 +844,15 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=10682369;
- //BA.debugLineNum = 10682369;BA.debugLine="LogEvent(pi, \"B4XPage_CloseRequest\")";
+RDebugUtils.currentLine=22151169;
+ //BA.debugLineNum = 22151169;BA.debugLine="LogEvent(pi, \"B4XPage_CloseRequest\")";
 __ref._logevent /*String*/ (null,_pi,"B4XPage_CloseRequest");
-RDebugUtils.currentLine=10682370;
- //BA.debugLineNum = 10682370;BA.debugLine="Dim rs As ResumableSub = CallSub(pi.B4XPage, \"B4X";
+RDebugUtils.currentLine=22151170;
+ //BA.debugLineNum = 22151170;BA.debugLine="Dim rs As ResumableSub = CallSub(pi.B4XPage, \"B4X";
 _rs = new anywheresoftware.b4a.keywords.Common.ResumableSubWrapper();
 _rs = (anywheresoftware.b4a.keywords.Common.ResumableSubWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.keywords.Common.ResumableSubWrapper(), (anywheresoftware.b4a.BA.ResumableSub)(parent.__c.CallSubDebug(ba,_pi.B4XPage /*Object*/ ,"B4XPage_CloseRequest")));
-RDebugUtils.currentLine=10682371;
- //BA.debugLineNum = 10682371;BA.debugLine="Wait For (rs) Complete (ShouldClose As Boolean)";
+RDebugUtils.currentLine=22151171;
+ //BA.debugLineNum = 22151171;BA.debugLine="Wait For (rs) Complete (ShouldClose As Boolean)";
 parent.__c.WaitFor("complete", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "b4xpagesmanager", "handlecloserequest"), _rs);
 this.state = 5;
 return;
@@ -861,8 +861,8 @@ case 5:
 this.state = 1;
 _shouldclose = (Boolean) result[1];
 ;
-RDebugUtils.currentLine=10682372;
- //BA.debugLineNum = 10682372;BA.debugLine="If ShouldClose Then";
+RDebugUtils.currentLine=22151172;
+ //BA.debugLineNum = 22151172;BA.debugLine="If ShouldClose Then";
 if (true) break;
 
 case 1:
@@ -875,8 +875,8 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=10682373;
- //BA.debugLineNum = 10682373;BA.debugLine="ClosePage(pi.B4XPage)";
+RDebugUtils.currentLine=22151173;
+ //BA.debugLineNum = 22151173;BA.debugLine="ClosePage(pi.B4XPage)";
 __ref._closepage /*String*/ (null,_pi.B4XPage /*Object*/ );
  if (true) break;
 
@@ -884,8 +884,8 @@ case 4:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=10682375;
- //BA.debugLineNum = 10682375;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22151175;
+ //BA.debugLineNum = 22151175;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -898,58 +898,58 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "raiseeventwithresult", true))
 	 {return ((Object) Debug.delegate(ba, "raiseeventwithresult", new Object[] {_targetpage,_subname,_params}));}
 int _length = 0;
-RDebugUtils.currentLine=10813440;
- //BA.debugLineNum = 10813440;BA.debugLine="Public Sub RaiseEventWithResult (TargetPage As B4X";
-RDebugUtils.currentLine=10813441;
- //BA.debugLineNum = 10813441;BA.debugLine="If TargetPage = Null Then Return Null";
+RDebugUtils.currentLine=22282240;
+ //BA.debugLineNum = 22282240;BA.debugLine="Public Sub RaiseEventWithResult (TargetPage As B4X";
+RDebugUtils.currentLine=22282241;
+ //BA.debugLineNum = 22282241;BA.debugLine="If TargetPage = Null Then Return Null";
 if (_targetpage== null) { 
 if (true) return __c.Null;};
-RDebugUtils.currentLine=10813442;
- //BA.debugLineNum = 10813442;BA.debugLine="Dim length As Int";
+RDebugUtils.currentLine=22282242;
+ //BA.debugLineNum = 22282242;BA.debugLine="Dim length As Int";
 _length = 0;
-RDebugUtils.currentLine=10813443;
- //BA.debugLineNum = 10813443;BA.debugLine="If Params = Null Then length = 0 Else length = Pa";
+RDebugUtils.currentLine=22282243;
+ //BA.debugLineNum = 22282243;BA.debugLine="If Params = Null Then length = 0 Else length = Pa";
 if (_params== null) { 
 _length = (int) (0);}
 else {
 _length = _params.length;};
-RDebugUtils.currentLine=10813444;
- //BA.debugLineNum = 10813444;BA.debugLine="LogEvent(TargetPage, SubName)";
+RDebugUtils.currentLine=22282244;
+ //BA.debugLineNum = 22282244;BA.debugLine="LogEvent(TargetPage, SubName)";
 __ref._logevent /*String*/ (null,_targetpage,_subname);
-RDebugUtils.currentLine=10813445;
- //BA.debugLineNum = 10813445;BA.debugLine="If xui.SubExists(TargetPage.B4XPage, SubName, len";
+RDebugUtils.currentLine=22282245;
+ //BA.debugLineNum = 22282245;BA.debugLine="If xui.SubExists(TargetPage.B4XPage, SubName, len";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .SubExists(ba,_targetpage.B4XPage /*Object*/ ,_subname,_length)==__c.False) { 
 if (true) return __c.Null;};
-RDebugUtils.currentLine=10813446;
- //BA.debugLineNum = 10813446;BA.debugLine="Select length";
+RDebugUtils.currentLine=22282246;
+ //BA.debugLineNum = 22282246;BA.debugLine="Select length";
 switch (_length) {
 case 0: {
-RDebugUtils.currentLine=10813448;
- //BA.debugLineNum = 10813448;BA.debugLine="Return CallSub(TargetPage.B4XPage, SubName)";
+RDebugUtils.currentLine=22282248;
+ //BA.debugLineNum = 22282248;BA.debugLine="Return CallSub(TargetPage.B4XPage, SubName)";
 if (true) return __c.CallSubNew(ba,_targetpage.B4XPage /*Object*/ ,_subname);
  break; }
 case 1: {
-RDebugUtils.currentLine=10813450;
- //BA.debugLineNum = 10813450;BA.debugLine="Return CallSub2(TargetPage.B4XPage, SubName, Pa";
+RDebugUtils.currentLine=22282250;
+ //BA.debugLineNum = 22282250;BA.debugLine="Return CallSub2(TargetPage.B4XPage, SubName, Pa";
 if (true) return __c.CallSubNew2(ba,_targetpage.B4XPage /*Object*/ ,_subname,_params[(int) (0)]);
  break; }
 case 2: {
-RDebugUtils.currentLine=10813452;
- //BA.debugLineNum = 10813452;BA.debugLine="Return CallSub3(TargetPage.B4XPage, SubName, Pa";
+RDebugUtils.currentLine=22282252;
+ //BA.debugLineNum = 22282252;BA.debugLine="Return CallSub3(TargetPage.B4XPage, SubName, Pa";
 if (true) return __c.CallSubNew3(ba,_targetpage.B4XPage /*Object*/ ,_subname,_params[(int) (0)],_params[(int) (1)]);
  break; }
 default: {
-RDebugUtils.currentLine=10813454;
- //BA.debugLineNum = 10813454;BA.debugLine="Log(\"Too many parameters\")";
-__c.LogImpl("910813454","Too many parameters",0);
+RDebugUtils.currentLine=22282254;
+ //BA.debugLineNum = 22282254;BA.debugLine="Log(\"Too many parameters\")";
+__c.LogImpl("922282254","Too many parameters",0);
  break; }
 }
 ;
-RDebugUtils.currentLine=10813456;
- //BA.debugLineNum = 10813456;BA.debugLine="Return Null";
+RDebugUtils.currentLine=22282256;
+ //BA.debugLineNum = 22282256;BA.debugLine="Return Null";
 if (true) return __c.Null;
-RDebugUtils.currentLine=10813457;
- //BA.debugLineNum = 10813457;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22282257;
+ //BA.debugLineNum = 22282257;BA.debugLine="End Sub";
 return null;
 }
 public String  _backgroundstatechanged(b4a.example.b4xpagesmanager __ref,boolean _newstate) throws Exception{
@@ -959,26 +959,26 @@ if (Debug.shouldDelegate(ba, "backgroundstatechanged", true))
 	 {return ((String) Debug.delegate(ba, "backgroundstatechanged", new Object[] {_newstate}));}
 String _ev = "";
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=11141120;
- //BA.debugLineNum = 11141120;BA.debugLine="Private Sub BackgroundStateChanged (NewState As Bo";
-RDebugUtils.currentLine=11141121;
- //BA.debugLineNum = 11141121;BA.debugLine="If IsForeground = NewState Then Return";
+RDebugUtils.currentLine=22609920;
+ //BA.debugLineNum = 22609920;BA.debugLine="Private Sub BackgroundStateChanged (NewState As Bo";
+RDebugUtils.currentLine=22609921;
+ //BA.debugLineNum = 22609921;BA.debugLine="If IsForeground = NewState Then Return";
 if (__ref._isforeground /*boolean*/ ==_newstate) { 
 if (true) return "";};
-RDebugUtils.currentLine=11141122;
- //BA.debugLineNum = 11141122;BA.debugLine="IsForeground = NewState";
+RDebugUtils.currentLine=22609922;
+ //BA.debugLineNum = 22609922;BA.debugLine="IsForeground = NewState";
 __ref._isforeground /*boolean*/  = _newstate;
-RDebugUtils.currentLine=11141123;
- //BA.debugLineNum = 11141123;BA.debugLine="Dim ev As String";
+RDebugUtils.currentLine=22609923;
+ //BA.debugLineNum = 22609923;BA.debugLine="Dim ev As String";
 _ev = "";
-RDebugUtils.currentLine=11141124;
- //BA.debugLineNum = 11141124;BA.debugLine="If IsForeground Then ev = \"B4XPage_Foreground\" El";
+RDebugUtils.currentLine=22609924;
+ //BA.debugLineNum = 22609924;BA.debugLine="If IsForeground Then ev = \"B4XPage_Foreground\" El";
 if (__ref._isforeground /*boolean*/ ) { 
 _ev = "B4XPage_Foreground";}
 else {
 _ev = "B4XPage_Background";};
-RDebugUtils.currentLine=11141125;
- //BA.debugLineNum = 11141125;BA.debugLine="For Each pi As B4XPageInfo In IdToB4XPage.Values";
+RDebugUtils.currentLine=22609925;
+ //BA.debugLineNum = 22609925;BA.debugLine="For Each pi As B4XPageInfo In IdToB4XPage.Values";
 {
 final anywheresoftware.b4a.BA.IterableList group5 = __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._getvalues /*anywheresoftware.b4a.objects.collections.List*/ (null);
 final int groupLen5 = group5.getSize()
@@ -986,28 +986,28 @@ final int groupLen5 = group5.getSize()
 ;
 for (; index5 < groupLen5;index5++){
 _pi = (b4a.example.b4xpagesmanager._b4xpageinfo)(group5.Get(index5));
-RDebugUtils.currentLine=11141126;
- //BA.debugLineNum = 11141126;BA.debugLine="If xui.SubExists(pi.B4XPage, ev, 0) Then";
+RDebugUtils.currentLine=22609926;
+ //BA.debugLineNum = 22609926;BA.debugLine="If xui.SubExists(pi.B4XPage, ev, 0) Then";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .SubExists(ba,_pi.B4XPage /*Object*/ ,_ev,(int) (0))) { 
-RDebugUtils.currentLine=11141127;
- //BA.debugLineNum = 11141127;BA.debugLine="LogEvent(pi, ev)";
+RDebugUtils.currentLine=22609927;
+ //BA.debugLineNum = 22609927;BA.debugLine="LogEvent(pi, ev)";
 __ref._logevent /*String*/ (null,_pi,_ev);
-RDebugUtils.currentLine=11141128;
- //BA.debugLineNum = 11141128;BA.debugLine="If IsForeground Then";
+RDebugUtils.currentLine=22609928;
+ //BA.debugLineNum = 22609928;BA.debugLine="If IsForeground Then";
 if (__ref._isforeground /*boolean*/ ) { 
-RDebugUtils.currentLine=11141129;
- //BA.debugLineNum = 11141129;BA.debugLine="CallSubDelayed(pi.B4XPage, ev)";
+RDebugUtils.currentLine=22609929;
+ //BA.debugLineNum = 22609929;BA.debugLine="CallSubDelayed(pi.B4XPage, ev)";
 __c.CallSubDelayed(ba,_pi.B4XPage /*Object*/ ,_ev);
  }else {
-RDebugUtils.currentLine=11141131;
- //BA.debugLineNum = 11141131;BA.debugLine="CallSub(pi.B4XPage, ev)";
+RDebugUtils.currentLine=22609931;
+ //BA.debugLineNum = 22609931;BA.debugLine="CallSub(pi.B4XPage, ev)";
 __c.CallSubNew(ba,_pi.B4XPage /*Object*/ ,_ev);
  };
  };
  }
 };
-RDebugUtils.currentLine=11141135;
- //BA.debugLineNum = 11141135;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22609935;
+ //BA.debugLineNum = 22609935;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.b4xpagesmanager._b4xpageinfo  _createb4xpageinfo(b4a.example.b4xpagesmanager __ref,Object _b4xpage,String _id,boolean _created,Object _title) throws Exception{
@@ -1016,31 +1016,31 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "createb4xpageinfo", true))
 	 {return ((b4a.example.b4xpagesmanager._b4xpageinfo) Debug.delegate(ba, "createb4xpageinfo", new Object[] {_b4xpage,_id,_created,_title}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _t1 = null;
-RDebugUtils.currentLine=10289152;
- //BA.debugLineNum = 10289152;BA.debugLine="Private Sub CreateB4XPageInfo (B4XPage As Object,";
-RDebugUtils.currentLine=10289153;
- //BA.debugLineNum = 10289153;BA.debugLine="Dim t1 As B4XPageInfo";
+RDebugUtils.currentLine=21757952;
+ //BA.debugLineNum = 21757952;BA.debugLine="Private Sub CreateB4XPageInfo (B4XPage As Object,";
+RDebugUtils.currentLine=21757953;
+ //BA.debugLineNum = 21757953;BA.debugLine="Dim t1 As B4XPageInfo";
 _t1 = new b4a.example.b4xpagesmanager._b4xpageinfo();
-RDebugUtils.currentLine=10289154;
- //BA.debugLineNum = 10289154;BA.debugLine="t1.Initialize";
+RDebugUtils.currentLine=21757954;
+ //BA.debugLineNum = 21757954;BA.debugLine="t1.Initialize";
 _t1.Initialize();
-RDebugUtils.currentLine=10289155;
- //BA.debugLineNum = 10289155;BA.debugLine="t1.B4XPage = B4XPage";
+RDebugUtils.currentLine=21757955;
+ //BA.debugLineNum = 21757955;BA.debugLine="t1.B4XPage = B4XPage";
 _t1.B4XPage /*Object*/  = _b4xpage;
-RDebugUtils.currentLine=10289156;
- //BA.debugLineNum = 10289156;BA.debugLine="t1.Id = Id";
+RDebugUtils.currentLine=21757956;
+ //BA.debugLineNum = 21757956;BA.debugLine="t1.Id = Id";
 _t1.Id /*String*/  = _id;
-RDebugUtils.currentLine=10289157;
- //BA.debugLineNum = 10289157;BA.debugLine="t1.Created = Created";
+RDebugUtils.currentLine=21757957;
+ //BA.debugLineNum = 21757957;BA.debugLine="t1.Created = Created";
 _t1.Created /*boolean*/  = _created;
-RDebugUtils.currentLine=10289158;
- //BA.debugLineNum = 10289158;BA.debugLine="t1.Title = Title";
+RDebugUtils.currentLine=21757958;
+ //BA.debugLineNum = 21757958;BA.debugLine="t1.Title = Title";
 _t1.Title /*Object*/  = _title;
-RDebugUtils.currentLine=10289159;
- //BA.debugLineNum = 10289159;BA.debugLine="Return t1";
+RDebugUtils.currentLine=21757959;
+ //BA.debugLineNum = 21757959;BA.debugLine="Return t1";
 if (true) return _t1;
-RDebugUtils.currentLine=10289160;
- //BA.debugLineNum = 10289160;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21757960;
+ //BA.debugLineNum = 21757960;BA.debugLine="End Sub";
 return null;
 }
 public String  _createpageifneeded(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _pi) throws Exception{
@@ -1048,32 +1048,32 @@ __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "createpageifneeded", true))
 	 {return ((String) Debug.delegate(ba, "createpageifneeded", new Object[] {_pi}));}
-RDebugUtils.currentLine=9830400;
- //BA.debugLineNum = 9830400;BA.debugLine="Private Sub CreatePageIfNeeded(pi As B4XPageInfo)";
-RDebugUtils.currentLine=9830401;
- //BA.debugLineNum = 9830401;BA.debugLine="If pi.Created Then Return";
+RDebugUtils.currentLine=21299200;
+ //BA.debugLineNum = 21299200;BA.debugLine="Private Sub CreatePageIfNeeded(pi As B4XPageInfo)";
+RDebugUtils.currentLine=21299201;
+ //BA.debugLineNum = 21299201;BA.debugLine="If pi.Created Then Return";
 if (_pi.Created /*boolean*/ ) { 
 if (true) return "";};
-RDebugUtils.currentLine=9830402;
- //BA.debugLineNum = 9830402;BA.debugLine="pi.IsFirst = IdToB4XPage.Size = 1";
+RDebugUtils.currentLine=21299202;
+ //BA.debugLineNum = 21299202;BA.debugLine="pi.IsFirst = IdToB4XPage.Size = 1";
 _pi.IsFirst /*boolean*/  = __ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._getsize /*int*/ (null)==1;
-RDebugUtils.currentLine=9830403;
- //BA.debugLineNum = 9830403;BA.debugLine="CreatePageImpl (pi)";
+RDebugUtils.currentLine=21299203;
+ //BA.debugLineNum = 21299203;BA.debugLine="CreatePageImpl (pi)";
 __ref._createpageimpl /*String*/ (null,_pi);
-RDebugUtils.currentLine=9830404;
- //BA.debugLineNum = 9830404;BA.debugLine="pi.Created = True";
+RDebugUtils.currentLine=21299204;
+ //BA.debugLineNum = 21299204;BA.debugLine="pi.Created = True";
 _pi.Created /*boolean*/  = __c.True;
-RDebugUtils.currentLine=9830405;
- //BA.debugLineNum = 9830405;BA.debugLine="RootB4XToPage.Put(pi.Root, pi)";
+RDebugUtils.currentLine=21299205;
+ //BA.debugLineNum = 21299205;BA.debugLine="RootB4XToPage.Put(pi.Root, pi)";
 __ref._rootb4xtopage /*b4a.example.b4xorderedmap*/ ._put /*String*/ (null,(Object)(_pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()),(Object)(_pi));
-RDebugUtils.currentLine=9830406;
- //BA.debugLineNum = 9830406;BA.debugLine="LogEvent(pi, \"B4XPage_Created\")";
+RDebugUtils.currentLine=21299206;
+ //BA.debugLineNum = 21299206;BA.debugLine="LogEvent(pi, \"B4XPage_Created\")";
 __ref._logevent /*String*/ (null,_pi,"B4XPage_Created");
-RDebugUtils.currentLine=9830407;
- //BA.debugLineNum = 9830407;BA.debugLine="CallSub2(pi.B4XPage, \"B4XPage_Created\", pi.root)";
+RDebugUtils.currentLine=21299207;
+ //BA.debugLineNum = 21299207;BA.debugLine="CallSub2(pi.B4XPage, \"B4XPage_Created\", pi.root)";
 __c.CallSubDebug2(ba,_pi.B4XPage /*Object*/ ,"B4XPage_Created",(Object)(_pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ));
-RDebugUtils.currentLine=9830408;
- //BA.debugLineNum = 9830408;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21299208;
+ //BA.debugLineNum = 21299208;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.b4xpagesmanager._b4xpageinfo  _getpagefromid(b4a.example.b4xpagesmanager __ref,String _id) throws Exception{
@@ -1082,26 +1082,26 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "getpagefromid", true))
 	 {return ((b4a.example.b4xpagesmanager._b4xpageinfo) Debug.delegate(ba, "getpagefromid", new Object[] {_id}));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=10158080;
- //BA.debugLineNum = 10158080;BA.debugLine="Private Sub GetPageFromId (id As String) As B4XPag";
-RDebugUtils.currentLine=10158081;
- //BA.debugLineNum = 10158081;BA.debugLine="Dim pi As B4XPageInfo = IdToB4XPage.Get(id.ToLowe";
+RDebugUtils.currentLine=21626880;
+ //BA.debugLineNum = 21626880;BA.debugLine="Private Sub GetPageFromId (id As String) As B4XPag";
+RDebugUtils.currentLine=21626881;
+ //BA.debugLineNum = 21626881;BA.debugLine="Dim pi As B4XPageInfo = IdToB4XPage.Get(id.ToLowe";
 _pi = (b4a.example.b4xpagesmanager._b4xpageinfo)(__ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._get /*Object*/ (null,(Object)(_id.toLowerCase(anywheresoftware.b4a.keywords.Common.stringLocale))));
-RDebugUtils.currentLine=10158082;
- //BA.debugLineNum = 10158082;BA.debugLine="If pi = Null Then";
+RDebugUtils.currentLine=21626882;
+ //BA.debugLineNum = 21626882;BA.debugLine="If pi = Null Then";
 if (_pi== null) { 
-RDebugUtils.currentLine=10158083;
- //BA.debugLineNum = 10158083;BA.debugLine="Log(\"Error: page id not found: \" & id)";
-__c.LogImpl("910158083","Error: page id not found: "+_id,0);
-RDebugUtils.currentLine=10158084;
- //BA.debugLineNum = 10158084;BA.debugLine="Log(\"Ids: \" & IdToB4XPage.Keys) 'ignore";
-__c.LogImpl("910158084","Ids: "+BA.ObjectToString(__ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._getkeys /*anywheresoftware.b4a.objects.collections.List*/ (null)),0);
+RDebugUtils.currentLine=21626883;
+ //BA.debugLineNum = 21626883;BA.debugLine="Log(\"Error: page id not found: \" & id)";
+__c.LogImpl("921626883","Error: page id not found: "+_id,0);
+RDebugUtils.currentLine=21626884;
+ //BA.debugLineNum = 21626884;BA.debugLine="Log(\"Ids: \" & IdToB4XPage.Keys) 'ignore";
+__c.LogImpl("921626884","Ids: "+BA.ObjectToString(__ref._idtob4xpage /*b4a.example.b4xorderedmap*/ ._getkeys /*anywheresoftware.b4a.objects.collections.List*/ (null)),0);
  };
-RDebugUtils.currentLine=10158086;
- //BA.debugLineNum = 10158086;BA.debugLine="Return pi";
+RDebugUtils.currentLine=21626886;
+ //BA.debugLineNum = 21626886;BA.debugLine="Return pi";
 if (true) return _pi;
-RDebugUtils.currentLine=10158087;
- //BA.debugLineNum = 10158087;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21626887;
+ //BA.debugLineNum = 21626887;BA.debugLine="End Sub";
 return null;
 }
 public String  _logevent(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _pi,String _ev) throws Exception{
@@ -1110,20 +1110,20 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "logevent", true))
 	 {return ((String) Debug.delegate(ba, "logevent", new Object[] {_pi,_ev}));}
 String _msg = "";
-RDebugUtils.currentLine=11272192;
- //BA.debugLineNum = 11272192;BA.debugLine="Private Sub LogEvent (pi As B4XPageInfo, ev As Str";
-RDebugUtils.currentLine=11272193;
- //BA.debugLineNum = 11272193;BA.debugLine="If LogEvents Then";
+RDebugUtils.currentLine=22740992;
+ //BA.debugLineNum = 22740992;BA.debugLine="Private Sub LogEvent (pi As B4XPageInfo, ev As Str";
+RDebugUtils.currentLine=22740993;
+ //BA.debugLineNum = 22740993;BA.debugLine="If LogEvents Then";
 if (__ref._logevents /*boolean*/ ) { 
-RDebugUtils.currentLine=11272194;
- //BA.debugLineNum = 11272194;BA.debugLine="Dim msg As String = $\"*** ${pi.Id}: ${ev} ${Stac";
+RDebugUtils.currentLine=22740994;
+ //BA.debugLineNum = 22740994;BA.debugLine="Dim msg As String = $\"*** ${pi.Id}: ${ev} ${Stac";
 _msg = ("*** "+__c.SmartStringFormatter("",(Object)(_pi.Id /*String*/ ))+": "+__c.SmartStringFormatter("",(Object)(_ev))+" "+__c.SmartStringFormatter("",(Object)(__ref._stackstring /*String*/ ))+"");
-RDebugUtils.currentLine=11272195;
- //BA.debugLineNum = 11272195;BA.debugLine="Log(msg)";
-__c.LogImpl("911272195",_msg,0);
+RDebugUtils.currentLine=22740995;
+ //BA.debugLineNum = 22740995;BA.debugLine="Log(msg)";
+__c.LogImpl("922740995",_msg,0);
  };
-RDebugUtils.currentLine=11272197;
- //BA.debugLineNum = 11272197;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22740997;
+ //BA.debugLineNum = 22740997;BA.debugLine="End Sub";
 return "";
 }
 public String  _checkmainactivityorientations(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -1139,44 +1139,44 @@ Object[] _activities = null;
 anywheresoftware.b4j.object.JavaObject _act = null;
 String _name = "";
 int _screenorientation = 0;
-RDebugUtils.currentLine=9043968;
- //BA.debugLineNum = 9043968;BA.debugLine="Private Sub CheckMainActivityOrientations";
-RDebugUtils.currentLine=9043970;
- //BA.debugLineNum = 9043970;BA.debugLine="Dim jo As JavaObject";
+RDebugUtils.currentLine=20512768;
+ //BA.debugLineNum = 20512768;BA.debugLine="Private Sub CheckMainActivityOrientations";
+RDebugUtils.currentLine=20512770;
+ //BA.debugLineNum = 20512770;BA.debugLine="Dim jo As JavaObject";
 _jo = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=9043971;
- //BA.debugLineNum = 9043971;BA.debugLine="jo.InitializeContext";
+RDebugUtils.currentLine=20512771;
+ //BA.debugLineNum = 20512771;BA.debugLine="jo.InitializeContext";
 _jo.InitializeContext(ba);
-RDebugUtils.currentLine=9043973;
- //BA.debugLineNum = 9043973;BA.debugLine="ActionBar = jo.RunMethod(\"getActionBar\", Null)";
+RDebugUtils.currentLine=20512773;
+ //BA.debugLineNum = 20512773;BA.debugLine="ActionBar = jo.RunMethod(\"getActionBar\", Null)";
 __ref._actionbar /*anywheresoftware.b4j.object.JavaObject*/  = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_jo.RunMethod("getActionBar",(Object[])(__c.Null))));
-RDebugUtils.currentLine=9043974;
- //BA.debugLineNum = 9043974;BA.debugLine="If ActionBar.IsInitialized = False Then";
+RDebugUtils.currentLine=20512774;
+ //BA.debugLineNum = 20512774;BA.debugLine="If ActionBar.IsInitialized = False Then";
 if (__ref._actionbar /*anywheresoftware.b4j.object.JavaObject*/ .IsInitialized()==__c.False) { 
-RDebugUtils.currentLine=9043975;
- //BA.debugLineNum = 9043975;BA.debugLine="Dim jme As JavaObject = Me";
+RDebugUtils.currentLine=20512775;
+ //BA.debugLineNum = 20512775;BA.debugLine="Dim jme As JavaObject = Me";
 _jme = new anywheresoftware.b4j.object.JavaObject();
 _jme = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(this));
-RDebugUtils.currentLine=9043976;
- //BA.debugLineNum = 9043976;BA.debugLine="Dim IsAppCompat As Boolean = jme.RunMethod(\"chec";
+RDebugUtils.currentLine=20512776;
+ //BA.debugLineNum = 20512776;BA.debugLine="Dim IsAppCompat As Boolean = jme.RunMethod(\"chec";
 _isappcompat = BA.ObjectToBoolean(_jme.RunMethod("checkIfAppCompat",new Object[]{(Object)(_jo.getObject())}));
-RDebugUtils.currentLine=9043977;
- //BA.debugLineNum = 9043977;BA.debugLine="If IsAppCompat Then";
+RDebugUtils.currentLine=20512777;
+ //BA.debugLineNum = 20512777;BA.debugLine="If IsAppCompat Then";
 if (_isappcompat) { 
-RDebugUtils.currentLine=9043978;
- //BA.debugLineNum = 9043978;BA.debugLine="ActionBar = jo.RunMethod(\"getSupportActionBar\",";
+RDebugUtils.currentLine=20512778;
+ //BA.debugLineNum = 20512778;BA.debugLine="ActionBar = jo.RunMethod(\"getSupportActionBar\",";
 __ref._actionbar /*anywheresoftware.b4j.object.JavaObject*/  = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_jo.RunMethod("getSupportActionBar",(Object[])(__c.Null))));
  };
  };
-RDebugUtils.currentLine=9043982;
- //BA.debugLineNum = 9043982;BA.debugLine="Dim pi As JavaObject = jo.RunMethodJO(\"getPackage";
+RDebugUtils.currentLine=20512782;
+ //BA.debugLineNum = 20512782;BA.debugLine="Dim pi As JavaObject = jo.RunMethodJO(\"getPackage";
 _pi = new anywheresoftware.b4j.object.JavaObject();
 _pi = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_jo.RunMethodJO("getPackageManager",(Object[])(__c.Null)).RunMethod("getPackageInfo",new Object[]{(Object)(__c.Application.getPackageName()),(Object)(1)})));
-RDebugUtils.currentLine=9043983;
- //BA.debugLineNum = 9043983;BA.debugLine="Dim activities() As Object = pi.GetField(\"activit";
+RDebugUtils.currentLine=20512783;
+ //BA.debugLineNum = 20512783;BA.debugLine="Dim activities() As Object = pi.GetField(\"activit";
 _activities = (Object[])(_pi.GetField("activities"));
-RDebugUtils.currentLine=9043984;
- //BA.debugLineNum = 9043984;BA.debugLine="For Each Act As JavaObject In activities";
+RDebugUtils.currentLine=20512784;
+ //BA.debugLineNum = 20512784;BA.debugLine="For Each Act As JavaObject In activities";
 _act = new anywheresoftware.b4j.object.JavaObject();
 {
 final Object[] group13 = _activities;
@@ -1185,90 +1185,90 @@ final int groupLen13 = group13.length
 ;
 for (; index13 < groupLen13;index13++){
 _act = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(group13[index13]));
-RDebugUtils.currentLine=9043985;
- //BA.debugLineNum = 9043985;BA.debugLine="Dim name As String = Act.GetField(\"name\")";
+RDebugUtils.currentLine=20512785;
+ //BA.debugLineNum = 20512785;BA.debugLine="Dim name As String = Act.GetField(\"name\")";
 _name = BA.ObjectToString(_act.GetField("name"));
-RDebugUtils.currentLine=9043986;
- //BA.debugLineNum = 9043986;BA.debugLine="If name.EndsWith(\".main\") Then";
+RDebugUtils.currentLine=20512786;
+ //BA.debugLineNum = 20512786;BA.debugLine="If name.EndsWith(\".main\") Then";
 if (_name.endsWith(".main")) { 
-RDebugUtils.currentLine=9043987;
- //BA.debugLineNum = 9043987;BA.debugLine="Dim screenOrientation As Int = Act.GetField(\"sc";
+RDebugUtils.currentLine=20512787;
+ //BA.debugLineNum = 20512787;BA.debugLine="Dim screenOrientation As Int = Act.GetField(\"sc";
 _screenorientation = (int)(BA.ObjectToNumber(_act.GetField("screenOrientation")));
-RDebugUtils.currentLine=9043988;
- //BA.debugLineNum = 9043988;BA.debugLine="If screenOrientation = -1 Then";
+RDebugUtils.currentLine=20512788;
+ //BA.debugLineNum = 20512788;BA.debugLine="If screenOrientation = -1 Then";
 if (_screenorientation==-1) { 
-RDebugUtils.currentLine=9043989;
- //BA.debugLineNum = 9043989;BA.debugLine="LogColor(\"#SupportedOrientations attribute mus";
-__c.LogImpl("99043989","#SupportedOrientations attribute must be set to landscape or portrait.",__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Red);
+RDebugUtils.currentLine=20512789;
+ //BA.debugLineNum = 20512789;BA.debugLine="LogColor(\"#SupportedOrientations attribute mus";
+__c.LogImpl("920512789","#SupportedOrientations attribute must be set to landscape or portrait.",__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Red);
  };
  };
  }
 };
-RDebugUtils.currentLine=9043993;
- //BA.debugLineNum = 9043993;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20512793;
+ //BA.debugLineNum = 20512793;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.b4xpagesmanager __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
-RDebugUtils.currentLine=8912896;
- //BA.debugLineNum = 8912896;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=8912897;
- //BA.debugLineNum = 8912897;BA.debugLine="Private IdToB4XPage As B4XOrderedMap";
+RDebugUtils.currentLine=20381696;
+ //BA.debugLineNum = 20381696;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=20381697;
+ //BA.debugLineNum = 20381697;BA.debugLine="Private IdToB4XPage As B4XOrderedMap";
 _idtob4xpage = new b4a.example.b4xorderedmap();
-RDebugUtils.currentLine=8912898;
- //BA.debugLineNum = 8912898;BA.debugLine="Private RootB4XToPage As B4XOrderedMap";
+RDebugUtils.currentLine=20381698;
+ //BA.debugLineNum = 20381698;BA.debugLine="Private RootB4XToPage As B4XOrderedMap";
 _rootb4xtopage = new b4a.example.b4xorderedmap();
-RDebugUtils.currentLine=8912900;
- //BA.debugLineNum = 8912900;BA.debugLine="Private Context As JavaObject";
+RDebugUtils.currentLine=20381700;
+ //BA.debugLineNum = 20381700;BA.debugLine="Private Context As JavaObject";
 _context = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=8912901;
- //BA.debugLineNum = 8912901;BA.debugLine="Type B4XPageParent (NativeType As Activity, MenuI";
+RDebugUtils.currentLine=20381701;
+ //BA.debugLineNum = 20381701;BA.debugLine="Type B4XPageParent (NativeType As Activity, MenuI";
 ;
-RDebugUtils.currentLine=8912902;
- //BA.debugLineNum = 8912902;BA.debugLine="Type B4AMenuItem (Title As Object, Bitmap As B4XB";
+RDebugUtils.currentLine=20381702;
+ //BA.debugLineNum = 20381702;BA.debugLine="Type B4AMenuItem (Title As Object, Bitmap As B4XB";
 ;
-RDebugUtils.currentLine=8912908;
- //BA.debugLineNum = 8912908;BA.debugLine="Type B4XPageInfo (B4XPage As Object, Id As String";
+RDebugUtils.currentLine=20381708;
+ //BA.debugLineNum = 20381708;BA.debugLine="Type B4XPageInfo (B4XPage As Object, Id As String";
 ;
-RDebugUtils.currentLine=8912912;
- //BA.debugLineNum = 8912912;BA.debugLine="Public mStackOfPageIds As B4XSet";
+RDebugUtils.currentLine=20381712;
+ //BA.debugLineNum = 20381712;BA.debugLine="Public mStackOfPageIds As B4XSet";
 _mstackofpageids = new b4a.example.b4xset();
-RDebugUtils.currentLine=8912913;
- //BA.debugLineNum = 8912913;BA.debugLine="Private xui As XUI 'ignore";
+RDebugUtils.currentLine=20381713;
+ //BA.debugLineNum = 20381713;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=8912917;
- //BA.debugLineNum = 8912917;BA.debugLine="Private mMainForm As Activity";
+RDebugUtils.currentLine=20381717;
+ //BA.debugLineNum = 20381717;BA.debugLine="Private mMainForm As Activity";
 _mmainform = new anywheresoftware.b4a.objects.ActivityWrapper();
-RDebugUtils.currentLine=8912918;
- //BA.debugLineNum = 8912918;BA.debugLine="Public ShowUpIndicator As Boolean = True";
+RDebugUtils.currentLine=20381718;
+ //BA.debugLineNum = 20381718;BA.debugLine="Public ShowUpIndicator As Boolean = True";
 _showupindicator = __c.True;
-RDebugUtils.currentLine=8912919;
- //BA.debugLineNum = 8912919;BA.debugLine="Public ActionBar As JavaObject";
+RDebugUtils.currentLine=20381719;
+ //BA.debugLineNum = 20381719;BA.debugLine="Public ActionBar As JavaObject";
 _actionbar = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=8912920;
- //BA.debugLineNum = 8912920;BA.debugLine="Private ime As IME";
+RDebugUtils.currentLine=20381720;
+ //BA.debugLineNum = 20381720;BA.debugLine="Private ime As IME";
 _ime = new anywheresoftware.b4a.objects.IME();
-RDebugUtils.currentLine=8912921;
- //BA.debugLineNum = 8912921;BA.debugLine="Private ReferenceRect As Rect";
+RDebugUtils.currentLine=20381721;
+ //BA.debugLineNum = 20381721;BA.debugLine="Private ReferenceRect As Rect";
 _referencerect = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper();
-RDebugUtils.currentLine=8912925;
- //BA.debugLineNum = 8912925;BA.debugLine="Public IsForeground As Boolean";
+RDebugUtils.currentLine=20381725;
+ //BA.debugLineNum = 20381725;BA.debugLine="Public IsForeground As Boolean";
 _isforeground = false;
-RDebugUtils.currentLine=8912926;
- //BA.debugLineNum = 8912926;BA.debugLine="Public TransitionAnimationDuration As Int = 100";
+RDebugUtils.currentLine=20381726;
+ //BA.debugLineNum = 20381726;BA.debugLine="Public TransitionAnimationDuration As Int = 100";
 _transitionanimationduration = (int) (100);
-RDebugUtils.currentLine=8912927;
- //BA.debugLineNum = 8912927;BA.debugLine="Public MainPage As B4XMainPage";
+RDebugUtils.currentLine=20381727;
+ //BA.debugLineNum = 20381727;BA.debugLine="Public MainPage As B4XMainPage";
 _mainpage = new b4a.example.b4xmainpage();
-RDebugUtils.currentLine=8912928;
- //BA.debugLineNum = 8912928;BA.debugLine="Private StackString As String";
+RDebugUtils.currentLine=20381728;
+ //BA.debugLineNum = 20381728;BA.debugLine="Private StackString As String";
 _stackstring = "";
-RDebugUtils.currentLine=8912929;
- //BA.debugLineNum = 8912929;BA.debugLine="Public LogEvents As Boolean = False";
+RDebugUtils.currentLine=20381729;
+ //BA.debugLineNum = 20381729;BA.debugLine="Public LogEvents As Boolean = False";
 _logevents = __c.False;
-RDebugUtils.currentLine=8912930;
- //BA.debugLineNum = 8912930;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20381730;
+ //BA.debugLineNum = 20381730;BA.debugLine="End Sub";
 return "";
 }
 public String  _closepageimpl(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _pi) throws Exception{
@@ -1277,33 +1277,33 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "closepageimpl", true))
 	 {return ((String) Debug.delegate(ba, "closepageimpl", new Object[] {_pi}));}
 anywheresoftware.b4a.objects.IntentWrapper _i = null;
-RDebugUtils.currentLine=9699328;
- //BA.debugLineNum = 9699328;BA.debugLine="Private Sub ClosePageImpl (pi As B4XPageInfo) 'ign";
-RDebugUtils.currentLine=9699330;
- //BA.debugLineNum = 9699330;BA.debugLine="If mStackOfPageIds.Size = 1 Then";
+RDebugUtils.currentLine=21168128;
+ //BA.debugLineNum = 21168128;BA.debugLine="Private Sub ClosePageImpl (pi As B4XPageInfo) 'ign";
+RDebugUtils.currentLine=21168130;
+ //BA.debugLineNum = 21168130;BA.debugLine="If mStackOfPageIds.Size = 1 Then";
 if (__ref._mstackofpageids /*b4a.example.b4xset*/ ._getsize /*int*/ (null)==1) { 
-RDebugUtils.currentLine=9699331;
- //BA.debugLineNum = 9699331;BA.debugLine="Dim i As Intent";
+RDebugUtils.currentLine=21168131;
+ //BA.debugLineNum = 21168131;BA.debugLine="Dim i As Intent";
 _i = new anywheresoftware.b4a.objects.IntentWrapper();
-RDebugUtils.currentLine=9699332;
- //BA.debugLineNum = 9699332;BA.debugLine="i.Initialize(i.ACTION_MAIN, \"\")";
+RDebugUtils.currentLine=21168132;
+ //BA.debugLineNum = 21168132;BA.debugLine="i.Initialize(i.ACTION_MAIN, \"\")";
 _i.Initialize(_i.ACTION_MAIN,"");
-RDebugUtils.currentLine=9699333;
- //BA.debugLineNum = 9699333;BA.debugLine="i.AddCategory(\"android.intent.category.HOME\")";
+RDebugUtils.currentLine=21168133;
+ //BA.debugLineNum = 21168133;BA.debugLine="i.AddCategory(\"android.intent.category.HOME\")";
 _i.AddCategory("android.intent.category.HOME");
-RDebugUtils.currentLine=9699334;
- //BA.debugLineNum = 9699334;BA.debugLine="i.Flags = 0x10000000";
+RDebugUtils.currentLine=21168134;
+ //BA.debugLineNum = 21168134;BA.debugLine="i.Flags = 0x10000000";
 _i.setFlags(((int)0x10000000));
-RDebugUtils.currentLine=9699335;
- //BA.debugLineNum = 9699335;BA.debugLine="StartActivity(i)";
+RDebugUtils.currentLine=21168135;
+ //BA.debugLineNum = 21168135;BA.debugLine="StartActivity(i)";
 __c.StartActivity(ba,(Object)(_i.getObject()));
  }else {
-RDebugUtils.currentLine=9699337;
- //BA.debugLineNum = 9699337;BA.debugLine="pi.Root.RemoveViewFromParent";
+RDebugUtils.currentLine=21168137;
+ //BA.debugLineNum = 21168137;BA.debugLine="pi.Root.RemoveViewFromParent";
 _pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .RemoveViewFromParent();
  };
-RDebugUtils.currentLine=9699344;
- //BA.debugLineNum = 9699344;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21168144;
+ //BA.debugLineNum = 21168144;BA.debugLine="End Sub";
 return "";
 }
 public String  _toppagedisappear(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -1312,32 +1312,32 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "toppagedisappear", true))
 	 {return ((String) Debug.delegate(ba, "toppagedisappear", null));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=9502720;
- //BA.debugLineNum = 9502720;BA.debugLine="Private Sub TopPageDisappear";
-RDebugUtils.currentLine=9502721;
- //BA.debugLineNum = 9502721;BA.debugLine="If xui.IsB4J Then Return";
+RDebugUtils.currentLine=20971520;
+ //BA.debugLineNum = 20971520;BA.debugLine="Private Sub TopPageDisappear";
+RDebugUtils.currentLine=20971521;
+ //BA.debugLineNum = 20971521;BA.debugLine="If xui.IsB4J Then Return";
 if (__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4J()) { 
 if (true) return "";};
-RDebugUtils.currentLine=9502722;
- //BA.debugLineNum = 9502722;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
+RDebugUtils.currentLine=20971522;
+ //BA.debugLineNum = 20971522;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
 _pi = __ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null);
-RDebugUtils.currentLine=9502723;
- //BA.debugLineNum = 9502723;BA.debugLine="If pi = Null Then Return";
+RDebugUtils.currentLine=20971523;
+ //BA.debugLineNum = 20971523;BA.debugLine="If pi = Null Then Return";
 if (_pi== null) { 
 if (true) return "";};
-RDebugUtils.currentLine=9502724;
- //BA.debugLineNum = 9502724;BA.debugLine="If Not(xui.IsB4i) Then";
+RDebugUtils.currentLine=20971524;
+ //BA.debugLineNum = 20971524;BA.debugLine="If Not(xui.IsB4i) Then";
 if (__c.Not(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i())) { 
-RDebugUtils.currentLine=9502725;
- //BA.debugLineNum = 9502725;BA.debugLine="If IsForeground Then";
+RDebugUtils.currentLine=20971525;
+ //BA.debugLineNum = 20971525;BA.debugLine="If IsForeground Then";
 if (__ref._isforeground /*boolean*/ ) { 
-RDebugUtils.currentLine=9502726;
- //BA.debugLineNum = 9502726;BA.debugLine="RaiseEventWithResult(pi, \"B4XPage_Disappear\", N";
+RDebugUtils.currentLine=20971526;
+ //BA.debugLineNum = 20971526;BA.debugLine="RaiseEventWithResult(pi, \"B4XPage_Disappear\", N";
 __ref._raiseeventwithresult /*Object*/ (null,_pi,"B4XPage_Disappear",(Object[])(__c.Null));
  };
  };
-RDebugUtils.currentLine=9502729;
- //BA.debugLineNum = 9502729;BA.debugLine="End Sub";
+RDebugUtils.currentLine=20971529;
+ //BA.debugLineNum = 20971529;BA.debugLine="End Sub";
 return "";
 }
 public String  _showpageimpl(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _pi) throws Exception{
@@ -1347,36 +1347,36 @@ if (Debug.shouldDelegate(ba, "showpageimpl", true))
 	 {return ((String) Debug.delegate(ba, "showpageimpl", new Object[] {_pi}));}
 anywheresoftware.b4a.objects.PanelWrapper _pnl = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper _r = null;
-RDebugUtils.currentLine=9764864;
- //BA.debugLineNum = 9764864;BA.debugLine="Private Sub ShowPageImpl (pi As B4XPageInfo)";
-RDebugUtils.currentLine=9764870;
- //BA.debugLineNum = 9764870;BA.debugLine="If pi.Root.Parent.IsInitialized Then pi.Root.Remo";
+RDebugUtils.currentLine=21233664;
+ //BA.debugLineNum = 21233664;BA.debugLine="Private Sub ShowPageImpl (pi As B4XPageInfo)";
+RDebugUtils.currentLine=21233670;
+ //BA.debugLineNum = 21233670;BA.debugLine="If pi.Root.Parent.IsInitialized Then pi.Root.Remo";
 if (_pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getParent().IsInitialized()) { 
 _pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .RemoveViewFromParent();};
-RDebugUtils.currentLine=9764871;
- //BA.debugLineNum = 9764871;BA.debugLine="Dim pnl As Panel = pi.Root";
+RDebugUtils.currentLine=21233671;
+ //BA.debugLineNum = 21233671;BA.debugLine="Dim pnl As Panel = pi.Root";
 _pnl = new anywheresoftware.b4a.objects.PanelWrapper();
 _pnl = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()));
-RDebugUtils.currentLine=9764872;
- //BA.debugLineNum = 9764872;BA.debugLine="Dim r As Rect = ReferenceRect";
+RDebugUtils.currentLine=21233672;
+ //BA.debugLineNum = 21233672;BA.debugLine="Dim r As Rect = ReferenceRect";
 _r = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper();
 _r = __ref._referencerect /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper*/ ;
-RDebugUtils.currentLine=9764873;
- //BA.debugLineNum = 9764873;BA.debugLine="If TransitionAnimationDuration > 0 Then";
+RDebugUtils.currentLine=21233673;
+ //BA.debugLineNum = 21233673;BA.debugLine="If TransitionAnimationDuration > 0 Then";
 if (__ref._transitionanimationduration /*int*/ >0) { 
-RDebugUtils.currentLine=9764874;
- //BA.debugLineNum = 9764874;BA.debugLine="mMainForm.AddView(pnl, 0, 0, 20dip, 20dip)";
+RDebugUtils.currentLine=21233674;
+ //BA.debugLineNum = 21233674;BA.debugLine="mMainForm.AddView(pnl, 0, 0, 20dip, 20dip)";
 __ref._mmainform /*anywheresoftware.b4a.objects.ActivityWrapper*/ .AddView((android.view.View)(_pnl.getObject()),(int) (0),(int) (0),__c.DipToCurrent((int) (20)),__c.DipToCurrent((int) (20)));
-RDebugUtils.currentLine=9764875;
- //BA.debugLineNum = 9764875;BA.debugLine="pnl.SetLayoutAnimated(TransitionAnimationDuratio";
+RDebugUtils.currentLine=21233675;
+ //BA.debugLineNum = 21233675;BA.debugLine="pnl.SetLayoutAnimated(TransitionAnimationDuratio";
 _pnl.SetLayoutAnimated(__ref._transitionanimationduration /*int*/ ,_r.getLeft(),_r.getTop(),_r.getWidth(),_r.getHeight());
  }else {
-RDebugUtils.currentLine=9764877;
- //BA.debugLineNum = 9764877;BA.debugLine="mMainForm.AddView(pnl, r.Left, r.Top, r.Width, r";
+RDebugUtils.currentLine=21233677;
+ //BA.debugLineNum = 21233677;BA.debugLine="mMainForm.AddView(pnl, r.Left, r.Top, r.Width, r";
 __ref._mmainform /*anywheresoftware.b4a.objects.ActivityWrapper*/ .AddView((android.view.View)(_pnl.getObject()),_r.getLeft(),_r.getTop(),_r.getWidth(),_r.getHeight());
  };
-RDebugUtils.currentLine=9764882;
- //BA.debugLineNum = 9764882;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21233682;
+ //BA.debugLineNum = 21233682;BA.debugLine="End Sub";
 return "";
 }
 public String  _toppageappear(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -1385,44 +1385,44 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "toppageappear", true))
 	 {return ((String) Debug.delegate(ba, "toppageappear", null));}
 b4a.example.b4xpagesmanager._b4xpageinfo _pi = null;
-RDebugUtils.currentLine=9568256;
- //BA.debugLineNum = 9568256;BA.debugLine="Private Sub TopPageAppear";
-RDebugUtils.currentLine=9568257;
- //BA.debugLineNum = 9568257;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
+RDebugUtils.currentLine=21037056;
+ //BA.debugLineNum = 21037056;BA.debugLine="Private Sub TopPageAppear";
+RDebugUtils.currentLine=21037057;
+ //BA.debugLineNum = 21037057;BA.debugLine="Dim pi As B4XPageInfo = GetTopPage";
 _pi = __ref._gettoppage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null);
-RDebugUtils.currentLine=9568258;
- //BA.debugLineNum = 9568258;BA.debugLine="If pi = Null Then Return";
+RDebugUtils.currentLine=21037058;
+ //BA.debugLineNum = 21037058;BA.debugLine="If pi = Null Then Return";
 if (_pi== null) { 
 if (true) return "";};
-RDebugUtils.currentLine=9568259;
- //BA.debugLineNum = 9568259;BA.debugLine="pi.Parent.NativeType.Title = pi.Title";
+RDebugUtils.currentLine=21037059;
+ //BA.debugLineNum = 21037059;BA.debugLine="pi.Parent.NativeType.Title = pi.Title";
 _pi.Parent /*b4a.example.b4xpagesmanager._b4xpageparent*/ .NativeType /*anywheresoftware.b4a.objects.ActivityWrapper*/ .setTitle(BA.ObjectToCharSequence(_pi.Title /*Object*/ ));
-RDebugUtils.currentLine=9568260;
- //BA.debugLineNum = 9568260;BA.debugLine="If Not(xui.IsB4i) Then";
+RDebugUtils.currentLine=21037060;
+ //BA.debugLineNum = 21037060;BA.debugLine="If Not(xui.IsB4i) Then";
 if (__c.Not(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i())) { 
-RDebugUtils.currentLine=9568261;
- //BA.debugLineNum = 9568261;BA.debugLine="If IsForeground Then";
+RDebugUtils.currentLine=21037061;
+ //BA.debugLineNum = 21037061;BA.debugLine="If IsForeground Then";
 if (__ref._isforeground /*boolean*/ ) { 
-RDebugUtils.currentLine=9568262;
- //BA.debugLineNum = 9568262;BA.debugLine="RaiseEvent(pi, \"B4XPage_Appear\", Null)";
+RDebugUtils.currentLine=21037062;
+ //BA.debugLineNum = 21037062;BA.debugLine="RaiseEvent(pi, \"B4XPage_Appear\", Null)";
 __ref._raiseevent /*String*/ (null,_pi,"B4XPage_Appear",(Object[])(__c.Null));
  };
  };
-RDebugUtils.currentLine=9568266;
- //BA.debugLineNum = 9568266;BA.debugLine="If ShowUpIndicator And ActionBar.IsInitialized Th";
+RDebugUtils.currentLine=21037066;
+ //BA.debugLineNum = 21037066;BA.debugLine="If ShowUpIndicator And ActionBar.IsInitialized Th";
 if (__ref._showupindicator /*boolean*/  && __ref._actionbar /*anywheresoftware.b4j.object.JavaObject*/ .IsInitialized()) { 
-RDebugUtils.currentLine=9568267;
- //BA.debugLineNum = 9568267;BA.debugLine="ActionBar.RunMethod(\"setDisplayHomeAsUpEnabled\",";
+RDebugUtils.currentLine=21037067;
+ //BA.debugLineNum = 21037067;BA.debugLine="ActionBar.RunMethod(\"setDisplayHomeAsUpEnabled\",";
 __ref._actionbar /*anywheresoftware.b4j.object.JavaObject*/ .RunMethod("setDisplayHomeAsUpEnabled",new Object[]{(Object)(__ref._mstackofpageids /*b4a.example.b4xset*/ ._getsize /*int*/ (null)>1)});
  };
-RDebugUtils.currentLine=9568269;
- //BA.debugLineNum = 9568269;BA.debugLine="UpdateMenuItems";
+RDebugUtils.currentLine=21037069;
+ //BA.debugLineNum = 21037069;BA.debugLine="UpdateMenuItems";
 __ref._updatemenuitems /*String*/ (null);
-RDebugUtils.currentLine=9568271;
- //BA.debugLineNum = 9568271;BA.debugLine="UpdateStackString";
+RDebugUtils.currentLine=21037071;
+ //BA.debugLineNum = 21037071;BA.debugLine="UpdateStackString";
 __ref._updatestackstring /*String*/ (null);
-RDebugUtils.currentLine=9568272;
- //BA.debugLineNum = 9568272;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21037072;
+ //BA.debugLineNum = 21037072;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.b4xpagesmanager._b4xpageparent  _createb4xpageparent(b4a.example.b4xpagesmanager __ref,Object _nativetype) throws Exception{
@@ -1431,22 +1431,22 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "createb4xpageparent", true))
 	 {return ((b4a.example.b4xpagesmanager._b4xpageparent) Debug.delegate(ba, "createb4xpageparent", new Object[] {_nativetype}));}
 b4a.example.b4xpagesmanager._b4xpageparent _t1 = null;
-RDebugUtils.currentLine=11010048;
- //BA.debugLineNum = 11010048;BA.debugLine="Private Sub CreateB4XPageParent (NativeType As Obj";
-RDebugUtils.currentLine=11010054;
- //BA.debugLineNum = 11010054;BA.debugLine="Dim t1 As B4XPageParent";
+RDebugUtils.currentLine=22478848;
+ //BA.debugLineNum = 22478848;BA.debugLine="Private Sub CreateB4XPageParent (NativeType As Obj";
+RDebugUtils.currentLine=22478854;
+ //BA.debugLineNum = 22478854;BA.debugLine="Dim t1 As B4XPageParent";
 _t1 = new b4a.example.b4xpagesmanager._b4xpageparent();
-RDebugUtils.currentLine=11010055;
- //BA.debugLineNum = 11010055;BA.debugLine="t1.Initialize";
+RDebugUtils.currentLine=22478855;
+ //BA.debugLineNum = 22478855;BA.debugLine="t1.Initialize";
 _t1.Initialize();
-RDebugUtils.currentLine=11010056;
- //BA.debugLineNum = 11010056;BA.debugLine="t1.NativeType = NativeType";
+RDebugUtils.currentLine=22478856;
+ //BA.debugLineNum = 22478856;BA.debugLine="t1.NativeType = NativeType";
 _t1.NativeType /*anywheresoftware.b4a.objects.ActivityWrapper*/  = (anywheresoftware.b4a.objects.ActivityWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ActivityWrapper(), (anywheresoftware.b4a.BALayout)(_nativetype));
-RDebugUtils.currentLine=11010057;
- //BA.debugLineNum = 11010057;BA.debugLine="Return t1";
+RDebugUtils.currentLine=22478857;
+ //BA.debugLineNum = 22478857;BA.debugLine="Return t1";
 if (true) return _t1;
-RDebugUtils.currentLine=11010058;
- //BA.debugLineNum = 11010058;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22478858;
+ //BA.debugLineNum = 22478858;BA.debugLine="End Sub";
 return null;
 }
 public String  _createpageimpl(b4a.example.b4xpagesmanager __ref,b4a.example.b4xpagesmanager._b4xpageinfo _pi) throws Exception{
@@ -1455,26 +1455,26 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "createpageimpl", true))
 	 {return ((String) Debug.delegate(ba, "createpageimpl", new Object[] {_pi}));}
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper _r = null;
-RDebugUtils.currentLine=10027008;
- //BA.debugLineNum = 10027008;BA.debugLine="Private Sub CreatePageImpl (pi As B4XPageInfo)";
-RDebugUtils.currentLine=10027020;
- //BA.debugLineNum = 10027020;BA.debugLine="pi.Root = xui.CreatePanel(\"root\")";
+RDebugUtils.currentLine=21495808;
+ //BA.debugLineNum = 21495808;BA.debugLine="Private Sub CreatePageImpl (pi As B4XPageInfo)";
+RDebugUtils.currentLine=21495820;
+ //BA.debugLineNum = 21495820;BA.debugLine="pi.Root = xui.CreatePanel(\"root\")";
 _pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"root");
-RDebugUtils.currentLine=10027021;
- //BA.debugLineNum = 10027021;BA.debugLine="Dim r As Rect = ReferenceRect";
+RDebugUtils.currentLine=21495821;
+ //BA.debugLineNum = 21495821;BA.debugLine="Dim r As Rect = ReferenceRect";
 _r = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper();
 _r = __ref._referencerect /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper*/ ;
-RDebugUtils.currentLine=10027022;
- //BA.debugLineNum = 10027022;BA.debugLine="pi.Root.SetLayoutAnimated(0, r.Left, r.Top, r.Wid";
+RDebugUtils.currentLine=21495822;
+ //BA.debugLineNum = 21495822;BA.debugLine="pi.Root.SetLayoutAnimated(0, r.Left, r.Top, r.Wid";
 _pi.Root /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),_r.getLeft(),_r.getTop(),_r.getWidth(),_r.getHeight());
-RDebugUtils.currentLine=10027023;
- //BA.debugLineNum = 10027023;BA.debugLine="pi.Parent = CreateB4XPageParent(mMainForm)";
+RDebugUtils.currentLine=21495823;
+ //BA.debugLineNum = 21495823;BA.debugLine="pi.Parent = CreateB4XPageParent(mMainForm)";
 _pi.Parent /*b4a.example.b4xpagesmanager._b4xpageparent*/  = __ref._createb4xpageparent /*b4a.example.b4xpagesmanager._b4xpageparent*/ (null,(Object)(__ref._mmainform /*anywheresoftware.b4a.objects.ActivityWrapper*/ .getObject()));
-RDebugUtils.currentLine=10027024;
- //BA.debugLineNum = 10027024;BA.debugLine="pi.Parent.MenuItems.Initialize";
+RDebugUtils.currentLine=21495824;
+ //BA.debugLineNum = 21495824;BA.debugLine="pi.Parent.MenuItems.Initialize";
 _pi.Parent /*b4a.example.b4xpagesmanager._b4xpageparent*/ .MenuItems /*anywheresoftware.b4a.objects.collections.List*/ .Initialize();
-RDebugUtils.currentLine=10027032;
- //BA.debugLineNum = 10027032;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21495832;
+ //BA.debugLineNum = 21495832;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper  _getcontentrect(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -1483,27 +1483,27 @@ RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "getcontentrect", true))
 	 {return ((anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper) Debug.delegate(ba, "getcontentrect", null));}
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper _r = null;
-RDebugUtils.currentLine=9961472;
- //BA.debugLineNum = 9961472;BA.debugLine="Private Sub GetContentRect As Rect";
-RDebugUtils.currentLine=9961473;
- //BA.debugLineNum = 9961473;BA.debugLine="If B4XPages.HandleInsets Then";
+RDebugUtils.currentLine=21430272;
+ //BA.debugLineNum = 21430272;BA.debugLine="Private Sub GetContentRect As Rect";
+RDebugUtils.currentLine=21430273;
+ //BA.debugLineNum = 21430273;BA.debugLine="If B4XPages.HandleInsets Then";
 if (_b4xpages._handleinsets /*boolean*/ ) { 
-RDebugUtils.currentLine=9961474;
- //BA.debugLineNum = 9961474;BA.debugLine="Return ime.GetContentRect";
+RDebugUtils.currentLine=21430274;
+ //BA.debugLineNum = 21430274;BA.debugLine="Return ime.GetContentRect";
 if (true) return (anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper(), (android.graphics.Rect)(__ref._ime /*anywheresoftware.b4a.objects.IME*/ .GetContentRect(ba)));
  }else {
-RDebugUtils.currentLine=9961476;
- //BA.debugLineNum = 9961476;BA.debugLine="Dim r As Rect";
+RDebugUtils.currentLine=21430276;
+ //BA.debugLineNum = 21430276;BA.debugLine="Dim r As Rect";
 _r = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.RectWrapper();
-RDebugUtils.currentLine=9961477;
- //BA.debugLineNum = 9961477;BA.debugLine="r.Initialize(0, 0, 100%x, 100%y)";
+RDebugUtils.currentLine=21430277;
+ //BA.debugLineNum = 21430277;BA.debugLine="r.Initialize(0, 0, 100%x, 100%y)";
 _r.Initialize((int) (0),(int) (0),__c.PerXToCurrent((float) (100),ba),__c.PerYToCurrent((float) (100),ba));
-RDebugUtils.currentLine=9961478;
- //BA.debugLineNum = 9961478;BA.debugLine="Return r";
+RDebugUtils.currentLine=21430278;
+ //BA.debugLineNum = 21430278;BA.debugLine="Return r";
 if (true) return _r;
  };
-RDebugUtils.currentLine=9961480;
- //BA.debugLineNum = 9961480;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21430280;
+ //BA.debugLineNum = 21430280;BA.debugLine="End Sub";
 return null;
 }
 public b4a.example.b4xpagesmanager._b4xpageinfo  _getpageinfofromroot(b4a.example.b4xpagesmanager __ref,anywheresoftware.b4a.objects.B4XViewWrapper _root) throws Exception{
@@ -1511,13 +1511,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "getpageinfofromroot", true))
 	 {return ((b4a.example.b4xpagesmanager._b4xpageinfo) Debug.delegate(ba, "getpageinfofromroot", new Object[] {_root}));}
-RDebugUtils.currentLine=10223616;
- //BA.debugLineNum = 10223616;BA.debugLine="Public Sub GetPageInfoFromRoot (Root As B4XView) A";
-RDebugUtils.currentLine=10223617;
- //BA.debugLineNum = 10223617;BA.debugLine="Return RootB4XToPage.Get(Root)";
+RDebugUtils.currentLine=21692416;
+ //BA.debugLineNum = 21692416;BA.debugLine="Public Sub GetPageInfoFromRoot (Root As B4XView) A";
+RDebugUtils.currentLine=21692417;
+ //BA.debugLineNum = 21692417;BA.debugLine="Return RootB4XToPage.Get(Root)";
 if (true) return (b4a.example.b4xpagesmanager._b4xpageinfo)(__ref._rootb4xtopage /*b4a.example.b4xorderedmap*/ ._get /*Object*/ (null,(Object)(_root.getObject())));
-RDebugUtils.currentLine=10223618;
- //BA.debugLineNum = 10223618;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21692418;
+ //BA.debugLineNum = 21692418;BA.debugLine="End Sub";
 return null;
 }
 public String  _updatemenuitems(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -1525,13 +1525,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xpagesmanager";
 if (Debug.shouldDelegate(ba, "updatemenuitems", true))
 	 {return ((String) Debug.delegate(ba, "updatemenuitems", null));}
-RDebugUtils.currentLine=10485760;
- //BA.debugLineNum = 10485760;BA.debugLine="Private Sub UpdateMenuItems";
-RDebugUtils.currentLine=10485761;
- //BA.debugLineNum = 10485761;BA.debugLine="Context.RunMethod(\"invalidateOptionsMenu\", Null)";
+RDebugUtils.currentLine=21954560;
+ //BA.debugLineNum = 21954560;BA.debugLine="Private Sub UpdateMenuItems";
+RDebugUtils.currentLine=21954561;
+ //BA.debugLineNum = 21954561;BA.debugLine="Context.RunMethod(\"invalidateOptionsMenu\", Null)";
 __ref._context /*anywheresoftware.b4j.object.JavaObject*/ .RunMethod("invalidateOptionsMenu",(Object[])(__c.Null));
-RDebugUtils.currentLine=10485762;
- //BA.debugLineNum = 10485762;BA.debugLine="End Sub";
+RDebugUtils.currentLine=21954562;
+ //BA.debugLineNum = 21954562;BA.debugLine="End Sub";
 return "";
 }
 public String  _updatestackstring(b4a.example.b4xpagesmanager __ref) throws Exception{
@@ -1541,22 +1541,22 @@ if (Debug.shouldDelegate(ba, "updatestackstring", true))
 	 {return ((String) Debug.delegate(ba, "updatestackstring", null));}
 anywheresoftware.b4a.keywords.StringBuilderWrapper _sb = null;
 String _id = "";
-RDebugUtils.currentLine=11337728;
- //BA.debugLineNum = 11337728;BA.debugLine="Public Sub UpdateStackString";
-RDebugUtils.currentLine=11337729;
- //BA.debugLineNum = 11337729;BA.debugLine="Dim sb As StringBuilder";
+RDebugUtils.currentLine=22806528;
+ //BA.debugLineNum = 22806528;BA.debugLine="Public Sub UpdateStackString";
+RDebugUtils.currentLine=22806529;
+ //BA.debugLineNum = 22806529;BA.debugLine="Dim sb As StringBuilder";
 _sb = new anywheresoftware.b4a.keywords.StringBuilderWrapper();
-RDebugUtils.currentLine=11337730;
- //BA.debugLineNum = 11337730;BA.debugLine="sb.Initialize";
+RDebugUtils.currentLine=22806530;
+ //BA.debugLineNum = 22806530;BA.debugLine="sb.Initialize";
 _sb.Initialize();
-RDebugUtils.currentLine=11337731;
- //BA.debugLineNum = 11337731;BA.debugLine="sb.Append(\"[\")";
+RDebugUtils.currentLine=22806531;
+ //BA.debugLineNum = 22806531;BA.debugLine="sb.Append(\"[\")";
 _sb.Append("[");
-RDebugUtils.currentLine=11337732;
- //BA.debugLineNum = 11337732;BA.debugLine="If mStackOfPageIds.Size > 0 Then";
+RDebugUtils.currentLine=22806532;
+ //BA.debugLineNum = 22806532;BA.debugLine="If mStackOfPageIds.Size > 0 Then";
 if (__ref._mstackofpageids /*b4a.example.b4xset*/ ._getsize /*int*/ (null)>0) { 
-RDebugUtils.currentLine=11337733;
- //BA.debugLineNum = 11337733;BA.debugLine="For Each id As String In mStackOfPageIds.AsList";
+RDebugUtils.currentLine=22806533;
+ //BA.debugLineNum = 22806533;BA.debugLine="For Each id As String In mStackOfPageIds.AsList";
 {
 final anywheresoftware.b4a.BA.IterableList group5 = __ref._mstackofpageids /*b4a.example.b4xset*/ ._aslist /*anywheresoftware.b4a.objects.collections.List*/ (null);
 final int groupLen5 = group5.getSize()
@@ -1564,23 +1564,23 @@ final int groupLen5 = group5.getSize()
 ;
 for (; index5 < groupLen5;index5++){
 _id = BA.ObjectToString(group5.Get(index5));
-RDebugUtils.currentLine=11337734;
- //BA.debugLineNum = 11337734;BA.debugLine="sb.Append(id).Append(\", \")";
+RDebugUtils.currentLine=22806534;
+ //BA.debugLineNum = 22806534;BA.debugLine="sb.Append(id).Append(\", \")";
 _sb.Append(_id).Append(", ");
  }
 };
-RDebugUtils.currentLine=11337736;
- //BA.debugLineNum = 11337736;BA.debugLine="sb.Remove(sb.Length - 2, sb.Length)";
+RDebugUtils.currentLine=22806536;
+ //BA.debugLineNum = 22806536;BA.debugLine="sb.Remove(sb.Length - 2, sb.Length)";
 _sb.Remove((int) (_sb.getLength()-2),_sb.getLength());
  };
-RDebugUtils.currentLine=11337738;
- //BA.debugLineNum = 11337738;BA.debugLine="sb.Append(\"]\")";
+RDebugUtils.currentLine=22806538;
+ //BA.debugLineNum = 22806538;BA.debugLine="sb.Append(\"]\")";
 _sb.Append("]");
-RDebugUtils.currentLine=11337739;
- //BA.debugLineNum = 11337739;BA.debugLine="StackString = sb.ToString";
+RDebugUtils.currentLine=22806539;
+ //BA.debugLineNum = 22806539;BA.debugLine="StackString = sb.ToString";
 __ref._stackstring /*String*/  = _sb.ToString();
-RDebugUtils.currentLine=11337740;
- //BA.debugLineNum = 11337740;BA.debugLine="End Sub";
+RDebugUtils.currentLine=22806540;
+ //BA.debugLineNum = 22806540;BA.debugLine="End Sub";
 return "";
 }
 public boolean checkIfAppCompat(android.app.Activity act) {

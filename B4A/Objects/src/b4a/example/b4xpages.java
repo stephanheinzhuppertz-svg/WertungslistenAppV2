@@ -25,185 +25,185 @@ public static String  _settitle(anywheresoftware.b4a.BA _ba,Object _b4xpage,Obje
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "settitle", true))
 	 {return ((String) Debug.delegate(null, "settitle", new Object[] {_ba,_b4xpage,_title}));}
-RDebugUtils.currentLine=1048576;
- //BA.debugLineNum = 1048576;BA.debugLine="Public Sub SetTitle (B4XPage As Object, Title As O";
-RDebugUtils.currentLine=1048577;
- //BA.debugLineNum = 1048577;BA.debugLine="GetManager.SetTitle(B4XPage, Title)";
+RDebugUtils.currentLine=12517376;
+ //BA.debugLineNum = 12517376;BA.debugLine="Public Sub SetTitle (B4XPage As Object, Title As O";
+RDebugUtils.currentLine=12517377;
+ //BA.debugLineNum = 12517377;BA.debugLine="GetManager.SetTitle(B4XPage, Title)";
 _getmanager(_ba)._settitle /*String*/ (null,_b4xpage,_title);
-RDebugUtils.currentLine=1048578;
- //BA.debugLineNum = 1048578;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12517378;
+ //BA.debugLineNum = 12517378;BA.debugLine="End Sub";
 return "";
 }
 public static String  _addpage(anywheresoftware.b4a.BA _ba,String _id,Object _b4xpage) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "addpage", true))
 	 {return ((String) Debug.delegate(null, "addpage", new Object[] {_ba,_id,_b4xpage}));}
-RDebugUtils.currentLine=720896;
- //BA.debugLineNum = 720896;BA.debugLine="Public Sub AddPage (Id As String, B4XPage As Objec";
-RDebugUtils.currentLine=720897;
- //BA.debugLineNum = 720897;BA.debugLine="GetManager.AddPage(Id, B4XPage)";
+RDebugUtils.currentLine=12189696;
+ //BA.debugLineNum = 12189696;BA.debugLine="Public Sub AddPage (Id As String, B4XPage As Objec";
+RDebugUtils.currentLine=12189697;
+ //BA.debugLineNum = 12189697;BA.debugLine="GetManager.AddPage(Id, B4XPage)";
 _getmanager(_ba)._addpage /*String*/ (null,_id,_b4xpage);
-RDebugUtils.currentLine=720898;
- //BA.debugLineNum = 720898;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12189698;
+ //BA.debugLineNum = 12189698;BA.debugLine="End Sub";
 return "";
 }
 public static String  _showpage(anywheresoftware.b4a.BA _ba,String _id) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "showpage", true))
 	 {return ((String) Debug.delegate(null, "showpage", new Object[] {_ba,_id}));}
-RDebugUtils.currentLine=851968;
- //BA.debugLineNum = 851968;BA.debugLine="Public Sub ShowPage (Id As String)";
-RDebugUtils.currentLine=851969;
- //BA.debugLineNum = 851969;BA.debugLine="GetManager.ShowPage(Id)";
+RDebugUtils.currentLine=12320768;
+ //BA.debugLineNum = 12320768;BA.debugLine="Public Sub ShowPage (Id As String)";
+RDebugUtils.currentLine=12320769;
+ //BA.debugLineNum = 12320769;BA.debugLine="GetManager.ShowPage(Id)";
 _getmanager(_ba)._showpage /*String*/ (null,_id);
-RDebugUtils.currentLine=851970;
- //BA.debugLineNum = 851970;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12320770;
+ //BA.debugLineNum = 12320770;BA.debugLine="End Sub";
 return "";
 }
 public static anywheresoftware.b4a.objects.ActivityWrapper  _getnativeparent(anywheresoftware.b4a.BA _ba,Object _b4xpage) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "getnativeparent", true))
 	 {return ((anywheresoftware.b4a.objects.ActivityWrapper) Debug.delegate(null, "getnativeparent", new Object[] {_ba,_b4xpage}));}
-RDebugUtils.currentLine=1179648;
- //BA.debugLineNum = 1179648;BA.debugLine="Public Sub GetNativeParent (B4XPage As Object) As";
-RDebugUtils.currentLine=1179656;
- //BA.debugLineNum = 1179656;BA.debugLine="Return GetManager.FindPIFromB4XPage(B4XPage).Pare";
+RDebugUtils.currentLine=12648448;
+ //BA.debugLineNum = 12648448;BA.debugLine="Public Sub GetNativeParent (B4XPage As Object) As";
+RDebugUtils.currentLine=12648456;
+ //BA.debugLineNum = 12648456;BA.debugLine="Return GetManager.FindPIFromB4XPage(B4XPage).Pare";
 if (true) return _getmanager(_ba)._findpifromb4xpage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_b4xpage).Parent /*b4a.example.b4xpagesmanager._b4xpageparent*/ .NativeType /*anywheresoftware.b4a.objects.ActivityWrapper*/ ;
-RDebugUtils.currentLine=1179657;
- //BA.debugLineNum = 1179657;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12648457;
+ //BA.debugLineNum = 12648457;BA.debugLine="End Sub";
 return null;
 }
 public static b4a.example.b4xmainpage  _mainpage(anywheresoftware.b4a.BA _ba) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "mainpage", true))
 	 {return ((b4a.example.b4xmainpage) Debug.delegate(null, "mainpage", new Object[] {_ba}));}
-RDebugUtils.currentLine=1114112;
- //BA.debugLineNum = 1114112;BA.debugLine="Public Sub MainPage As B4XMainPage";
-RDebugUtils.currentLine=1114113;
- //BA.debugLineNum = 1114113;BA.debugLine="Return GetManager.MainPage";
+RDebugUtils.currentLine=12582912;
+ //BA.debugLineNum = 12582912;BA.debugLine="Public Sub MainPage As B4XMainPage";
+RDebugUtils.currentLine=12582913;
+ //BA.debugLineNum = 12582913;BA.debugLine="Return GetManager.MainPage";
 if (true) return _getmanager(_ba)._mainpage /*b4a.example.b4xmainpage*/ ;
-RDebugUtils.currentLine=1114114;
- //BA.debugLineNum = 1114114;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12582914;
+ //BA.debugLineNum = 12582914;BA.debugLine="End Sub";
 return null;
 }
 public static String  _closepage(anywheresoftware.b4a.BA _ba,Object _b4xpage) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "closepage", true))
 	 {return ((String) Debug.delegate(null, "closepage", new Object[] {_ba,_b4xpage}));}
-RDebugUtils.currentLine=983040;
- //BA.debugLineNum = 983040;BA.debugLine="Public Sub ClosePage (B4XPage As Object)";
-RDebugUtils.currentLine=983041;
- //BA.debugLineNum = 983041;BA.debugLine="GetManager.ClosePage (B4XPage)";
+RDebugUtils.currentLine=12451840;
+ //BA.debugLineNum = 12451840;BA.debugLine="Public Sub ClosePage (B4XPage As Object)";
+RDebugUtils.currentLine=12451841;
+ //BA.debugLineNum = 12451841;BA.debugLine="GetManager.ClosePage (B4XPage)";
 _getmanager(_ba)._closepage /*String*/ (null,_b4xpage);
-RDebugUtils.currentLine=983042;
- //BA.debugLineNum = 983042;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12451842;
+ //BA.debugLineNum = 12451842;BA.debugLine="End Sub";
 return "";
 }
 public static b4a.example.b4xpagesmanager._b4amenuitem  _addmenuitem(anywheresoftware.b4a.BA _ba,Object _b4xpage,Object _title) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "addmenuitem", true))
 	 {return ((b4a.example.b4xpagesmanager._b4amenuitem) Debug.delegate(null, "addmenuitem", new Object[] {_ba,_b4xpage,_title}));}
-RDebugUtils.currentLine=1245184;
- //BA.debugLineNum = 1245184;BA.debugLine="Public Sub AddMenuItem(B4XPage As Object, Title As";
-RDebugUtils.currentLine=1245185;
- //BA.debugLineNum = 1245185;BA.debugLine="Return GetManager.AddMenuItem(B4XPage, Title)";
+RDebugUtils.currentLine=12713984;
+ //BA.debugLineNum = 12713984;BA.debugLine="Public Sub AddMenuItem(B4XPage As Object, Title As";
+RDebugUtils.currentLine=12713985;
+ //BA.debugLineNum = 12713985;BA.debugLine="Return GetManager.AddMenuItem(B4XPage, Title)";
 if (true) return _getmanager(_ba)._addmenuitem /*b4a.example.b4xpagesmanager._b4amenuitem*/ (null,_b4xpage,_title);
-RDebugUtils.currentLine=1245186;
- //BA.debugLineNum = 1245186;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12713986;
+ //BA.debugLineNum = 12713986;BA.debugLine="End Sub";
 return null;
 }
 public static b4a.example.b4xpagesmanager  _getmanager(anywheresoftware.b4a.BA _ba) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "getmanager", true))
 	 {return ((b4a.example.b4xpagesmanager) Debug.delegate(null, "getmanager", new Object[] {_ba}));}
-RDebugUtils.currentLine=458752;
- //BA.debugLineNum = 458752;BA.debugLine="Public Sub GetManager As B4XPagesManager";
-RDebugUtils.currentLine=458753;
- //BA.debugLineNum = 458753;BA.debugLine="Return mPM";
+RDebugUtils.currentLine=11927552;
+ //BA.debugLineNum = 11927552;BA.debugLine="Public Sub GetManager As B4XPagesManager";
+RDebugUtils.currentLine=11927553;
+ //BA.debugLineNum = 11927553;BA.debugLine="Return mPM";
 if (true) return (b4a.example.b4xpagesmanager)(_mpm);
-RDebugUtils.currentLine=458754;
- //BA.debugLineNum = 458754;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11927554;
+ //BA.debugLineNum = 11927554;BA.debugLine="End Sub";
 return null;
 }
 public static String  _addpageandcreate(anywheresoftware.b4a.BA _ba,String _id,Object _b4xpage) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "addpageandcreate", true))
 	 {return ((String) Debug.delegate(null, "addpageandcreate", new Object[] {_ba,_id,_b4xpage}));}
-RDebugUtils.currentLine=786432;
- //BA.debugLineNum = 786432;BA.debugLine="Public Sub AddPageAndCreate (Id As String, B4XPage";
-RDebugUtils.currentLine=786433;
- //BA.debugLineNum = 786433;BA.debugLine="GetManager.AddPageAndCreate(Id, B4XPage)";
+RDebugUtils.currentLine=12255232;
+ //BA.debugLineNum = 12255232;BA.debugLine="Public Sub AddPageAndCreate (Id As String, B4XPage";
+RDebugUtils.currentLine=12255233;
+ //BA.debugLineNum = 12255233;BA.debugLine="GetManager.AddPageAndCreate(Id, B4XPage)";
 _getmanager(_ba)._addpageandcreate /*String*/ (null,_id,_b4xpage);
-RDebugUtils.currentLine=786434;
- //BA.debugLineNum = 786434;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12255234;
+ //BA.debugLineNum = 12255234;BA.debugLine="End Sub";
 return "";
 }
 public static Object  _getpage(anywheresoftware.b4a.BA _ba,String _id) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "getpage", true))
 	 {return ((Object) Debug.delegate(null, "getpage", new Object[] {_ba,_id}));}
-RDebugUtils.currentLine=589824;
- //BA.debugLineNum = 589824;BA.debugLine="Public Sub GetPage (Id As String) As Object";
-RDebugUtils.currentLine=589825;
- //BA.debugLineNum = 589825;BA.debugLine="Return GetManager.GetPage(Id)";
+RDebugUtils.currentLine=12058624;
+ //BA.debugLineNum = 12058624;BA.debugLine="Public Sub GetPage (Id As String) As Object";
+RDebugUtils.currentLine=12058625;
+ //BA.debugLineNum = 12058625;BA.debugLine="Return GetManager.GetPage(Id)";
 if (true) return _getmanager(_ba)._getpage /*Object*/ (null,_id);
-RDebugUtils.currentLine=589826;
- //BA.debugLineNum = 589826;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12058626;
+ //BA.debugLineNum = 12058626;BA.debugLine="End Sub";
 return null;
 }
 public static String  _getpageid(anywheresoftware.b4a.BA _ba,Object _b4xpage) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "getpageid", true))
 	 {return ((String) Debug.delegate(null, "getpageid", new Object[] {_ba,_b4xpage}));}
-RDebugUtils.currentLine=655360;
- //BA.debugLineNum = 655360;BA.debugLine="Public Sub GetPageId (B4XPage As Object) As String";
-RDebugUtils.currentLine=655361;
- //BA.debugLineNum = 655361;BA.debugLine="Return GetManager.FindPIFromB4XPage(B4XPage).Id";
+RDebugUtils.currentLine=12124160;
+ //BA.debugLineNum = 12124160;BA.debugLine="Public Sub GetPageId (B4XPage As Object) As String";
+RDebugUtils.currentLine=12124161;
+ //BA.debugLineNum = 12124161;BA.debugLine="Return GetManager.FindPIFromB4XPage(B4XPage).Id";
 if (true) return _getmanager(_ba)._findpifromb4xpage /*b4a.example.b4xpagesmanager._b4xpageinfo*/ (null,_b4xpage).Id /*String*/ ;
-RDebugUtils.currentLine=655362;
- //BA.debugLineNum = 655362;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12124162;
+ //BA.debugLineNum = 12124162;BA.debugLine="End Sub";
 return "";
 }
 public static String  _internalsetpagesmanager(anywheresoftware.b4a.BA _ba,Object _pm) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "internalsetpagesmanager", true))
 	 {return ((String) Debug.delegate(null, "internalsetpagesmanager", new Object[] {_ba,_pm}));}
-RDebugUtils.currentLine=524288;
- //BA.debugLineNum = 524288;BA.debugLine="Public Sub InternalSetPagesManager(PM As Object)";
-RDebugUtils.currentLine=524289;
- //BA.debugLineNum = 524289;BA.debugLine="Delegate.Initialize";
+RDebugUtils.currentLine=11993088;
+ //BA.debugLineNum = 11993088;BA.debugLine="Public Sub InternalSetPagesManager(PM As Object)";
+RDebugUtils.currentLine=11993089;
+ //BA.debugLineNum = 11993089;BA.debugLine="Delegate.Initialize";
 _delegate._initialize /*String*/ (null,(_ba.processBA == null ? _ba : _ba.processBA));
-RDebugUtils.currentLine=524290;
- //BA.debugLineNum = 524290;BA.debugLine="mPM = PM";
+RDebugUtils.currentLine=11993090;
+ //BA.debugLineNum = 11993090;BA.debugLine="mPM = PM";
 _mpm = _pm;
-RDebugUtils.currentLine=524291;
- //BA.debugLineNum = 524291;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11993091;
+ //BA.debugLineNum = 11993091;BA.debugLine="End Sub";
 return "";
 }
 public static boolean  _isinitialized(anywheresoftware.b4a.BA _ba) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "isinitialized", true))
 	 {return ((Boolean) Debug.delegate(null, "isinitialized", new Object[] {_ba}));}
-RDebugUtils.currentLine=393216;
- //BA.debugLineNum = 393216;BA.debugLine="Public Sub IsInitialized As Boolean";
-RDebugUtils.currentLine=393217;
- //BA.debugLineNum = 393217;BA.debugLine="Return mPM Is B4XPagesManager";
+RDebugUtils.currentLine=11862016;
+ //BA.debugLineNum = 11862016;BA.debugLine="Public Sub IsInitialized As Boolean";
+RDebugUtils.currentLine=11862017;
+ //BA.debugLineNum = 11862017;BA.debugLine="Return mPM Is B4XPagesManager";
 if (true) return _mpm instanceof b4a.example.b4xpagesmanager;
-RDebugUtils.currentLine=393218;
- //BA.debugLineNum = 393218;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11862018;
+ //BA.debugLineNum = 11862018;BA.debugLine="End Sub";
 return false;
 }
 public static String  _showpageandremovepreviouspages(anywheresoftware.b4a.BA _ba,String _id) throws Exception{
 RDebugUtils.currentModule="b4xpages";
 if (Debug.shouldDelegate(null, "showpageandremovepreviouspages", true))
 	 {return ((String) Debug.delegate(null, "showpageandremovepreviouspages", new Object[] {_ba,_id}));}
-RDebugUtils.currentLine=917504;
- //BA.debugLineNum = 917504;BA.debugLine="Public Sub ShowPageAndRemovePreviousPages (Id As S";
-RDebugUtils.currentLine=917505;
- //BA.debugLineNum = 917505;BA.debugLine="GetManager.ShowPageAndRemovePreviousPages (Id)";
+RDebugUtils.currentLine=12386304;
+ //BA.debugLineNum = 12386304;BA.debugLine="Public Sub ShowPageAndRemovePreviousPages (Id As S";
+RDebugUtils.currentLine=12386305;
+ //BA.debugLineNum = 12386305;BA.debugLine="GetManager.ShowPageAndRemovePreviousPages (Id)";
 _getmanager(_ba)._showpageandremovepreviouspages /*String*/ (null,_id);
-RDebugUtils.currentLine=917506;
- //BA.debugLineNum = 917506;BA.debugLine="End Sub";
+RDebugUtils.currentLine=12386306;
+ //BA.debugLineNum = 12386306;BA.debugLine="End Sub";
 return "";
 }
 }
