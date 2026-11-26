@@ -66,6 +66,8 @@ public b4a.example3.customlistview _lstteilnehmer = null;
 public anywheresoftware.b4a.objects.EditTextWrapper _tbxteilnehmer = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btntlndelete = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btntlnspeichern = null;
+public anywheresoftware.b4a.objects.PanelWrapper _pnlvstng = null;
+public anywheresoftware.b4a.objects.PanelWrapper _pnlteilnehmer = null;
 public anywheresoftware.b4a.objects.Timer _uhrzeit = null;
 public anywheresoftware.b4a.objects.collections.Map _dbverein = null;
 public String _dbfilename = "";
@@ -275,9 +277,6 @@ __ref._tbxveranstaltung /*anywheresoftware.b4a.objects.EditTextWrapper*/ .setEna
 RDebugUtils.currentLine=7864328;
  //BA.debugLineNum = 7864328;BA.debugLine="tbxAnzahl.Enabled = False";
 __ref._tbxanzahl /*anywheresoftware.b4a.objects.EditTextWrapper*/ .setEnabled(__c.False);
-RDebugUtils.currentLine=7864329;
- //BA.debugLineNum = 7864329;BA.debugLine="btnAuswahl.Enabled = False";
-__ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setEnabled(__c.False);
 RDebugUtils.currentLine=7864330;
  //BA.debugLineNum = 7864330;BA.debugLine="btnAuswahl.TextColor = 0xFF888888";
 __ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setTextColor(((int)0xff888888));
@@ -532,49 +531,90 @@ if (Debug.shouldDelegate(ba, "btnauswahl_click", false))
 	 {return ((String) Debug.delegate(ba, "btnauswahl_click", null));}
 RDebugUtils.currentLine=9568256;
  //BA.debugLineNum = 9568256;BA.debugLine="Private Sub btnAuswahl_Click";
-RDebugUtils.currentLine=9568257;
- //BA.debugLineNum = 9568257;BA.debugLine="Uhrzeit.Enabled = False";
-__ref._uhrzeit /*anywheresoftware.b4a.objects.Timer*/ .setEnabled(__c.False);
-RDebugUtils.currentLine=9568258;
- //BA.debugLineNum = 9568258;BA.debugLine="Veranstaltung_ID = webviewVSTGN_ID";
-__ref._veranstaltung_id /*String*/  = __ref._webviewvstgn_id /*String*/ ;
-RDebugUtils.currentLine=9568259;
- //BA.debugLineNum = 9568259;BA.debugLine="saveDBvstng";
-__ref._savedbvstng /*String*/ (null);
-RDebugUtils.currentLine=9568260;
- //BA.debugLineNum = 9568260;BA.debugLine="CloseSettings";
-__ref._closesettings /*String*/ (null);
-RDebugUtils.currentLine=9568261;
- //BA.debugLineNum = 9568261;BA.debugLine="End Sub";
+RDebugUtils.currentLine=9568262;
+ //BA.debugLineNum = 9568262;BA.debugLine="TestVeranstaltungsliste";
+__ref._testveranstaltungsliste /*String*/ (null);
+RDebugUtils.currentLine=9568263;
+ //BA.debugLineNum = 9568263;BA.debugLine="End Sub";
 return "";
 }
-public String  _savedbvstng(b4a.example.settings __ref) throws Exception{
+public String  _testveranstaltungsliste(b4a.example.settings __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(ba, "savedbvstng", false))
-	 {return ((String) Debug.delegate(ba, "savedbvstng", null));}
-RDebugUtils.currentLine=8585216;
- //BA.debugLineNum = 8585216;BA.debugLine="Private Sub saveDBvstng";
-RDebugUtils.currentLine=8585217;
- //BA.debugLineNum = 8585217;BA.debugLine="lblVeranstaltung.Text = tbxVeranstaltung.Text";
-__ref._lblveranstaltung /*anywheresoftware.b4a.objects.LabelWrapper*/ .setText(BA.ObjectToCharSequence(__ref._tbxveranstaltung /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText()));
-RDebugUtils.currentLine=8585218;
- //BA.debugLineNum = 8585218;BA.debugLine="lblDatum.Text = dprDatum.Text";
-__ref._lbldatum /*anywheresoftware.b4a.objects.LabelWrapper*/ .setText(BA.ObjectToCharSequence(__ref._dprdatum /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getText()));
-RDebugUtils.currentLine=8585219;
- //BA.debugLineNum = 8585219;BA.debugLine="DBPut(\"VeranstaltungID\", Veranstaltung_ID)";
-__ref._dbput /*String*/ (null,"VeranstaltungID",(Object)(__ref._veranstaltung_id /*String*/ ));
-RDebugUtils.currentLine=8585220;
- //BA.debugLineNum = 8585220;BA.debugLine="DBPut(\"VeranstaltungName\", tbxVeranstaltung.Text)";
-__ref._dbput /*String*/ (null,"VeranstaltungName",(Object)(__ref._tbxveranstaltung /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText()));
-RDebugUtils.currentLine=8585221;
- //BA.debugLineNum = 8585221;BA.debugLine="DBPut(\"VeranstaltungDatum\", dprDatum.Text)";
-__ref._dbput /*String*/ (null,"VeranstaltungDatum",(Object)(__ref._dprdatum /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getText()));
-RDebugUtils.currentLine=8585222;
- //BA.debugLineNum = 8585222;BA.debugLine="DBPut(\"VeranstaltungAnzahl\", tbxAnzahl.Text)";
-__ref._dbput /*String*/ (null,"VeranstaltungAnzahl",(Object)(__ref._tbxanzahl /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText()));
-RDebugUtils.currentLine=8585223;
- //BA.debugLineNum = 8585223;BA.debugLine="End Sub";
+if (Debug.shouldDelegate(ba, "testveranstaltungsliste", false))
+	 {return ((String) Debug.delegate(ba, "testveranstaltungsliste", null));}
+anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
+anywheresoftware.b4a.objects.PanelWrapper _pnlrow = null;
+anywheresoftware.b4a.objects.LabelWrapper _lbld = null;
+anywheresoftware.b4a.objects.LabelWrapper _lblv = null;
+int _i = 0;
+RDebugUtils.currentLine=11075584;
+ //BA.debugLineNum = 11075584;BA.debugLine="Private Sub TestVeranstaltungsliste";
+RDebugUtils.currentLine=11075586;
+ //BA.debugLineNum = 11075586;BA.debugLine="lstVeranstaltungen.Clear";
+__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._clear();
+RDebugUtils.currentLine=11075588;
+ //BA.debugLineNum = 11075588;BA.debugLine="Dim p As B4XView";
+_p = new anywheresoftware.b4a.objects.B4XViewWrapper();
+RDebugUtils.currentLine=11075589;
+ //BA.debugLineNum = 11075589;BA.debugLine="p = CreateVeranstaltungRow(\"Datum\", \"Bezeichnung\"";
+_p = __ref._createveranstaltungrow /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null,"Datum","Bezeichnung");
+RDebugUtils.currentLine=11075590;
+ //BA.debugLineNum = 11075590;BA.debugLine="lstVeranstaltungen.Add(p, 1)";
+__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._add(_p,(Object)(1));
+RDebugUtils.currentLine=11075592;
+ //BA.debugLineNum = 11075592;BA.debugLine="Dim pnlRow As Panel = p.GetView(0)";
+_pnlrow = new anywheresoftware.b4a.objects.PanelWrapper();
+_pnlrow = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_p.GetView((int) (0)).getObject()));
+RDebugUtils.currentLine=11075594;
+ //BA.debugLineNum = 11075594;BA.debugLine="Dim lblD As Label = pnlRow.GetView(0)";
+_lbld = new anywheresoftware.b4a.objects.LabelWrapper();
+_lbld = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(_pnlrow.GetView((int) (0)).getObject()));
+RDebugUtils.currentLine=11075595;
+ //BA.debugLineNum = 11075595;BA.debugLine="lblD.Color = 0xFF16AA16";
+_lbld.setColor(((int)0xff16aa16));
+RDebugUtils.currentLine=11075596;
+ //BA.debugLineNum = 11075596;BA.debugLine="lblD.TextColor = 0xFFFFFFFF";
+_lbld.setTextColor(((int)0xffffffff));
+RDebugUtils.currentLine=11075597;
+ //BA.debugLineNum = 11075597;BA.debugLine="lblD.Typeface = Typeface.DEFAULT_BOLD";
+_lbld.setTypeface(__c.Typeface.DEFAULT_BOLD);
+RDebugUtils.currentLine=11075599;
+ //BA.debugLineNum = 11075599;BA.debugLine="Dim lblV As Label = pnlRow.GetView(1)";
+_lblv = new anywheresoftware.b4a.objects.LabelWrapper();
+_lblv = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(_pnlrow.GetView((int) (1)).getObject()));
+RDebugUtils.currentLine=11075600;
+ //BA.debugLineNum = 11075600;BA.debugLine="lblV.Color = 0xFF16AA16";
+_lblv.setColor(((int)0xff16aa16));
+RDebugUtils.currentLine=11075601;
+ //BA.debugLineNum = 11075601;BA.debugLine="lblV.TextColor = 0xFFFFFFFF";
+_lblv.setTextColor(((int)0xffffffff));
+RDebugUtils.currentLine=11075602;
+ //BA.debugLineNum = 11075602;BA.debugLine="lblV.Gravity = Gravity.CENTER_HORIZONTAL + Gravit";
+_lblv.setGravity((int) (__c.Gravity.CENTER_HORIZONTAL+__c.Gravity.CENTER_VERTICAL));
+RDebugUtils.currentLine=11075603;
+ //BA.debugLineNum = 11075603;BA.debugLine="lblV.Padding  = Array As Int(5dip, 5dip, 5dip, 5d";
+_lblv.setPadding(new int[]{__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5))});
+RDebugUtils.currentLine=11075604;
+ //BA.debugLineNum = 11075604;BA.debugLine="lblV.Typeface = Typeface.DEFAULT_BOLD";
+_lblv.setTypeface(__c.Typeface.DEFAULT_BOLD);
+RDebugUtils.currentLine=11075606;
+ //BA.debugLineNum = 11075606;BA.debugLine="For i = 2 To 9";
+{
+final int step16 = 1;
+final int limit16 = (int) (9);
+_i = (int) (2) ;
+for (;_i <= limit16 ;_i = _i + step16 ) {
+RDebugUtils.currentLine=11075607;
+ //BA.debugLineNum = 11075607;BA.debugLine="lstVeranstaltungen.Add(CreateVeranstaltungRow( $";
+__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._add(__ref._createveranstaltungrow /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null,("0"+__c.SmartStringFormatter("",(Object)(_i))+".05.2026"),("Veranstaltung "+__c.SmartStringFormatter("",(Object)(_i-1))+"")),(Object)(_i));
+ }
+};
+RDebugUtils.currentLine=11075610;
+ //BA.debugLineNum = 11075610;BA.debugLine="UpdateLayout";
+__ref._updatelayout /*String*/ (null);
+RDebugUtils.currentLine=11075612;
+ //BA.debugLineNum = 11075612;BA.debugLine="End Sub";
 return "";
 }
 public String  _btnback_click(b4a.example.settings __ref) throws Exception{
@@ -1230,29 +1270,35 @@ _btntlndelete = new anywheresoftware.b4a.objects.ButtonWrapper();
 RDebugUtils.currentLine=7471146;
  //BA.debugLineNum = 7471146;BA.debugLine="Private btnTLNSpeichern As Button";
 _btntlnspeichern = new anywheresoftware.b4a.objects.ButtonWrapper();
+RDebugUtils.currentLine=7471148;
+ //BA.debugLineNum = 7471148;BA.debugLine="Private pnlVstng As Panel";
+_pnlvstng = new anywheresoftware.b4a.objects.PanelWrapper();
 RDebugUtils.currentLine=7471149;
- //BA.debugLineNum = 7471149;BA.debugLine="Private Uhrzeit As Timer";
-_uhrzeit = new anywheresoftware.b4a.objects.Timer();
-RDebugUtils.currentLine=7471150;
- //BA.debugLineNum = 7471150;BA.debugLine="Private DBVerein As Map";
-_dbverein = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=7471151;
- //BA.debugLineNum = 7471151;BA.debugLine="Private DBFileName As String = \"DBVerein.dat\"";
-_dbfilename = "DBVerein.dat";
+ //BA.debugLineNum = 7471149;BA.debugLine="Private pnlTeilnehmer As Panel";
+_pnlteilnehmer = new anywheresoftware.b4a.objects.PanelWrapper();
 RDebugUtils.currentLine=7471152;
- //BA.debugLineNum = 7471152;BA.debugLine="Private CurrentWebUrl As String = \"\"";
-_currentweburl = "";
+ //BA.debugLineNum = 7471152;BA.debugLine="Private Uhrzeit As Timer";
+_uhrzeit = new anywheresoftware.b4a.objects.Timer();
 RDebugUtils.currentLine=7471153;
- //BA.debugLineNum = 7471153;BA.debugLine="Private dprYear As Int";
-_dpryear = 0;
+ //BA.debugLineNum = 7471153;BA.debugLine="Private DBVerein As Map";
+_dbverein = new anywheresoftware.b4a.objects.collections.Map();
 RDebugUtils.currentLine=7471154;
- //BA.debugLineNum = 7471154;BA.debugLine="Private dprMonth As Int";
-_dprmonth = 0;
+ //BA.debugLineNum = 7471154;BA.debugLine="Private DBFileName As String = \"DBVerein.dat\"";
+_dbfilename = "DBVerein.dat";
 RDebugUtils.currentLine=7471155;
- //BA.debugLineNum = 7471155;BA.debugLine="Private dprDay As Int";
-_dprday = 0;
+ //BA.debugLineNum = 7471155;BA.debugLine="Private CurrentWebUrl As String = \"\"";
+_currentweburl = "";
 RDebugUtils.currentLine=7471156;
- //BA.debugLineNum = 7471156;BA.debugLine="End Sub";
+ //BA.debugLineNum = 7471156;BA.debugLine="Private dprYear As Int";
+_dpryear = 0;
+RDebugUtils.currentLine=7471157;
+ //BA.debugLineNum = 7471157;BA.debugLine="Private dprMonth As Int";
+_dprmonth = 0;
+RDebugUtils.currentLine=7471158;
+ //BA.debugLineNum = 7471158;BA.debugLine="Private dprDay As Int";
+_dprday = 0;
+RDebugUtils.currentLine=7471159;
+ //BA.debugLineNum = 7471159;BA.debugLine="End Sub";
 return "";
 }
 public String  _clvteilnehmer_itemclick(b4a.example.settings __ref,int _index,Object _value) throws Exception{
@@ -1451,6 +1497,70 @@ __ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setEnabled(__c
 RDebugUtils.currentLine=8388649;
  //BA.debugLineNum = 8388649;BA.debugLine="End Sub";
 return "";
+}
+public anywheresoftware.b4a.objects.B4XViewWrapper  _createveranstaltungrow(b4a.example.settings __ref,String _datum,String _name) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="settings";
+if (Debug.shouldDelegate(ba, "createveranstaltungrow", false))
+	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper) Debug.delegate(ba, "createveranstaltungrow", new Object[] {_datum,_name}));}
+anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
+anywheresoftware.b4a.objects.PanelWrapper _row = null;
+anywheresoftware.b4a.objects.LabelWrapper _lbld = null;
+anywheresoftware.b4a.objects.LabelWrapper _lblv = null;
+RDebugUtils.currentLine=11141120;
+ //BA.debugLineNum = 11141120;BA.debugLine="Private Sub CreateVeranstaltungRow(Datum As String";
+RDebugUtils.currentLine=11141123;
+ //BA.debugLineNum = 11141123;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"\")";
+_p = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_p = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"");
+RDebugUtils.currentLine=11141124;
+ //BA.debugLineNum = 11141124;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.A";
+_p.SetLayoutAnimated((int) (0),(int) (0),(int) (0),__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._asview().getWidth(),__c.DipToCurrent((int) (25)));
+RDebugUtils.currentLine=11141126;
+ //BA.debugLineNum = 11141126;BA.debugLine="p.LoadLayout(\"rowVeranstaltung\")";
+_p.LoadLayout("rowVeranstaltung",ba);
+RDebugUtils.currentLine=11141128;
+ //BA.debugLineNum = 11141128;BA.debugLine="Dim row As Panel = p.GetView(0)";
+_row = new anywheresoftware.b4a.objects.PanelWrapper();
+_row = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_p.GetView((int) (0)).getObject()));
+RDebugUtils.currentLine=11141131;
+ //BA.debugLineNum = 11141131;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.A";
+_p.SetLayoutAnimated((int) (0),(int) (0),(int) (0),__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._asview().getWidth(),(int) (_row.getHeight()-2));
+RDebugUtils.currentLine=11141133;
+ //BA.debugLineNum = 11141133;BA.debugLine="Dim lblD As Label = row.GetView(0)";
+_lbld = new anywheresoftware.b4a.objects.LabelWrapper();
+_lbld = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(_row.GetView((int) (0)).getObject()));
+RDebugUtils.currentLine=11141134;
+ //BA.debugLineNum = 11141134;BA.debugLine="lblD.Typeface = Typeface.DEFAULT";
+_lbld.setTypeface(__c.Typeface.DEFAULT);
+RDebugUtils.currentLine=11141135;
+ //BA.debugLineNum = 11141135;BA.debugLine="lblD.Padding  = Array As Int(5dip, 5dip, 5dip, 5d";
+_lbld.setPadding(new int[]{__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5))});
+RDebugUtils.currentLine=11141137;
+ //BA.debugLineNum = 11141137;BA.debugLine="Dim lblV As Label = row.GetView(1)";
+_lblv = new anywheresoftware.b4a.objects.LabelWrapper();
+_lblv = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(_row.GetView((int) (1)).getObject()));
+RDebugUtils.currentLine=11141139;
+ //BA.debugLineNum = 11141139;BA.debugLine="lblD.Text = Datum";
+_lbld.setText(BA.ObjectToCharSequence(_datum));
+RDebugUtils.currentLine=11141140;
+ //BA.debugLineNum = 11141140;BA.debugLine="lblV.Text = Name";
+_lblv.setText(BA.ObjectToCharSequence(_name));
+RDebugUtils.currentLine=11141141;
+ //BA.debugLineNum = 11141141;BA.debugLine="lblV.Gravity = Gravity.LEFT + Gravity.CENTER_VERT";
+_lblv.setGravity((int) (__c.Gravity.LEFT+__c.Gravity.CENTER_VERTICAL));
+RDebugUtils.currentLine=11141142;
+ //BA.debugLineNum = 11141142;BA.debugLine="lblV.Typeface = Typeface.DEFAULT";
+_lblv.setTypeface(__c.Typeface.DEFAULT);
+RDebugUtils.currentLine=11141143;
+ //BA.debugLineNum = 11141143;BA.debugLine="lblV.Padding  = Array As Int(5dip, 5dip, 5dip, 5d";
+_lblv.setPadding(new int[]{__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5)),__c.DipToCurrent((int) (5))});
+RDebugUtils.currentLine=11141145;
+ //BA.debugLineNum = 11141145;BA.debugLine="Return p";
+if (true) return _p;
+RDebugUtils.currentLine=11141146;
+ //BA.debugLineNum = 11141146;BA.debugLine="End Sub";
+return null;
 }
 public long  _dateutils_setdate(b4a.example.settings __ref,int _year,int _month,int _day) throws Exception{
 __ref = this;
@@ -1805,9 +1915,6 @@ __ref._tbxveranstaltung /*anywheresoftware.b4a.objects.EditTextWrapper*/ .setEna
 RDebugUtils.currentLine=7929864;
  //BA.debugLineNum = 7929864;BA.debugLine="tbxAnzahl.Enabled = True";
 __ref._tbxanzahl /*anywheresoftware.b4a.objects.EditTextWrapper*/ .setEnabled(__c.True);
-RDebugUtils.currentLine=7929865;
- //BA.debugLineNum = 7929865;BA.debugLine="btnAuswahl.Enabled = False";
-__ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setEnabled(__c.False);
 RDebugUtils.currentLine=7929866;
  //BA.debugLineNum = 7929866;BA.debugLine="btnAuswahl.TextColor = 0xFF888888";
 __ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setTextColor(((int)0xff888888));
@@ -1842,9 +1949,9 @@ String _key = "";
 anywheresoftware.b4a.objects.collections.Map _veranstaltung = null;
 String _datum = "";
 int _anzval = 0;
-anywheresoftware.b4a.BA.IterableList group20;
-int index20;
-int groupLen20;
+anywheresoftware.b4a.BA.IterableList group19;
+int index19;
+int groupLen19;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
@@ -1919,9 +2026,6 @@ _ticks = __ref._dateutils_setdate /*long*/ (null,__ref._dpryear /*int*/ ,__ref._
 RDebugUtils.currentLine=9437201;
  //BA.debugLineNum = 9437201;BA.debugLine="dprDatum.Text = FormatDateCustom(ticks, \"dd.MM.y";
 __ref._dprdatum /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setText(BA.ObjectToCharSequence(__ref._formatdatecustom /*String*/ (null,_ticks,"dd.MM.yyyy")));
-RDebugUtils.currentLine=9437203;
- //BA.debugLineNum = 9437203;BA.debugLine="btnAuswahl.Enabled = False";
-__ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setEnabled(parent.__c.False);
 RDebugUtils.currentLine=9437204;
  //BA.debugLineNum = 9437204;BA.debugLine="btnAuswahl.TextColor = 0xFF888888";
 __ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setTextColor(((int)0xff888888));
@@ -1963,24 +2067,24 @@ if (true) break;
 case 10:
 //for
 this.state = 17;
-group20 = __ref._veranstaltungen /*anywheresoftware.b4a.objects.collections.Map*/ .Keys();
-index20 = 0;
-groupLen20 = group20.getSize();
+group19 = __ref._veranstaltungen /*anywheresoftware.b4a.objects.collections.Map*/ .Keys();
+index19 = 0;
+groupLen19 = group19.getSize();
 this.state = 29;
 if (true) break;
 
 case 29:
 //C
 this.state = 17;
-if (index20 < groupLen20) {
+if (index19 < groupLen19) {
 this.state = 12;
-_key = BA.ObjectToString(group20.Get(index20));}
+_key = BA.ObjectToString(group19.Get(index19));}
 if (true) break;
 
 case 30:
 //C
 this.state = 29;
-index20++;
+index19++;
 if (true) break;
 
 case 12:
@@ -2101,9 +2205,6 @@ __ref._btnverstgdelete /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setEnable
 RDebugUtils.currentLine=9437240;
  //BA.debugLineNum = 9437240;BA.debugLine="btnVerstgDelete.TextColor = 0xFF888888";
 __ref._btnverstgdelete /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setTextColor(((int)0xff888888));
-RDebugUtils.currentLine=9437241;
- //BA.debugLineNum = 9437241;BA.debugLine="btnAuswahl.Enabled = False";
-__ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setEnabled(parent.__c.False);
 RDebugUtils.currentLine=9437242;
  //BA.debugLineNum = 9437242;BA.debugLine="btnAuswahl.TextColor = 0xFF888888";
 __ref._btnauswahl /*anywheresoftware.b4a.objects.ButtonWrapper*/ .setTextColor(((int)0xff888888));
@@ -2727,6 +2828,35 @@ RDebugUtils.currentLine=8781839;
  //BA.debugLineNum = 8781839;BA.debugLine="End Sub";
 return "";
 }
+public String  _savedbvstng(b4a.example.settings __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="settings";
+if (Debug.shouldDelegate(ba, "savedbvstng", false))
+	 {return ((String) Debug.delegate(ba, "savedbvstng", null));}
+RDebugUtils.currentLine=8585216;
+ //BA.debugLineNum = 8585216;BA.debugLine="Private Sub saveDBvstng";
+RDebugUtils.currentLine=8585217;
+ //BA.debugLineNum = 8585217;BA.debugLine="lblVeranstaltung.Text = tbxVeranstaltung.Text";
+__ref._lblveranstaltung /*anywheresoftware.b4a.objects.LabelWrapper*/ .setText(BA.ObjectToCharSequence(__ref._tbxveranstaltung /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText()));
+RDebugUtils.currentLine=8585218;
+ //BA.debugLineNum = 8585218;BA.debugLine="lblDatum.Text = dprDatum.Text";
+__ref._lbldatum /*anywheresoftware.b4a.objects.LabelWrapper*/ .setText(BA.ObjectToCharSequence(__ref._dprdatum /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getText()));
+RDebugUtils.currentLine=8585219;
+ //BA.debugLineNum = 8585219;BA.debugLine="DBPut(\"VeranstaltungID\", Veranstaltung_ID)";
+__ref._dbput /*String*/ (null,"VeranstaltungID",(Object)(__ref._veranstaltung_id /*String*/ ));
+RDebugUtils.currentLine=8585220;
+ //BA.debugLineNum = 8585220;BA.debugLine="DBPut(\"VeranstaltungName\", tbxVeranstaltung.Text)";
+__ref._dbput /*String*/ (null,"VeranstaltungName",(Object)(__ref._tbxveranstaltung /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText()));
+RDebugUtils.currentLine=8585221;
+ //BA.debugLineNum = 8585221;BA.debugLine="DBPut(\"VeranstaltungDatum\", dprDatum.Text)";
+__ref._dbput /*String*/ (null,"VeranstaltungDatum",(Object)(__ref._dprdatum /*anywheresoftware.b4a.objects.ButtonWrapper*/ .getText()));
+RDebugUtils.currentLine=8585222;
+ //BA.debugLineNum = 8585222;BA.debugLine="DBPut(\"VeranstaltungAnzahl\", tbxAnzahl.Text)";
+__ref._dbput /*String*/ (null,"VeranstaltungAnzahl",(Object)(__ref._tbxanzahl /*anywheresoftware.b4a.objects.EditTextWrapper*/ .getText()));
+RDebugUtils.currentLine=8585223;
+ //BA.debugLineNum = 8585223;BA.debugLine="End Sub";
+return "";
+}
 public String  _tbxanzahl_focuschanged(b4a.example.settings __ref,boolean _hasfocus) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="settings";
@@ -2759,10 +2889,10 @@ RDebugUtils.currentLine=10092544;
  //BA.debugLineNum = 10092544;BA.debugLine="Private Sub tbxAnzahl_TextChanged (Old As String,";
 RDebugUtils.currentLine=10092545;
  //BA.debugLineNum = 10092545;BA.debugLine="Log(\"tbxAnzahl_TextChanged\")";
-__c.LogImpl("110092545","tbxAnzahl_TextChanged",0);
+__c.LogImpl("310092545","tbxAnzahl_TextChanged",0);
 RDebugUtils.currentLine=10092546;
  //BA.debugLineNum = 10092546;BA.debugLine="Log(\"dochange = \" & dochange)";
-__c.LogImpl("110092546","dochange = "+BA.ObjectToString(__ref._dochange /*boolean*/ ),0);
+__c.LogImpl("310092546","dochange = "+BA.ObjectToString(__ref._dochange /*boolean*/ ),0);
 RDebugUtils.currentLine=10092547;
  //BA.debugLineNum = 10092547;BA.debugLine="If dochange = False Then Return";
 if (__ref._dochange /*boolean*/ ==__c.False) { 
@@ -2836,10 +2966,10 @@ RDebugUtils.currentLine=10223616;
  //BA.debugLineNum = 10223616;BA.debugLine="Private Sub tbxTeilnehmer_TextChanged (Old As Stri";
 RDebugUtils.currentLine=10223617;
  //BA.debugLineNum = 10223617;BA.debugLine="Log(\"tbxTeilnehmer_TextChanged\")";
-__c.LogImpl("110223617","tbxTeilnehmer_TextChanged",0);
+__c.LogImpl("310223617","tbxTeilnehmer_TextChanged",0);
 RDebugUtils.currentLine=10223618;
  //BA.debugLineNum = 10223618;BA.debugLine="Log(\"dochange = \" & dochange)";
-__c.LogImpl("110223618","dochange = "+BA.ObjectToString(__ref._dochange /*boolean*/ ),0);
+__c.LogImpl("310223618","dochange = "+BA.ObjectToString(__ref._dochange /*boolean*/ ),0);
 RDebugUtils.currentLine=10223619;
  //BA.debugLineNum = 10223619;BA.debugLine="If dochange = False Then Return";
 if (__ref._dochange /*boolean*/ ==__c.False) { 
@@ -2970,10 +3100,10 @@ RDebugUtils.currentLine=9961472;
  //BA.debugLineNum = 9961472;BA.debugLine="Private Sub tbxVeranstaltung_TextChanged (Old As S";
 RDebugUtils.currentLine=9961473;
  //BA.debugLineNum = 9961473;BA.debugLine="Log(\"tbxVeranstaltung_TextChanged\")";
-__c.LogImpl("19961473","tbxVeranstaltung_TextChanged",0);
+__c.LogImpl("39961473","tbxVeranstaltung_TextChanged",0);
 RDebugUtils.currentLine=9961474;
  //BA.debugLineNum = 9961474;BA.debugLine="Log(\"dochange = \" & dochange)";
-__c.LogImpl("19961474","dochange = "+BA.ObjectToString(__ref._dochange /*boolean*/ ),0);
+__c.LogImpl("39961474","dochange = "+BA.ObjectToString(__ref._dochange /*boolean*/ ),0);
 RDebugUtils.currentLine=9961475;
  //BA.debugLineNum = 9961475;BA.debugLine="If dochange = False Then Return";
 if (__ref._dochange /*boolean*/ ==__c.False) { 
@@ -2996,6 +3126,44 @@ RDebugUtils.currentLine=9961482;
 __ref._starttimer /*String*/ (null);
 RDebugUtils.currentLine=9961483;
  //BA.debugLineNum = 9961483;BA.debugLine="End Sub";
+return "";
+}
+public String  _updatelayout(b4a.example.settings __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="settings";
+if (Debug.shouldDelegate(ba, "updatelayout", false))
+	 {return ((String) Debug.delegate(ba, "updatelayout", null));}
+int _hoehe = 0;
+int _newtop = 0;
+int _delta = 0;
+RDebugUtils.currentLine=48562176;
+ //BA.debugLineNum = 48562176;BA.debugLine="Private Sub UpdateLayout";
+RDebugUtils.currentLine=48562178;
+ //BA.debugLineNum = 48562178;BA.debugLine="Dim hoehe As Int = lstVeranstaltungen.sv.Scrol";
+_hoehe = __ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._sv.getScrollViewContentHeight();
+RDebugUtils.currentLine=48562179;
+ //BA.debugLineNum = 48562179;BA.debugLine="lstVeranstaltungen.AsView.Height = hoehe";
+__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._asview().setHeight(_hoehe);
+RDebugUtils.currentLine=48562180;
+ //BA.debugLineNum = 48562180;BA.debugLine="lstVeranstaltungen.Base_Resize( lstVeranstaltunge";
+__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._base_resize(__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._asview().getWidth(),_hoehe);
+RDebugUtils.currentLine=48562182;
+ //BA.debugLineNum = 48562182;BA.debugLine="Dim newtop As Int = lstVeranstaltungen.AsView.Top";
+_newtop = (int) (__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._asview().getTop()+__ref._lstveranstaltungen /*b4a.example3.customlistview*/ ._asview().getHeight()+__c.DipToCurrent((int) (5)));
+RDebugUtils.currentLine=48562183;
+ //BA.debugLineNum = 48562183;BA.debugLine="Dim delta As Int = newtop - pnlTeilnehmer.Top";
+_delta = (int) (_newtop-__ref._pnlteilnehmer /*anywheresoftware.b4a.objects.PanelWrapper*/ .getTop());
+RDebugUtils.currentLine=48562184;
+ //BA.debugLineNum = 48562184;BA.debugLine="pnlTeilnehmer.Top = newtop";
+__ref._pnlteilnehmer /*anywheresoftware.b4a.objects.PanelWrapper*/ .setTop(_newtop);
+RDebugUtils.currentLine=48562186;
+ //BA.debugLineNum = 48562186;BA.debugLine="lstTeilnehmer.AsView.Top = lstTeilnehmer.AsView.T";
+__ref._lstteilnehmer /*b4a.example3.customlistview*/ ._asview().setTop((int) (__ref._lstteilnehmer /*b4a.example3.customlistview*/ ._asview().getTop()+_delta));
+RDebugUtils.currentLine=48562188;
+ //BA.debugLineNum = 48562188;BA.debugLine="Log(\"Delta: \" & delta)";
+__c.LogImpl("348562188","Delta: "+BA.NumberToString(_delta),0);
+RDebugUtils.currentLine=48562190;
+ //BA.debugLineNum = 48562190;BA.debugLine="End Sub";
 return "";
 }
 public String  _uhrzeit_tick(b4a.example.settings __ref) throws Exception{

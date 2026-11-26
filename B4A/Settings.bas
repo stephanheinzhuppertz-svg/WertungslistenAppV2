@@ -50,6 +50,9 @@ Sub Class_Globals
 	Private tbxTeilnehmer As EditText
 	Private btnTLNDelete As Button
 	Private btnTLNSpeichern As Button
+	
+	Private pnlVstng As Panel
+	Private pnlTeilnehmer As Panel
 		
 	' --- Nicht-sichtbare Komponenten & Hilfsvariablen ---
 	Private Uhrzeit As Timer
@@ -405,7 +408,7 @@ Private Sub disableVSTNG
 	btnVerstgSpeichern.TextColor = 0xFF888888
 	tbxVeranstaltung.Enabled = False
 	tbxAnzahl.Enabled = False
-	btnAuswahl.Enabled = False
+	'btnAuswahl.Enabled = False
 	btnAuswahl.TextColor = 0xFF888888
 End Sub
 
@@ -418,7 +421,7 @@ Private Sub enableVSTNG
 	btnVerstgSpeichern.TextColor = 0xFF888888
 	tbxVeranstaltung.Enabled = True
 	tbxAnzahl.Enabled = True
-	btnAuswahl.Enabled = False
+	'btnAuswahl.Enabled = False
 	btnAuswahl.TextColor = 0xFF888888
 End Sub
 
@@ -852,7 +855,7 @@ Private Sub dprDatum_Click
 		Dim ticks As Long = DateUtils_SetDate(dprYear, dprMonth, dprDay)
 		dprDatum.Text = FormatDateCustom(ticks, "dd.MM.yyyy")
 		
-		btnAuswahl.Enabled = False
+		'btnAuswahl.Enabled = False
 		btnAuswahl.TextColor = 0xFF888888
 		
 		If dprDatum.Text <> DBGet("VeranstaltungDatum", "") Then
@@ -890,7 +893,7 @@ Private Sub dprDatum_Click
 				End If
 				btnVerstgDelete.Enabled = False
 				btnVerstgDelete.TextColor = 0xFF888888
-				btnAuswahl.Enabled = False
+				'btnAuswahl.Enabled = False
 				btnAuswahl.TextColor = 0xFF888888
 			End If
 		End If
@@ -909,10 +912,12 @@ Private Sub DateUtils_SetDate(Year As Int, Month As Int, Day As Int) As Long
 End Sub
 
 Private Sub btnAuswahl_Click
-	Uhrzeit.Enabled = False
-	Veranstaltung_ID = webviewVSTGN_ID
-	saveDBvstng
-	CloseSettings
+	'Uhrzeit.Enabled = False
+	'Veranstaltung_ID = webviewVSTGN_ID
+	'saveDBvstng
+	'CloseSettings
+	
+	TestVeranstaltungsliste
 End Sub
 
 Private Sub btnVerstgDelete_Click
@@ -1183,3 +1188,76 @@ Private Sub lstVeranstaltungen_ItemClick (Position As Int, Value As Object)
 
 End Sub
 
+Private Sub TestVeranstaltungsliste
+
+	lstVeranstaltungen.Clear
+	
+	Dim p As B4XView
+	p = CreateVeranstaltungRow("Datum", "Bezeichnung")
+	lstVeranstaltungen.Add(p, 1)
+	
+	Dim pnlRow As Panel = p.GetView(0)
+
+	Dim lblD As Label = pnlRow.GetView(0)
+	lblD.Color = 0xFF16AA16
+	lblD.TextColor = 0xFFFFFFFF
+	lblD.Typeface = Typeface.DEFAULT_BOLD
+	
+	Dim lblV As Label = pnlRow.GetView(1)
+	lblV.Color = 0xFF16AA16
+	lblV.TextColor = 0xFFFFFFFF
+	lblV.Gravity = Gravity.CENTER_HORIZONTAL + Gravity.CENTER_VERTICAL
+	lblV.Padding  = Array As Int(5dip, 5dip, 5dip, 5dip)
+	lblV.Typeface = Typeface.DEFAULT_BOLD
+
+	For i = 2 To 9
+		lstVeranstaltungen.Add(CreateVeranstaltungRow( $"0${i}.05.2026"$, $"Veranstaltung ${i -1}"$), i)
+	Next
+
+	UpdateLayout
+
+End Sub
+
+Private Sub CreateVeranstaltungRow(Datum As String, Name As String) As B4XView
+	'Erzeugt eine Zeile für die Veranstaltungsliste basierend auf rowVeranstaltung.bal
+
+	Dim p As B4XView = xui.CreatePanel("")
+	p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.AsView.Width, 25dip)
+
+	p.LoadLayout("rowVeranstaltung")
+
+	Dim row As Panel = p.GetView(0)
+
+	'Zeilenhöhe aus dem Designerlayout übernehmen
+	p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.AsView.Width, row.Height -2)
+
+	Dim lblD As Label = row.GetView(0)
+	lblD.Typeface = Typeface.DEFAULT
+	lblD.Padding  = Array As Int(5dip, 5dip, 5dip, 5dip)
+	
+	Dim lblV As Label = row.GetView(1)
+
+	lblD.Text = Datum
+	lblV.Text = Name
+	lblV.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL 
+	lblV.Typeface = Typeface.DEFAULT
+	lblV.Padding  = Array As Int(5dip, 5dip, 5dip, 5dip)
+
+	Return p
+End Sub
+
+Private Sub UpdateLayout
+
+    Dim hoehe As Int = lstVeranstaltungen.sv.ScrollViewContentHeight
+	lstVeranstaltungen.AsView.Height = hoehe
+	lstVeranstaltungen.Base_Resize( lstVeranstaltungen.AsView.Width, hoehe)
+	
+	Dim newtop As Int = lstVeranstaltungen.AsView.Top + lstVeranstaltungen.AsView.Height + 5dip
+	Dim delta As Int = newtop - pnlTeilnehmer.Top
+	pnlTeilnehmer.Top = newtop
+	
+	lstTeilnehmer.AsView.Top = lstTeilnehmer.AsView.Top + delta
+		
+	Log("Delta: " & delta)
+
+End Sub
