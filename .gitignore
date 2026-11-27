@@ -1,0 +1,19 @@
+Objects/
+AutoBackups/
+
+*.apk
+*.apks
+*.aab
+
+# Logs
+*.log
+
+# Backup-Dateien
+*.bak
+
+# Temporäre Dateien
+*.tmp
+
+# Windows
+Thumbs.db
+desktop.ini
