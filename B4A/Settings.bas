@@ -1,5 +1,5 @@
 ﻿B4A=true
-Group=Default Group
+Group=WertungslistenAppV2
 ModulesStructureVersion=1
 Type=Class
 Version=12.8
@@ -108,6 +108,7 @@ End Sub
 Public Sub Initialize
 
 	'Initialisiert die Datenstrukturen und Standardwerte der Settings-Seite.
+	Log("Settings-Initialize")
 
 	STATUS.Initialize
 	VERANSTALTUNGEN.Initialize
@@ -127,6 +128,7 @@ Private Sub B4XPage_Created(Root1 As B4XView)
 
     'Erzeugt die Seite, lädt die Layouts und speichert die Standardgrößen
     'der beiden CustomListViews für spätere Layoutanpassungen.
+	Log("Settings-B4XPage_Created")
 
     Root = Root1
 
@@ -140,10 +142,45 @@ Private Sub B4XPage_Created(Root1 As B4XView)
 
 End Sub
 
+Private Sub B4XPage_Appear
+
+    'Stellt den ursprünglichen Initialisierungsablauf
+    'des Settings-Screens wieder her.
+	Log("Settings-B4XPage_Appear")
+
+    VERANSTALTUNG_ID = DBGet("VeranstaltungID", "v0")
+
+    COLORBLUE = lblVeranstaltung.TextColor
+    COLORGREEN = lblVerein.TextColor
+
+    disableVSTNG
+    disableTLN
+
+    setzeHeaderfromDB
+    changeURL
+
+    If VERANSTALTUNG_ID = "v0" Then
+        DBPut("VeranstaltungDatum", "")
+    End If
+
+'	Log("STATUS = " & STATUS)
+'	Log("TOKEN = " & STATUS.GetDefault("idToken", ""))
+'    If STATUS.GetDefault("idToken", "") = "" Then
+'        CloseSettings
+'        Return
+'    End If
+'
+'    holeVeranstaltungen
+'
+'    startTimer
+
+End Sub
+
 Private Sub B4XPage_CloseRequest As ResumableSub
 
 	'Stoppt den Bildschirmschoner-Timer und sichert den aktuellen Status
 	'bevor die Seite geschlossen wird.
+	Log("Settings-B4XPage_CloseRequest")
 
 	UHRZEIT.Enabled = False
 
@@ -157,11 +194,10 @@ Private Sub CloseSettings
 
 	'Beendet die Settings-Seite und übernimmt den aktuellen Status
 	'in die MainPage.
+	Log("Settings-CloseSettings")
 
 	UHRZEIT.Enabled = False
-
 	B4XPages.MainPage.STATUS = STATUS
-
 	B4XPages.ClosePage(Me)
 
 End Sub
@@ -170,6 +206,7 @@ End Sub
 Private Sub disableVSTNG
 
 	'Sperrt die Bearbeitung einer Veranstaltung.
+	Log("Settings-disableVSTNG")
 
 	dprDatum.Enabled = False
 	dprDatum.TextColor = 0xFF888888
@@ -210,6 +247,7 @@ End Sub
 Private Sub disableTLN
 
 	'Sperrt die Bearbeitung eines Teilnehmers.
+	Log("Settings-disableTLN")
 
 	btnTLNDelete.Enabled = False
 	btnTLNSpeichern.Enabled = False
@@ -239,6 +277,7 @@ Private Sub setzeHeaderfromDB
 
 	'Übernimmt die aktuell gespeicherten Vereins- und
 	'Veranstaltungsdaten in den Kopfbereich der Seite.
+	Log("Settings-setzeHeaderfromDB")
 
 	lblVerein.Text = DBGet("Bezeichnung", "- nicht gesetzt -")
 	lblVeranstaltung.Text = DBGet("VeranstaltungName", "- nicht gesetzt -")
@@ -249,6 +288,7 @@ End Sub
 Private Sub changeURL
 
 	'Erzeugt die Firebase-URLs des aktuell ausgewählten Vereins.
+	Log("Settings-changeURL")
 
 	Dim vereinsid As String = DBGet("VereinsID", "[...]")
 
@@ -269,6 +309,7 @@ End Sub
 Private Sub holeVeranstaltungen
 
     'Lädt die Veranstaltungen des aktuell ausgewählten Vereins.
+	Log("Settings-holeVeranstaltungen")
 
     DBDATENTYP = "Veranstaltungen"
 
@@ -1098,12 +1139,12 @@ Private Sub btnAuswahl_Click
 
     'Öffnet die Auswahl der Veranstaltungen.
 
-	'Uhrzeit.Enabled = False
-	'Veranstaltung_ID = webviewVSTGN_ID
-	'saveDBvstng
-	'CloseSettings
+	UHRZEIT.Enabled = False
+	VERANSTALTUNG_ID = WEBVIEWVERANSTALTUNG_ID
+	saveDBvstng
+	CloseSettings
 	
-	TestVeranstaltungsliste
+	'TestVeranstaltungsliste
 
 End Sub
 
@@ -1381,6 +1422,7 @@ End Sub
 Private Sub startTimer
 
 	'Startet den Inaktivitäts-Timer neu.
+	Log("Settings-startTimer")
 
 	UHRZEIT.Enabled = False
 	UHRZEIT.Interval = 1000 * 300
@@ -1441,6 +1483,7 @@ End Sub
 Private Sub DBPut(Key As String, Value As Object)
 
 	'Speichert einen Wert im lokalen Datenbestand.
+	Log("Settings-DBPut")
 
 	If Value Is Map Then
 
@@ -1476,6 +1519,7 @@ End Sub
 Private Sub DBGet(Key As String, DefaultValue As Object) As Object
 
 	'Liest einen Wert aus dem lokalen Datenbestand.
+	Log("Settings-DBGet")
 
 	If DBVEREIN.ContainsKey(Key) = False Then
 		Return DefaultValue
@@ -1583,23 +1627,23 @@ Private Sub TestVeranstaltungsliste
 
 	Dim pnlrow As Panel = panel.GetView(0)
 
-	Dim lbldatum As Label = pnlrow.GetView(0)
+	Dim lblDatum As Label = pnlrow.GetView(0)
 
-	lbldatum.Color = COLORGREEN
-	lbldatum.TextColor = 0xFFFFFFFF
-	lbldatum.Typeface = Typeface.DEFAULT_BOLD
+	lblDatum.Color = COLORGREEN
+	lblDatum.TextColor = 0xFFFFFFFF
+	lblDatum.Typeface = Typeface.DEFAULT_BOLD
 
-	Dim lblveranstaltung As Label = pnlrow.GetView(1)
+	Dim lblVeranstaltung As Label = pnlrow.GetView(1)
 
-	lblveranstaltung.Color = COLORGREEN
-	lblveranstaltung.TextColor = 0xFFFFFFFF
-	lblveranstaltung.Gravity = _
+	lblVeranstaltung.Color = COLORGREEN
+	lblVeranstaltung.TextColor = 0xFFFFFFFF
+	lblVeranstaltung.Gravity = _
         Gravity.CENTER_HORIZONTAL + Gravity.CENTER_VERTICAL
 
-	lblveranstaltung.Padding = _
+	lblVeranstaltung.Padding = _
         Array As Int(5dip, 5dip, 5dip, 5dip)
 
-	lblveranstaltung.Typeface = Typeface.DEFAULT_BOLD
+	lblVeranstaltung.Typeface = Typeface.DEFAULT_BOLD
 
 	For i = 2 To 9
 

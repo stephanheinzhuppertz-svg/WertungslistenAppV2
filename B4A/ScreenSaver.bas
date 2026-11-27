@@ -1,5 +1,5 @@
 ﻿B4A=true
-Group=Default Group
+Group=WertungslistenAppV2
 ModulesStructureVersion=1
 Type=Class
 Version=12.8

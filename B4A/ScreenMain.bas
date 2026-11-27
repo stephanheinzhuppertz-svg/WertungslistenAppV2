@@ -400,9 +400,6 @@ Public Sub setWebViewString(val As String)
 	CallSubDelayed2(Me, "webErgebnis_WebViewStringChange", val)
 End Sub
 
-' ==============================================================================
-' 2. INITIALISIERUNG & HILFSPROZEDUREN
-' ==============================================================================
 Private Sub initialisiere
 	Teilnehmer.Initialize
 	DBdatenTyp = ""
