@@ -44,6 +44,7 @@ Sub Class_Globals
 	Private btnVerstgDelete As Button
 	Private btnVerstgSpeichern As Button
 	
+	Private svMain As ScrollView
 	Private lstVeranstaltungen As CustomListView
 	Private lstTeilnehmer As CustomListView
 	
@@ -62,6 +63,10 @@ Sub Class_Globals
 	Private dprYear As Int
 	Private dprMonth As Int
 	Private dprDay As Int
+	
+	Private mDefaultLstVeranstaltungenHeight As Int
+	Private mDefaultLstTeilnehmerHeight As Int
+	
 End Sub
 
 Public Sub Initialize
@@ -81,8 +86,14 @@ End Sub
 Private Sub B4XPage_Created (Root1 As B4XView)
 	Root = Root1
 	Root.LoadLayout("Settings")
+
+    svMain.Panel.LoadLayout("SettingsContent")
 	
-	' B4XPage_Appear wird von B4XPages automatisch nach B4XPage_Created aufgerufen
+	mDefaultLstVeranstaltungenHeight = lstVeranstaltungen.AsView.Height
+	mDefaultLstTeilnehmerHeight = lstTeilnehmer.AsView.Height
+	
+	UpdateLayout
+	
 End Sub
 
 Public Sub B4XPage_Appear
@@ -1214,7 +1225,29 @@ Private Sub TestVeranstaltungsliste
 		lstVeranstaltungen.Add(CreateVeranstaltungRow( $"0${i}.05.2026"$, $"Veranstaltung ${i -1}"$), i)
 	Next
 
+	lstTeilnehmer.Clear
+	
+	Dim anzahltln As Int = 10
+	Dim p As B4XView
+	p = CreateTeilnehmerRow("Teilnehmer (" & anzahltln & ")")
+	lstTeilnehmer.Add(p, 1)
+	
+	Dim pnlRow As Panel = p.GetView(0)
+
+	Dim lblT As Label = pnlRow.GetView(0)
+	lblT.Color = 0xFF16AA16
+	lblT.TextColor = 0xFFFFFFFF
+	lblT.Typeface = Typeface.DEFAULT_BOLD
+	lblT.Gravity = Gravity.CENTER_HORIZONTAL + Gravity.CENTER_VERTICAL
+	
+	For i = 2 To anzahltln -1
+		lstTeilnehmer.Add(CreateTeilnehmerRow($"Name Vorname ${i -1}"$), i)
+	Next
+	
 	UpdateLayout
+	
+	lstViewVeranstaltung_markiereZeile(2)
+	lstViewTeilnehmer_markiereZeile(2)
 
 End Sub
 
@@ -1222,33 +1255,64 @@ Private Sub CreateVeranstaltungRow(Datum As String, Name As String) As B4XView
 	'Erzeugt eine Zeile für die Veranstaltungsliste basierend auf rowVeranstaltung.bal
 
 	Dim p As B4XView = xui.CreatePanel("")
-	p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.AsView.Width, 25dip)
+	p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.AsView.Width, 26dip)
 
 	p.LoadLayout("rowVeranstaltung")
 
 	Dim row As Panel = p.GetView(0)
+	Log("row.Height = " & row.Height)
 
 	'Zeilenhöhe aus dem Designerlayout übernehmen
-	p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.AsView.Width, row.Height -2)
+	p.SetLayoutAnimated(0, 0, 0, lstVeranstaltungen.AsView.Width, row.Height )
 
 	Dim lblD As Label = row.GetView(0)
 	lblD.Typeface = Typeface.DEFAULT
+	lblD.TextColor = 0xFF000000
 	lblD.Padding  = Array As Int(5dip, 5dip, 5dip, 5dip)
 	
 	Dim lblV As Label = row.GetView(1)
+	
+	Log("lblD.Height = " & lblD.Height)
+	Log("lblV.Height = " & lblV.Height)
 
 	lblD.Text = Datum
 	lblV.Text = Name
 	lblV.Gravity = Gravity.LEFT + Gravity.CENTER_VERTICAL 
 	lblV.Typeface = Typeface.DEFAULT
+	lblV.TextColor = 0xFF000000
 	lblV.Padding  = Array As Int(5dip, 5dip, 5dip, 5dip)
 
+	Return p
+End Sub
+
+Private Sub CreateTeilnehmerRow(Name As String) As B4XView
+	'Erzeugt eine Zeile für die Teilnehmerliste basierend auf rowTeilnehmer.bal
+
+	Dim p As B4XView = xui.CreatePanel("")
+	p.SetLayoutAnimated(0, 0, 0, lstTeilnehmer.AsView.Width, 26dip)
+
+	p.LoadLayout("rowTeilnehmer")
+
+	Dim row As Panel = p.GetView(0)
+
+	'Zeilenhöhe aus dem Designerlayout übernehmen
+	p.SetLayoutAnimated(0, 0, 0, lstTeilnehmer.AsView.Width, row.Height )
+
+	Dim lblT As Label = row.GetView(0)
+	lblT.Typeface = Typeface.DEFAULT
+	lblT.TextColor = 0xFF000000
+	lblT.Padding  = Array As Int(5dip, 5dip, 5dip, 5dip)
+	
+	lblT.Text = Name
+	
 	Return p
 End Sub
 
 Private Sub UpdateLayout
 
     Dim hoehe As Int = lstVeranstaltungen.sv.ScrollViewContentHeight
+	hoehe = Max(hoehe, mDefaultLstVeranstaltungenHeight)
+	
 	lstVeranstaltungen.AsView.Height = hoehe
 	lstVeranstaltungen.Base_Resize( lstVeranstaltungen.AsView.Width, hoehe)
 	
@@ -1257,7 +1321,48 @@ Private Sub UpdateLayout
 	pnlTeilnehmer.Top = newtop
 	
 	lstTeilnehmer.AsView.Top = lstTeilnehmer.AsView.Top + delta
-		
-	Log("Delta: " & delta)
+	
+	Dim hoehe As Int = lstTeilnehmer.sv.ScrollViewContentHeight
+	hoehe = Max(hoehe, mDefaultLstTeilnehmerHeight)
+	lstTeilnehmer.AsView.Height = hoehe
+	lstTeilnehmer.Base_Resize( lstTeilnehmer.AsView.Width, hoehe)
+
+	svMain.Panel.Height = _
+    lstTeilnehmer.AsView.Top + _
+    lstTeilnehmer.AsView.Height + 20dip
+
+End Sub
+
+Private Sub lstViewVeranstaltung_markiereZeile(Zeile As Int)
+	Dim Index As Int = Zeile - 1
+	If Index < 0 Or Index >= lstVeranstaltungen.Size Then Return
+
+	' 1. Äußeres Zeilen-Panel aus der Liste holen
+	Dim pnlRow As B4XView = lstVeranstaltungen.GetPanel(Index)
+	
+	' 2. Inneres Basis-Panel aus deinem Layout holen
+	Dim pnlBasis As B4XView = pnlRow.GetView(0)
+
+	' 3. Jetzt auf die Labels im Basis-Panel zugreifen
+	Dim lblD As B4XView = pnlBasis.GetView(0)
+	lblD.Color = 0xffffcc99
+
+	Dim lblV As B4XView = pnlBasis.GetView(1)
+	lblV.Color = 0xffffcc99
+End Sub
+
+Private Sub lstViewTeilnehmer_markiereZeile(Zeile As Int)
+	Dim Index As Int = Zeile - 1
+	If Index < 0 Or Index >= lstTeilnehmer.Size Then Return
+
+	' 1. Äußeres Zeilen-Panel aus der Liste holen
+	Dim pnlRow As B4XView = lstTeilnehmer.GetPanel(Index)
+	
+	' 2. Inneres Basis-Panel aus deinem Layout holen
+	Dim pnlBasis As B4XView = pnlRow.GetView(0)
+
+	' 3. Jetzt auf das Label im Basis-Panel zugreifen
+	Dim lblD As B4XView = pnlBasis.GetView(0)
+	lblD.Color = 0xffffcc99
 
 End Sub

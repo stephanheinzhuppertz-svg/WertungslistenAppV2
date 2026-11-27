@@ -355,7 +355,7 @@ __ref.runClassMethod (b4a.example.screensaver.class, "_startactivityforresult" /
        catch (Exception e6) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e6.toString()); BA.debugLineNum = 81;BA.debugLine="Log(\"StartConfirmDeviceCredential Fehler: \" & La";
 Debug.ShouldStop(65536);
-screensaver.__c.runVoidMethod ("LogImpl","311665414",RemoteObject.concat(RemoteObject.createImmutable("StartConfirmDeviceCredential Fehler: "),screensaver.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
+screensaver.__c.runVoidMethod ("LogImpl","411730950",RemoteObject.concat(RemoteObject.createImmutable("StartConfirmDeviceCredential Fehler: "),screensaver.__c.runMethod(false,"LastException",__ref.getField(false, "ba")).runMethod(true,"getMessage")),0);
  BA.debugLineNum = 82;BA.debugLine="B4XPages.MainPage.Status = Status";
 Debug.ShouldStop(131072);
 screensaver._b4xpages.runMethod(false,"_mainpage" /*RemoteObject*/ ,__ref.getField(false, "ba")).setField ("_status" /*RemoteObject*/ ,__ref.getField(false,"_status" /*RemoteObject*/ ));

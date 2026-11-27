@@ -53,13 +53,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "getpanel", true))
 	 {return ((anywheresoftware.b4a.objects.B4XViewWrapper) Debug.delegate(ba, "getpanel", new Object[] {_dialog}));}
-RDebugUtils.currentLine=37027840;
- //BA.debugLineNum = 37027840;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
-RDebugUtils.currentLine=37027841;
- //BA.debugLineNum = 37027841;BA.debugLine="Return mBase";
+RDebugUtils.currentLine=37093376;
+ //BA.debugLineNum = 37093376;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
+RDebugUtils.currentLine=37093377;
+ //BA.debugLineNum = 37093377;BA.debugLine="Return mBase";
 if (true) return __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ;
-RDebugUtils.currentLine=37027842;
- //BA.debugLineNum = 37027842;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37093378;
+ //BA.debugLineNum = 37093378;BA.debugLine="End Sub";
 return null;
 }
 public void  _show(b4a.example.b4xinputtemplate __ref,b4a.example.b4xdialog _dialog) throws Exception{
@@ -93,14 +93,14 @@ return;
 case 0:
 //C
 this.state = -1;
-RDebugUtils.currentLine=37093377;
- //BA.debugLineNum = 37093377;BA.debugLine="xDialog = Dialog";
+RDebugUtils.currentLine=37158913;
+ //BA.debugLineNum = 37158913;BA.debugLine="xDialog = Dialog";
 __ref._xdialog /*b4a.example.b4xdialog*/  = _dialog;
-RDebugUtils.currentLine=37093378;
- //BA.debugLineNum = 37093378;BA.debugLine="xDialog.PutAtTop = xui.IsB4A Or xui.IsB4i";
+RDebugUtils.currentLine=37158914;
+ //BA.debugLineNum = 37158914;BA.debugLine="xDialog.PutAtTop = xui.IsB4A Or xui.IsB4i";
 __ref._xdialog /*b4a.example.b4xdialog*/ ._putattop /*boolean*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4A() || __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .getIsB4i();
-RDebugUtils.currentLine=37093379;
- //BA.debugLineNum = 37093379;BA.debugLine="Sleep(20)";
+RDebugUtils.currentLine=37158915;
+ //BA.debugLineNum = 37158915;BA.debugLine="Sleep(20)";
 parent.__c.Sleep(ba,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "b4xinputtemplate", "show"),(int) (20));
 this.state = 1;
 return;
@@ -108,27 +108,27 @@ case 1:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=37093380;
- //BA.debugLineNum = 37093380;BA.debugLine="TextField1.Text = Text";
+RDebugUtils.currentLine=37158916;
+ //BA.debugLineNum = 37158916;BA.debugLine="TextField1.Text = Text";
 __ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setText(BA.ObjectToCharSequence(__ref._text /*String*/ ));
-RDebugUtils.currentLine=37093381;
- //BA.debugLineNum = 37093381;BA.debugLine="Validate(Text)";
+RDebugUtils.currentLine=37158917;
+ //BA.debugLineNum = 37158917;BA.debugLine="Validate(Text)";
 __ref._validate /*String*/ (null,__ref._text /*String*/ );
-RDebugUtils.currentLine=37093382;
- //BA.debugLineNum = 37093382;BA.debugLine="TextField1.RequestFocus";
+RDebugUtils.currentLine=37158918;
+ //BA.debugLineNum = 37158918;BA.debugLine="TextField1.RequestFocus";
 __ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .RequestFocus();
-RDebugUtils.currentLine=37093384;
- //BA.debugLineNum = 37093384;BA.debugLine="Dim tf As EditText = TextField1";
+RDebugUtils.currentLine=37158920;
+ //BA.debugLineNum = 37158920;BA.debugLine="Dim tf As EditText = TextField1";
 _tf = new anywheresoftware.b4a.objects.EditTextWrapper();
 _tf = (anywheresoftware.b4a.objects.EditTextWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.EditTextWrapper(), (android.widget.EditText)(__ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()));
-RDebugUtils.currentLine=37093385;
- //BA.debugLineNum = 37093385;BA.debugLine="tf.SelectAll";
+RDebugUtils.currentLine=37158921;
+ //BA.debugLineNum = 37158921;BA.debugLine="tf.SelectAll";
 _tf.SelectAll();
-RDebugUtils.currentLine=37093386;
- //BA.debugLineNum = 37093386;BA.debugLine="IME.ShowKeyboard(TextField1)";
+RDebugUtils.currentLine=37158922;
+ //BA.debugLineNum = 37158922;BA.debugLine="IME.ShowKeyboard(TextField1)";
 __ref._ime /*anywheresoftware.b4a.objects.IME*/ .ShowKeyboard((android.view.View)(__ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()));
-RDebugUtils.currentLine=37093391;
- //BA.debugLineNum = 37093391;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37158927;
+ //BA.debugLineNum = 37158927;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -140,57 +140,57 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "dialogclosed", true))
 	 {return ((String) Debug.delegate(ba, "dialogclosed", new Object[] {_result}));}
-RDebugUtils.currentLine=37158912;
- //BA.debugLineNum = 37158912;BA.debugLine="Private Sub DialogClosed(Result As Int)";
-RDebugUtils.currentLine=37158913;
- //BA.debugLineNum = 37158913;BA.debugLine="If Result = xui.DialogResponse_Positive Then";
+RDebugUtils.currentLine=37224448;
+ //BA.debugLineNum = 37224448;BA.debugLine="Private Sub DialogClosed(Result As Int)";
+RDebugUtils.currentLine=37224449;
+ //BA.debugLineNum = 37224449;BA.debugLine="If Result = xui.DialogResponse_Positive Then";
 if (_result==__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive) { 
-RDebugUtils.currentLine=37158914;
- //BA.debugLineNum = 37158914;BA.debugLine="Text = TextField1.Text";
+RDebugUtils.currentLine=37224450;
+ //BA.debugLineNum = 37224450;BA.debugLine="Text = TextField1.Text";
 __ref._text /*String*/  = __ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getText();
  };
-RDebugUtils.currentLine=37158916;
- //BA.debugLineNum = 37158916;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37224452;
+ //BA.debugLineNum = 37224452;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.example.b4xinputtemplate __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
-RDebugUtils.currentLine=36372480;
- //BA.debugLineNum = 36372480;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=36372481;
- //BA.debugLineNum = 36372481;BA.debugLine="Private xui As XUI";
+RDebugUtils.currentLine=36438016;
+ //BA.debugLineNum = 36438016;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=36438017;
+ //BA.debugLineNum = 36438017;BA.debugLine="Private xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=36372482;
- //BA.debugLineNum = 36372482;BA.debugLine="Public mBase As B4XView";
+RDebugUtils.currentLine=36438018;
+ //BA.debugLineNum = 36438018;BA.debugLine="Public mBase As B4XView";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=36372483;
- //BA.debugLineNum = 36372483;BA.debugLine="Public Text As String";
+RDebugUtils.currentLine=36438019;
+ //BA.debugLineNum = 36438019;BA.debugLine="Public Text As String";
 _text = "";
-RDebugUtils.currentLine=36372484;
- //BA.debugLineNum = 36372484;BA.debugLine="Private xDialog As B4XDialog";
+RDebugUtils.currentLine=36438020;
+ //BA.debugLineNum = 36438020;BA.debugLine="Private xDialog As B4XDialog";
 _xdialog = new b4a.example.b4xdialog();
-RDebugUtils.currentLine=36372485;
- //BA.debugLineNum = 36372485;BA.debugLine="Public RegexPattern As String";
+RDebugUtils.currentLine=36438021;
+ //BA.debugLineNum = 36438021;BA.debugLine="Public RegexPattern As String";
 _regexpattern = "";
-RDebugUtils.currentLine=36372486;
- //BA.debugLineNum = 36372486;BA.debugLine="Public TextField1 As B4XView";
+RDebugUtils.currentLine=36438022;
+ //BA.debugLineNum = 36438022;BA.debugLine="Public TextField1 As B4XView";
 _textfield1 = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=36372487;
- //BA.debugLineNum = 36372487;BA.debugLine="Public lblTitle As B4XView";
+RDebugUtils.currentLine=36438023;
+ //BA.debugLineNum = 36438023;BA.debugLine="Public lblTitle As B4XView";
 _lbltitle = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=36372489;
- //BA.debugLineNum = 36372489;BA.debugLine="Private IME As IME";
+RDebugUtils.currentLine=36438025;
+ //BA.debugLineNum = 36438025;BA.debugLine="Private IME As IME";
 _ime = new anywheresoftware.b4a.objects.IME();
-RDebugUtils.currentLine=36372491;
- //BA.debugLineNum = 36372491;BA.debugLine="Private mAllowDecimals As Boolean";
+RDebugUtils.currentLine=36438027;
+ //BA.debugLineNum = 36438027;BA.debugLine="Private mAllowDecimals As Boolean";
 _mallowdecimals = false;
-RDebugUtils.currentLine=36372492;
- //BA.debugLineNum = 36372492;BA.debugLine="Private BorderColor = xui.Color_White, BorderColo";
+RDebugUtils.currentLine=36438028;
+ //BA.debugLineNum = 36438028;BA.debugLine="Private BorderColor = xui.Color_White, BorderColo";
 _bordercolor = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White;
 _bordercolorinvalid = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Red;
-RDebugUtils.currentLine=36372493;
- //BA.debugLineNum = 36372493;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36438029;
+ //BA.debugLineNum = 36438029;BA.debugLine="End Sub";
 return "";
 }
 public String  _configurefornumbers(b4a.example.b4xinputtemplate __ref,boolean _allowdecimals,boolean _allownegative) throws Exception{
@@ -199,57 +199,57 @@ RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "configurefornumbers", true))
 	 {return ((String) Debug.delegate(ba, "configurefornumbers", new Object[] {_allowdecimals,_allownegative}));}
 anywheresoftware.b4a.objects.EditTextWrapper _et = null;
-RDebugUtils.currentLine=36569088;
- //BA.debugLineNum = 36569088;BA.debugLine="Public Sub ConfigureForNumbers (AllowDecimals As B";
-RDebugUtils.currentLine=36569090;
- //BA.debugLineNum = 36569090;BA.debugLine="Dim et As EditText = TextField1";
+RDebugUtils.currentLine=36634624;
+ //BA.debugLineNum = 36634624;BA.debugLine="Public Sub ConfigureForNumbers (AllowDecimals As B";
+RDebugUtils.currentLine=36634626;
+ //BA.debugLineNum = 36634626;BA.debugLine="Dim et As EditText = TextField1";
 _et = new anywheresoftware.b4a.objects.EditTextWrapper();
 _et = (anywheresoftware.b4a.objects.EditTextWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.EditTextWrapper(), (android.widget.EditText)(__ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()));
-RDebugUtils.currentLine=36569091;
- //BA.debugLineNum = 36569091;BA.debugLine="If AllowDecimals Or AllowNegative Then";
+RDebugUtils.currentLine=36634627;
+ //BA.debugLineNum = 36634627;BA.debugLine="If AllowDecimals Or AllowNegative Then";
 if (_allowdecimals || _allownegative) { 
-RDebugUtils.currentLine=36569092;
- //BA.debugLineNum = 36569092;BA.debugLine="et.InputType = et.INPUT_TYPE_DECIMAL_NUMBERS";
+RDebugUtils.currentLine=36634628;
+ //BA.debugLineNum = 36634628;BA.debugLine="et.InputType = et.INPUT_TYPE_DECIMAL_NUMBERS";
 _et.setInputType(_et.INPUT_TYPE_DECIMAL_NUMBERS);
  }else {
-RDebugUtils.currentLine=36569094;
- //BA.debugLineNum = 36569094;BA.debugLine="et.InputType = et.INPUT_TYPE_NUMBERS";
+RDebugUtils.currentLine=36634630;
+ //BA.debugLineNum = 36634630;BA.debugLine="et.InputType = et.INPUT_TYPE_NUMBERS";
 _et.setInputType(_et.INPUT_TYPE_NUMBERS);
  };
-RDebugUtils.currentLine=36569107;
- //BA.debugLineNum = 36569107;BA.debugLine="If AllowDecimals And AllowNegative Then";
+RDebugUtils.currentLine=36634643;
+ //BA.debugLineNum = 36634643;BA.debugLine="If AllowDecimals And AllowNegative Then";
 if (_allowdecimals && _allownegative) { 
-RDebugUtils.currentLine=36569108;
- //BA.debugLineNum = 36569108;BA.debugLine="RegexPattern = \"^-?(0|[1-9]\\d*)?(\\.\\d+)?(?<=\\d)$";
+RDebugUtils.currentLine=36634644;
+ //BA.debugLineNum = 36634644;BA.debugLine="RegexPattern = \"^-?(0|[1-9]\\d*)?(\\.\\d+)?(?<=\\d)$";
 __ref._regexpattern /*String*/  = "^-?(0|[1-9]\\d*)?(\\.\\d+)?(?<=\\d)$";
  }else 
-{RDebugUtils.currentLine=36569109;
- //BA.debugLineNum = 36569109;BA.debugLine="Else If AllowDecimals And AllowNegative = False T";
+{RDebugUtils.currentLine=36634645;
+ //BA.debugLineNum = 36634645;BA.debugLine="Else If AllowDecimals And AllowNegative = False T";
 if (_allowdecimals && _allownegative==__c.False) { 
-RDebugUtils.currentLine=36569110;
- //BA.debugLineNum = 36569110;BA.debugLine="RegexPattern = \"^(0|[1-9]\\d*)?(\\.\\d+)?(?<=\\d)$\"";
+RDebugUtils.currentLine=36634646;
+ //BA.debugLineNum = 36634646;BA.debugLine="RegexPattern = \"^(0|[1-9]\\d*)?(\\.\\d+)?(?<=\\d)$\"";
 __ref._regexpattern /*String*/  = "^(0|[1-9]\\d*)?(\\.\\d+)?(?<=\\d)$";
  }else 
-{RDebugUtils.currentLine=36569111;
- //BA.debugLineNum = 36569111;BA.debugLine="Else If AllowDecimals = False And AllowNegative =";
+{RDebugUtils.currentLine=36634647;
+ //BA.debugLineNum = 36634647;BA.debugLine="Else If AllowDecimals = False And AllowNegative =";
 if (_allowdecimals==__c.False && _allownegative==__c.True) { 
-RDebugUtils.currentLine=36569112;
- //BA.debugLineNum = 36569112;BA.debugLine="RegexPattern = \"^-?(0|[1-9]\\d*)$\"";
+RDebugUtils.currentLine=36634648;
+ //BA.debugLineNum = 36634648;BA.debugLine="RegexPattern = \"^-?(0|[1-9]\\d*)$\"";
 __ref._regexpattern /*String*/  = "^-?(0|[1-9]\\d*)$";
  }else 
-{RDebugUtils.currentLine=36569113;
- //BA.debugLineNum = 36569113;BA.debugLine="Else If AllowDecimals = False And AllowNegative =";
+{RDebugUtils.currentLine=36634649;
+ //BA.debugLineNum = 36634649;BA.debugLine="Else If AllowDecimals = False And AllowNegative =";
 if (_allowdecimals==__c.False && _allownegative==__c.False) { 
-RDebugUtils.currentLine=36569114;
- //BA.debugLineNum = 36569114;BA.debugLine="RegexPattern = \"^(0|[1-9]\\d*)$\"";
+RDebugUtils.currentLine=36634650;
+ //BA.debugLineNum = 36634650;BA.debugLine="RegexPattern = \"^(0|[1-9]\\d*)$\"";
 __ref._regexpattern /*String*/  = "^(0|[1-9]\\d*)$";
  }}}}
 ;
-RDebugUtils.currentLine=36569116;
- //BA.debugLineNum = 36569116;BA.debugLine="mAllowDecimals = AllowDecimals";
+RDebugUtils.currentLine=36634652;
+ //BA.debugLineNum = 36634652;BA.debugLine="mAllowDecimals = AllowDecimals";
 __ref._mallowdecimals /*boolean*/  = _allowdecimals;
-RDebugUtils.currentLine=36569117;
- //BA.debugLineNum = 36569117;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36634653;
+ //BA.debugLineNum = 36634653;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4a.example.b4xinputtemplate __ref,anywheresoftware.b4a.BA _ba) throws Exception{
@@ -259,42 +259,42 @@ RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
 anywheresoftware.b4j.object.JavaObject _jo = null;
-RDebugUtils.currentLine=36438016;
- //BA.debugLineNum = 36438016;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=36438017;
- //BA.debugLineNum = 36438017;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
+RDebugUtils.currentLine=36503552;
+ //BA.debugLineNum = 36503552;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=36503553;
+ //BA.debugLineNum = 36503553;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .CreatePanel(ba,"mBase");
-RDebugUtils.currentLine=36438018;
- //BA.debugLineNum = 36438018;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 80dip)";
+RDebugUtils.currentLine=36503554;
+ //BA.debugLineNum = 36503554;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 80dip)";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (80)));
-RDebugUtils.currentLine=36438019;
- //BA.debugLineNum = 36438019;BA.debugLine="mBase.LoadLayout(\"B4XInputTemplate\")";
+RDebugUtils.currentLine=36503555;
+ //BA.debugLineNum = 36503555;BA.debugLine="mBase.LoadLayout(\"B4XInputTemplate\")";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .LoadLayout("B4XInputTemplate",ba);
-RDebugUtils.currentLine=36438020;
- //BA.debugLineNum = 36438020;BA.debugLine="TextField1.TextColor = xui.Color_White";
+RDebugUtils.currentLine=36503556;
+ //BA.debugLineNum = 36503556;BA.debugLine="TextField1.TextColor = xui.Color_White";
 __ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setTextColor(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_White);
-RDebugUtils.currentLine=36438022;
- //BA.debugLineNum = 36438022;BA.debugLine="IME.Initialize(\"\")";
+RDebugUtils.currentLine=36503558;
+ //BA.debugLineNum = 36503558;BA.debugLine="IME.Initialize(\"\")";
 __ref._ime /*anywheresoftware.b4a.objects.IME*/ .Initialize("");
-RDebugUtils.currentLine=36438023;
- //BA.debugLineNum = 36438023;BA.debugLine="Dim jo As JavaObject = TextField1";
+RDebugUtils.currentLine=36503559;
+ //BA.debugLineNum = 36503559;BA.debugLine="Dim jo As JavaObject = TextField1";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(__ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getObject()));
-RDebugUtils.currentLine=36438024;
- //BA.debugLineNum = 36438024;BA.debugLine="jo.RunMethod(\"setImeOptions\", Array(Bit.Or(335544";
+RDebugUtils.currentLine=36503560;
+ //BA.debugLineNum = 36503560;BA.debugLine="jo.RunMethod(\"setImeOptions\", Array(Bit.Or(335544";
 _jo.RunMethod("setImeOptions",new Object[]{(Object)(__c.Bit.Or((int) (33554432),(int) (6)))});
-RDebugUtils.currentLine=36438026;
- //BA.debugLineNum = 36438026;BA.debugLine="Dim jo As JavaObject = Me";
+RDebugUtils.currentLine=36503562;
+ //BA.debugLineNum = 36503562;BA.debugLine="Dim jo As JavaObject = Me";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(this));
-RDebugUtils.currentLine=36438027;
- //BA.debugLineNum = 36438027;BA.debugLine="jo.RunMethod(\"RemoveWarning\", Null)";
+RDebugUtils.currentLine=36503563;
+ //BA.debugLineNum = 36503563;BA.debugLine="jo.RunMethod(\"RemoveWarning\", Null)";
 _jo.RunMethod("RemoveWarning",(Object[])(__c.Null));
-RDebugUtils.currentLine=36438030;
- //BA.debugLineNum = 36438030;BA.debugLine="SetBorder(BorderColor)";
+RDebugUtils.currentLine=36503566;
+ //BA.debugLineNum = 36503566;BA.debugLine="SetBorder(BorderColor)";
 __ref._setborder /*String*/ (null,__ref._bordercolor /*int*/ );
-RDebugUtils.currentLine=36438031;
- //BA.debugLineNum = 36438031;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36503567;
+ //BA.debugLineNum = 36503567;BA.debugLine="End Sub";
 return "";
 }
 public String  _setborder(b4a.example.b4xinputtemplate __ref,int _bc) throws Exception{
@@ -302,13 +302,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "setborder", true))
 	 {return ((String) Debug.delegate(ba, "setborder", new Object[] {_bc}));}
-RDebugUtils.currentLine=36765696;
- //BA.debugLineNum = 36765696;BA.debugLine="Private Sub SetBorder(bc As Int)";
-RDebugUtils.currentLine=36765697;
- //BA.debugLineNum = 36765697;BA.debugLine="TextField1.SetColorAndBorder(xui.Color_Transparen";
+RDebugUtils.currentLine=36831232;
+ //BA.debugLineNum = 36831232;BA.debugLine="Private Sub SetBorder(bc As Int)";
+RDebugUtils.currentLine=36831233;
+ //BA.debugLineNum = 36831233;BA.debugLine="TextField1.SetColorAndBorder(xui.Color_Transparen";
 __ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .SetColorAndBorder(__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .Color_Transparent,__c.DipToCurrent((int) (1)),_bc,__c.DipToCurrent((int) (2)));
-RDebugUtils.currentLine=36765698;
- //BA.debugLineNum = 36765698;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36831234;
+ //BA.debugLineNum = 36831234;BA.debugLine="End Sub";
 return "";
 }
 public boolean  _isvalid(b4a.example.b4xinputtemplate __ref,String _new) throws Exception{
@@ -316,13 +316,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "isvalid", true))
 	 {return ((Boolean) Debug.delegate(ba, "isvalid", new Object[] {_new}));}
-RDebugUtils.currentLine=36831232;
- //BA.debugLineNum = 36831232;BA.debugLine="Private Sub IsValid(New As String) As Boolean";
-RDebugUtils.currentLine=36831233;
- //BA.debugLineNum = 36831233;BA.debugLine="Return RegexPattern = \"\" Or Regex.IsMatch(RegexPa";
+RDebugUtils.currentLine=36896768;
+ //BA.debugLineNum = 36896768;BA.debugLine="Private Sub IsValid(New As String) As Boolean";
+RDebugUtils.currentLine=36896769;
+ //BA.debugLineNum = 36896769;BA.debugLine="Return RegexPattern = \"\" Or Regex.IsMatch(RegexPa";
 if (true) return (__ref._regexpattern /*String*/ ).equals("") || __c.Regex.IsMatch(__ref._regexpattern /*String*/ ,_new);
-RDebugUtils.currentLine=36831234;
- //BA.debugLineNum = 36831234;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36896770;
+ //BA.debugLineNum = 36896770;BA.debugLine="End Sub";
 return false;
 }
 public String  _setbordercolor(b4a.example.b4xinputtemplate __ref,int _valid,int _invalid) throws Exception{
@@ -330,19 +330,19 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "setbordercolor", true))
 	 {return ((String) Debug.delegate(ba, "setbordercolor", new Object[] {_valid,_invalid}));}
-RDebugUtils.currentLine=36503552;
- //BA.debugLineNum = 36503552;BA.debugLine="Public Sub SetBorderColor(Valid As Int, Invalid As";
-RDebugUtils.currentLine=36503553;
- //BA.debugLineNum = 36503553;BA.debugLine="BorderColor = Valid";
+RDebugUtils.currentLine=36569088;
+ //BA.debugLineNum = 36569088;BA.debugLine="Public Sub SetBorderColor(Valid As Int, Invalid As";
+RDebugUtils.currentLine=36569089;
+ //BA.debugLineNum = 36569089;BA.debugLine="BorderColor = Valid";
 __ref._bordercolor /*int*/  = _valid;
-RDebugUtils.currentLine=36503554;
- //BA.debugLineNum = 36503554;BA.debugLine="BorderColorInvalid = Invalid";
+RDebugUtils.currentLine=36569090;
+ //BA.debugLineNum = 36569090;BA.debugLine="BorderColorInvalid = Invalid";
 __ref._bordercolorinvalid /*int*/  = _invalid;
-RDebugUtils.currentLine=36503555;
- //BA.debugLineNum = 36503555;BA.debugLine="SetBorder(BorderColor)";
+RDebugUtils.currentLine=36569091;
+ //BA.debugLineNum = 36569091;BA.debugLine="SetBorder(BorderColor)";
 __ref._setborder /*String*/ (null,__ref._bordercolor /*int*/ );
-RDebugUtils.currentLine=36503556;
- //BA.debugLineNum = 36503556;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36569092;
+ //BA.debugLineNum = 36569092;BA.debugLine="End Sub";
 return "";
 }
 public String  _validate(b4a.example.b4xinputtemplate __ref,String _new) throws Exception{
@@ -352,36 +352,36 @@ if (Debug.shouldDelegate(ba, "validate", true))
 	 {return ((String) Debug.delegate(ba, "validate", new Object[] {_new}));}
 int _bc = 0;
 boolean _enabled = false;
-RDebugUtils.currentLine=36700160;
- //BA.debugLineNum = 36700160;BA.debugLine="Private Sub Validate (New As String)";
-RDebugUtils.currentLine=36700161;
- //BA.debugLineNum = 36700161;BA.debugLine="Dim bc As Int = BorderColor";
+RDebugUtils.currentLine=36765696;
+ //BA.debugLineNum = 36765696;BA.debugLine="Private Sub Validate (New As String)";
+RDebugUtils.currentLine=36765697;
+ //BA.debugLineNum = 36765697;BA.debugLine="Dim bc As Int = BorderColor";
 _bc = __ref._bordercolor /*int*/ ;
-RDebugUtils.currentLine=36700162;
- //BA.debugLineNum = 36700162;BA.debugLine="Dim enabled As Boolean = True";
+RDebugUtils.currentLine=36765698;
+ //BA.debugLineNum = 36765698;BA.debugLine="Dim enabled As Boolean = True";
 _enabled = __c.True;
-RDebugUtils.currentLine=36700163;
- //BA.debugLineNum = 36700163;BA.debugLine="If IsValid(New) = False Then";
+RDebugUtils.currentLine=36765699;
+ //BA.debugLineNum = 36765699;BA.debugLine="If IsValid(New) = False Then";
 if (__ref._isvalid /*boolean*/ (null,_new)==__c.False) { 
-RDebugUtils.currentLine=36700164;
- //BA.debugLineNum = 36700164;BA.debugLine="If New.Length > 0 Then";
+RDebugUtils.currentLine=36765700;
+ //BA.debugLineNum = 36765700;BA.debugLine="If New.Length > 0 Then";
 if (_new.length()>0) { 
-RDebugUtils.currentLine=36700165;
- //BA.debugLineNum = 36700165;BA.debugLine="bc = BorderColorInvalid";
+RDebugUtils.currentLine=36765701;
+ //BA.debugLineNum = 36765701;BA.debugLine="bc = BorderColorInvalid";
 _bc = __ref._bordercolorinvalid /*int*/ ;
  };
-RDebugUtils.currentLine=36700167;
- //BA.debugLineNum = 36700167;BA.debugLine="enabled = False";
+RDebugUtils.currentLine=36765703;
+ //BA.debugLineNum = 36765703;BA.debugLine="enabled = False";
 _enabled = __c.False;
  };
-RDebugUtils.currentLine=36700169;
- //BA.debugLineNum = 36700169;BA.debugLine="xDialog.SetButtonState(xui.DialogResponse_Positiv";
+RDebugUtils.currentLine=36765705;
+ //BA.debugLineNum = 36765705;BA.debugLine="xDialog.SetButtonState(xui.DialogResponse_Positiv";
 __ref._xdialog /*b4a.example.b4xdialog*/ ._setbuttonstate /*String*/ (null,__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive,_enabled);
-RDebugUtils.currentLine=36700170;
- //BA.debugLineNum = 36700170;BA.debugLine="SetBorder(bc)";
+RDebugUtils.currentLine=36765706;
+ //BA.debugLineNum = 36765706;BA.debugLine="SetBorder(bc)";
 __ref._setborder /*String*/ (null,_bc);
-RDebugUtils.currentLine=36700171;
- //BA.debugLineNum = 36700171;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36765707;
+ //BA.debugLineNum = 36765707;BA.debugLine="End Sub";
 return "";
 }
 public String  _textfield1_action(b4a.example.b4xinputtemplate __ref) throws Exception{
@@ -389,13 +389,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "textfield1_action", true))
 	 {return ((String) Debug.delegate(ba, "textfield1_action", null));}
-RDebugUtils.currentLine=36896768;
- //BA.debugLineNum = 36896768;BA.debugLine="Private Sub TextField1_Action";
-RDebugUtils.currentLine=36896769;
- //BA.debugLineNum = 36896769;BA.debugLine="TextField1_EnterPressed";
+RDebugUtils.currentLine=36962304;
+ //BA.debugLineNum = 36962304;BA.debugLine="Private Sub TextField1_Action";
+RDebugUtils.currentLine=36962305;
+ //BA.debugLineNum = 36962305;BA.debugLine="TextField1_EnterPressed";
 __ref._textfield1_enterpressed /*String*/ (null);
-RDebugUtils.currentLine=36896770;
- //BA.debugLineNum = 36896770;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36962306;
+ //BA.debugLineNum = 36962306;BA.debugLine="End Sub";
 return "";
 }
 public String  _textfield1_enterpressed(b4a.example.b4xinputtemplate __ref) throws Exception{
@@ -403,14 +403,14 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "textfield1_enterpressed", true))
 	 {return ((String) Debug.delegate(ba, "textfield1_enterpressed", null));}
-RDebugUtils.currentLine=36962304;
- //BA.debugLineNum = 36962304;BA.debugLine="Private Sub TextField1_EnterPressed";
-RDebugUtils.currentLine=36962305;
- //BA.debugLineNum = 36962305;BA.debugLine="If IsValid(TextField1.Text) Then xDialog.Close(xu";
+RDebugUtils.currentLine=37027840;
+ //BA.debugLineNum = 37027840;BA.debugLine="Private Sub TextField1_EnterPressed";
+RDebugUtils.currentLine=37027841;
+ //BA.debugLineNum = 37027841;BA.debugLine="If IsValid(TextField1.Text) Then xDialog.Close(xu";
 if (__ref._isvalid /*boolean*/ (null,__ref._textfield1 /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getText())) { 
 __ref._xdialog /*b4a.example.b4xdialog*/ ._close /*boolean*/ (null,__ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .DialogResponse_Positive);};
-RDebugUtils.currentLine=36962306;
- //BA.debugLineNum = 36962306;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37027842;
+ //BA.debugLineNum = 37027842;BA.debugLine="End Sub";
 return "";
 }
 public String  _textfield1_textchanged(b4a.example.b4xinputtemplate __ref,String _old,String _new) throws Exception{
@@ -418,13 +418,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xinputtemplate";
 if (Debug.shouldDelegate(ba, "textfield1_textchanged", true))
 	 {return ((String) Debug.delegate(ba, "textfield1_textchanged", new Object[] {_old,_new}));}
-RDebugUtils.currentLine=36634624;
- //BA.debugLineNum = 36634624;BA.debugLine="Private Sub TextField1_TextChanged (Old As String,";
-RDebugUtils.currentLine=36634636;
- //BA.debugLineNum = 36634636;BA.debugLine="Validate (New)";
+RDebugUtils.currentLine=36700160;
+ //BA.debugLineNum = 36700160;BA.debugLine="Private Sub TextField1_TextChanged (Old As String,";
+RDebugUtils.currentLine=36700172;
+ //BA.debugLineNum = 36700172;BA.debugLine="Validate (New)";
 __ref._validate /*String*/ (null,_new);
-RDebugUtils.currentLine=36634637;
- //BA.debugLineNum = 36634637;BA.debugLine="End Sub";
+RDebugUtils.currentLine=36700173;
+ //BA.debugLineNum = 36700173;BA.debugLine="End Sub";
 return "";
 }
 public void RemoveWarning() throws Exception{
